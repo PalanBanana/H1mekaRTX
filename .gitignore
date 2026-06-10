@@ -4,3 +4,9 @@ DerivedData/
 *.xcuserstate
 *.xcworkspace/xcuserdata/
 *.xcodeproj/xcuserdata/
+
+# Xcode user state
+xcuserdata/
+*.xcuserstate
+DerivedData/
+.DS_Store
