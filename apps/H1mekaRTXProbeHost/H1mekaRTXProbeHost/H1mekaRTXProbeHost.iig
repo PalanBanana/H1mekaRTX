@@ -1,0 +1,21 @@
+//
+//  H1mekaRTXProbeHost.iig
+//  H1mekaRTXProbeHost
+//
+//  Created by 히메카 on 6/11/26.
+//
+
+#ifndef H1mekaRTXProbeHost_h
+#define H1mekaRTXProbeHost_h
+
+#include <Availability.h>
+#include <DriverKit/IOService.iig>
+
+class H1mekaRTXProbeHost: public IOService
+{
+public:
+    virtual kern_return_t
+    Start(IOService * provider) override;
+};
+
+#endif /* H1mekaRTXProbeHost_h */
