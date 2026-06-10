@@ -10,9 +10,29 @@
 		F65A62FB2FD9BC7C00BED8CF /* DriverKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65A62FA2FD9BC7C00BED8CF /* DriverKit.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F6A7145B2FD9C44400D5C00D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F65A62EE2FD9BC7C00BED8CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6A714492FD9C44400D5C00D;
+			remoteInfo = "H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller";
+		};
+		F6A714652FD9C44500D5C00D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F65A62EE2FD9BC7C00BED8CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6A714492FD9C44400D5C00D;
+			remoteInfo = "H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		F65A62F72FD9BC7C00BED8CF /* com.palanbanana.H1mekaRTXProbeHost.dext */ = {isa = PBXFileReference; explicitFileType = "wrapper.driver-extension"; includeInIndex = 0; path = com.palanbanana.H1mekaRTXProbeHost.dext; sourceTree = BUILT_PRODUCTS_DIR; };
 		F65A62FA2FD9BC7C00BED8CF /* DriverKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DriverKit.framework; path = Library/Frameworks/DriverKit.framework; sourceTree = DEVELOPER_DIR; };
+		F6A7144A2FD9C44400D5C00D /* H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A7145A2FD9C44400D5C00D /* H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A714642FD9C44500D5C00D /* H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -34,6 +54,21 @@
 			path = H1mekaRTXProbeHost;
 			sourceTree = "<group>";
 		};
+		F6A7144B2FD9C44400D5C00D /* H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller";
+			sourceTree = "<group>";
+		};
+		F6A7145D2FD9C44400D5C00D /* H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerTests";
+			sourceTree = "<group>";
+		};
+		F6A714672FD9C44500D5C00D /* H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerUITests";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +80,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F6A714472FD9C44400D5C00D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A714572FD9C44400D5C00D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A714612FD9C44500D5C00D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -52,6 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				F65A62FC2FD9BC7C00BED8CF /* H1mekaRTXProbeHost */,
+				F6A7144B2FD9C44400D5C00D /* H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller */,
+				F6A7145D2FD9C44400D5C00D /* H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerTests */,
+				F6A714672FD9C44500D5C00D /* H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerUITests */,
 				F65A62F92FD9BC7C00BED8CF /* Frameworks */,
 				F65A62F82FD9BC7C00BED8CF /* Products */,
 			);
@@ -61,6 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				F65A62F72FD9BC7C00BED8CF /* com.palanbanana.H1mekaRTXProbeHost.dext */,
+				F6A7144A2FD9C44400D5C00D /* H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller.app */,
+				F6A7145A2FD9C44400D5C00D /* H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerTests.xctest */,
+				F6A714642FD9C44500D5C00D /* H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +171,74 @@
 			productReference = F65A62F72FD9BC7C00BED8CF /* com.palanbanana.H1mekaRTXProbeHost.dext */;
 			productType = "com.apple.product-type.driver-extension";
 		};
+		F6A714492FD9C44400D5C00D /* H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6A714722FD9C44500D5C00D /* Build configuration list for PBXNativeTarget "H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller" */;
+			buildPhases = (
+				F6A714462FD9C44400D5C00D /* Sources */,
+				F6A714472FD9C44400D5C00D /* Frameworks */,
+				F6A714482FD9C44400D5C00D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F6A7144B2FD9C44400D5C00D /* H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller */,
+			);
+			name = "H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller";
+			packageProductDependencies = (
+			);
+			productName = "H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller";
+			productReference = F6A7144A2FD9C44400D5C00D /* H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6A714592FD9C44400D5C00D /* H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6A714732FD9C44500D5C00D /* Build configuration list for PBXNativeTarget "H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerTests" */;
+			buildPhases = (
+				F6A714562FD9C44400D5C00D /* Sources */,
+				F6A714572FD9C44400D5C00D /* Frameworks */,
+				F6A714582FD9C44400D5C00D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6A7145C2FD9C44400D5C00D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F6A7145D2FD9C44400D5C00D /* H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerTests */,
+			);
+			name = "H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerTests";
+			packageProductDependencies = (
+			);
+			productName = "H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerTests";
+			productReference = F6A7145A2FD9C44400D5C00D /* H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F6A714632FD9C44500D5C00D /* H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6A714742FD9C44500D5C00D /* Build configuration list for PBXNativeTarget "H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerUITests" */;
+			buildPhases = (
+				F6A714602FD9C44500D5C00D /* Sources */,
+				F6A714612FD9C44500D5C00D /* Frameworks */,
+				F6A714622FD9C44500D5C00D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6A714662FD9C44500D5C00D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F6A714672FD9C44500D5C00D /* H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerUITests */,
+			);
+			name = "H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerUITests";
+			packageProductDependencies = (
+			);
+			productName = "H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerUITests";
+			productReference = F6A714642FD9C44500D5C00D /* H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -116,10 +246,22 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					F65A62F62FD9BC7C00BED8CF = {
 						CreatedOnToolsVersion = 16.2;
+					};
+					F6A714492FD9C44400D5C00D = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					F6A714592FD9C44400D5C00D = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = F6A714492FD9C44400D5C00D;
+					};
+					F6A714632FD9C44500D5C00D = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = F6A714492FD9C44400D5C00D;
 					};
 				};
 			};
@@ -138,12 +280,36 @@
 			projectRoot = "";
 			targets = (
 				F65A62F62FD9BC7C00BED8CF /* H1mekaRTXProbeHost */,
+				F6A714492FD9C44400D5C00D /* H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller */,
+				F6A714592FD9C44400D5C00D /* H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerTests */,
+				F6A714632FD9C44500D5C00D /* H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F65A62F52FD9BC7C00BED8CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A714482FD9C44400D5C00D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A714582FD9C44400D5C00D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A714622FD9C44500D5C00D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -160,7 +326,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F6A714462FD9C44400D5C00D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A714562FD9C44400D5C00D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A714602FD9C44500D5C00D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6A7145C2FD9C44400D5C00D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6A714492FD9C44400D5C00D /* H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller */;
+			targetProxy = F6A7145B2FD9C44400D5C00D /* PBXContainerItemProxy */;
+		};
+		F6A714662FD9C44500D5C00D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6A714492FD9C44400D5C00D /* H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller */;
+			targetProxy = F6A714652FD9C44500D5C00D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F65A63042FD9BC7C00BED8CF /* Debug */ = {
@@ -326,6 +526,147 @@
 			};
 			name = Release;
 		};
+		F6A7146C2FD9C44500D5C00D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller/H1mekaRTXProbeInstaller_H1mekaRTXProbeInstaller.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller/Preview Content\"";
+				DEVELOPMENT_TEAM = 29PMYP22C5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.8;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.palanbanana.H1mekaRTXProbeInstaller-H1mekaRTXProbeInstaller";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F6A7146D2FD9C44500D5C00D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller/H1mekaRTXProbeInstaller_H1mekaRTXProbeInstaller.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller/Preview Content\"";
+				DEVELOPMENT_TEAM = 29PMYP22C5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.8;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.palanbanana.H1mekaRTXProbeInstaller-H1mekaRTXProbeInstaller";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F6A7146E2FD9C44500D5C00D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29PMYP22C5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.8;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.palanbanana.H1mekaRTXProbeInstaller-H1mekaRTXProbeInstallerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller";
+			};
+			name = Debug;
+		};
+		F6A7146F2FD9C44500D5C00D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29PMYP22C5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.8;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.palanbanana.H1mekaRTXProbeInstaller-H1mekaRTXProbeInstallerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller";
+			};
+			name = Release;
+		};
+		F6A714702FD9C44500D5C00D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29PMYP22C5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.8;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.palanbanana.H1mekaRTXProbeInstaller-H1mekaRTXProbeInstallerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller";
+			};
+			name = Debug;
+		};
+		F6A714712FD9C44500D5C00D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29PMYP22C5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.8;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.palanbanana.H1mekaRTXProbeInstaller-H1mekaRTXProbeInstallerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -343,6 +684,33 @@
 			buildConfigurations = (
 				F65A63042FD9BC7C00BED8CF /* Debug */,
 				F65A63052FD9BC7C00BED8CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6A714722FD9C44500D5C00D /* Build configuration list for PBXNativeTarget "H1mekaRTXProbeInstaller H1mekaRTXProbeInstaller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A7146C2FD9C44500D5C00D /* Debug */,
+				F6A7146D2FD9C44500D5C00D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6A714732FD9C44500D5C00D /* Build configuration list for PBXNativeTarget "H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A7146E2FD9C44500D5C00D /* Debug */,
+				F6A7146F2FD9C44500D5C00D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6A714742FD9C44500D5C00D /* Build configuration list for PBXNativeTarget "H1mekaRTXProbeInstaller H1mekaRTXProbeInstallerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A714702FD9C44500D5C00D /* Debug */,
+				F6A714712FD9C44500D5C00D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
