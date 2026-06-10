@@ -1,0 +1,253 @@
+[    0.006010] [gap 0x70800000-0xfdffffff] available for PCI devices
+[    0.133654] ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
+[    0.133655] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.133743] PCI: ECAM [mem 0xc0000000-0xcfffffff] (base 0xc0000000) for domain 0000 [bus 00-ff]
+[    0.133755] PCI: Using configuration type 1 for base access
+[    0.243915] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.243917] PCI: Ignoring E820 reservations for host bridge windows
+[    0.283656] ACPI: PCI Root Bridge [PC00] (domain 0000 [bus 00-fe])
+[    0.283786] acpi PNP0A08:00: _OSC: platform does not support [PCIeHotplug SHPCHotplug PME]
+[    0.284021] acpi PNP0A08:00: _OSC: OS now controls [AER PCIeCapability LTR DPC]
+[    0.284903] PCI host bridge to bus 0000:00
+[    0.284905] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    0.284907] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    0.284908] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    0.284909] pci_bus 0000:00: root bus resource [mem 0x000e0000-0x000effff window]
+[    0.284910] pci_bus 0000:00: root bus resource [mem 0x70800000-0xbfffffff window]
+[    0.284911] pci_bus 0000:00: root bus resource [mem 0x4000000000-0x7fffffffff window]
+[    0.284913] pci_bus 0000:00: root bus resource [bus 00-fe]
+[    0.284933] pci 0000:00:00.0: [8086:a740] type 00 class 0x060000 conventional PCI endpoint
+[    0.285042] pci 0000:00:01.0: [8086:a70d] type 01 class 0x060400 PCIe Root Port
+[    0.285052] pci 0000:00:01.0: PCI bridge to [bus 01]
+[    0.285054] pci 0000:00:01.0:   bridge window [io  0x4000-0x4fff]
+[    0.285056] pci 0000:00:01.0:   bridge window [mem 0x74000000-0x780fffff]
+[    0.285059] pci 0000:00:01.0:   bridge window [mem 0x6000000000-0x6401ffffff 64bit pref]
+[    0.285091] pci 0000:00:01.0: PME# supported from D0 D3hot D3cold
+[    0.285107] pci 0000:00:01.0: PTM enabled (root), 4ns granularity
+[    0.285609] pci 0000:00:02.0: [8086:a780] type 00 class 0x038000 PCIe Root Complex Integrated Endpoint
+[    0.285620] pci 0000:00:02.0: BAR 0 [mem 0x6402000000-0x6402ffffff 64bit]
+[    0.285622] pci 0000:00:02.0: BAR 2 [mem 0x4000000000-0x400fffffff 64bit pref]
+[    0.285623] pci 0000:00:02.0: BAR 4 [io  0x5000-0x503f]
+[    0.285632] pci 0000:00:02.0: DMAR: Skip IOMMU disabling for graphics
+[    0.285653] pci 0000:00:02.0: VF BAR 0 [mem 0x00000000-0x00ffffff 64bit]
+[    0.285654] pci 0000:00:02.0: VF BAR 0 [mem 0x00000000-0x06ffffff 64bit]: contains BAR 0 for 7 VFs
+[    0.285656] pci 0000:00:02.0: VF BAR 2 [mem 0x00000000-0x1fffffff 64bit pref]
+[    0.285657] pci 0000:00:02.0: VF BAR 2 [mem 0x00000000-0xdfffffff 64bit pref]: contains BAR 2 for 7 VFs
+[    0.285783] pci 0000:00:06.0: [8086:a74d] type 01 class 0x060400 PCIe Root Port
+[    0.285793] pci 0000:00:06.0: PCI bridge to [bus 02]
+[    0.285796] pci 0000:00:06.0:   bridge window [mem 0x78200000-0x782fffff]
+[    0.285832] pci 0000:00:06.0: PME# supported from D0 D3hot D3cold
+[    0.285848] pci 0000:00:06.0: PTM enabled (root), 4ns granularity
+[    0.286382] pci 0000:00:14.0: [8086:7a60] type 00 class 0x0c0330 conventional PCI endpoint
+[    0.286420] pci 0000:00:14.0: BAR 0 [mem 0x6403100000-0x640310ffff 64bit]
+[    0.286462] pci 0000:00:14.0: PME# supported from D3hot D3cold
+[    0.287051] pci 0000:00:14.2: [8086:7a27] type 00 class 0x050000 conventional PCI endpoint
+[    0.287095] pci 0000:00:14.2: BAR 0 [mem 0x6403114000-0x6403117fff 64bit]
+[    0.287099] pci 0000:00:14.2: BAR 2 [mem 0x640311b000-0x640311bfff 64bit]
+[    0.287282] pci 0000:00:15.0: [8086:7a4c] type 00 class 0x0c8000 conventional PCI endpoint
+[    0.287415] pci 0000:00:15.0: BAR 0 [mem 0x00000000-0x00000fff 64bit]
+[    0.298524] pci 0000:00:16.0: [8086:7a68] type 00 class 0x078000 conventional PCI endpoint
+[    0.298574] pci 0000:00:16.0: BAR 0 [mem 0x6403119000-0x6403119fff 64bit]
+[    0.298625] pci 0000:00:16.0: PME# supported from D3hot
+[    0.299121] pci 0000:00:17.0: [8086:7a62] type 00 class 0x010601 conventional PCI endpoint
+[    0.299156] pci 0000:00:17.0: BAR 0 [mem 0x78300000-0x78301fff]
+[    0.299160] pci 0000:00:17.0: BAR 1 [mem 0x78303000-0x783030ff]
+[    0.299165] pci 0000:00:17.0: BAR 2 [io  0x5090-0x5097]
+[    0.299169] pci 0000:00:17.0: BAR 3 [io  0x5080-0x5083]
+[    0.299173] pci 0000:00:17.0: BAR 4 [io  0x5060-0x507f]
+[    0.299177] pci 0000:00:17.0: BAR 5 [mem 0x78302000-0x783027ff]
+[    0.299213] pci 0000:00:17.0: PME# supported from D3hot
+[    0.299518] pci 0000:00:1d.0: [8086:7a36] type 01 class 0x060400 PCIe Root Port
+[    0.299541] pci 0000:00:1d.0: PCI bridge to [bus 03]
+[    0.299544] pci 0000:00:1d.0:   bridge window [io  0x3000-0x3fff]
+[    0.299547] pci 0000:00:1d.0:   bridge window [mem 0x78100000-0x781fffff]
+[    0.299634] pci 0000:00:1d.0: PME# supported from D0 D3hot D3cold
+[    0.299675] pci 0000:00:1d.0: PTM enabled (root), 4ns granularity
+[    0.300229] pci 0000:00:1f.0: [8086:7a06] type 00 class 0x060100 conventional PCI endpoint
+[    0.300536] pci 0000:00:1f.3: [8086:7a50] type 00 class 0x040300 conventional PCI endpoint
+[    0.300633] pci 0000:00:1f.3: BAR 0 [mem 0x6403110000-0x6403113fff 64bit]
+[    0.300645] pci 0000:00:1f.3: BAR 4 [mem 0x6403000000-0x64030fffff 64bit]
+[    0.300738] pci 0000:00:1f.3: PME# supported from D3hot D3cold
+[    0.300839] pci 0000:00:1f.4: [8086:7a23] type 00 class 0x0c0500 conventional PCI endpoint
+[    0.300886] pci 0000:00:1f.4: BAR 0 [mem 0x6403118000-0x64031180ff 64bit]
+[    0.300892] pci 0000:00:1f.4: BAR 4 [io  0xefa0-0xefbf]
+[    0.301115] pci 0000:00:1f.5: [8086:7a24] type 00 class 0x0c8000 conventional PCI endpoint
+[    0.301165] pci 0000:00:1f.5: BAR 0 [mem 0xfe010000-0xfe010fff]
+[    0.301256] pci 0000:01:00.0: [10de:2f04] type 00 class 0x030000 PCIe Legacy Endpoint
+[    0.301276] pci 0000:01:00.0: BAR 0 [mem 0x74000000-0x77ffffff]
+[    0.301278] pci 0000:01:00.0: BAR 1 [mem 0x6000000000-0x63ffffffff 64bit pref]
+[    0.301280] pci 0000:01:00.0: BAR 3 [mem 0x6400000000-0x6401ffffff 64bit pref]
+[    0.301282] pci 0000:01:00.0: BAR 5 [io  0x4000-0x407f]
+[    0.301283] pci 0000:01:00.0: ROM [mem 0x78000000-0x7807ffff pref]
+[    0.301308] pci 0000:01:00.0: Enabling HDA controller
+[    0.301346] pci 0000:01:00.0: PME# supported from D0 D3hot
+[    0.301374] pci 0000:01:00.0: VF BAR 0 [mem 0x00000000-0x0003ffff 64bit pref]
+[    0.301376] pci 0000:01:00.0: VF BAR 0 [mem 0x00000000-0x0003ffff 64bit pref]: contains BAR 0 for 1 VFs
+[    0.301378] pci 0000:01:00.0: VF BAR 2 [mem 0x00000000-0x0fffffff 64bit pref]
+[    0.301378] pci 0000:01:00.0: VF BAR 2 [mem 0x00000000-0x0fffffff 64bit pref]: contains BAR 2 for 1 VFs
+[    0.301380] pci 0000:01:00.0: VF BAR 4 [mem 0x00000000-0x01ffffff 64bit pref]
+[    0.301381] pci 0000:01:00.0: VF BAR 4 [mem 0x00000000-0x01ffffff 64bit pref]: contains BAR 4 for 1 VFs
+[    0.301531] pci 0000:01:00.1: [10de:2f80] type 00 class 0x040300 PCIe Endpoint
+[    0.301550] pci 0000:01:00.1: BAR 0 [mem 0x78080000-0x78083fff]
+[    0.301641] pci 0000:00:01.0: PCI bridge to [bus 01]
+[    0.301681] pci 0000:02:00.0: [1987:5019] type 00 class 0x010802 PCIe Endpoint
+[    0.301704] pci 0000:02:00.0: BAR 0 [mem 0x78200000-0x78203fff 64bit]
+[    0.301858] pci 0000:00:06.0: PCI bridge to [bus 02]
+[    0.301949] pci 0000:03:00.0: [10ec:8125] type 00 class 0x020000 PCIe Endpoint
+[    0.302006] pci 0000:03:00.0: BAR 0 [io  0x3000-0x30ff]
+[    0.302012] pci 0000:03:00.0: BAR 2 [mem 0x78100000-0x7810ffff 64bit]
+[    0.302016] pci 0000:03:00.0: BAR 4 [mem 0x78110000-0x78113fff 64bit]
+[    0.302147] pci 0000:03:00.0: supports D1 D2
+[    0.302148] pci 0000:03:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.302405] pci 0000:00:1d.0: PCI bridge to [bus 03]
+[    0.304754] ACPI: PCI: Interrupt link LNKA configured for IRQ 0
+[    0.304842] ACPI: PCI: Interrupt link LNKB configured for IRQ 1
+[    0.304928] ACPI: PCI: Interrupt link LNKC configured for IRQ 0
+[    0.305014] ACPI: PCI: Interrupt link LNKD configured for IRQ 0
+[    0.305099] ACPI: PCI: Interrupt link LNKE configured for IRQ 0
+[    0.305185] ACPI: PCI: Interrupt link LNKF configured for IRQ 0
+[    0.305270] ACPI: PCI: Interrupt link LNKG configured for IRQ 0
+[    0.305356] ACPI: PCI: Interrupt link LNKH configured for IRQ 0
+[    0.313300] PCI: Using ACPI for IRQ routing
+[    0.321201] PCI: pci_cache_line_size set to 64 bytes
+[    0.321234] pci 0000:00:1f.5: BAR 0 [mem 0xfe010000-0xfe010fff]: can't claim; no compatible bridge window
+[    0.321295] pci 0000:01:00.0: vgaarb: setting as boot VGA device
+[    0.321295] pci 0000:01:00.0: vgaarb: bridge control possible
+[    0.321295] pci 0000:01:00.0: vgaarb: VGA device added: decodes=io+mem,owns=none,locks=none
+[    0.353827] pci_bus 0000:00: max bus depth: 1 pci_try_num: 2
+[    0.353840] pci 0000:00:02.0: VF BAR 2 [mem 0x4020000000-0x40ffffffff 64bit pref]: assigned
+[    0.353844] pci 0000:00:02.0: VF BAR 0 [mem 0x4010000000-0x4016ffffff 64bit]: assigned
+[    0.353846] pci 0000:00:15.0: BAR 0 [mem 0x4017000000-0x4017000fff 64bit]: assigned
+[    0.353862] pci 0000:00:1f.5: BAR 0 [mem 0x70800000-0x70800fff]: assigned
+[    0.353874] pci 0000:01:00.0: VF BAR 2 [mem size 0x10000000 64bit pref]: can't assign; no space
+[    0.353875] pci 0000:01:00.0: VF BAR 2 [mem size 0x10000000 64bit pref]: failed to assign
+[    0.353880] pci 0000:01:00.0: VF BAR 4 [mem size 0x02000000 64bit pref]: can't assign; no space
+[    0.353881] pci 0000:01:00.0: VF BAR 4 [mem size 0x02000000 64bit pref]: failed to assign
+[    0.353882] pci 0000:01:00.0: VF BAR 0 [mem 0x780c0000-0x780fffff 64bit pref]: assigned
+[    0.353885] pci 0000:00:01.0: PCI bridge to [bus 01]
+[    0.353887] pci 0000:00:01.0:   bridge window [io  0x4000-0x4fff]
+[    0.353889] pci 0000:00:01.0:   bridge window [mem 0x74000000-0x780fffff]
+[    0.353891] pci 0000:00:01.0:   bridge window [mem 0x6000000000-0x6401ffffff 64bit pref]
+[    0.353893] pci 0000:00:06.0: PCI bridge to [bus 02]
+[    0.353895] pci 0000:00:06.0:   bridge window [mem 0x78200000-0x782fffff]
+[    0.353899] pci 0000:00:1d.0: PCI bridge to [bus 03]
+[    0.353907] pci 0000:00:1d.0:   bridge window [io  0x3000-0x3fff]
+[    0.353911] pci 0000:00:1d.0:   bridge window [mem 0x78100000-0x781fffff]
+[    0.353917] PCI: No. 2 try to assign unassigned res
+[    0.353920] pci 0000:00:01.0: bridge window [mem 0x6000000000-0x6401ffffff 64bit pref]: releasing
+[    0.353926] pci 0000:00:01.0: bridge window [mem size 0x402000000 64bit pref] to [bus 01] add_size 12000000 add_align 400000000
+[    0.353930] pci 0000:00:01.0: bridge window [mem 0x4400000000-0x4813ffffff 64bit pref]: assigned
+[    0.353932] pci 0000:01:00.0: BAR 1 [mem 0x4400000000-0x47ffffffff 64bit pref]: assigned
+[    0.353937] pci 0000:01:00.0: VF BAR 2 [mem 0x4800000000-0x480fffffff 64bit pref]: assigned
+[    0.353939] pci 0000:01:00.0: BAR 3 [mem 0x4810000000-0x4811ffffff 64bit pref]: assigned
+[    0.353944] pci 0000:01:00.0: VF BAR 4 [mem 0x4812000000-0x4813ffffff 64bit pref]: assigned
+[    0.353946] pci 0000:00:01.0: PCI bridge to [bus 01]
+[    0.353947] pci 0000:00:01.0:   bridge window [io  0x4000-0x4fff]
+[    0.353949] pci 0000:00:01.0:   bridge window [mem 0x74000000-0x780fffff]
+[    0.353950] pci 0000:00:01.0:   bridge window [mem 0x4400000000-0x4813ffffff 64bit pref]
+[    0.353953] pci 0000:00:06.0: PCI bridge to [bus 02]
+[    0.353955] pci 0000:00:06.0:   bridge window [mem 0x78200000-0x782fffff]
+[    0.353958] pci 0000:00:1d.0: PCI bridge to [bus 03]
+[    0.353966] pci 0000:00:1d.0:   bridge window [io  0x3000-0x3fff]
+[    0.353969] pci 0000:00:1d.0:   bridge window [mem 0x78100000-0x781fffff]
+[    0.353976] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[    0.353977] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[    0.353978] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[    0.353979] pci_bus 0000:00: resource 7 [mem 0x000e0000-0x000effff window]
+[    0.353980] pci_bus 0000:00: resource 8 [mem 0x70800000-0xbfffffff window]
+[    0.353981] pci_bus 0000:00: resource 9 [mem 0x4000000000-0x7fffffffff window]
+[    0.353982] pci_bus 0000:01: resource 0 [io  0x4000-0x4fff]
+[    0.353982] pci_bus 0000:01: resource 1 [mem 0x74000000-0x780fffff]
+[    0.353983] pci_bus 0000:01: resource 2 [mem 0x4400000000-0x4813ffffff 64bit pref]
+[    0.353985] pci_bus 0000:02: resource 1 [mem 0x78200000-0x782fffff]
+[    0.353985] pci_bus 0000:03: resource 0 [io  0x3000-0x3fff]
+[    0.353986] pci_bus 0000:03: resource 1 [mem 0x78100000-0x781fffff]
+[    0.354607] pci 0000:01:00.1: extending delay after power-on from D3hot to 20 msec
+[    0.354637] pci 0000:01:00.1: D0 power state depends on 0000:01:00.0
+[    0.354651] PCI: CLS 64 bytes, default 64
+[    0.355122] pci 0000:00:02.0: Adding to iommu group 0
+[    0.355880] pci 0000:00:00.0: Adding to iommu group 1
+[    0.355889] pci 0000:00:01.0: Adding to iommu group 2
+[    0.355898] pci 0000:00:06.0: Adding to iommu group 3
+[    0.355907] pci 0000:00:14.0: Adding to iommu group 4
+[    0.355912] pci 0000:00:14.2: Adding to iommu group 4
+[    0.355919] pci 0000:00:15.0: Adding to iommu group 5
+[    0.355926] pci 0000:00:16.0: Adding to iommu group 6
+[    0.355931] pci 0000:00:17.0: Adding to iommu group 7
+[    0.355947] pci 0000:00:1d.0: Adding to iommu group 8
+[    0.355958] pci 0000:00:1f.0: Adding to iommu group 9
+[    0.355965] pci 0000:00:1f.3: Adding to iommu group 9
+[    0.355970] pci 0000:00:1f.4: Adding to iommu group 9
+[    0.355976] pci 0000:00:1f.5: Adding to iommu group 9
+[    0.355985] pci 0000:01:00.0: Adding to iommu group 10
+[    0.355991] pci 0000:01:00.1: Adding to iommu group 10
+[    0.355997] pci 0000:02:00.0: Adding to iommu group 11
+[    0.356010] pci 0000:03:00.0: Adding to iommu group 12
+[    0.357926] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    0.416373] ACPI: bus type drm_connector registered
+[    0.429011] simple-framebuffer simple-framebuffer.0: [drm] Registered 1 planes with drm panic
+[    0.429023] [drm] Initialized simpledrm 1.0.0 for simple-framebuffer.0 on minor 0
+[    0.429491] simple-framebuffer simple-framebuffer.0: [drm] fb0: simpledrmdrmfb frame buffer device
+[    1.071947] nvme nvme0: pci function 0000:02:00.0
+[    1.072617] input: Video Bus as /devices/pci0000:00/acpi.video_bus.0/input/input3
+[    1.995650] input: Maono DGM20 USB Microphone as /devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4:1.3/0003:352F:0105.0001/input/input4
+[    1.995791] input: Maono DGM20 USB Microphone as /devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4:1.3/0003:352F:0105.0001/input/input5
+[    2.046802] input: Maono DGM20 USB Microphone Consumer Control as /devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4:1.3/0003:352F:0105.0001/input/input6
+[    2.047603] input: DaKai GP100K as /devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2.2/1-2.2:1.0/0003:0E6A:02C5.0002/input/input7
+[    2.099826] input: DaKai GP100K Consumer Control as /devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2.2/1-2.2:1.1/0003:0E6A:02C5.0003/input/input8
+[    2.145298] input: INSTANT GP100M as /devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2.4/1-2.4:1.0/0003:30FA:1340.0005/input/input12
+[    2.150903] input: DaKai GP100K System Control as /devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2.2/1-2.2:1.1/0003:0E6A:02C5.0003/input/input9
+[    2.151714] input: DaKai GP100K Keyboard as /devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2.2/1-2.2:1.1/0003:0E6A:02C5.0003/input/input11
+[    2.152534] input: ASRock LED Controller as /devices/pci0000:00/0000:00:14.0/usb1/1-11/1-11:1.0/0003:26CE:01A2.0004/input/input13
+[    2.153014] input: INSTANT GP100M Keyboard as /devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2.4/1-2.4:1.1/0003:30FA:1340.0006/input/input14
+[   12.786578] systemd[1]: modprobe@drm.service - Load Kernel Module drm skipped, unmet condition check ConditionKernelModuleLoaded=!drm
+[   13.414901] i801_smbus 0000:00:1f.4: SMBus using PCI interrupt
+[   14.043395] i915 0000:00:02.0: [drm] Found alderlake_s/raptorlake_s (device ID a780) integrated display version 12.00 stepping D0
+[   14.044140] i915 0000:00:02.0: [drm] VT-d active for gfx access
+[   14.044187] i915 0000:00:02.0: [drm] Using Transparent Hugepages
+[   14.071441] i915 0000:00:02.0: [drm] Finished loading DMC firmware i915/adls_dmc_ver2_01.bin (v2.1)
+[   14.121832] nouveau 0000:01:00.0: NVIDIA GB205 (1b5000a1)
+[   14.131285] RAPL PMU: hw unit of domain pp1-gpu 2^-14 Joules
+[   14.254040] snd_hda_intel 0000:01:00.1: enabling device (0000 -> 0002)
+[   14.254071] snd_hda_intel 0000:01:00.1: Disabling MSI
+[   14.254074] snd_hda_intel 0000:01:00.1: Handle vga_switcheroo audio client
+[   14.386779] input: HDA NVidia HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:01.0/0000:01:00.1/sound/card0/input16
+[   14.386809] input: HDA NVidia HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:01.0/0000:01:00.1/sound/card0/input17
+[   14.386843] input: HDA NVidia HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:01.0/0000:01:00.1/sound/card0/input18
+[   14.386871] input: HDA NVidia HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:01.0/0000:01:00.1/sound/card0/input19
+[   15.379470] i915 0000:00:02.0: [drm] [ENCODER:506:DDI A/PHY A] failed to retrieve link info, disabling eDP
+[   15.462752] i915 0000:00:02.0: [drm] GT0: GuC firmware i915/tgl_guc_70.bin version 70.49.4
+[   15.462765] i915 0000:00:02.0: [drm] GT0: HuC firmware i915/tgl_huc.bin version 7.9.3
+[   15.465835] i915 0000:00:02.0: [drm] GT0: HuC: authenticated for all workloads
+[   15.466903] i915 0000:00:02.0: [drm] GT0: GUC: submission enabled
+[   15.466907] i915 0000:00:02.0: [drm] GT0: GUC: SLPC enabled
+[   15.467383] i915 0000:00:02.0: [drm] GT0: GUC: RC enabled
+[   15.468860] i915 0000:00:02.0: [drm] Protected Xe Path (PXP) protected content support initialized
+[   15.470771] i915 0000:00:02.0: [drm] Registered 4 planes with drm panic
+[   15.470779] [drm] Initialized i915 1.6.0 for 0000:00:02.0 on minor 1
+[   15.483851] i915 0000:00:02.0: [drm] Cannot find any crtc or sizes
+[   15.508515] i915 0000:00:02.0: [drm] Cannot find any crtc or sizes
+[   15.520585] i915 0000:00:02.0: [drm] Cannot find any crtc or sizes
+[   15.705384] input: HDA Intel PCH Rear Mic as /devices/pci0000:00/0000:00:1f.3/sound/card2/input20
+[   15.705425] input: HDA Intel PCH Front Mic as /devices/pci0000:00/0000:00:1f.3/sound/card2/input21
+[   15.705450] input: HDA Intel PCH Line as /devices/pci0000:00/0000:00:1f.3/sound/card2/input22
+[   15.705473] input: HDA Intel PCH Line Out as /devices/pci0000:00/0000:00:1f.3/sound/card2/input23
+[   15.705497] input: HDA Intel PCH Front Headphone as /devices/pci0000:00/0000:00:1f.3/sound/card2/input24
+[   15.705521] input: HDA Intel PCH HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:1f.3/sound/card2/input25
+[   15.705544] input: HDA Intel PCH HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:1f.3/sound/card2/input26
+[   15.705562] input: HDA Intel PCH HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:1f.3/sound/card2/input27
+[   15.705582] input: HDA Intel PCH HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:1f.3/sound/card2/input28
+[   16.066443] nouveau 0000:01:00.0: gsp: RM version: 570.144
+[   16.082813] nouveau 0000:01:00.0: vgaarb: deactivate vga console
+[   17.445054] nouveau 0000:01:00.0: drm: VRAM: 12227 MiB
+[   17.445057] nouveau 0000:01:00.0: drm: GART: 0 MiB
+[   17.824171] nouveau 0000:01:00.0: drm: MM: using COPY for buffer copies
+[   17.867280] snd_hda_intel 0000:01:00.1: bound 0000:01:00.0 (ops nv50_audio_component_bind_ops [nouveau])
+[   17.870539] nouveau 0000:01:00.0: [drm] Registered 4 planes with drm panic
+[   17.870540] [drm] Initialized nouveau 1.4.2 for 0000:01:00.0 on minor 0
+[   17.895611] fbcon: nouveaudrmfb (fb0) is primary device
+[   17.895614] nouveau 0000:01:00.0: [drm] fb0: nouveaudrmfb frame buffer device
+[   21.528308] audit: type=1400 audit(1781110033.604:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.mesa-2404.hook.disconnect-plug-kernel-gpu-2404" pid=2796 comm="apparmor_parser"
+[   31.590924] audit: type=1400 audit(1781110043.667:58): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.mesa-2404.hook.disconnect-plug-kernel-gpu-2404" pid=3356 comm="apparmor_parser"
+[  285.308530] audit: type=1400 audit(1781077896.318:491): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.mesa-2404.hook.connect-plug-kernel-gpu-2404" pid=34787 comm="apparmor_parser"
+[  285.309338] audit: type=1400 audit(1781077896.318:494): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.mesa-2404.hook.disconnect-plug-kernel-gpu-2404" pid=34788 comm="apparmor_parser"
