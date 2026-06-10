@@ -12,10 +12,10 @@
 			<string>IOUserService</string>
 			<key>IOMatchCategory</key>
 			<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+			<key>IOPCIMatch</key>
+			<string>0x2f0410de</string>
 			<key>IOProviderClass</key>
-			<string>IOUserResources</string>
-			<key>IOResourceMatch</key>
-			<string>IOKit</string>
+			<string>IOPCIDevice</string>
 			<key>IOUserClass</key>
 			<string>H1mekaRTXProbeHost</string>
 			<key>IOUserServerName</key>
@@ -23,6 +23,6 @@
 		</dict>
 	</dict>
 	<key>OSBundleUsageDescription</key>
-	<string></string>
+	<string>H1mekaRTXProbe read-only PCI visibility probe for NVIDIA RTX 5070.</string>
 </dict>
 </plist>
