@@ -173,6 +173,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = H1mekaRTXProbeHost/Info.plist;
 				MARKETING_VERSION = 1.0;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"$(inherited)",
+					"-framework",
+					PCIDriverKit,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.palanbanana.H1mekaRTXProbeHost;
 				PRODUCT_NAME = "$(inherited)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -192,6 +197,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = H1mekaRTXProbeHost/Info.plist;
 				MARKETING_VERSION = 1.0;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"$(inherited)",
+					"-framework",
+					PCIDriverKit,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.palanbanana.H1mekaRTXProbeHost;
 				PRODUCT_NAME = "$(inherited)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
