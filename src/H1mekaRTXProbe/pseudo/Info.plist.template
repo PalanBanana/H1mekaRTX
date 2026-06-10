@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleIdentifier</key>
+  <string>com.h1meka.H1mekaRTXProbe.Driver</string>
+
+  <key>CFBundleName</key>
+  <string>H1mekaRTXProbe</string>
+
+  <key>CFBundlePackageType</key>
+  <string>DEXT</string>
+
+  <key>IOKitPersonalities</key>
+  <dict>
+    <key>H1mekaRTXProbe-RTX5070</key>
+    <dict>
+      <key>CFBundleIdentifier</key>
+      <string>com.h1meka.H1mekaRTXProbe.Driver</string>
+
+      <key>IOClass</key>
+      <string>IOUserService</string>
+
+      <key>IOProviderClass</key>
+      <string>IOPCIDevice</string>
+
+      <key>IOUserClass</key>
+      <string>H1mekaRTXProbe</string>
+
+      <key>IOUserServerName</key>
+      <string>com.h1meka.H1mekaRTXProbe.Driver</string>
+
+      <!-- Device ID 0x2f04 + Vendor ID 0x10de -->
+      <!-- Common IOPCIPrimaryMatch format is device/vendor packed as 0xDDD D VVVV style. Verify in Xcode/Apple docs before building. -->
+      <key>IOPCIPrimaryMatch</key>
+      <string>0x2f0410de</string>
+
+      <!-- VGA controller class 0x030000 -->
+      <key>IOPCIClassMatch</key>
+      <string>0x03000000&amp;0xffffff00</string>
+    </dict>
+  </dict>
+</dict>
+</plist>
