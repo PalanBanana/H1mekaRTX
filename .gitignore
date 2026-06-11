@@ -28,3 +28,6 @@ metal-feasibility-boundary.json
 metal-feasibility-boundary.md
 macos-graphics-stack-map.json
 macos-graphics-stack-map.md
+metal-validation-harness-report.json
+metal-validation-harness-report.md
+tools/metal-validation-harness/.build/
