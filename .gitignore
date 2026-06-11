@@ -82,3 +82,7 @@ host-report-bundle-format-check.json
 host-report-bundle-format-check.md
 local-host-report-bundle-generator-check.json
 local-host-report-bundle-generator-check.md
+local-diagnostics-index.json
+local-diagnostics-index.md
+local-diagnostics-index-check.json
+local-diagnostics-index-check.md
