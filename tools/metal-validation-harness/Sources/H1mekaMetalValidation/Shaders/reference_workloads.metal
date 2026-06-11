@@ -27,3 +27,32 @@ kernel void h1meka_square(
 ) {
     out[id] = x[id] * x[id];
 }
+
+kernel void h1meka_vector_multiply(
+    device const float *a [[buffer(0)]],
+    device const float *b [[buffer(1)]],
+    device float *out [[buffer(2)]],
+    uint id [[thread_position_in_grid]]
+) {
+    out[id] = a[id] * b[id];
+}
+
+kernel void h1meka_vector_subtract(
+    device const float *a [[buffer(0)]],
+    device const float *b [[buffer(1)]],
+    device float *out [[buffer(2)]],
+    uint id [[thread_position_in_grid]]
+) {
+    out[id] = a[id] - b[id];
+}
+
+kernel void h1meka_axpby(
+    device const float *x [[buffer(0)]],
+    device const float *y [[buffer(1)]],
+    constant float &alpha [[buffer(2)]],
+    constant float &beta [[buffer(3)]],
+    device float *out [[buffer(4)]],
+    uint id [[thread_position_in_grid]]
+) {
+    out[id] = alpha * x[id] + beta * y[id];
+}

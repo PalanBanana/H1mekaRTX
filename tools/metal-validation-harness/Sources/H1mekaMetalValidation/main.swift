@@ -134,7 +134,6 @@ func makePipeline(device: MTLDevice, library: MTLLibrary, functionName: String) 
 func submitAndVerify(
     workloadName: String,
     functionName: String,
-    device: MTLDevice,
     queue: MTLCommandQueue,
     pipeline: MTLComputePipelineState,
     buffers: [(MTLBuffer, Int)],
@@ -210,28 +209,38 @@ func runValidationSuite() throws -> H1mekaMetalValidationReport {
     let a = (0..<count).map { Float($0) * 0.25 }
     let b = (0..<count).map { Float($0 % 17) * 1.5 }
     let alpha: Float = 2.5
+    let beta: Float = -0.75
 
     let vectorAddPipeline = try makePipeline(device: device, library: library, functionName: "h1meka_vector_add")
     let saxpyPipeline = try makePipeline(device: device, library: library, functionName: "h1meka_saxpy")
     let squarePipeline = try makePipeline(device: device, library: library, functionName: "h1meka_square")
+    let vectorMultiplyPipeline = try makePipeline(device: device, library: library, functionName: "h1meka_vector_multiply")
+    let vectorSubtractPipeline = try makePipeline(device: device, library: library, functionName: "h1meka_vector_subtract")
+    let axpbyPipeline = try makePipeline(device: device, library: library, functionName: "h1meka_axpby")
 
     let aBuffer = try makeBuffer(device: device, values: a, label: "h1meka.reference.a")
     let bBuffer = try makeBuffer(device: device, values: b, label: "h1meka.reference.b")
     let alphaBuffer = try makeScalarBuffer(device: device, value: alpha, label: "h1meka.reference.alpha")
+    let betaBuffer = try makeScalarBuffer(device: device, value: beta, label: "h1meka.reference.beta")
 
     let vectorAddOut = try makeEmptyBuffer(device: device, count: count, label: "h1meka.reference.vector_add.out")
     let saxpyOut = try makeEmptyBuffer(device: device, count: count, label: "h1meka.reference.saxpy.out")
     let squareOut = try makeEmptyBuffer(device: device, count: count, label: "h1meka.reference.square.out")
+    let vectorMultiplyOut = try makeEmptyBuffer(device: device, count: count, label: "h1meka.reference.vector_multiply.out")
+    let vectorSubtractOut = try makeEmptyBuffer(device: device, count: count, label: "h1meka.reference.vector_subtract.out")
+    let axpbyOut = try makeEmptyBuffer(device: device, count: count, label: "h1meka.reference.axpby.out")
 
     let vectorAddExpected = zip(a, b).map { $0 + $1 }
     let saxpyExpected = zip(a, b).map { alpha * $0 + $1 }
     let squareExpected = a.map { $0 * $0 }
+    let vectorMultiplyExpected = zip(a, b).map { $0 * $1 }
+    let vectorSubtractExpected = zip(a, b).map { $0 - $1 }
+    let axpbyExpected = zip(a, b).map { alpha * $0 + beta * $1 }
 
     let results = try [
         submitAndVerify(
             workloadName: "vector_add",
             functionName: "h1meka_vector_add",
-            device: device,
             queue: queue,
             pipeline: vectorAddPipeline,
             buffers: [(aBuffer, 0), (bBuffer, 1), (vectorAddOut, 2)],
@@ -242,7 +251,6 @@ func runValidationSuite() throws -> H1mekaMetalValidationReport {
         submitAndVerify(
             workloadName: "saxpy",
             functionName: "h1meka_saxpy",
-            device: device,
             queue: queue,
             pipeline: saxpyPipeline,
             buffers: [(aBuffer, 0), (bBuffer, 1), (alphaBuffer, 2), (saxpyOut, 3)],
@@ -253,13 +261,42 @@ func runValidationSuite() throws -> H1mekaMetalValidationReport {
         submitAndVerify(
             workloadName: "square",
             functionName: "h1meka_square",
-            device: device,
             queue: queue,
             pipeline: squarePipeline,
             buffers: [(aBuffer, 0), (squareOut, 1)],
             count: count,
             expected: squareExpected,
             outputBuffer: squareOut
+        ),
+        submitAndVerify(
+            workloadName: "vector_multiply",
+            functionName: "h1meka_vector_multiply",
+            queue: queue,
+            pipeline: vectorMultiplyPipeline,
+            buffers: [(aBuffer, 0), (bBuffer, 1), (vectorMultiplyOut, 2)],
+            count: count,
+            expected: vectorMultiplyExpected,
+            outputBuffer: vectorMultiplyOut
+        ),
+        submitAndVerify(
+            workloadName: "vector_subtract",
+            functionName: "h1meka_vector_subtract",
+            queue: queue,
+            pipeline: vectorSubtractPipeline,
+            buffers: [(aBuffer, 0), (bBuffer, 1), (vectorSubtractOut, 2)],
+            count: count,
+            expected: vectorSubtractExpected,
+            outputBuffer: vectorSubtractOut
+        ),
+        submitAndVerify(
+            workloadName: "axpby",
+            functionName: "h1meka_axpby",
+            queue: queue,
+            pipeline: axpbyPipeline,
+            buffers: [(aBuffer, 0), (bBuffer, 1), (alphaBuffer, 2), (betaBuffer, 3), (axpbyOut, 4)],
+            count: count,
+            expected: axpbyExpected,
+            outputBuffer: axpbyOut
         ),
     ]
 
