@@ -31,6 +31,12 @@ Future DriverKit entitlements:
 - com.apple.developer.driverkit
 - com.apple.developer.driverkit.transport.pci
 
+## RTX 5070 PCI Target
+
+- Vendor ID: 0x10de
+- Device ID: 0x2f04
+- IOPCIMatch: 0x2f0410de
+
 ## Activation Flow
 
 1. User opens Host App.
