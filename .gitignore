@@ -43,3 +43,5 @@ metal-implementation-decision-gate.json
 metal-implementation-decision-gate.md
 implementation-blocker-register.json
 implementation-blocker-register.md
+recovery-rollback-runbook.json
+recovery-rollback-runbook.md
