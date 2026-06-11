@@ -86,3 +86,7 @@ local-diagnostics-index.json
 local-diagnostics-index.md
 local-diagnostics-index-check.json
 local-diagnostics-index-check.md
+no-hardware-activation-readiness-review.json
+no-hardware-activation-readiness-review.md
+no-hardware-activation-readiness-check.json
+no-hardware-activation-readiness-check.md
