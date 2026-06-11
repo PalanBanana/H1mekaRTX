@@ -6,13 +6,14 @@ import Metal
 enum H1mekaMetalValidationError: Error, CustomStringConvertible {
     case noDefaultMetalDevice
     case noCommandQueue
-    case missingShaderLibrary
+    case missingShaderSource
+    case libraryCreationFailed(String)
     case missingFunction(String)
     case pipelineCreationFailed(String)
     case bufferCreationFailed(String)
     case commandBufferCreationFailed
     case encoderCreationFailed
-    case verificationFailed(index: Int, expected: Float, actual: Float)
+    case verificationFailed(workload: String, index: Int, expected: Float, actual: Float)
 
     var description: String {
         switch self {
@@ -20,8 +21,10 @@ enum H1mekaMetalValidationError: Error, CustomStringConvertible {
             return "No default system Metal device is available."
         case .noCommandQueue:
             return "Failed to create a Metal command queue."
-        case .missingShaderLibrary:
-            return "Failed to load the default Metal shader library."
+        case .missingShaderSource:
+            return "Failed to load reference_workloads.metal from package resources."
+        case .libraryCreationFailed(let reason):
+            return "Failed to create Metal shader library: \(reason)"
         case .missingFunction(let name):
             return "Missing Metal function: \(name)"
         case .pipelineCreationFailed(let reason):
@@ -32,18 +35,27 @@ enum H1mekaMetalValidationError: Error, CustomStringConvertible {
             return "Failed to create command buffer."
         case .encoderCreationFailed:
             return "Failed to create compute command encoder."
-        case .verificationFailed(let index, let expected, let actual):
-            return "Verification failed at index \(index): expected \(expected), actual \(actual)"
+        case .verificationFailed(let workload, let index, let expected, let actual):
+            return "Verification failed for \(workload) at index \(index): expected \(expected), actual \(actual)"
         }
     }
+}
+
+struct WorkloadResult: Codable {
+    let name: String
+    let functionName: String
+    let vectorLength: Int
+    let validationPassed: Bool
+    let maxAbsoluteError: Float
 }
 
 struct H1mekaMetalValidationReport: Codable {
     let schema: String
     let deviceName: String
     let registryID: UInt64
-    let vectorLength: Int
+    let workloadCount: Int
     let validationPassed: Bool
+    let workloads: [WorkloadResult]
     let safetyBoundary: SafetyBoundary
 
     struct SafetyBoundary: Codable {
@@ -61,6 +73,8 @@ struct H1mekaMetalValidationReport: Codable {
         let displayEngineInit: Bool
         let framebufferInit: Bool
         let driverkitActivation: Bool
+        let hardwareCommandSubmissionToRTX5070: Bool
+        let resourceAllocationOnRTX5070: Bool
     }
 }
 
@@ -82,57 +96,71 @@ func makeEmptyBuffer(device: MTLDevice, count: Int, label: String) throws -> MTL
     return buffer
 }
 
-func runValidation() throws -> H1mekaMetalValidationReport {
-    guard let device = MTLCreateSystemDefaultDevice() else {
-        throw H1mekaMetalValidationError.noDefaultMetalDevice
+func makeScalarBuffer(device: MTLDevice, value: Float, label: String) throws -> MTLBuffer {
+    var scalar = value
+    guard let buffer = device.makeBuffer(bytes: &scalar, length: MemoryLayout<Float>.stride, options: [.storageModeShared]) else {
+        throw H1mekaMetalValidationError.bufferCreationFailed(label)
+    }
+    buffer.label = label
+    return buffer
+}
+
+func loadReferenceLibrary(device: MTLDevice) throws -> MTLLibrary {
+    guard let url = Bundle.module.url(forResource: "reference_workloads", withExtension: "metal", subdirectory: "Shaders") else {
+        throw H1mekaMetalValidationError.missingShaderSource
     }
 
-    guard let queue = device.makeCommandQueue() else {
-        throw H1mekaMetalValidationError.noCommandQueue
-    }
-    queue.label = "H1mekaRTX validation command queue"
+    let source = try String(contentsOf: url, encoding: .utf8)
 
-    guard let library = device.makeDefaultLibrary() else {
-        throw H1mekaMetalValidationError.missingShaderLibrary
+    do {
+        return try device.makeLibrary(source: source, options: nil)
+    } catch {
+        throw H1mekaMetalValidationError.libraryCreationFailed(String(describing: error))
     }
+}
 
-    let functionName = "h1meka_vector_add"
+func makePipeline(device: MTLDevice, library: MTLLibrary, functionName: String) throws -> MTLComputePipelineState {
     guard let function = library.makeFunction(name: functionName) else {
         throw H1mekaMetalValidationError.missingFunction(functionName)
     }
 
-    let pipeline: MTLComputePipelineState
     do {
-        pipeline = try device.makeComputePipelineState(function: function)
+        return try device.makeComputePipelineState(function: function)
     } catch {
         throw H1mekaMetalValidationError.pipelineCreationFailed(String(describing: error))
     }
+}
 
-    let count = 256
-    let a = (0..<count).map { Float($0) }
-    let b = (0..<count).map { Float($0 * 2) }
-
-    let aBuffer = try makeBuffer(device: device, values: a, label: "h1meka.input.a")
-    let bBuffer = try makeBuffer(device: device, values: b, label: "h1meka.input.b")
-    let outBuffer = try makeEmptyBuffer(device: device, count: count, label: "h1meka.output")
-
+func submitAndVerify(
+    workloadName: String,
+    functionName: String,
+    device: MTLDevice,
+    queue: MTLCommandQueue,
+    pipeline: MTLComputePipelineState,
+    buffers: [(MTLBuffer, Int)],
+    count: Int,
+    expected: [Float],
+    outputBuffer: MTLBuffer
+) throws -> WorkloadResult {
     guard let commandBuffer = queue.makeCommandBuffer() else {
         throw H1mekaMetalValidationError.commandBufferCreationFailed
     }
-    commandBuffer.label = "H1mekaRTX validation command buffer"
+    commandBuffer.label = "H1mekaRTX reference workload: \(workloadName)"
 
     guard let encoder = commandBuffer.makeComputeCommandEncoder() else {
         throw H1mekaMetalValidationError.encoderCreationFailed
     }
-    encoder.label = "H1mekaRTX validation compute encoder"
+
+    encoder.label = "H1mekaRTX reference encoder: \(workloadName)"
     encoder.setComputePipelineState(pipeline)
-    encoder.setBuffer(aBuffer, offset: 0, index: 0)
-    encoder.setBuffer(bBuffer, offset: 0, index: 1)
-    encoder.setBuffer(outBuffer, offset: 0, index: 2)
+
+    for (buffer, index) in buffers {
+        encoder.setBuffer(buffer, offset: 0, index: index)
+    }
 
     let threadsPerGrid = MTLSize(width: count, height: 1, depth: 1)
-    let threadExecutionWidth = max(1, pipeline.threadExecutionWidth)
-    let threadsPerThreadgroup = MTLSize(width: min(threadExecutionWidth, count), height: 1, depth: 1)
+    let width = max(1, min(pipeline.threadExecutionWidth, count))
+    let threadsPerThreadgroup = MTLSize(width: width, height: 1, depth: 1)
 
     encoder.dispatchThreads(threadsPerGrid, threadsPerThreadgroup: threadsPerThreadgroup)
     encoder.endEncoding()
@@ -140,21 +168,108 @@ func runValidation() throws -> H1mekaMetalValidationReport {
     commandBuffer.commit()
     commandBuffer.waitUntilCompleted()
 
-    let resultPointer = outBuffer.contents().bindMemory(to: Float.self, capacity: count)
+    let resultPointer = outputBuffer.contents().bindMemory(to: Float.self, capacity: count)
+    var maxError: Float = 0
+
     for index in 0..<count {
-        let expected = a[index] + b[index]
         let actual = resultPointer[index]
-        if abs(expected - actual) > 0.0001 {
-            throw H1mekaMetalValidationError.verificationFailed(index: index, expected: expected, actual: actual)
+        let error = abs(expected[index] - actual)
+        maxError = max(maxError, error)
+        if error > 0.0001 {
+            throw H1mekaMetalValidationError.verificationFailed(
+                workload: workloadName,
+                index: index,
+                expected: expected[index],
+                actual: actual
+            )
         }
     }
 
-    return H1mekaMetalValidationReport(
-        schema: "h1mekartx.metal_validation_harness_runtime.v1",
-        deviceName: device.name,
-        registryID: device.registryID,
+    return WorkloadResult(
+        name: workloadName,
+        functionName: functionName,
         vectorLength: count,
         validationPassed: true,
+        maxAbsoluteError: maxError
+    )
+}
+
+func runValidationSuite() throws -> H1mekaMetalValidationReport {
+    guard let device = MTLCreateSystemDefaultDevice() else {
+        throw H1mekaMetalValidationError.noDefaultMetalDevice
+    }
+
+    guard let queue = device.makeCommandQueue() else {
+        throw H1mekaMetalValidationError.noCommandQueue
+    }
+    queue.label = "H1mekaRTX reference workload command queue"
+
+    let library = try loadReferenceLibrary(device: device)
+
+    let count = 512
+    let a = (0..<count).map { Float($0) * 0.25 }
+    let b = (0..<count).map { Float($0 % 17) * 1.5 }
+    let alpha: Float = 2.5
+
+    let vectorAddPipeline = try makePipeline(device: device, library: library, functionName: "h1meka_vector_add")
+    let saxpyPipeline = try makePipeline(device: device, library: library, functionName: "h1meka_saxpy")
+    let squarePipeline = try makePipeline(device: device, library: library, functionName: "h1meka_square")
+
+    let aBuffer = try makeBuffer(device: device, values: a, label: "h1meka.reference.a")
+    let bBuffer = try makeBuffer(device: device, values: b, label: "h1meka.reference.b")
+    let alphaBuffer = try makeScalarBuffer(device: device, value: alpha, label: "h1meka.reference.alpha")
+
+    let vectorAddOut = try makeEmptyBuffer(device: device, count: count, label: "h1meka.reference.vector_add.out")
+    let saxpyOut = try makeEmptyBuffer(device: device, count: count, label: "h1meka.reference.saxpy.out")
+    let squareOut = try makeEmptyBuffer(device: device, count: count, label: "h1meka.reference.square.out")
+
+    let vectorAddExpected = zip(a, b).map { $0 + $1 }
+    let saxpyExpected = zip(a, b).map { alpha * $0 + $1 }
+    let squareExpected = a.map { $0 * $0 }
+
+    let results = try [
+        submitAndVerify(
+            workloadName: "vector_add",
+            functionName: "h1meka_vector_add",
+            device: device,
+            queue: queue,
+            pipeline: vectorAddPipeline,
+            buffers: [(aBuffer, 0), (bBuffer, 1), (vectorAddOut, 2)],
+            count: count,
+            expected: vectorAddExpected,
+            outputBuffer: vectorAddOut
+        ),
+        submitAndVerify(
+            workloadName: "saxpy",
+            functionName: "h1meka_saxpy",
+            device: device,
+            queue: queue,
+            pipeline: saxpyPipeline,
+            buffers: [(aBuffer, 0), (bBuffer, 1), (alphaBuffer, 2), (saxpyOut, 3)],
+            count: count,
+            expected: saxpyExpected,
+            outputBuffer: saxpyOut
+        ),
+        submitAndVerify(
+            workloadName: "square",
+            functionName: "h1meka_square",
+            device: device,
+            queue: queue,
+            pipeline: squarePipeline,
+            buffers: [(aBuffer, 0), (squareOut, 1)],
+            count: count,
+            expected: squareExpected,
+            outputBuffer: squareOut
+        ),
+    ]
+
+    return H1mekaMetalValidationReport(
+        schema: "h1mekartx.metal_reference_workload_runtime.v1",
+        deviceName: device.name,
+        registryID: device.registryID,
+        workloadCount: results.count,
+        validationPassed: results.allSatisfy { $0.validationPassed },
+        workloads: results,
         safetyBoundary: .init(
             usesExistingSystemMetalDeviceOnly: true,
             rtx5070MetalAccelerationAttempt: false,
@@ -169,13 +284,15 @@ func runValidation() throws -> H1mekaMetalValidationReport {
             gspInitialization: false,
             displayEngineInit: false,
             framebufferInit: false,
-            driverkitActivation: false
+            driverkitActivation: false,
+            hardwareCommandSubmissionToRTX5070: false,
+            resourceAllocationOnRTX5070: false
         )
     )
 }
 
 do {
-    let report = try runValidation()
+    let report = try runValidationSuite()
     let encoder = JSONEncoder()
     encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
     let data = try encoder.encode(report)
