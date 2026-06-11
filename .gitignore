@@ -58,3 +58,6 @@ host-app-no-activation-skeleton-report.md
 tools/host-app-no-activation/.build/
 host-status-schema-viewer-plan.json
 host-status-schema-viewer-plan.md
+local-host-report-renderer-report.json
+local-host-report-renderer-report.md
+rendered-host-status-report.md
