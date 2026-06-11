@@ -1,5 +1,9 @@
 # H1mekaRTX
 
+<!-- H1mekaRTX:ci-badges:start -->
+[![BAR Safety Gates](https://github.com/PalanBanana/H1mekaRTX/actions/workflows/bar-safety-gates.yml/badge.svg?branch=main)](https://github.com/PalanBanana/H1mekaRTX/actions/workflows/bar-safety-gates.yml)
+<!-- H1mekaRTX:ci-badges:end -->
+
 H1mekaRTX is an experimental research project for NVIDIA GeForce RTX 5070 detection, compute-only runtime research, framebuffer-only output research, and long-term Metal acceleration research on macOS.
 
 > Status: research-only. This repo does **not** provide working macOS NVIDIA graphics acceleration, CUDA support, or a production display driver.

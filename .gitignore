@@ -15,3 +15,5 @@ __pycache__/
 *.py[cod]
 forbidden-bar-operation-audit.json
 forbidden-bar-operation-audit.md
+release-readiness-check.json
+release-readiness-check.md

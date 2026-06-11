@@ -1,0 +1,20 @@
+changelog:
+  exclude:
+    labels:
+      - ignore-for-release
+    authors:
+      - dependabot
+      - dependabot[bot]
+  categories:
+    - title: Safety and diagnostics
+      labels:
+        - safety
+        - diagnostics
+        - ci
+    - title: Documentation
+      labels:
+        - documentation
+        - docs
+    - title: Other changes
+      labels:
+        - "*"
