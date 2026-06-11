@@ -31,3 +31,5 @@ macos-graphics-stack-map.md
 metal-validation-harness-report.json
 metal-validation-harness-report.md
 tools/metal-validation-harness/.build/
+driverkit-activation-design.json
+driverkit-activation-design.md
