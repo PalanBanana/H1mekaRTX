@@ -75,3 +75,8 @@ p1-arithmetic-workload-implementation-report.json
 p1-arithmetic-workload-implementation-report.md
 workload-schema-regression-sync-report.json
 workload-schema-regression-sync-report.md
+host-report-bundle/
+host-report-bundle-format.json
+host-report-bundle-format.md
+host-report-bundle-format-check.json
+host-report-bundle-format-check.md
