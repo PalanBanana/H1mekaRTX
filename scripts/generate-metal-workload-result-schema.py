@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any
 
 
-SCHEMA = "h1mekartx.metal_workload_result_schema.v1"
+SCHEMA = "h1mekartx.metal_workload_result_schema.v2"
 
 TARGET = {
     "gpu": "NVIDIA RTX 5070",
@@ -66,6 +66,7 @@ WORKLOAD_CATALOG = [
         "output_buffers": ["out"],
         "expected_formula": "out[i] = a[i] + b[i]",
         "deterministic": True,
+        "stage_added": "Stage 25",
         "rtx5070_execution_allowed": False,
     },
     {
@@ -76,6 +77,7 @@ WORKLOAD_CATALOG = [
         "output_buffers": ["out"],
         "expected_formula": "out[i] = alpha * x[i] + y[i]",
         "deterministic": True,
+        "stage_added": "Stage 25",
         "rtx5070_execution_allowed": False,
     },
     {
@@ -86,6 +88,40 @@ WORKLOAD_CATALOG = [
         "output_buffers": ["out"],
         "expected_formula": "out[i] = x[i] * x[i]",
         "deterministic": True,
+        "stage_added": "Stage 25",
+        "rtx5070_execution_allowed": False,
+    },
+    {
+        "name": "vector_multiply",
+        "function_name": "h1meka_vector_multiply",
+        "workload_type": "compute",
+        "input_buffers": ["a", "b"],
+        "output_buffers": ["out"],
+        "expected_formula": "out[i] = a[i] * b[i]",
+        "deterministic": True,
+        "stage_added": "Stage 35",
+        "rtx5070_execution_allowed": False,
+    },
+    {
+        "name": "vector_subtract",
+        "function_name": "h1meka_vector_subtract",
+        "workload_type": "compute",
+        "input_buffers": ["a", "b"],
+        "output_buffers": ["out"],
+        "expected_formula": "out[i] = a[i] - b[i]",
+        "deterministic": True,
+        "stage_added": "Stage 35",
+        "rtx5070_execution_allowed": False,
+    },
+    {
+        "name": "axpby",
+        "function_name": "h1meka_axpby",
+        "workload_type": "compute",
+        "input_buffers": ["x", "y", "alpha", "beta"],
+        "output_buffers": ["out"],
+        "expected_formula": "out[i] = alpha * x[i] + beta * y[i]",
+        "deterministic": True,
+        "stage_added": "Stage 35",
         "rtx5070_execution_allowed": False,
     },
 ]
@@ -100,6 +136,11 @@ VALIDATION_RULES = [
         "rule": "workloadCount matches workload array length",
         "required": True,
         "expected": "workloadCount == len(workloads)",
+    },
+    {
+        "rule": "all six expected workloads are present",
+        "required": True,
+        "expected": "vector_add, saxpy, square, vector_multiply, vector_subtract, axpby",
     },
     {
         "rule": "every workload validationPassed is true",
@@ -122,9 +163,9 @@ VALIDATION_RULES = [
         "expected": "rtx5070MetalAccelerationAttempt == false",
     },
     {
-        "rule": "BAR and MMIO disabled",
+        "rule": "BAR, MMIO, DriverKit, and RTX 5070 hardware submission disabled",
         "required": True,
-        "expected": "performsMMIOReads == false, performsMMIOWrites == false, mapsBARMemory == false",
+        "expected": "all hardware-facing safety flags remain false",
     },
 ]
 
@@ -160,22 +201,25 @@ def build_schema() -> dict[str, Any]:
         "schema": SCHEMA,
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "target": TARGET,
-        "decision": "METAL_WORKLOAD_RESULT_SCHEMA_READY",
+        "decision": "METAL_WORKLOAD_RESULT_SCHEMA_SYNCED_WITH_P1",
         "full_metal_goal": True,
         "research_continues": True,
         "safe_app_level_production_started": True,
+        "p1_workloads_included": True,
+        "workload_count": len(WORKLOAD_CATALOG),
         "real_acceleration_production_started": False,
         "real_acceleration_production_allowed": False,
         "runtime_schema": RUNTIME_SCHEMA,
         "workload_catalog": WORKLOAD_CATALOG,
         "validation_rules": VALIDATION_RULES,
         "forbidden_now": FORBIDDEN_NOW,
-        "next_stage_recommendation": "Stage 33 should add a workload regression manifest for the public Metal reference suite.",
+        "next_stage_recommendation": "Stage 37 should add host report bundle format for local app/Metal reports.",
         "safety_boundary": {
             "read_only": True,
             "documentation_only": True,
             "schema_only": True,
             "uses_existing_system_metal_device_only": True,
+            "p1_workloads_documented": True,
             "real_acceleration_implementation_allowed": False,
             "real_acceleration_implementation_started": False,
             "rtx5070_metal_acceleration_attempt": False,
@@ -206,21 +250,15 @@ def build_schema() -> dict[str, Any]:
 
 
 def markdown_report(data: dict[str, Any]) -> str:
-    top_rows = [f"| `{field}` | required |" for field in data["runtime_schema"]["required_top_level_fields"]]
-    workload_field_rows = [f"| `{field}` | required |" for field in data["runtime_schema"]["workload_fields"]]
-    safety_rows = [f"| `{field}` | required |" for field in data["runtime_schema"]["safety_boundary_fields"]]
-
     workload_rows = []
     for item in data["workload_catalog"]:
         workload_rows.append(
-            f"| `{item['name']}` | `{item['function_name']}` | `{item['workload_type']}` | `{item['deterministic']}` | `{item['rtx5070_execution_allowed']}` | `{item['expected_formula']}` |"
+            f"| `{item['name']}` | `{item['function_name']}` | `{item['stage_added']}` | `{item['expected_formula']}` | `{item['rtx5070_execution_allowed']}` |"
         )
 
     rule_rows = []
     for item in data["validation_rules"]:
-        rule_rows.append(
-            f"| {item['rule']} | `{item['required']}` | `{item['expected']}` |"
-        )
+        rule_rows.append(f"| {item['rule']} | `{item['required']}` | `{item['expected']}` |")
 
     forbidden_lines = [f"- {item}" for item in data["forbidden_now"]]
 
@@ -238,45 +276,22 @@ def markdown_report(data: dict[str, Any]) -> str:
             "",
             f"Safe app-level production started: `{data['safe_app_level_production_started']}`",
             "",
+            f"P1 workloads included: `{data['p1_workloads_included']}`",
+            "",
+            f"Workload count: `{data['workload_count']}`",
+            "",
             f"Real acceleration production started: `{data['real_acceleration_production_started']}`",
             "",
             f"Real acceleration production allowed: `{data['real_acceleration_production_allowed']}`",
-            "",
-            "## Target",
-            "",
-            f"- GPU: `{data['target']['gpu']}`",
-            f"- Vendor ID: `{data['target']['vendor_id']}`",
-            f"- Device ID: `{data['target']['device_id']}`",
-            f"- IOPCIMatch: `{data['target']['iopcimatch']}`",
-            f"- Subsystem Vendor ID: `{data['target']['subsystem_vendor_id']}`",
-            f"- Subsystem ID: `{data['target']['subsystem_id']}`",
             "",
             "## Runtime Schema",
             "",
             f"Schema name: `{data['runtime_schema']['schema_name']}`",
             "",
-            "### Required Top-level Fields",
-            "",
-            "| Field | Status |",
-            "| --- | --- |",
-            *top_rows,
-            "",
-            "### Required Workload Fields",
-            "",
-            "| Field | Status |",
-            "| --- | --- |",
-            *workload_field_rows,
-            "",
-            "### Required Safety Boundary Fields",
-            "",
-            "| Field | Status |",
-            "| --- | --- |",
-            *safety_rows,
-            "",
             "## Workload Catalog",
             "",
-            "| Name | Function | Type | Deterministic | RTX 5070 Execution Allowed | Expected Formula |",
-            "| --- | --- | --- | --- | --- | --- |",
+            "| Name | Function | Stage Added | Expected Formula | RTX 5070 Execution Allowed |",
+            "| --- | --- | --- | --- | --- |",
             *workload_rows,
             "",
             "## Validation Rules",
@@ -293,20 +308,14 @@ def markdown_report(data: dict[str, Any]) -> str:
             "",
             "This stage is schema-only and documentation-only.",
             "",
-            "It does not start real RTX 5070 Metal acceleration production, execute RTX 5070 shaders, submit hardware commands to RTX 5070, allocate RTX 5070 resources, run live PCI probing, run ioreg, run system_profiler, perform PCI config-space reads, perform PCI config-space writes, perform MMIO reads, perform MMIO writes, map BAR memory, poke BAR memory, activate DriverKit, submit System Extension requests, request device ownership, load firmware, initialize GSP, initialize display engine, initialize framebuffer, or run GPU reset logic.",
-            "",
-            "## Next Stage",
-            "",
-            data["next_stage_recommendation"],
+            "It documents the six public Metal workloads that run on the existing system Metal device only. It does not start RTX 5070 Metal acceleration, execute RTX 5070 shaders, submit hardware commands to RTX 5070, allocate RTX 5070 resources, access PCI config space, access MMIO, map BAR memory, activate DriverKit, submit System Extension requests, request device ownership, load firmware, initialize display paths, or reset the GPU.",
             "",
         ]
     )
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(
-        description="Generate H1mekaRTX Metal workload result schema."
-    )
+    parser = argparse.ArgumentParser(description="Generate synced H1mekaRTX Metal workload result schema.")
     parser.add_argument("--out-dir", default=".", help="Output directory. Defaults to current directory.")
     args = parser.parse_args()
 
@@ -324,7 +333,6 @@ def main() -> int:
     print(f"Wrote: {json_path}")
     print(f"Wrote: {md_path}")
     print(f"Decision: {data['decision']}")
-
     return 0
 
 
