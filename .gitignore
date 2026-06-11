@@ -39,3 +39,5 @@ command-memory-model-placeholders.json
 command-memory-model-placeholders.md
 shader-compiler-research-notes.json
 shader-compiler-research-notes.md
+metal-implementation-decision-gate.json
+metal-implementation-decision-gate.md
