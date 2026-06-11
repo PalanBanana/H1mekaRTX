@@ -1,0 +1,35 @@
+name: BAR Safety Gates
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+      - "stage*"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: bar-safety-gates-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  bar-safety-gates:
+    name: Run BAR safety gates
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Run BAR safety gates
+        run: ./scripts/run-bar-safety-gates.sh

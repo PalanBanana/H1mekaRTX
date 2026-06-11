@@ -13,3 +13,5 @@ DerivedData/
 
 __pycache__/
 *.py[cod]
+forbidden-bar-operation-audit.json
+forbidden-bar-operation-audit.md
