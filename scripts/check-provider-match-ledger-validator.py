@@ -39,9 +39,9 @@ REQUIRED_TERMS = [
 ]
 
 FORBIDDEN_LITERAL_TERMS = [
-    "activationRequest(forExtensionWithIdentifier",
-    "deactivationRequest(forExtensionWithIdentifier",
-    ".submitRequest",
+    "activation" + "Request(forExtensionWithIdentifier",
+    "deactivation" + "Request(forExtensionWithIdentifier",
+    "." + "submitRequest",
     "Configuration" + "Write",
     "Memory" + "Read",
     "Memory" + "Write",
