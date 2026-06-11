@@ -19,3 +19,6 @@ release-readiness-check.json
 release-readiness-check.md
 release-manifest.json
 release-manifest.md
+github-release-draft.md
+github-release-api-payload.json
+github-release-submit-checklist.md
