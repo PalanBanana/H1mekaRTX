@@ -53,3 +53,6 @@ metal-reference-workload-suite-report.json
 metal-reference-workload-suite-report.md
 host-app-scaffold-plan.json
 host-app-scaffold-plan.md
+host-app-no-activation-skeleton-report.json
+host-app-no-activation-skeleton-report.md
+tools/host-app-no-activation/.build/
