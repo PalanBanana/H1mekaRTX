@@ -213,3 +213,7 @@ tools/host-app-no-runtime-swiftui/.build/
 /signed-extension-packaging-plan-matrix-report.md
 /signed-extension-packaging-plan-matrix-check.json
 /signed-extension-packaging-plan-matrix-check.md
+/signed-extension-packaging-plan-static-contract-report.json
+/signed-extension-packaging-plan-static-contract-report.md
+/signed-extension-packaging-plan-static-contract-check.json
+/signed-extension-packaging-plan-static-contract-check.md

@@ -1,0 +1,40 @@
+{
+  "schema": "h1mekartx.signed_extension_packaging_plan.v1",
+  "purpose": "Redacted-ready packaging plan fixture for static contract testing. This fixture never enables runtime.",
+  "target": {
+    "gpu": "NVIDIA RTX 5070",
+    "vendor_id": "0x10de",
+    "device_id": "0x2f04",
+    "iopcimatch": "0x2f0410de",
+    "subsystem_vendor_id": "0x1458",
+    "subsystem_id": "0x417e"
+  },
+  "packaging_plan": {
+    "host_app_bundle_id_status": "PROVIDED_REDACTED",
+    "driver_extension_bundle_id_status": "PROVIDED_REDACTED",
+    "bundle_id_pairing_status": "CONFIRMED_REDACTED",
+    "driverkit_entitlement_status": "APPROVED_REDACTED",
+    "driverkit_development_profile_status": "PROVIDED_REDACTED",
+    "extension_install_permission_status": "APPROVED_REDACTED",
+    "developer_certificate_status": "PROVIDED_REDACTED",
+    "distribution_signing_status": "PROVIDED_REDACTED",
+    "notarization_status": "PROVIDED_REDACTED",
+    "manual_review_status": "READY_FOR_MANUAL_REVIEW"
+  },
+  "runtime_policy": {
+    "metal_injection_goal": true,
+    "metal_injection_runtime_allowed_now": false,
+    "driver_runtime_allowed": false,
+    "driver_installation_allowed": false,
+    "driver_activation_allowed": false,
+    "provider_attach_allowed": false,
+    "device_ownership_allowed": false,
+    "low_level_hardware_path_allowed": false,
+    "rtx5070_metal_runtime_allowed": false
+  },
+  "notes": [
+    "This fixture represents packaging evidence present for manual review only.",
+    "This fixture must not enable runtime.",
+    "This fixture must not include private keys, certificates, profile files, Apple ID email addresses, or unredacted team information."
+  ]
+}
