@@ -201,3 +201,7 @@ tools/host-app-no-runtime-swiftui/.build/
 /entitlement-evidence-resolver-report.md
 /entitlement-evidence-resolver-check.json
 /entitlement-evidence-resolver-check.md
+/entitlement-evidence-resolver-static-contract-report.json
+/entitlement-evidence-resolver-static-contract-report.md
+/entitlement-evidence-resolver-static-contract-check.json
+/entitlement-evidence-resolver-static-contract-check.md

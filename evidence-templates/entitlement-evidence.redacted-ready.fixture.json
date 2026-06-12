@@ -1,0 +1,35 @@
+{
+  "schema": "h1mekartx.entitlement_evidence_input.v1",
+  "redaction_required": true,
+  "purpose": "Redacted-ready fixture for entitlement resolver static contract testing. This fixture never enables runtime.",
+  "target": {
+    "gpu": "NVIDIA RTX 5070",
+    "vendor_id": "0x10de",
+    "device_id": "0x2f04",
+    "iopcimatch": "0x2f0410de",
+    "subsystem_vendor_id": "0x1458",
+    "subsystem_id": "0x417e"
+  },
+  "evidence": {
+    "apple_developer_program_membership_status": "PROVIDED_REDACTED",
+    "team_identifier_redacted": "TEAM_ID_REDACTED_PRESENT",
+    "host_app_bundle_identifier_redacted": "HOST_APP_BUNDLE_ID_REDACTED_PRESENT",
+    "driver_extension_bundle_identifier_redacted": "DRIVER_EXTENSION_BUNDLE_ID_REDACTED_PRESENT",
+    "driverkit_entitlement_request_status": "APPROVED_REDACTED",
+    "driverkit_entitlement_group_status": "APPROVED_REDACTED",
+    "device_interface_scope_status": "CONFIRMED_REDACTED",
+    "extension_install_entitlement_status": "APPROVED_REDACTED",
+    "driverkit_development_profile_status": "PROVIDED_REDACTED",
+    "distribution_signing_path_status": "PROVIDED_REDACTED",
+    "notarization_path_status": "PROVIDED_REDACTED",
+    "local_research_scope_acknowledged": true,
+    "metal_injection_goal": true,
+    "metal_injection_runtime_allowed_now": false,
+    "rtx5070_metal_runtime_allowed": false
+  },
+  "notes": [
+    "This fixture represents redacted evidence present for manual review only.",
+    "This fixture must not enable runtime.",
+    "This fixture must not include private keys, certificates, profile files, Apple ID email addresses, or unredacted team information."
+  ]
+}
