@@ -137,3 +137,7 @@ activation-controller-transition-gate-check.json
 /swiftui-no-runtime-host-app-skeleton-check.json
 /swiftui-no-runtime-host-app-skeleton-check.md
 tools/host-app-no-runtime-swiftui/.build/
+/swiftui-no-runtime-static-contract-report.json
+/swiftui-no-runtime-static-contract-report.md
+/swiftui-no-runtime-static-contract-check.json
+/swiftui-no-runtime-static-contract-check.md
