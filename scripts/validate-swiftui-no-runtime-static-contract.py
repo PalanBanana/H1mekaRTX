@@ -31,6 +31,9 @@ SWIFT_FILES = [
     "tools/host-app-no-runtime-swiftui/Sources/H1mekaRTXHostApp/StatusCardView.swift",
     "tools/host-app-no-runtime-swiftui/Sources/H1mekaRTXHostApp/DisabledActionPanel.swift",
     "tools/host-app-no-runtime-swiftui/Sources/H1mekaRTXHostApp/HostStatusViewModel.swift",
+    "tools/host-app-no-runtime-swiftui/Sources/H1mekaRTXHostApp/HostAppStatusModel.swift",
+    "tools/host-app-no-runtime-swiftui/Sources/H1mekaRTXHostApp/LocalStatusModelLoader.swift",
+    "tools/host-app-no-runtime-swiftui/Sources/H1mekaRTXHostApp/Resources/sample-host-status.json",
 ]
 
 REQUIRED_SWIFT_TERMS = [
