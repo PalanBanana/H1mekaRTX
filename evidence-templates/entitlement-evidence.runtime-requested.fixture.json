@@ -1,0 +1,35 @@
+{
+  "schema": "h1mekartx.entitlement_evidence_input.v1",
+  "redaction_required": true,
+  "purpose": "Negative fixture for resolver matrix testing. This fixture intentionally claims runtime and must be rejected.",
+  "target": {
+    "gpu": "NVIDIA RTX 5070",
+    "vendor_id": "0x10de",
+    "device_id": "0x2f04",
+    "iopcimatch": "0x2f0410de",
+    "subsystem_vendor_id": "0x1458",
+    "subsystem_id": "0x417e"
+  },
+  "evidence": {
+    "apple_developer_program_membership_status": "PROVIDED_REDACTED",
+    "team_identifier_redacted": "TEAM_ID_REDACTED_PRESENT",
+    "host_app_bundle_identifier_redacted": "HOST_APP_BUNDLE_ID_REDACTED_PRESENT",
+    "driver_extension_bundle_identifier_redacted": "DRIVER_EXTENSION_BUNDLE_ID_REDACTED_PRESENT",
+    "driverkit_entitlement_request_status": "APPROVED_REDACTED",
+    "driverkit_entitlement_group_status": "APPROVED_REDACTED",
+    "device_interface_scope_status": "CONFIRMED_REDACTED",
+    "extension_install_entitlement_status": "APPROVED_REDACTED",
+    "driverkit_development_profile_status": "PROVIDED_REDACTED",
+    "distribution_signing_path_status": "PROVIDED_REDACTED",
+    "notarization_path_status": "PROVIDED_REDACTED",
+    "local_research_scope_acknowledged": true,
+    "metal_injection_goal": true,
+    "metal_injection_runtime_allowed_now": true,
+    "rtx5070_metal_runtime_allowed": true
+  },
+  "notes": [
+    "This fixture intentionally attempts to claim runtime.",
+    "The resolver must reject this fixture.",
+    "The matrix must keep runtime disabled."
+  ]
+}
