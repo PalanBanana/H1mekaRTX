@@ -16,6 +16,10 @@ struct HeaderView: View {
             Text(viewModel.targetSummary)
                 .font(.callout)
                 .foregroundStyle(.secondary)
+
+            Text("Status source: \(viewModel.statusSource)")
+                .font(.caption)
+                .foregroundStyle(.secondary)
         }
     }
 }

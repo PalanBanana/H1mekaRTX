@@ -1,0 +1,34 @@
+import Foundation
+
+struct HostAppStatusModel: Codable, Equatable {
+    let schema: String
+    let projectStatus: String
+    let providerMatchStatus: String
+    let activationStatus: String
+    let evidenceStatus: String
+    let hardwareAccessStatus: String
+    let statusSource: String
+    let targetSummary: String
+    let disabledActions: [String]
+
+    static let fallback = HostAppStatusModel(
+        schema: "h1mekartx.host_app_status_model.v1",
+        projectStatus: "RESEARCH_ONLY",
+        providerMatchStatus: "NO_GO",
+        activationStatus: "NO_GO",
+        evidenceStatus: "NEEDS_USER_EVIDENCE",
+        hardwareAccessStatus: "BLOCKED",
+        statusSource: "LOCAL_FALLBACK_ONLY",
+        targetSummary: "Target: NVIDIA RTX 5070 / vendor 0x10de / device 0x2f04 / match 0x2f0410de",
+        disabledActions: [
+            "Activate Driver",
+            "Deactivate Driver",
+            "Install Driver Extension",
+            "Attach Provider",
+            "Request Device Ownership",
+            "Probe Device",
+            "Open Hardware Path",
+            "Run Metal Workload On RTX 5070"
+        ]
+    )
+}

@@ -15,7 +15,10 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "H1mekaRTXHostApp"
+            name: "H1mekaRTXHostApp",
+            resources: [
+                .process("Resources")
+            ]
         )
     ]
 )
