@@ -177,3 +177,7 @@ tools/host-app-no-runtime-swiftui/.build/
 /swiftui-import-result-store-ui-actions-report.md
 /swiftui-import-result-store-ui-actions-check.json
 /swiftui-import-result-store-ui-actions-check.md
+/swiftui-store-actions-static-contract-report.json
+/swiftui-store-actions-static-contract-report.md
+/swiftui-store-actions-static-contract-check.json
+/swiftui-store-actions-static-contract-check.md
