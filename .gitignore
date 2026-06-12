@@ -149,3 +149,7 @@ tools/host-app-no-runtime-swiftui/.build/
 /swiftui-local-status-model-loader-report.md
 /swiftui-local-status-model-loader-check.json
 /swiftui-local-status-model-loader-check.md
+/swiftui-local-status-import-validator-report.json
+/swiftui-local-status-import-validator-report.md
+/swiftui-local-status-import-validator-check.json
+/swiftui-local-status-import-validator-check.md
