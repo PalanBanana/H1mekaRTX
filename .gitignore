@@ -132,3 +132,8 @@ activation-controller-transition-gate-check.json
 /host-app-status-schema-validator-report.md
 /host-app-status-schema-validator-check.json
 /host-app-status-schema-validator-check.md
+/swiftui-no-runtime-host-app-skeleton-report.json
+/swiftui-no-runtime-host-app-skeleton-report.md
+/swiftui-no-runtime-host-app-skeleton-check.json
+/swiftui-no-runtime-host-app-skeleton-check.md
+tools/host-app-no-runtime-swiftui/.build/
