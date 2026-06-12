@@ -189,3 +189,7 @@ tools/host-app-no-runtime-swiftui/.build/
 /swiftui-layout-static-contract-report.md
 /swiftui-layout-static-contract-check.json
 /swiftui-layout-static-contract-check.md
+/entitlement-provisioning-evidence-matrix-report.json
+/entitlement-provisioning-evidence-matrix-report.md
+/entitlement-provisioning-evidence-matrix-check.json
+/entitlement-provisioning-evidence-matrix-check.md
