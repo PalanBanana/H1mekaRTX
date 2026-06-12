@@ -116,3 +116,7 @@ activation-controller-static-contract-report.json
 activation-controller-static-contract-report.md
 activation-controller-static-contract-check.json
 activation-controller-static-contract-check.md
+activation-controller-transition-gate-report.json
+/activation-controller-transition-gate-report.md
+activation-controller-transition-gate-check.json
+/activation-controller-transition-gate-check.md
