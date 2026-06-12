@@ -157,3 +157,7 @@ tools/host-app-no-runtime-swiftui/.build/
 /swiftui-import-preview-view-report.md
 /swiftui-import-preview-view-check.json
 /swiftui-import-preview-view-check.md
+/swiftui-local-report-file-picker-stub-report.json
+/swiftui-local-report-file-picker-stub-report.md
+/swiftui-local-report-file-picker-stub-check.json
+/swiftui-local-report-file-picker-stub-check.md

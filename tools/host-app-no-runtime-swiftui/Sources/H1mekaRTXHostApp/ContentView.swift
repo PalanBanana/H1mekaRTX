@@ -39,6 +39,8 @@ struct ContentView: View {
 
             ImportPreviewView(viewModel: .sample)
 
+            LocalReportFilePickerView(viewModel: .sample)
+
             DisabledActionPanel(actions: viewModel.disabledActions)
 
             Spacer()
