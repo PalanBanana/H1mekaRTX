@@ -217,3 +217,7 @@ tools/host-app-no-runtime-swiftui/.build/
 /signed-extension-packaging-plan-static-contract-report.md
 /signed-extension-packaging-plan-static-contract-check.json
 /signed-extension-packaging-plan-static-contract-check.md
+/signed-extension-packaging-plan-resolver-report.json
+/signed-extension-packaging-plan-resolver-report.md
+/signed-extension-packaging-plan-resolver-check.json
+/signed-extension-packaging-plan-resolver-check.md
