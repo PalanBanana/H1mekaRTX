@@ -37,6 +37,8 @@ struct ContentView: View {
                 detail: "GPU hardware actions remain blocked"
             )
 
+            ImportPreviewView(viewModel: .sample)
+
             DisabledActionPanel(actions: viewModel.disabledActions)
 
             Spacer()
