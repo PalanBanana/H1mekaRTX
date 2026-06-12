@@ -161,3 +161,7 @@ tools/host-app-no-runtime-swiftui/.build/
 /swiftui-local-report-file-picker-stub-report.md
 /swiftui-local-report-file-picker-stub-check.json
 /swiftui-local-report-file-picker-stub-check.md
+/swiftui-file-picker-static-contract-report.json
+/swiftui-file-picker-static-contract-report.md
+/swiftui-file-picker-static-contract-check.json
+/swiftui-file-picker-static-contract-check.md
