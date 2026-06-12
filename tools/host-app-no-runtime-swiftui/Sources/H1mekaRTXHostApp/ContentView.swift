@@ -43,6 +43,8 @@ struct ContentView: View {
 
             ImportResultStoreView(store: .sample)
 
+            ImportResultStoreActionView(store: .sample)
+
             DisabledActionPanel(actions: viewModel.disabledActions)
 
             Spacer()
