@@ -169,3 +169,7 @@ tools/host-app-no-runtime-swiftui/.build/
 /swiftui-local-import-result-store-report.md
 /swiftui-local-import-result-store-check.json
 /swiftui-local-import-result-store-check.md
+/swiftui-import-result-store-static-contract-report.json
+/swiftui-import-result-store-static-contract-report.md
+/swiftui-import-result-store-static-contract-check.json
+/swiftui-import-result-store-static-contract-check.md
