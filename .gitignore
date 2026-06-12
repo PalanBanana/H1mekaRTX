@@ -185,3 +185,7 @@ tools/host-app-no-runtime-swiftui/.build/
 /swiftui-host-app-layout-consolidation-report.md
 /swiftui-host-app-layout-consolidation-check.json
 /swiftui-host-app-layout-consolidation-check.md
+/swiftui-layout-static-contract-report.json
+/swiftui-layout-static-contract-report.md
+/swiftui-layout-static-contract-check.json
+/swiftui-layout-static-contract-check.md
