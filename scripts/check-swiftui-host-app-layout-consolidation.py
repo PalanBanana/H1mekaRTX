@@ -9,29 +9,34 @@ from pathlib import Path
 from typing import Any
 
 
-SCHEMA = "h1mekartx.swiftui_import_result_store_ui_actions_check.v1"
+SCHEMA = "h1mekartx.swiftui_host_app_layout_consolidation_check.v1"
 
 REQUIRED_FILES = [
-    "tools/host-app-no-runtime-swiftui/Sources/H1mekaRTXHostApp/ImportResultStoreActionView.swift",
-    "tools/host-app-no-runtime-swiftui/Sources/H1mekaRTXHostApp/LocalImportResultStore.swift",
     "tools/host-app-no-runtime-swiftui/Sources/H1mekaRTXHostApp/ContentView.swift",
-    "scripts/generate-swiftui-import-result-store-ui-actions-report.py",
-    "scripts/check-swiftui-import-result-store-ui-actions.py",
-    "docs/metal/swiftui-import-result-store-ui-actions.md",
+    "tools/host-app-no-runtime-swiftui/Sources/H1mekaRTXHostApp/MetalInjectionGoalBannerView.swift",
+    "tools/host-app-no-runtime-swiftui/Sources/H1mekaRTXHostApp/RuntimeBoundarySummaryView.swift",
+    "tools/host-app-no-runtime-swiftui/Sources/H1mekaRTXHostApp/HostAppLayoutSectionHeader.swift",
+    "scripts/generate-swiftui-host-app-layout-consolidation-report.py",
+    "scripts/check-swiftui-host-app-layout-consolidation.py",
+    "docs/metal/swiftui-host-app-layout-consolidation.md",
 ]
 
 REQUIRED_TERMS = [
-    "SWIFTUI_IMPORT_RESULT_STORE_UI_ACTIONS_READY",
-    "ImportResultStoreActionView",
-    "Button(\"Record Sample Accepted\")",
-    "Button(\"Record Sample Rejected\")",
-    "Button(\"Clear Local Store\")",
-    "store.record(fileName:",
-    "store.reset()",
-    "ACCEPTED_LOCAL_IMPORT",
-    "REJECTED_LOCAL_IMPORT",
-    "local_store_ui_actions_ready",
-    "local_ui_controls_enabled",
+    "SWIFTUI_HOST_APP_LAYOUT_CONSOLIDATION_READY",
+    "NavigationStack",
+    "ScrollView",
+    "MetalInjectionGoalBannerView",
+    "RuntimeBoundarySummaryView",
+    "HostAppLayoutSectionHeader",
+    "ImportPreviewView(viewModel: .sample)",
+    "LocalReportFilePickerView(viewModel: .sample)",
+    "ImportResultStoreView(store: importStore)",
+    "ImportResultStoreActionView(store: importStore)",
+    "DisabledActionPanel(actions: viewModel.disabledActions)",
+    "layout_consolidation_ready",
+    "navigation_stack_added",
+    "metal_goal_banner_added",
+    "runtime_boundary_summary_added",
     "metal_injection_goal",
     "metal_injection_runtime_allowed_now",
     "rtx5070_metal_runtime_allowed",
@@ -69,7 +74,7 @@ def run_report(root: Path, out_dir: Path) -> dict[str, Any]:
     proc = subprocess.run(
         [
             "python3",
-            str(root / "scripts" / "generate-swiftui-import-result-store-ui-actions-report.py"),
+            str(root / "scripts" / "generate-swiftui-host-app-layout-consolidation-report.py"),
             "--root",
             str(root),
             "--out-dir",
@@ -103,23 +108,24 @@ def build_report(root: Path, out_dir: Path) -> dict[str, Any]:
         add_check(checks, f"forbidden_literal_absent:{token}", token not in source, "absent" if token not in source else "present")
 
     content = read_text(root / "tools/host-app-no-runtime-swiftui/Sources/H1mekaRTXHostApp/ContentView.swift")
-    action_view_embedded = (
-        "ImportResultStoreActionView(store: .sample)" in content
-        or "ImportResultStoreActionView(store: importStore)" in content
-    )
-    add_check(checks, "content_view_embeds_action_view", action_view_embedded, "embedded" if action_view_embedded else "missing")
+    add_check(checks, "content_view_uses_navigation_stack", "NavigationStack" in content, "present" if "NavigationStack" in content else "missing")
+    add_check(checks, "content_view_uses_scroll_view", "ScrollView" in content, "present" if "ScrollView" in content else "missing")
+    add_check(checks, "content_view_embeds_goal_banner", "MetalInjectionGoalBannerView()" in content, "embedded" if "MetalInjectionGoalBannerView()" in content else "missing")
+    add_check(checks, "content_view_embeds_boundary_summary", "RuntimeBoundarySummaryView()" in content, "embedded" if "RuntimeBoundarySummaryView()" in content else "missing")
 
     report_run = run_report(root, out_dir)
     add_check(checks, "report_generator_returncode", report_run["returncode"] == 0, f"returncode={report_run['returncode']}")
 
-    report_path = out_dir / "swiftui-import-result-store-ui-actions-report.json"
+    report_path = out_dir / "swiftui-host-app-layout-consolidation-report.json"
     report = json.loads(report_path.read_text()) if report_path.exists() else {}
 
-    add_check(checks, "report_schema", report.get("schema") == "h1mekartx.swiftui_import_result_store_ui_actions.v1", f"schema={report.get('schema')!r}")
-    add_check(checks, "report_decision", report.get("decision") == "SWIFTUI_IMPORT_RESULT_STORE_UI_ACTIONS_READY", f"decision={report.get('decision')!r}")
-    add_check(checks, "actions_ready", report.get("local_store_ui_actions_ready") is True, f"value={report.get('local_store_ui_actions_ready')!r}")
-    add_check(checks, "local_controls_enabled", report.get("local_ui_controls_enabled") is True, f"value={report.get('local_ui_controls_enabled')!r}")
-    add_check(checks, "local_ui_state_only", report.get("local_ui_state_only") is True, f"value={report.get('local_ui_state_only')!r}")
+    add_check(checks, "report_schema", report.get("schema") == "h1mekartx.swiftui_host_app_layout_consolidation.v1", f"schema={report.get('schema')!r}")
+    add_check(checks, "report_decision", report.get("decision") == "SWIFTUI_HOST_APP_LAYOUT_CONSOLIDATION_READY", f"decision={report.get('decision')!r}")
+    add_check(checks, "layout_ready", report.get("layout_consolidation_ready") is True, f"value={report.get('layout_consolidation_ready')!r}")
+    add_check(checks, "navigation_added", report.get("navigation_stack_added") is True, f"value={report.get('navigation_stack_added')!r}")
+    add_check(checks, "scroll_added", report.get("scroll_layout_added") is True, f"value={report.get('scroll_layout_added')!r}")
+    add_check(checks, "metal_goal_banner_added", report.get("metal_goal_banner_added") is True, f"value={report.get('metal_goal_banner_added')!r}")
+    add_check(checks, "runtime_boundary_summary_added", report.get("runtime_boundary_summary_added") is True, f"value={report.get('runtime_boundary_summary_added')!r}")
     add_check(checks, "metal_goal_recorded", report.get("metal_injection_goal") is True, f"value={report.get('metal_injection_goal')!r}")
     add_check(checks, "metal_runtime_not_allowed_now", report.get("metal_injection_runtime_allowed_now") is False, f"value={report.get('metal_injection_runtime_allowed_now')!r}")
 
@@ -143,9 +149,8 @@ def build_report(root: Path, out_dir: Path) -> dict[str, Any]:
     for key in [
         "read_only",
         "swiftui_source_only",
-        "local_store_ui_actions_only",
+        "layout_consolidation_only",
         "local_ui_state_only",
-        "local_ui_controls_only",
         "no_runtime",
         "no_driver_installation",
         "no_driver_activation",
@@ -163,7 +168,7 @@ def build_report(root: Path, out_dir: Path) -> dict[str, Any]:
         "schema": SCHEMA,
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "repo_root": str(root),
-        "decision": "PASS_SWIFTUI_IMPORT_RESULT_STORE_UI_ACTIONS_READY" if failed_count == 0 else "FAIL_SWIFTUI_IMPORT_RESULT_STORE_UI_ACTIONS",
+        "decision": "PASS_SWIFTUI_HOST_APP_LAYOUT_CONSOLIDATION_READY" if failed_count == 0 else "FAIL_SWIFTUI_HOST_APP_LAYOUT_CONSOLIDATION",
         "passed_count": passed_count,
         "failed_count": failed_count,
         "checks": checks,
@@ -171,7 +176,7 @@ def build_report(root: Path, out_dir: Path) -> dict[str, Any]:
         "safety_boundary": {
             "read_only_static_check": True,
             "swiftui_source_only": True,
-            "local_store_ui_actions_only": True,
+            "layout_consolidation_only": True,
             "local_ui_state_only": True,
             "no_runtime": True,
             "no_driver_installation": True,
@@ -191,7 +196,7 @@ def markdown_report(report: dict[str, Any]) -> str:
 
     return "\n".join(
         [
-            "# SwiftUI Import Result Store UI Actions Check",
+            "# SwiftUI Host-app Layout Consolidation Check",
             "",
             f"Generated UTC: `{report['generated_at_utc']}`",
             "",
@@ -209,14 +214,14 @@ def markdown_report(report: dict[str, Any]) -> str:
             "",
             "## Safety Boundary",
             "",
-            "This check validates SwiftUI local store UI actions only. It adds no driver installation, no driver activation, no provider transition, no device ownership transition, no hardware-path code, and no RTX 5070 Metal runtime.",
+            "This check validates SwiftUI layout consolidation only. It adds no driver installation, no driver activation, no provider transition, no device ownership transition, no hardware-path code, and no RTX 5070 Metal runtime.",
             "",
         ]
     )
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Check SwiftUI import result store UI actions.")
+    parser = argparse.ArgumentParser(description="Check SwiftUI host-app layout consolidation.")
     parser.add_argument("--root", default=".", help="Repository root.")
     parser.add_argument("--out-dir", default=None, help="Output directory.")
     args = parser.parse_args()
@@ -231,8 +236,8 @@ def main() -> int:
 
     report = build_report(root, out_dir)
 
-    json_path = out_dir / "swiftui-import-result-store-ui-actions-check.json"
-    md_path = out_dir / "swiftui-import-result-store-ui-actions-check.md"
+    json_path = out_dir / "swiftui-host-app-layout-consolidation-check.json"
+    md_path = out_dir / "swiftui-host-app-layout-consolidation-check.md"
 
     json_path.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
     md_path.write_text(markdown_report(report) + "\n")

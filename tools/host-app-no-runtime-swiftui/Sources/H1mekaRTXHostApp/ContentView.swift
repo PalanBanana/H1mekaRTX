@@ -1,55 +1,78 @@
 import SwiftUI
 
 struct ContentView: View {
-    let viewModel: HostStatusViewModel
+    private let viewModel = HostStatusViewModel.sample
+    private let importStore = LocalImportResultStore.sample
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 18) {
-            HeaderView(viewModel: viewModel)
+        NavigationStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 16) {
+                    HeaderView(viewModel: viewModel)
 
-            StatusCardView(
-                title: "Project",
-                value: viewModel.projectStatus,
-                detail: "Research-only host app skeleton"
-            )
+                    MetalInjectionGoalBannerView()
 
-            StatusCardView(
-                title: "Provider Match",
-                value: viewModel.providerMatchStatus,
-                detail: "Local report state only"
-            )
+                    HostAppLayoutSectionHeader(
+                        title: "Status",
+                        subtitle: "Local status summary and research boundary state."
+                    )
 
-            StatusCardView(
-                title: "Activation",
-                value: viewModel.activationStatus,
-                detail: "No runtime path is enabled"
-            )
+                    StatusCardView(
+                        title: "Project",
+                        value: viewModel.projectStatus,
+                        detail: "Research-only host-app shell"
+                    )
 
-            StatusCardView(
-                title: "Evidence",
-                value: viewModel.evidenceStatus,
-                detail: "User-private evidence remains required"
-            )
+                    StatusCardView(
+                        title: "Provider Match",
+                        value: viewModel.providerMatchStatus,
+                        detail: "Provider transition remains gated"
+                    )
 
-            StatusCardView(
-                title: "Hardware Access",
-                value: viewModel.hardwareAccessStatus,
-                detail: "GPU hardware actions remain blocked"
-            )
+                    StatusCardView(
+                        title: "Activation",
+                        value: viewModel.activationStatus,
+                        detail: "Runtime actions remain disabled"
+                    )
 
-            ImportPreviewView(viewModel: .sample)
+                    StatusCardView(
+                        title: "Evidence",
+                        value: viewModel.evidenceStatus,
+                        detail: "User-provided evidence still required"
+                    )
 
-            LocalReportFilePickerView(viewModel: .sample)
+                    StatusCardView(
+                        title: "Hardware",
+                        value: viewModel.hardwareAccessStatus,
+                        detail: "Hardware-path actions remain blocked"
+                    )
 
-            ImportResultStoreView(store: .sample)
+                    HostAppLayoutSectionHeader(
+                        title: "Local Import",
+                        subtitle: "Local JSON preview, picker, and result-store UI."
+                    )
 
-            ImportResultStoreActionView(store: .sample)
+                    ImportPreviewView(viewModel: .sample)
 
-            DisabledActionPanel(actions: viewModel.disabledActions)
+                    LocalReportFilePickerView(viewModel: .sample)
 
-            Spacer()
+                    ImportResultStoreView(store: importStore)
+
+                    ImportResultStoreActionView(store: importStore)
+
+                    HostAppLayoutSectionHeader(
+                        title: "Runtime Boundary",
+                        subtitle: "Current no-runtime safety summary."
+                    )
+
+                    RuntimeBoundarySummaryView()
+
+                    DisabledActionPanel(actions: viewModel.disabledActions)
+                }
+                .padding(20)
+                .frame(maxWidth: 980, alignment: .leading)
+            }
+            .navigationTitle("H1mekaRTX Host")
         }
-        .padding(24)
-        .frame(minWidth: 760, minHeight: 620)
     }
 }

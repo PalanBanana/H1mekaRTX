@@ -103,7 +103,11 @@ def build_report(root: Path, out_dir: Path) -> dict[str, Any]:
         add_check(checks, f"forbidden_literal_absent:{token}", token not in source, "absent" if token not in source else "present")
 
     content = read_text(root / "tools/host-app-no-runtime-swiftui/Sources/H1mekaRTXHostApp/ContentView.swift")
-    add_check(checks, "content_view_embeds_store", "ImportResultStoreView(store: .sample)" in content, "embedded" if "ImportResultStoreView(store: .sample)" in content else "missing")
+    store_embedded = (
+        "ImportResultStoreView(store: .sample)" in content
+        or "ImportResultStoreView(store: importStore)" in content
+    )
+    add_check(checks, "content_view_embeds_store", store_embedded, "embedded" if store_embedded else "missing")
 
     report_run = run_report(root, out_dir)
     add_check(checks, "report_generator_returncode", report_run["returncode"] == 0, f"returncode={report_run['returncode']}")
