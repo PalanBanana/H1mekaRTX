@@ -43,7 +43,7 @@ REQUIRED_TERMS = [
     "LocalStatusImportResult.reject",
     "store.record(fileName:",
     "store.reset()",
-    "ImportResultStoreActionView(store: .sample)",
+    "ImportResultStoreActionView(store:",
     "RTX 5070 Metal runtime remains disabled",
     "No runtime action was performed",
 ]

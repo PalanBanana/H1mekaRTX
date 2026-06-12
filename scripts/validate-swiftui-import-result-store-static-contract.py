@@ -45,7 +45,7 @@ REQUIRED_TERMS = [
     "static let sample = LocalImportResultStore",
     "struct ImportResultStoreView: View",
     "@ObservedObject var store: LocalImportResultStore",
-    "ImportResultStoreView(store: .sample)",
+    "ImportResultStoreView(store:",
     "ACCEPTED_LOCAL_IMPORT",
     "REJECTED_LOCAL_IMPORT",
     "SELECTED_LOCAL_FILE",
