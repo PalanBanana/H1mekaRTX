@@ -1,0 +1,40 @@
+{
+  "schema": "h1mekartx.signed_extension_packaging_plan.v1",
+  "purpose": "Plan-only matrix for future signed host app and driver extension packaging.",
+  "target": {
+    "gpu": "NVIDIA RTX 5070",
+    "vendor_id": "0x10de",
+    "device_id": "0x2f04",
+    "iopcimatch": "0x2f0410de",
+    "subsystem_vendor_id": "0x1458",
+    "subsystem_id": "0x417e"
+  },
+  "packaging_plan": {
+    "host_app_bundle_id_status": "NOT_PROVIDED",
+    "driver_extension_bundle_id_status": "NOT_PROVIDED",
+    "bundle_id_pairing_status": "NOT_PROVIDED",
+    "driverkit_entitlement_status": "NOT_PROVIDED",
+    "driverkit_development_profile_status": "NOT_PROVIDED",
+    "extension_install_permission_status": "NOT_PROVIDED",
+    "developer_certificate_status": "NOT_PROVIDED",
+    "distribution_signing_status": "NOT_PROVIDED",
+    "notarization_status": "NOT_PROVIDED",
+    "manual_review_status": "NOT_READY"
+  },
+  "runtime_policy": {
+    "metal_injection_goal": true,
+    "metal_injection_runtime_allowed_now": false,
+    "driver_runtime_allowed": false,
+    "driver_installation_allowed": false,
+    "driver_activation_allowed": false,
+    "provider_attach_allowed": false,
+    "device_ownership_allowed": false,
+    "low_level_hardware_path_allowed": false,
+    "rtx5070_metal_runtime_allowed": false
+  },
+  "notes": [
+    "This file is a packaging plan sample only.",
+    "Do not include private keys, certificates, profile files, Apple ID email addresses, or unredacted team information.",
+    "This file does not enable driver runtime, driver installation, provider transition, device ownership transition, hardware-path code, or RTX 5070 Metal runtime."
+  ]
+}
