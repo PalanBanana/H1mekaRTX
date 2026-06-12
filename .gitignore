@@ -193,3 +193,7 @@ tools/host-app-no-runtime-swiftui/.build/
 /entitlement-provisioning-evidence-matrix-report.md
 /entitlement-provisioning-evidence-matrix-check.json
 /entitlement-provisioning-evidence-matrix-check.md
+/entitlement-evidence-input-template-report.json
+/entitlement-evidence-input-template-report.md
+/entitlement-evidence-input-template-check.json
+/entitlement-evidence-input-template-check.md
