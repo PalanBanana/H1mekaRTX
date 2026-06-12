@@ -128,3 +128,7 @@ activation-controller-transition-gate-check.json
 /host-app-status-schema.md
 /host-app-status-schema-check.json
 /host-app-status-schema-check.md
+/host-app-status-schema-validator-report.json
+/host-app-status-schema-validator-report.md
+/host-app-status-schema-validator-check.json
+/host-app-status-schema-validator-check.md
