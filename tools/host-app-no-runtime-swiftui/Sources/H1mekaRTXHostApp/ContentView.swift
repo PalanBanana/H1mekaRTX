@@ -41,6 +41,8 @@ struct ContentView: View {
 
             LocalReportFilePickerView(viewModel: .sample)
 
+            ImportResultStoreView(store: .sample)
+
             DisabledActionPanel(actions: viewModel.disabledActions)
 
             Spacer()
