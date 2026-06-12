@@ -197,3 +197,7 @@ tools/host-app-no-runtime-swiftui/.build/
 /entitlement-evidence-input-template-report.md
 /entitlement-evidence-input-template-check.json
 /entitlement-evidence-input-template-check.md
+/entitlement-evidence-resolver-report.json
+/entitlement-evidence-resolver-report.md
+/entitlement-evidence-resolver-check.json
+/entitlement-evidence-resolver-check.md
