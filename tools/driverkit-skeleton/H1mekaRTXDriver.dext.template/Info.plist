@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleIdentifier</key>
+  <string>dev.h1meka.H1mekaRTXDriver</string>
+  <key>CFBundleName</key>
+  <string>H1mekaRTXDriver</string>
+  <key>CFBundleDisplayName</key>
+  <string>H1mekaRTX DriverKit Template</string>
+  <key>CFBundleVersion</key>
+  <string>0.0.0-static-template</string>
+  <key>CFBundleShortVersionString</key>
+  <string>0.0.0</string>
+  <key>NSExtension</key>
+  <dict>
+    <key>NSExtensionPointIdentifier</key>
+    <string>com.apple.driverkit</string>
+  </dict>
+  <key>IOKitPersonalities</key>
+  <dict>
+    <key>H1mekaRTX5070StaticTemplate</key>
+    <dict>
+      <key>CFBundleIdentifier</key>
+      <string>dev.h1meka.H1mekaRTXDriver</string>
+      <key>IOProviderClass</key>
+      <string>IOPCIDevice</string>
+      <key>IOPCIMatch</key>
+      <string>0x2f0410de</string>
+      <key>H1mekaRTXTargetGPU</key>
+      <string>NVIDIA RTX 5070</string>
+      <key>H1mekaRTXTemplateOnly</key>
+      <true/>
+    </dict>
+  </dict>
+  <key>H1mekaRTXSafetyBoundary</key>
+  <dict>
+    <key>NO_DEXT_LOAD</key>
+    <true/>
+    <key>NO_PROVIDER_OPEN</key>
+    <true/>
+    <key>NO_BAR_MAPPING</key>
+    <true/>
+    <key>NO_BAR_MMIO_MUTATION</key>
+    <true/>
+    <key>NO_COMMAND_SUBMISSION</key>
+    <true/>
+  </dict>
+</dict>
+</plist>
