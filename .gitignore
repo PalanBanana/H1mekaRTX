@@ -257,3 +257,7 @@ tools/host-app-no-runtime-swiftui/.build/
 /release-readiness-ci-wrapper-check.md
 /release-readiness-workflow-static-contract-check.json
 /release-readiness-workflow-static-contract-check.md
+/rtx5070-metal-runtime-milestone-map-report.json
+/rtx5070-metal-runtime-milestone-map-report.md
+/rtx5070-metal-runtime-milestone-map-check.json
+/rtx5070-metal-runtime-milestone-map-check.md
