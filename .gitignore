@@ -225,3 +225,7 @@ tools/host-app-no-runtime-swiftui/.build/
 /signed-extension-packaging-plan-resolver-fixture-matrix-report.md
 /signed-extension-packaging-plan-resolver-fixture-matrix-check.json
 /signed-extension-packaging-plan-resolver-fixture-matrix-check.md
+/combined-entitlement-packaging-gate-summary-report.json
+/combined-entitlement-packaging-gate-summary-report.md
+/combined-entitlement-packaging-gate-summary-check.json
+/combined-entitlement-packaging-gate-summary-check.md
