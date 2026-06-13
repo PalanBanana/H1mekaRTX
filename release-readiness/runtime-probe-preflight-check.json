@@ -1,0 +1,89 @@
+{
+  "checks": [
+    {
+      "detail": "docs/metal/runtime-probe-preflight-contract.md\uac00 \uc874\uc7ac\ud569\ub2c8\ub2e4.",
+      "name": "contract_file_exists",
+      "passed": true
+    },
+    {
+      "detail": "\ud544\uc218 \uacc4\uc57d \ub2e8\uc5b4 'PREFLIGHT_STAGE_3_CONTRACT_READY' \uac00 \ud655\uc778\ub418\uc5c8\uc2b5\ub2c8\ub2e4.",
+      "name": "term_check:PREFLIGHT_STAGE_3_CONTRACT_READY",
+      "passed": true
+    },
+    {
+      "detail": "\ud544\uc218 \uacc4\uc57d \ub2e8\uc5b4 'CLASSIFICATION_STATIC_CONTRACT' \uac00 \ud655\uc778\ub418\uc5c8\uc2b5\ub2c8\ub2e4.",
+      "name": "term_check:CLASSIFICATION_STATIC_CONTRACT",
+      "passed": true
+    },
+    {
+      "detail": "\ud544\uc218 \uacc4\uc57d \ub2e8\uc5b4 'CLASSIFICATION_RUNTIME_PROBE_PREFLIGHT' \uac00 \ud655\uc778\ub418\uc5c8\uc2b5\ub2c8\ub2e4.",
+      "name": "term_check:CLASSIFICATION_RUNTIME_PROBE_PREFLIGHT",
+      "passed": true
+    },
+    {
+      "detail": "\ud544\uc218 \uacc4\uc57d \ub2e8\uc5b4 'FUTURE_EVIDENCE_CHECKLIST' \uac00 \ud655\uc778\ub418\uc5c8\uc2b5\ub2c8\ub2e4.",
+      "name": "term_check:FUTURE_EVIDENCE_CHECKLIST",
+      "passed": true
+    },
+    {
+      "detail": "\ud544\uc218 \uacc4\uc57d \ub2e8\uc5b4 'DRIVERKIT_PREREQUISITES' \uac00 \ud655\uc778\ub418\uc5c8\uc2b5\ub2c8\ub2e4.",
+      "name": "term_check:DRIVERKIT_PREREQUISITES",
+      "passed": true
+    },
+    {
+      "detail": "\ud544\uc218 \uacc4\uc57d \ub2e8\uc5b4 'BAR_MMIO_SUBMISSION_FORBIDDEN' \uac00 \ud655\uc778\ub418\uc5c8\uc2b5\ub2c8\ub2e4.",
+      "name": "term_check:BAR_MMIO_SUBMISSION_FORBIDDEN",
+      "passed": true
+    },
+    {
+      "detail": "\ud574\ub2f9 \uce68\uc2b5\uc801 \ud328\ud134\uc758 \uc2e4\ud589/\ucc38\uc870\uac00 \uac10\uc9c0\ub418\uc9c0 \uc54a\uc544 \uc548\uc804\ud569\ub2c8\ub2e4.",
+      "name": "safety_check_forbidden_pattern:OS_System_Extension_Manager",
+      "passed": true
+    },
+    {
+      "detail": "\ud574\ub2f9 \uce68\uc2b5\uc801 \ud328\ud134\uc758 \uc2e4\ud589/\ucc38\uc870\uac00 \uac10\uc9c0\ub418\uc9c0 \uc54a\uc544 \uc548\uc804\ud569\ub2c8\ub2e4.",
+      "name": "safety_check_forbidden_pattern:activation_Request",
+      "passed": true
+    },
+    {
+      "detail": "\ud574\ub2f9 \uce68\uc2b5\uc801 \ud328\ud134\uc758 \uc2e4\ud589/\ucc38\uc870\uac00 \uac10\uc9c0\ub418\uc9c0 \uc54a\uc544 \uc548\uc804\ud569\ub2c8\ub2e4.",
+      "name": "safety_check_forbidden_pattern:map_Device_Memory",
+      "passed": true
+    },
+    {
+      "detail": "\ud574\ub2f9 \uce68\uc2b5\uc801 \ud328\ud134\uc758 \uc2e4\ud589/\ucc38\uc870\uac00 \uac10\uc9c0\ub418\uc9c0 \uc54a\uc544 \uc548\uc804\ud569\ub2c8\ub2e4.",
+      "name": "safety_check_forbidden_pattern:Create_Memory_Map",
+      "passed": true
+    },
+    {
+      "detail": "\ud574\ub2f9 \uce68\uc2b5\uc801 \ud328\ud134\uc758 \uc2e4\ud589/\ucc38\uc870\uac00 \uac10\uc9c0\ub418\uc9c0 \uc54a\uc544 \uc548\uc804\ud569\ub2c8\ub2e4.",
+      "name": "safety_check_forbidden_pattern:Configuration_Write",
+      "passed": true
+    },
+    {
+      "detail": "\ud574\ub2f9 \uce68\uc2b5\uc801 \ud328\ud134\uc758 \uc2e4\ud589/\ucc38\uc870\uac00 \uac10\uc9c0\ub418\uc9c0 \uc54a\uc544 \uc548\uc804\ud569\ub2c8\ub2e4.",
+      "name": "safety_check_forbidden_pattern:Memory_Write",
+      "passed": true
+    },
+    {
+      "detail": "\ud504\ub9ac\ud50c\ub77c\uc774\ud2b8 \uc815\uc801 \uacc4\uc57d \ubc94\uc704\ub9cc\uc744 \uac80\uc99d\ud558\ub3c4\ub85d \ubcf4\uc7a5\ud569\ub2c8\ub2e4.",
+      "name": "read_only_harness_policy",
+      "passed": true
+    }
+  ],
+  "classification_level": "Runtime probe preflight / Static contract",
+  "decision": "PASS_RUNTIME_PROBE_PREFLIGHT_READY",
+  "failed_count": 0,
+  "generated_at_utc": "2026-06-13T15:06:03.319550+00:00",
+  "hardware_access_attempted": false,
+  "passed_count": 14,
+  "safety_boundary": {
+    "no_bar_write": true,
+    "no_command_submission": true,
+    "no_mmio_write": true,
+    "no_system_modification": true,
+    "read_only": true
+  },
+  "schema": "h1mekartx.runtime_probe_preflight_check.v1",
+  "scope": "Phase 3 Preflight"
+}
