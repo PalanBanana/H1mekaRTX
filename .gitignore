@@ -229,3 +229,9 @@ tools/host-app-no-runtime-swiftui/.build/
 /combined-entitlement-packaging-gate-summary-report.md
 /combined-entitlement-packaging-gate-summary-check.json
 /combined-entitlement-packaging-gate-summary-check.md
+/combined-gate-static-contract-badge-report.json
+/combined-gate-static-contract-badge-report.md
+/combined-gate-static-contract-badge-check.json
+/combined-gate-static-contract-badge-check.md
+/combined-gate-status-badge.json
+/combined-gate-status-badge.md
