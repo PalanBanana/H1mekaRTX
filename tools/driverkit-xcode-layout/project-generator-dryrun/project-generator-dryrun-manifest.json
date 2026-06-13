@@ -1,0 +1,62 @@
+{
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "build_attempted": false,
+  "classification": "CLASSIFICATION_NONBUILDING_PROJECT_GENERATOR_DRYRUN",
+  "device_ownership_request_attempted": false,
+  "dext_load_attempted": false,
+  "driverkit_activation_attempted": false,
+  "forbidden_real_project_outputs_existing": [],
+  "future_project_generator_contract": {
+    "actually_generated": [],
+    "dext_bundle_id": "dev.h1meka.H1mekaRTXDriver",
+    "dext_extension_point": "com.apple.driverkit",
+    "dext_target_name": "H1mekaRTXDriver",
+    "host_bundle_id": "dev.h1meka.H1mekaRTXHost",
+    "host_target_name": "H1mekaRTXHost",
+    "project_name": "H1mekaRTXDriverKit",
+    "source_metadata_schema": "h1mekartx.pbxproj_metadata_dryrun.v1",
+    "source_sanitized_schema": "h1mekartx.pbxproj_sanitized_metadata.v1",
+    "would_generate_if_promoted": [
+      "tools/driverkit-xcode-layout/H1mekaRTXDriverKit.xcodeproj/project.pbxproj"
+    ]
+  },
+  "generated_at_utc": "2026-06-13T15:55:40.429065+00:00",
+  "generator_emits_metadata_only": true,
+  "install_attempted": false,
+  "metal_proof_claimed": false,
+  "nonbuilding_project_generator_dryrun_only": true,
+  "provider_open_attempted": false,
+  "real_gpu_acceleration_claimed": false,
+  "real_gpu_command_execution_attempted": false,
+  "real_pbxproj_generation_attempted": false,
+  "real_xcodeproj_generation_attempted": false,
+  "rtx5070_workload_attribution_claimed": false,
+  "schema": "h1mekartx.nonbuilding_project_generator_dryrun.v1",
+  "secondary_classification": "CLASSIFICATION_PBXPROJ_DRYRUN_DIFF_GUARD",
+  "signing_attempted": false,
+  "system_extension_activation_attempted": false,
+  "target_pci_provider_matching_manifest": {
+    "architecture_family": "NVIDIA Blackwell",
+    "device_id": "0x2f04",
+    "expected_driver_family": "PCIDriverKit",
+    "expected_pci_transport_entitlement": "com.apple.developer.driverkit.transport.pci",
+    "expected_provider_class": "IOPCIDevice",
+    "io_pci_match": "0x2f0410de",
+    "target_gpu": "NVIDIA RTX 5070",
+    "vendor_id": "0x10de"
+  },
+  "target_user_visible_goal": [
+    "smooth Dock animation",
+    "working transparency",
+    "working blur",
+    "smooth window movement and resizing",
+    "smooth Mission Control",
+    "smooth Launchpad",
+    "smooth Stage Manager"
+  ],
+  "tertiary_classification": "CLASSIFICATION_STATIC_CONTRACT",
+  "ui_compositor_proof_claimed": false,
+  "xcode_invocation_attempted": false,
+  "xcodebuild_invocation_attempted": false
+}
