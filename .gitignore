@@ -251,3 +251,7 @@ tools/host-app-no-runtime-swiftui/.build/
 /release-readiness-dashboard-ci-report.md
 /release-readiness-dashboard-ci-entrypoint-check.json
 /release-readiness-dashboard-ci-entrypoint-check.md
+/release-readiness-ci-wrapper-report.json
+/release-readiness-ci-wrapper-report.md
+/release-readiness-ci-wrapper-check.json
+/release-readiness-ci-wrapper-check.md
