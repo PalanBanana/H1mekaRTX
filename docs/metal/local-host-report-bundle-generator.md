@@ -66,6 +66,8 @@ The generator copies these files only if they already exist:
 - ui-compositor-readiness-matrix.md
 - ui-gpu-attribution-summary.json
 - ui-gpu-attribution-summary.md
+- ui-workload-correlation-report.json
+- ui-workload-correlation-report.md
 - rendered-host-status-report.md
 - forbidden-bar-operation-audit.md
 

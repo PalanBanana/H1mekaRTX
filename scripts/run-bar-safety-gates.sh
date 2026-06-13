@@ -193,6 +193,43 @@ print("Phase 2 UI GPU attribution diagnostics validation passed")
 PY
 
 echo
+echo "== Phase 2 fixture: UI workload correlation report =="
+UI_WORKLOAD_OUT="$TMP_ROOT/ui-workload-correlation-report-check"
+./scripts/check-ui-workload-correlation-report.py --root "$ROOT" --out-dir "$UI_WORKLOAD_OUT"
+test -s "$UI_WORKLOAD_OUT/ui-workload-correlation-report-check.json"
+test -s "$UI_WORKLOAD_OUT/ui-workload-correlation-report-check.md"
+
+python3 - <<PY
+import json
+from pathlib import Path
+
+p = Path("$UI_WORKLOAD_OUT/ui-workload-correlation-report-check.json")
+data = json.loads(p.read_text())
+
+assert data["schema"] == "h1mekartx.ui_workload_correlation_report_check.v1"
+assert data["decision"] == "PASS_UI_WORKLOAD_CORRELATION_REPORT_READY"
+assert data["failed_count"] == 0
+assert data["safety_boundary"]["read_only_fixture_check"] is True
+assert data["safety_boundary"]["uses_existing_reports_only"] is True
+assert data["safety_boundary"]["driverkit_activation"] is False
+assert data["safety_boundary"]["system_extension_activation"] is False
+assert data["safety_boundary"]["device_ownership_request"] is False
+assert data["safety_boundary"]["windowserver_injection"] is False
+assert data["safety_boundary"]["dock_injection"] is False
+assert data["safety_boundary"]["pci_config_writes"] is False
+assert data["safety_boundary"]["mmio_reads"] is False
+assert data["safety_boundary"]["mmio_writes"] is False
+assert data["safety_boundary"]["bar_mapping"] is False
+assert data["safety_boundary"]["gpu_command_submission"] is False
+assert data["safety_boundary"]["rtx5070_shader_execution"] is False
+assert data["safety_boundary"]["trusted_rtx5070_workload_attribution_claim"] is False
+assert data["safety_boundary"]["ui_compositor_proof"] is False
+assert data["safety_boundary"]["metal_proof"] is False
+
+print("Phase 2 UI workload correlation report validation passed")
+PY
+
+echo
 echo "== Phase 2 fixture: UI compositor readiness matrix =="
 UI_READINESS_OUT="$TMP_ROOT/ui-compositor-readiness-matrix-check"
 ./scripts/check-ui-compositor-readiness-matrix.py --root "$ROOT" --out-dir "$UI_READINESS_OUT"

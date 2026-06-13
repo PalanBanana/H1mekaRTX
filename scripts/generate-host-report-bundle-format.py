@@ -129,6 +129,18 @@ BUNDLE_LAYOUT = [
         "description": "Optional Phase 2 UI GPU attribution candidate diagnostics Markdown summary.",
     },
     {
+        "path": "reports/ui-workload-correlation-report.json",
+        "required": False,
+        "kind": "graphics_stack_diagnostics",
+        "description": "Optional Phase 2 UI workload correlation candidate JSON report.",
+    },
+    {
+        "path": "reports/ui-workload-correlation-report.md",
+        "required": False,
+        "kind": "graphics_stack_diagnostics",
+        "description": "Optional Phase 2 UI workload correlation candidate Markdown report.",
+    },
+    {
         "path": "reports/rendered-host-status-report.md",
         "required": False,
         "kind": "local_report",

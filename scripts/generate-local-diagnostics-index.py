@@ -183,6 +183,27 @@ INDEX_ITEMS = [
         "description": "Generated Phase 2 UI GPU attribution diagnostics check.",
     },
     {
+        "path": "ui-workload-correlation-report.json",
+        "category": "ui_workload_correlation",
+        "kind": "json_report",
+        "required": False,
+        "description": "Generated Phase 2 UI workload correlation candidate JSON report.",
+    },
+    {
+        "path": "ui-workload-correlation-report.md",
+        "category": "ui_workload_correlation",
+        "kind": "markdown_report",
+        "required": False,
+        "description": "Generated Phase 2 UI workload correlation candidate Markdown report.",
+    },
+    {
+        "path": "ui-workload-correlation-report-check.json",
+        "category": "ui_workload_correlation",
+        "kind": "json_report",
+        "required": False,
+        "description": "Generated Phase 2 UI workload correlation report check.",
+    },
+    {
         "path": "rendered-host-status-report.md",
         "category": "host_tooling",
         "kind": "markdown_report",

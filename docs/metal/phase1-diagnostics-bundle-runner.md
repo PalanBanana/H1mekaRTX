@@ -13,6 +13,7 @@ This runner combines:
 - UI compositor proof schema generation
 - baseline UI compositor sample diagnostics
 - UI GPU attribution candidate diagnostics
+- UI workload correlation candidate report
 - UI compositor readiness matrix generation
 - local host report bundle creation
 - local diagnostics index creation
@@ -39,6 +40,8 @@ Optional output path:
 - ui-compositor-sample-summary.md
 - ui-gpu-attribution-summary.json
 - ui-gpu-attribution-summary.md
+- ui-workload-correlation-report.json
+- ui-workload-correlation-report.md
 - ui-compositor-readiness-matrix.json
 - ui-compositor-readiness-matrix.md
 - local-diagnostics-index.json

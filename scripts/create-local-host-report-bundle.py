@@ -135,6 +135,20 @@ REPORT_CANDIDATES = [
         "description": "Optional Phase 2 UI GPU attribution candidate diagnostics Markdown summary.",
     },
     {
+        "source": "ui-workload-correlation-report.json",
+        "dest": "reports/ui-workload-correlation-report.json",
+        "kind": "graphics_stack_diagnostics",
+        "required": False,
+        "description": "Optional Phase 2 UI workload correlation candidate JSON report.",
+    },
+    {
+        "source": "ui-workload-correlation-report.md",
+        "dest": "reports/ui-workload-correlation-report.md",
+        "kind": "graphics_stack_diagnostics",
+        "required": False,
+        "description": "Optional Phase 2 UI workload correlation candidate Markdown report.",
+    },
+    {
         "source": "rendered-host-status-report.md",
         "dest": "reports/rendered-host-status-report.md",
         "kind": "local_report",

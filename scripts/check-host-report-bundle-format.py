@@ -35,6 +35,8 @@ REQUIRED_LAYOUT_PATHS = [
     "reports/ui-compositor-readiness-matrix.md",
     "reports/ui-gpu-attribution-summary.json",
     "reports/ui-gpu-attribution-summary.md",
+    "reports/ui-workload-correlation-report.json",
+    "reports/ui-workload-correlation-report.md",
     "reports/rendered-host-status-report.md",
     "reports/safety-gates.md",
 ]
