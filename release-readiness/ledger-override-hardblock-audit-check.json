@@ -1,0 +1,489 @@
+{
+  "activation_execution_gate_decision": "BLOCK_EXECUTE",
+  "all_required_ledger_items_ready": false,
+  "audit_scope_mode": "runtime_activation_artifacts_only",
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/driverkit/ledger-override-hardblock-audit.md",
+      "name": "contract_file_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-activation/ledger-override-hardblock-audit.json",
+      "name": "audit_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-activation/activation-execution-gate.json",
+      "name": "activation_execution_gate_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-activation/activation-prerequisites-ledger.json",
+      "name": "activation_prerequisites_ledger_exists",
+      "passed": true
+    },
+    {
+      "detail": "CLASSIFICATION_LEDGER_OVERRIDE_HARDBLOCK_AUDIT",
+      "name": "requires_contract_token_classification_ledger_override_hardblock_audit",
+      "passed": true
+    },
+    {
+      "detail": "CLASSIFICATION_ACTIVATION_EXECUTION_GATE",
+      "name": "requires_contract_token_classification_activation_execution_gate",
+      "passed": true
+    },
+    {
+      "detail": "CLASSIFICATION_ACTIVATION_PREREQUISITES_LEDGER",
+      "name": "requires_contract_token_classification_activation_prerequisites_ledger",
+      "passed": true
+    },
+    {
+      "detail": "CLASSIFICATION_STATIC_CONTRACT",
+      "name": "requires_contract_token_classification_static_contract",
+      "passed": true
+    },
+    {
+      "detail": "LEDGER_OVERRIDE_HARDBLOCK_AUDIT_ONLY: True",
+      "name": "requires_contract_token_ledger_override_hardblock_audit_only_true",
+      "passed": true
+    },
+    {
+      "detail": "OVERRIDE_PATHS_FORBIDDEN: True",
+      "name": "requires_contract_token_override_paths_forbidden_true",
+      "passed": true
+    },
+    {
+      "detail": "FORCE_EXECUTE_FORBIDDEN: True",
+      "name": "requires_contract_token_force_execute_forbidden_true",
+      "passed": true
+    },
+    {
+      "detail": "EXECUTE_MODE_STILL_BLOCKED: True",
+      "name": "requires_contract_token_execute_mode_still_blocked_true",
+      "passed": true
+    },
+    {
+      "detail": "LEDGER_READY_REQUIRED_FOR_EXECUTE: True",
+      "name": "requires_contract_token_ledger_ready_required_for_execute_true",
+      "passed": true
+    },
+    {
+      "detail": "REAL_ACTIVATION_NOT_ATTEMPTED: True",
+      "name": "requires_contract_token_real_activation_not_attempted_true",
+      "passed": true
+    },
+    {
+      "detail": "REAL_DEACTIVATION_NOT_ATTEMPTED: True",
+      "name": "requires_contract_token_real_deactivation_not_attempted_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_DRIVER_ACTIVATION: True",
+      "name": "requires_contract_token_no_driver_activation_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_SYSTEM_EXTENSION_ACTIVATION: True",
+      "name": "requires_contract_token_no_system_extension_activation_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_SYSTEM_EXTENSION_DEACTIVATION: True",
+      "name": "requires_contract_token_no_system_extension_deactivation_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_DEXT_LOAD: True",
+      "name": "requires_contract_token_no_dext_load_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_DEVICE_OWNERSHIP_REQUEST: True",
+      "name": "requires_contract_token_no_device_ownership_request_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_PROVIDER_OPEN: True",
+      "name": "requires_contract_token_no_provider_open_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_BAR_MAPPING: True",
+      "name": "requires_contract_token_no_bar_mapping_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_BAR_MMIO_MUTATION: True",
+      "name": "requires_contract_token_no_bar_mmio_mutation_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_COMMAND_SUBMISSION: True",
+      "name": "requires_contract_token_no_command_submission_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_GSP_FIRMWARE_LOAD: True",
+      "name": "requires_contract_token_no_gsp_firmware_load_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_GPU_RESET: True",
+      "name": "requires_contract_token_no_gpu_reset_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_FRAMEBUFFER_INIT: True",
+      "name": "requires_contract_token_no_framebuffer_init_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_DISPLAY_ENGINE_INIT: True",
+      "name": "requires_contract_token_no_display_engine_init_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_KERNEL_OR_PROCESS_INJECTION: True",
+      "name": "requires_contract_token_no_kernel_or_process_injection_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_SIP_AMFI_BYPASS: True",
+      "name": "requires_contract_token_no_sip_amfi_bypass_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_PRIVATE_FRAMEWORK_PATCHING: True",
+      "name": "requires_contract_token_no_private_framework_patching_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_FAKE_METAL_DEVICE_SPOOFING: True",
+      "name": "requires_contract_token_no_fake_metal_device_spoofing_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_DIRECT_DOCK_INJECTION: True",
+      "name": "requires_contract_token_no_direct_dock_injection_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_WINDOWSERVER_PATCHING: True",
+      "name": "requires_contract_token_no_windowserver_patching_true",
+      "passed": true
+    },
+    {
+      "detail": "FORBIDDEN_LEDGER_OVERRIDE_MARKERS",
+      "name": "requires_contract_token_forbidden_ledger_override_markers",
+      "passed": true
+    },
+    {
+      "detail": "FORBIDDEN_RUNTIME_SUBMIT_MARKERS",
+      "name": "requires_contract_token_forbidden_runtime_submit_markers",
+      "passed": true
+    },
+    {
+      "detail": "LEDGER_OVERRIDE_HARDBLOCK_AUDIT_SCOPE",
+      "name": "requires_contract_token_ledger_override_hardblock_audit_scope",
+      "passed": true
+    },
+    {
+      "detail": "ACTIVATION_EXECUTION_GATE_RULE",
+      "name": "requires_contract_token_activation_execution_gate_rule",
+      "passed": true
+    },
+    {
+      "detail": "REAL_UI_COMPOSITOR_ACCELERATION_RULE",
+      "name": "requires_contract_token_real_ui_compositor_acceleration_rule",
+      "passed": true
+    },
+    {
+      "detail": "Dock",
+      "name": "requires_contract_token_dock",
+      "passed": true
+    },
+    {
+      "detail": "transparency",
+      "name": "requires_contract_token_transparency",
+      "passed": true
+    },
+    {
+      "detail": "blur",
+      "name": "requires_contract_token_blur",
+      "passed": true
+    },
+    {
+      "detail": "WindowServer",
+      "name": "requires_contract_token_windowserver",
+      "passed": true
+    },
+    {
+      "detail": "Core Animation",
+      "name": "requires_contract_token_core_animation",
+      "passed": true
+    },
+    {
+      "detail": "QuartzCore",
+      "name": "requires_contract_token_quartzcore",
+      "passed": true
+    },
+    {
+      "detail": "Metal compositor",
+      "name": "requires_contract_token_metal_compositor",
+      "passed": true
+    },
+    {
+      "detail": "ACTIVATION_EXECUTION_GATE_DECISION: BLOCK_EXECUTE",
+      "name": "requires_contract_token_activation_execution_gate_decision_block_execute",
+      "passed": true
+    },
+    {
+      "detail": "DRIVERKIT_ACTIVATION_ATTEMPTED: False",
+      "name": "requires_contract_token_driverkit_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "SYSTEM_EXTENSION_ACTIVATION_ATTEMPTED: False",
+      "name": "requires_contract_token_system_extension_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "SYSTEM_EXTENSION_DEACTIVATION_ATTEMPTED: False",
+      "name": "requires_contract_token_system_extension_deactivation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "DEXT_LOAD_ATTEMPTED: False",
+      "name": "requires_contract_token_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "DEVICE_OWNERSHIP_REQUEST_ATTEMPTED: False",
+      "name": "requires_contract_token_device_ownership_request_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "PROVIDER_OPEN_ATTEMPTED: False",
+      "name": "requires_contract_token_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "BAR_MAPPING_ATTEMPTED: False",
+      "name": "requires_contract_token_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "BAR_MMIO_MUTATION_ATTEMPTED: False",
+      "name": "requires_contract_token_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "REAL_GPU_COMMAND_EXECUTION_ATTEMPTED: False",
+      "name": "requires_contract_token_real_gpu_command_execution_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "RTX5070_WORKLOAD_ATTRIBUTION_CLAIMED: False",
+      "name": "requires_contract_token_rtx5070_workload_attribution_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "REAL_GPU_ACCELERATION_CLAIMED: False",
+      "name": "requires_contract_token_real_gpu_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "UI_COMPOSITOR_PROOF_CLAIMED: False",
+      "name": "requires_contract_token_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "METAL_PROOF_CLAIMED: False",
+      "name": "requires_contract_token_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema_matches",
+      "passed": true
+    },
+    {
+      "detail": "ledger_override_hardblock_audit_only=true",
+      "name": "manifest_audit_only_true",
+      "passed": true
+    },
+    {
+      "detail": "execute_mode_still_blocked=true",
+      "name": "manifest_execute_blocked_true",
+      "passed": true
+    },
+    {
+      "detail": "BLOCK_EXECUTE",
+      "name": "gate_decision_block_execute",
+      "passed": true
+    },
+    {
+      "detail": "expected hard-block until ledger READY",
+      "name": "ledger_not_all_required_ready",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "audit_scope_files_exist",
+      "passed": true
+    },
+    {
+      "detail": "[]",
+      "name": "no_forbidden_override_markers_in_activation_tooling",
+      "passed": true
+    },
+    {
+      "detail": "[]",
+      "name": "no_forbidden_runtime_submit_markers_in_activation_tooling",
+      "passed": true
+    },
+    {
+      "detail": "manifest.driverkit_activation_attempted=false",
+      "name": "manifest_driverkit_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manifest.system_extension_activation_attempted=false",
+      "name": "manifest_system_extension_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manifest.system_extension_deactivation_attempted=false",
+      "name": "manifest_system_extension_deactivation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manifest.dext_load_attempted=false",
+      "name": "manifest_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manifest.device_ownership_request_attempted=false",
+      "name": "manifest_device_ownership_request_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manifest.provider_open_attempted=false",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manifest.bar_mapping_attempted=false",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manifest.bar_mmio_mutation_attempted=false",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manifest.real_gpu_command_execution_attempted=false",
+      "name": "manifest_real_gpu_command_execution_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manifest.ui_compositor_proof_claimed=false",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "manifest.metal_proof_claimed=false",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "gate.driverkit_activation_attempted=false",
+      "name": "gate_driverkit_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gate.system_extension_activation_attempted=false",
+      "name": "gate_system_extension_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gate.system_extension_deactivation_attempted=false",
+      "name": "gate_system_extension_deactivation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gate.dext_load_attempted=false",
+      "name": "gate_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gate.device_ownership_request_attempted=false",
+      "name": "gate_device_ownership_request_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gate.provider_open_attempted=false",
+      "name": "gate_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gate.bar_mapping_attempted=false",
+      "name": "gate_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gate.bar_mmio_mutation_attempted=false",
+      "name": "gate_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gate.real_gpu_command_execution_attempted=false",
+      "name": "gate_real_gpu_command_execution_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gate.ui_compositor_proof_claimed=false",
+      "name": "gate_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "gate.metal_proof_claimed=false",
+      "name": "gate_metal_proof_claimed_false",
+      "passed": true
+    }
+  ],
+  "classification": "CLASSIFICATION_LEDGER_OVERRIDE_HARDBLOCK_AUDIT",
+  "decision": "PASS_LEDGER_OVERRIDE_HARDBLOCK_AUDIT_READY",
+  "device_ownership_request_attempted": false,
+  "dext_load_attempted": false,
+  "dock_transparency_blur_state": "BLOCKED_UNTIL_REAL_GPU_COMMAND_AND_COMPOSITOR_ATTRIBUTION_EVIDENCE",
+  "driverkit_activation_attempted": false,
+  "execute_mode_still_blocked": true,
+  "failed_count": 0,
+  "force_execute_forbidden": true,
+  "generated_at_utc": "2026-06-13T16:19:02.237036+00:00",
+  "ledger_override_hardblock_audit_only": true,
+  "ledger_ready_required_for_execute": true,
+  "metal_proof_claimed": false,
+  "override_hits": [],
+  "override_paths_forbidden": true,
+  "passed_count": 90,
+  "provider_open_attempted": false,
+  "real_activation_not_attempted": true,
+  "real_deactivation_not_attempted": true,
+  "real_gpu_acceleration_claimed": false,
+  "real_gpu_command_execution_attempted": false,
+  "rtx5070_workload_attribution_claimed": false,
+  "runtime_submit_hits": [],
+  "schema": "h1mekartx.ledger_override_hardblock_audit_check.v1",
+  "scope": "Phase 22 ledger override hard-block audit",
+  "secondary_classification": "CLASSIFICATION_ACTIVATION_EXECUTION_GATE",
+  "system_extension_activation_attempted": false,
+  "system_extension_deactivation_attempted": false,
+  "tertiary_classification": "CLASSIFICATION_STATIC_CONTRACT",
+  "ui_compositor_proof_claimed": false
+}
