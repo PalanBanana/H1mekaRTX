@@ -1,0 +1,181 @@
+{
+  "activation_execution_gate_decision": "BLOCK_EXECUTE",
+  "audit_scope": [
+    "tools/driverkit-activation/H1mekaRTXSystemExtensionActivationDryRun.swift",
+    "scripts/collect-provider-match-candidate.py",
+    "tools/driverkit-activation/provider-match-candidate-collector-plan.json",
+    "tools/driverkit-activation/provider-match-candidate-summary-gate.json",
+    "tools/driverkit-activation/dext-load-provider-match-proof-schema.json",
+    "tools/driverkit-activation/activation-execution-gate.json"
+  ],
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "candidate_summary_only": true,
+  "classification": "CLASSIFICATION_PROVIDER_OPEN_PROHIBITION_GATE",
+  "configuration_writes_attempted": false,
+  "device_ownership_request_attempted": false,
+  "dext_load_attempted": false,
+  "dext_load_proof_state": "NOT_ATTEMPTED",
+  "driverkit_activation_attempted": false,
+  "execute_mode_still_blocked": true,
+  "forbidden_hardware_access_marker_parts": [
+    [
+      "mapDevice",
+      "Memory"
+    ],
+    [
+      "MapDevice",
+      "Memory"
+    ],
+    [
+      "CreateMemory",
+      "Descriptor"
+    ],
+    [
+      "Configuration",
+      "Write8"
+    ],
+    [
+      "Configuration",
+      "Write16"
+    ],
+    [
+      "Configuration",
+      "Write32"
+    ],
+    [
+      "Memory",
+      "Write"
+    ],
+    [
+      "write",
+      "Memory"
+    ],
+    [
+      "submit",
+      "Commands"
+    ],
+    [
+      "Submit",
+      "Commands"
+    ],
+    [
+      "command",
+      "Submission"
+    ],
+    [
+      "GPU",
+      "Command"
+    ],
+    [
+      "GSP",
+      "Firmware"
+    ],
+    [
+      "GPU",
+      "Reset"
+    ],
+    [
+      "framebuffer",
+      "Init"
+    ],
+    [
+      "display",
+      "EngineInit"
+    ]
+  ],
+  "forbidden_provider_open_marker_parts": [
+    [
+      "IOPCIDevice",
+      ".open"
+    ],
+    [
+      "IOPCIDevice",
+      "::Open"
+    ],
+    [
+      "IOPCIDevice",
+      "Open"
+    ],
+    [
+      "provider",
+      ".open"
+    ],
+    [
+      "open",
+      "Provider"
+    ],
+    [
+      "provider",
+      "Open("
+    ],
+    [
+      "IOService",
+      "Open"
+    ],
+    [
+      "IOConnect",
+      "CallMethod"
+    ],
+    [
+      "IOConnect",
+      "MapMemory"
+    ],
+    [
+      "IOConnect",
+      "SetNotificationPort"
+    ]
+  ],
+  "iopcidevice_open_attempted": false,
+  "ioservice_open_attempted": false,
+  "ledger_ready_required_for_execute": true,
+  "memory_descriptor_mapping_attempted": false,
+  "metal_proof_claimed": false,
+  "metal_proof_state": "NOT_ATTEMPTED",
+  "provider_match_candidate_summary_state": "SUMMARY_ONLY",
+  "provider_match_proof_not_claimed": true,
+  "provider_match_proof_state": "NOT_ATTEMPTED",
+  "provider_open_attempted": false,
+  "provider_open_forbidden": true,
+  "provider_open_prohibition_gate_only": true,
+  "provider_open_prohibition_state": "ENFORCED",
+  "real_activation_not_attempted": true,
+  "real_deactivation_not_attempted": true,
+  "real_gpu_acceleration_claimed": false,
+  "real_gpu_command_execution_attempted": false,
+  "real_gpu_command_execution_proof_state": "NOT_ATTEMPTED",
+  "rtx5070_workload_attribution_claimed": false,
+  "schema": "h1mekartx.provider_open_prohibition_gate.v1",
+  "secondary_classification": "CLASSIFICATION_PROVIDER_MATCH_CANDIDATE_SUMMARY_GATE",
+  "system_extension_activation_attempted": false,
+  "system_extension_deactivation_attempted": false,
+  "target_pci_provider_matching_manifest": {
+    "architecture_family": "NVIDIA Blackwell",
+    "device_id": "0x2f04",
+    "expected_dext_bundle_id": "dev.h1meka.H1mekaRTXDriver",
+    "expected_driver_family": "PCIDriverKit",
+    "expected_host_bundle_id": "dev.h1meka.H1mekaRTXHost",
+    "expected_pci_transport_entitlement": "com.apple.developer.driverkit.transport.pci",
+    "expected_provider_class": "IOPCIDevice",
+    "expected_system_extension_entitlement": "com.apple.developer.system-extension.install",
+    "io_pci_match": "0x2f0410de",
+    "target_gpu": "NVIDIA RTX 5070",
+    "vendor_id": "0x10de"
+  },
+  "tertiary_classification": "CLASSIFICATION_STATIC_CONTRACT",
+  "ui_compositor_proof_claimed": false,
+  "ui_compositor_proof_state": "NOT_ATTEMPTED",
+  "ui_compositor_timing": {
+    "dock_transparency_blur_blocked_until": [
+      "dext load proof",
+      "provider matching proof",
+      "separately reviewed provider open policy",
+      "separately reviewed BAR mapping policy",
+      "real GPU command execution",
+      "WindowServer/Core Animation/QuartzCore/Metal compositor attribution",
+      "UI compositor proof",
+      "Metal proof"
+    ],
+    "provider_open_prohibition_alone_is_not_acceleration": true
+  }
+}
