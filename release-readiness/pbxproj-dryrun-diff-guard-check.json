@@ -1,0 +1,173 @@
+{
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "build_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-xcode-layout/pbxproj-metadata-dryrun.json",
+      "name": "metadata_json_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-xcode-layout/project-layout.json",
+      "name": "project_layout_json_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-xcode-layout/H1mekaRTXDriverKit.xcodeproj",
+      "name": "real_xcodeproj_absent",
+      "passed": true
+    },
+    {
+      "detail": "h1mekartx.pbxproj_metadata_dryrun.v1",
+      "name": "metadata_schema_expected",
+      "passed": true
+    },
+    {
+      "detail": "h1mekartx.deterministic_xcode_project_layout.v1",
+      "name": "layout_schema_expected",
+      "passed": true
+    },
+    {
+      "detail": "pbxproj_metadata_dryrun_only=true",
+      "name": "metadata_dryrun_only_true",
+      "passed": true
+    },
+    {
+      "detail": "real_xcodeproj_generation_attempted=false",
+      "name": "forbidden_true_field_real_xcodeproj_generation_attempted_is_false",
+      "passed": true
+    },
+    {
+      "detail": "real_pbxproj_generation_attempted=false",
+      "name": "forbidden_true_field_real_pbxproj_generation_attempted_is_false",
+      "passed": true
+    },
+    {
+      "detail": "xcodebuild_invocation_attempted=false",
+      "name": "forbidden_true_field_xcodebuild_invocation_attempted_is_false",
+      "passed": true
+    },
+    {
+      "detail": "build_attempted=false",
+      "name": "forbidden_true_field_build_attempted_is_false",
+      "passed": true
+    },
+    {
+      "detail": "signing_attempted=false",
+      "name": "forbidden_true_field_signing_attempted_is_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted=false",
+      "name": "forbidden_true_field_install_attempted_is_false",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_activation_attempted=false",
+      "name": "forbidden_true_field_driverkit_activation_attempted_is_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_activation_attempted=false",
+      "name": "forbidden_true_field_system_extension_activation_attempted_is_false",
+      "passed": true
+    },
+    {
+      "detail": "dext_load_attempted=false",
+      "name": "forbidden_true_field_dext_load_attempted_is_false",
+      "passed": true
+    },
+    {
+      "detail": "device_ownership_request_attempted=false",
+      "name": "forbidden_true_field_device_ownership_request_attempted_is_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted=false",
+      "name": "forbidden_true_field_provider_open_attempted_is_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted=false",
+      "name": "forbidden_true_field_bar_mapping_attempted_is_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted=false",
+      "name": "forbidden_true_field_bar_mmio_mutation_attempted_is_false",
+      "passed": true
+    },
+    {
+      "detail": "real_gpu_command_execution_attempted=false",
+      "name": "forbidden_true_field_real_gpu_command_execution_attempted_is_false",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_workload_attribution_claimed=false",
+      "name": "forbidden_true_field_rtx5070_workload_attribution_claimed_is_false",
+      "passed": true
+    },
+    {
+      "detail": "real_gpu_acceleration_claimed=false",
+      "name": "forbidden_true_field_real_gpu_acceleration_claimed_is_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed=false",
+      "name": "forbidden_true_field_ui_compositor_proof_claimed_is_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed=false",
+      "name": "forbidden_true_field_metal_proof_claimed_is_false",
+      "passed": true
+    },
+    {
+      "detail": "actually_generated=[]",
+      "name": "future_graph_actually_generated_empty",
+      "passed": true
+    },
+    {
+      "detail": "would_generate metadata only",
+      "name": "future_graph_would_generate_only_metadata",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-xcode-layout/pbxproj-sanitized-metadata.json",
+      "name": "sanitized_json_written",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-xcode-layout/pbxproj-sanitized-metadata.md",
+      "name": "sanitized_markdown_written",
+      "passed": true
+    }
+  ],
+  "classification": "CLASSIFICATION_PBXPROJ_DRYRUN_DIFF_GUARD",
+  "decision": "PASS_PBXPROJ_DRYRUN_DIFF_GUARD_READY",
+  "device_ownership_request_attempted": false,
+  "dext_load_attempted": false,
+  "driverkit_activation_attempted": false,
+  "failed_count": 0,
+  "generated_at_utc": "2026-06-13T15:52:08.244204+00:00",
+  "install_attempted": false,
+  "metal_proof_claimed": false,
+  "passed_count": 28,
+  "pbxproj_dryrun_diff_guard_only": true,
+  "provider_open_attempted": false,
+  "real_gpu_acceleration_claimed": false,
+  "real_gpu_command_execution_attempted": false,
+  "real_pbxproj_generation_attempted": false,
+  "real_xcodeproj_generation_attempted": false,
+  "rtx5070_workload_attribution_claimed": false,
+  "sanitizer_report_only": true,
+  "schema": "h1mekartx.pbxproj_dryrun_diff_guard.v1",
+  "scope": "Phase 13 pbxproj dry-run diff guard and sanitizer",
+  "secondary_classification": "CLASSIFICATION_PBXPROJ_METADATA_DRYRUN",
+  "signing_attempted": false,
+  "system_extension_activation_attempted": false,
+  "tertiary_classification": "CLASSIFICATION_STATIC_CONTRACT",
+  "ui_compositor_proof_claimed": false,
+  "xcodebuild_invocation_attempted": false
+}
