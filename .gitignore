@@ -243,3 +243,7 @@ tools/host-app-no-runtime-swiftui/.build/
 /release-readiness-dashboard-snapshot-report.md
 /release-readiness-dashboard-static-contract-check.json
 /release-readiness-dashboard-static-contract-check.md
+/release-readiness-dashboard-diff-guard-report.json
+/release-readiness-dashboard-diff-guard-report.md
+/release-readiness-dashboard-diff-guard-check.json
+/release-readiness-dashboard-diff-guard-check.md
