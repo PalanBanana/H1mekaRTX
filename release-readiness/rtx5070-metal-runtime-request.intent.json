@@ -1,0 +1,45 @@
+{
+  "schema": "h1mekartx.rtx5070_metal_runtime_request_intent.v1",
+  "target": {
+    "gpu": "NVIDIA RTX 5070",
+    "architecture": "Blackwell",
+    "vendor_id": "0x10de",
+    "device_id": "0x2f04",
+    "iopcimatch": "0x2f0410de"
+  },
+  "intent": {
+    "metal_full_graphics_acceleration_requested": true,
+    "desired_rtx5070_metal_runtime_state": true,
+    "requested_by_project": true,
+    "requested_stage": 82
+  },
+  "effective_policy": {
+    "metal_injection_goal": true,
+    "metal_injection_runtime_allowed_now": false,
+    "runtime_allowed_after_workflow_static_contract": false,
+    "rtx5070_metal_runtime_allowed": false,
+    "driver_runtime_allowed": false,
+    "driver_installation_allowed": false,
+    "driver_activation_allowed": false,
+    "provider_attach_allowed": false,
+    "device_ownership_allowed": false,
+    "low_level_hardware_path_allowed": false
+  },
+  "reason": [
+    "Requested runtime intent is recorded as true.",
+    "Effective runtime remains false until entitlement, packaging, review, CI, and safety gates explicitly allow a later runtime milestone.",
+    "Manual review only is not runtime permission."
+  ],
+  "safety_boundary": {
+    "read_only": true,
+    "intent_record_only": true,
+    "manual_review_only": true,
+    "no_runtime": true,
+    "no_driver_installation": true,
+    "no_driver_activation": true,
+    "no_provider_attach": true,
+    "no_device_ownership": true,
+    "no_low_level_hardware_path": true,
+    "no_rtx5070_metal_runtime": true
+  }
+}

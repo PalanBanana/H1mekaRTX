@@ -255,3 +255,5 @@ tools/host-app-no-runtime-swiftui/.build/
 /release-readiness-ci-wrapper-report.md
 /release-readiness-ci-wrapper-check.json
 /release-readiness-ci-wrapper-check.md
+/release-readiness-workflow-static-contract-check.json
+/release-readiness-workflow-static-contract-check.md
