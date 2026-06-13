@@ -38,11 +38,7 @@ REQUIRED_TOKENS = [
 ]
 
 def make_check(name: str, passed: bool, detail: str) -> dict:
-    return {
-        "name": name,
-        "passed": bool(passed),
-        "detail": detail,
-    }
+    return {"name": name, "passed": bool(passed), "detail": detail}
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Check H1mekaRTX runtime probe preflight contract.")
@@ -56,23 +52,17 @@ def main() -> int:
 
     contract_path = root / "docs" / "metal" / "runtime-probe-preflight-contract.md"
 
-    checks = []
-    checks.append(make_check(
-        "contract_file_exists",
-        contract_path.exists(),
-        str(contract_path),
-    ))
+    checks = [
+        make_check("contract_file_exists", contract_path.exists(), str(contract_path))
+    ]
 
     text = ""
     if contract_path.exists():
         text = contract_path.read_text(encoding="utf-8", errors="replace")
 
     for token in REQUIRED_TOKENS:
-        checks.append(make_check(
-            "requires_token_" + token.replace(" ", "_").replace(":", "").replace("/", "_").lower(),
-            token in text,
-            token,
-        ))
+        check_name = "requires_token_" + token.replace(" ", "_").replace(":", "").replace("/", "_").lower()
+        checks.append(make_check(check_name, token in text, token))
 
     passed_count = sum(1 for check in checks if check["passed"])
     failed_count = len(checks) - passed_count

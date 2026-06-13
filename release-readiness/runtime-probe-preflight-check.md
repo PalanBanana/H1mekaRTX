@@ -1,6 +1,6 @@
 # Runtime Probe Preflight Report
 
-- Generated At UTC: `2026-06-13T15:21:48.413365+00:00`
+- Generated At UTC: `2026-06-13T15:25:08.311589+00:00`
 - Decision: `PASS_RUNTIME_PROBE_PREFLIGHT_READY`
 - Classification: `CLASSIFICATION_RUNTIME_PROBE_PREFLIGHT`
 - Secondary Classification: `CLASSIFICATION_STATIC_CONTRACT`
