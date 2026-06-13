@@ -1,34 +1,88 @@
 # Runtime Probe Preflight & Read-Only Harness Contract
 
-## 목적
-H1mekaRTX Phase 3 단계의 런타임 프로브 사전 비침습(Read-only) 검증 규격과 하드웨어 제어권 매칭 사전 요구사항을 정의합니다.
+## Purpose
 
-## 결과 분류 규칙 (Classification)
-본 단계의 모든 진단 결과와 리포트는 오직 아래 두 수준으로만 라벨링 및 보고되어야 합니다.
-- `CLASSIFICATION_STATIC_CONTRACT`: 코드 수준 규격 검증 및 모의 계약 결과
-- `CLASSIFICATION_RUNTIME_PROBE_PREFLIGHT`: 실제 장치 접근 전 소프트웨어/환경 사전 진단 상태
+This contract defines the Phase 3 runtime probe preflight and read-only harness boundary for H1mekaRTX.
 
-## 안전 수칙 (Safety Boundary)
-- **BAR_MMIO_SUBMISSION_FORBIDDEN**: 실제 BAR 및 MMIO 어드레스 영역으로의 쓰기 행위, 하드웨어 리셋, GSP 펌웨어 로드 및 GPU 명령 제출(Command Submission)은 무조건 금지됩니다.
-- 본 프리플라이트는 쓰기 작업이 없는 안전 상태에서 실행을 유지하는 것을 계약 목적으로 삼습니다.
+This phase exists to prepare future runtime diagnostics for RTX 5070 / NVIDIA RTX 5000-series macOS UI compositor acceleration research.
 
-## DriverKit / System-Extension 사전 요구조건 (DRIVERKIT_PREREQUISITES)
-1. **PCI Matching Manifest**:
-   - target_gpu: "NVIDIA RTX 5070" (Blackwell Architecture)
-   - vendor_id: `0x10de`
-   - device_id: `0x2f04`
-   - io-pci-match: `0x2f0410de`
-2. **Entitlements Requirements**:
-   - PCI-DriverKit 사용을 위한 Apple Entitlement 승인 필요
-   - System-Extension (dext) 활성화 사전 준비 계약 확인
+The long-term user-visible target remains:
 
-## 미래 Compositor 검증 기준 (FUTURE_EVIDENCE_CHECKLIST)
-사용자가 체감하는 부드러운 macOS 데스크톱 UI(투명도, 블러, Dock 애니메이션, 창 크기 변경 등) 성능 가속 경로 추적을 위한 증거 체크리스트입니다.
-1. `WindowServer`가 RTX 5070 GPU에 Composition 워크로드를 실제 할당하는지 여부
-2. `Core Animation` 프레임 딜리버리 타임 및 드롭 카운트 추적 경로 설계
-3. `QuartzCore` 렌더 파이프라인에서 소프트웨어 렌더러가 아닌 가속 디바이스 인스턴스 매칭 여부
-4. `Metal compositor` 폴백 디터런스(Deterrence) 검증 구조
+- Smooth Dock animation
+- Smooth Dock magnification
+- Smooth Launchpad
+- Smooth Mission Control
+- Smooth Stage Manager
+- Smooth window movement
+- Smooth window resizing
+- Working transparency
+- Working blur
+- Working shadows
+- Smooth menu bar and Dock translucent effects
 
-## 계약 상태
-- **PREFLIGHT_STAGE_3_CONTRACT_READY**: True
-- **REAL_GPU_ACCELERATION_CLAIMED**: False (절대 허위 가속 주장을 하지 않음)
+These goals relate to the WindowServer / Core Animation / QuartzCore / Metal compositor path.
+
+## Classification
+
+All Phase 3 preflight outputs must be labeled only as:
+
+- CLASSIFICATION_STATIC_CONTRACT
+- CLASSIFICATION_RUNTIME_PROBE_PREFLIGHT
+
+This phase must not claim:
+
+- real GPU command execution
+- UI compositor proof
+- Metal proof
+- RTX 5070 workload attribution
+
+## Safety Boundary
+
+The Phase 3 preflight is non-invasive.
+
+Required safety markers:
+
+- READ_ONLY_PREFLIGHT_ONLY: True
+- NO_BAR_MMIO_MUTATION: True
+- NO_COMMAND_SUBMISSION: True
+- NO_GSP_FIRMWARE_LOAD: True
+- NO_GPU_RESET: True
+- NO_SYSTEM_MODIFICATION: True
+- NO_DRIVER_ACTIVATION: True
+- NO_KERNEL_OR_PROCESS_INJECTION: True
+- NO_SIP_AMFI_BYPASS: True
+- NO_PRIVATE_FRAMEWORK_PATCHING: True
+- NO_FAKE_METAL_DEVICE_SPOOFING: True
+
+## DriverKit Prerequisites
+
+DRIVERKIT_PREREQUISITES:
+
+1. PCI matching manifest must exist before any driver activation attempt.
+2. The target GPU must be identified as NVIDIA RTX 5070 / Blackwell.
+3. Known static PCI identifiers:
+   - vendor_id: 0x10de
+   - device_id: 0x2f04
+   - io_pci_match: 0x2f0410de
+4. Apple DriverKit / PCIDriverKit entitlement requirements must be documented.
+5. System Extension activation and deactivation must be reversible.
+6. No DriverKit or System Extension activation is performed by this preflight.
+
+## Future UI Compositor Evidence Checklist
+
+FUTURE_UI_COMPOSITOR_EVIDENCE_CHECKLIST:
+
+1. WindowServer must show evidence of compositor workload routing.
+2. Core Animation frame delivery timing must be measurable.
+3. QuartzCore rendering path must not be treated as proven GPU-backed without evidence.
+4. Metal compositor fallback state must be distinguishable from real device-backed execution.
+5. Dock, transparency, blur, Mission Control, Launchpad, Stage Manager, and window animation behavior must be tied to evidence, not assumptions.
+6. RTX 5070 workload attribution must remain UNPROVEN until real counters, logs, command execution, or verified compositor routing evidence exists.
+
+## Current Contract State
+
+- PREFLIGHT_STAGE_3_CONTRACT_READY: True
+- REAL_GPU_ACCELERATION_CLAIMED: False
+- UI_COMPOSITOR_PROOF_CLAIMED: False
+- METAL_PROOF_CLAIMED: False
+- REAL_GPU_COMMAND_EXECUTION_ATTEMPTED: False

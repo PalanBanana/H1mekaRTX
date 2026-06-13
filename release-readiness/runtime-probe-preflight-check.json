@@ -1,89 +1,183 @@
 {
   "checks": [
     {
-      "detail": "docs/metal/runtime-probe-preflight-contract.md\uac00 \uc874\uc7ac\ud569\ub2c8\ub2e4.",
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/metal/runtime-probe-preflight-contract.md",
       "name": "contract_file_exists",
       "passed": true
     },
     {
-      "detail": "\ud544\uc218 \uacc4\uc57d \ub2e8\uc5b4 'PREFLIGHT_STAGE_3_CONTRACT_READY' \uac00 \ud655\uc778\ub418\uc5c8\uc2b5\ub2c8\ub2e4.",
-      "name": "term_check:PREFLIGHT_STAGE_3_CONTRACT_READY",
+      "detail": "CLASSIFICATION_STATIC_CONTRACT",
+      "name": "requires_token_classification_static_contract",
       "passed": true
     },
     {
-      "detail": "\ud544\uc218 \uacc4\uc57d \ub2e8\uc5b4 'CLASSIFICATION_STATIC_CONTRACT' \uac00 \ud655\uc778\ub418\uc5c8\uc2b5\ub2c8\ub2e4.",
-      "name": "term_check:CLASSIFICATION_STATIC_CONTRACT",
+      "detail": "CLASSIFICATION_RUNTIME_PROBE_PREFLIGHT",
+      "name": "requires_token_classification_runtime_probe_preflight",
       "passed": true
     },
     {
-      "detail": "\ud544\uc218 \uacc4\uc57d \ub2e8\uc5b4 'CLASSIFICATION_RUNTIME_PROBE_PREFLIGHT' \uac00 \ud655\uc778\ub418\uc5c8\uc2b5\ub2c8\ub2e4.",
-      "name": "term_check:CLASSIFICATION_RUNTIME_PROBE_PREFLIGHT",
+      "detail": "READ_ONLY_PREFLIGHT_ONLY: True",
+      "name": "requires_token_read_only_preflight_only_true",
       "passed": true
     },
     {
-      "detail": "\ud544\uc218 \uacc4\uc57d \ub2e8\uc5b4 'FUTURE_EVIDENCE_CHECKLIST' \uac00 \ud655\uc778\ub418\uc5c8\uc2b5\ub2c8\ub2e4.",
-      "name": "term_check:FUTURE_EVIDENCE_CHECKLIST",
+      "detail": "NO_BAR_MMIO_MUTATION: True",
+      "name": "requires_token_no_bar_mmio_mutation_true",
       "passed": true
     },
     {
-      "detail": "\ud544\uc218 \uacc4\uc57d \ub2e8\uc5b4 'DRIVERKIT_PREREQUISITES' \uac00 \ud655\uc778\ub418\uc5c8\uc2b5\ub2c8\ub2e4.",
-      "name": "term_check:DRIVERKIT_PREREQUISITES",
+      "detail": "NO_COMMAND_SUBMISSION: True",
+      "name": "requires_token_no_command_submission_true",
       "passed": true
     },
     {
-      "detail": "\ud544\uc218 \uacc4\uc57d \ub2e8\uc5b4 'BAR_MMIO_SUBMISSION_FORBIDDEN' \uac00 \ud655\uc778\ub418\uc5c8\uc2b5\ub2c8\ub2e4.",
-      "name": "term_check:BAR_MMIO_SUBMISSION_FORBIDDEN",
+      "detail": "NO_GSP_FIRMWARE_LOAD: True",
+      "name": "requires_token_no_gsp_firmware_load_true",
       "passed": true
     },
     {
-      "detail": "\ud574\ub2f9 \uce68\uc2b5\uc801 \ud328\ud134\uc758 \uc2e4\ud589/\ucc38\uc870\uac00 \uac10\uc9c0\ub418\uc9c0 \uc54a\uc544 \uc548\uc804\ud569\ub2c8\ub2e4.",
-      "name": "safety_check_forbidden_pattern:OS_System_Extension_Manager",
+      "detail": "NO_GPU_RESET: True",
+      "name": "requires_token_no_gpu_reset_true",
       "passed": true
     },
     {
-      "detail": "\ud574\ub2f9 \uce68\uc2b5\uc801 \ud328\ud134\uc758 \uc2e4\ud589/\ucc38\uc870\uac00 \uac10\uc9c0\ub418\uc9c0 \uc54a\uc544 \uc548\uc804\ud569\ub2c8\ub2e4.",
-      "name": "safety_check_forbidden_pattern:activation_Request",
+      "detail": "NO_SYSTEM_MODIFICATION: True",
+      "name": "requires_token_no_system_modification_true",
       "passed": true
     },
     {
-      "detail": "\ud574\ub2f9 \uce68\uc2b5\uc801 \ud328\ud134\uc758 \uc2e4\ud589/\ucc38\uc870\uac00 \uac10\uc9c0\ub418\uc9c0 \uc54a\uc544 \uc548\uc804\ud569\ub2c8\ub2e4.",
-      "name": "safety_check_forbidden_pattern:map_Device_Memory",
+      "detail": "NO_DRIVER_ACTIVATION: True",
+      "name": "requires_token_no_driver_activation_true",
       "passed": true
     },
     {
-      "detail": "\ud574\ub2f9 \uce68\uc2b5\uc801 \ud328\ud134\uc758 \uc2e4\ud589/\ucc38\uc870\uac00 \uac10\uc9c0\ub418\uc9c0 \uc54a\uc544 \uc548\uc804\ud569\ub2c8\ub2e4.",
-      "name": "safety_check_forbidden_pattern:Create_Memory_Map",
+      "detail": "NO_KERNEL_OR_PROCESS_INJECTION: True",
+      "name": "requires_token_no_kernel_or_process_injection_true",
       "passed": true
     },
     {
-      "detail": "\ud574\ub2f9 \uce68\uc2b5\uc801 \ud328\ud134\uc758 \uc2e4\ud589/\ucc38\uc870\uac00 \uac10\uc9c0\ub418\uc9c0 \uc54a\uc544 \uc548\uc804\ud569\ub2c8\ub2e4.",
-      "name": "safety_check_forbidden_pattern:Configuration_Write",
+      "detail": "NO_SIP_AMFI_BYPASS: True",
+      "name": "requires_token_no_sip_amfi_bypass_true",
       "passed": true
     },
     {
-      "detail": "\ud574\ub2f9 \uce68\uc2b5\uc801 \ud328\ud134\uc758 \uc2e4\ud589/\ucc38\uc870\uac00 \uac10\uc9c0\ub418\uc9c0 \uc54a\uc544 \uc548\uc804\ud569\ub2c8\ub2e4.",
-      "name": "safety_check_forbidden_pattern:Memory_Write",
+      "detail": "NO_PRIVATE_FRAMEWORK_PATCHING: True",
+      "name": "requires_token_no_private_framework_patching_true",
       "passed": true
     },
     {
-      "detail": "\ud504\ub9ac\ud50c\ub77c\uc774\ud2b8 \uc815\uc801 \uacc4\uc57d \ubc94\uc704\ub9cc\uc744 \uac80\uc99d\ud558\ub3c4\ub85d \ubcf4\uc7a5\ud569\ub2c8\ub2e4.",
-      "name": "read_only_harness_policy",
+      "detail": "NO_FAKE_METAL_DEVICE_SPOOFING: True",
+      "name": "requires_token_no_fake_metal_device_spoofing_true",
+      "passed": true
+    },
+    {
+      "detail": "DRIVERKIT_PREREQUISITES",
+      "name": "requires_token_driverkit_prerequisites",
+      "passed": true
+    },
+    {
+      "detail": "FUTURE_UI_COMPOSITOR_EVIDENCE_CHECKLIST",
+      "name": "requires_token_future_ui_compositor_evidence_checklist",
+      "passed": true
+    },
+    {
+      "detail": "WindowServer",
+      "name": "requires_token_windowserver",
+      "passed": true
+    },
+    {
+      "detail": "Core Animation",
+      "name": "requires_token_core_animation",
+      "passed": true
+    },
+    {
+      "detail": "QuartzCore",
+      "name": "requires_token_quartzcore",
+      "passed": true
+    },
+    {
+      "detail": "Metal compositor",
+      "name": "requires_token_metal_compositor",
+      "passed": true
+    },
+    {
+      "detail": "Dock",
+      "name": "requires_token_dock",
+      "passed": true
+    },
+    {
+      "detail": "transparency",
+      "name": "requires_token_transparency",
+      "passed": true
+    },
+    {
+      "detail": "blur",
+      "name": "requires_token_blur",
+      "passed": true
+    },
+    {
+      "detail": "REAL_GPU_ACCELERATION_CLAIMED: False",
+      "name": "requires_token_real_gpu_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "UI_COMPOSITOR_PROOF_CLAIMED: False",
+      "name": "requires_token_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "METAL_PROOF_CLAIMED: False",
+      "name": "requires_token_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "REAL_GPU_COMMAND_EXECUTION_ATTEMPTED: False",
+      "name": "requires_token_real_gpu_command_execution_attempted_false",
       "passed": true
     }
   ],
-  "classification_level": "Runtime probe preflight / Static contract",
+  "classification": "CLASSIFICATION_RUNTIME_PROBE_PREFLIGHT",
   "decision": "PASS_RUNTIME_PROBE_PREFLIGHT_READY",
+  "driver_activation_attempted": false,
   "failed_count": 0,
-  "generated_at_utc": "2026-06-13T15:06:03.319550+00:00",
+  "future_evidence_path": [
+    "WindowServer",
+    "Core Animation",
+    "QuartzCore",
+    "Metal compositor",
+    "UI compositor proof",
+    "Metal proof"
+  ],
+  "generated_at_utc": "2026-06-13T15:21:48.413365+00:00",
   "hardware_access_attempted": false,
-  "passed_count": 14,
+  "metal_proof_claimed": false,
+  "passed_count": 27,
+  "real_gpu_acceleration_claimed": false,
+  "real_gpu_command_execution_attempted": false,
   "safety_boundary": {
-    "no_bar_write": true,
-    "no_command_submission": true,
-    "no_mmio_write": true,
-    "no_system_modification": true,
-    "read_only": true
+    "bar_mmio_mutation_blocked": true,
+    "command_submission_blocked": true,
+    "driver_activation_blocked": true,
+    "fake_metal_device_spoofing_blocked": true,
+    "gpu_reset_blocked": true,
+    "gsp_firmware_load_blocked": true,
+    "kernel_or_process_injection_blocked": true,
+    "private_framework_patching_blocked": true,
+    "read_only_preflight_only": true,
+    "sip_amfi_bypass_blocked": true,
+    "system_modification_blocked": true
   },
-  "schema": "h1mekartx.runtime_probe_preflight_check.v1",
-  "scope": "Phase 3 Preflight"
+  "schema": "h1mekartx.runtime_probe_preflight.v1",
+  "scope": "Phase 3 runtime probe preflight",
+  "secondary_classification": "CLASSIFICATION_STATIC_CONTRACT",
+  "target_user_visible_goal": [
+    "smooth Dock animation",
+    "working transparency",
+    "working blur",
+    "smooth window movement and resizing",
+    "smooth Mission Control",
+    "smooth Launchpad",
+    "smooth Stage Manager"
+  ],
+  "ui_compositor_proof_claimed": false
 }

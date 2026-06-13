@@ -1,20 +1,30 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -euo pipefail
 
-echo "== H1mekaRTX Phase 3 Runtime Probe Preflight Verification =="
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+OUT_DIR="${1:-${ROOT_DIR}/release-readiness}"
 
-echo "1. Compile Python scripts..."
-python3 -m py_compile "${ROOT_DIR}/scripts"/*.py
+echo "== H1mekaRTX Phase 3 Runtime Probe Preflight Verification =="
+echo "ROOT_DIR=${ROOT_DIR}"
+echo "OUT_DIR=${OUT_DIR}"
 
-echo "2. Run Runtime Probe Preflight Checker..."
-python3 "${ROOT_DIR}/scripts/check-runtime-probe-preflight.py" --root "${ROOT_DIR}" --out-dir "${ROOT_DIR}/release-readiness"
+mkdir -p "${OUT_DIR}"
 
-echo "3. Validate bash syntax..."
-bash -n "${ROOT_DIR}/scripts"/*.sh
+echo "== 1. Compile Python scripts =="
+python3 -m py_compile "${ROOT_DIR}"/scripts/*.py
 
-echo "4. Execute existing safety gates..."
+echo "== 2. Validate bash syntax =="
+bash -n "${ROOT_DIR}"/scripts/*.sh
+
+echo "== 3. Run runtime probe preflight checker =="
+python3 "${ROOT_DIR}/scripts/check-runtime-probe-preflight.py" \
+  --root "${ROOT_DIR}" \
+  --out-dir "${OUT_DIR}"
+
+echo "== 4. Execute existing BAR safety gates =="
 "${ROOT_DIR}/scripts/run-bar-safety-gates.sh"
+
+echo "== 5. Execute release readiness no-runtime gate =="
 "${ROOT_DIR}/scripts/run-release-readiness-ci.sh" --out-dir "$(mktemp -d)"
 
-echo "All Phase 3 verification successfully passed."
+echo "== Phase 3 runtime probe preflight verification passed =="

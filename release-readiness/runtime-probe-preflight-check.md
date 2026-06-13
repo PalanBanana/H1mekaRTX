@@ -1,32 +1,69 @@
 # Runtime Probe Preflight Report
 
-- Generated At UTC: `2026-06-13T15:06:03.319550+00:00`
+- Generated At UTC: `2026-06-13T15:21:48.413365+00:00`
 - Decision: `PASS_RUNTIME_PROBE_PREFLIGHT_READY`
-- Classification Level: `Runtime probe preflight / Static contract`
-- Scope: `Phase 3 Preflight`
+- Classification: `CLASSIFICATION_RUNTIME_PROBE_PREFLIGHT`
+- Secondary Classification: `CLASSIFICATION_STATIC_CONTRACT`
+- Scope: `Phase 3 runtime probe preflight`
 - Hardware Access Attempted: `False`
+- Driver Activation Attempted: `False`
+- Real GPU Command Execution Attempted: `False`
+- Real GPU Acceleration Claimed: `False`
+- UI Compositor Proof Claimed: `False`
+- Metal Proof Claimed: `False`
+
+## Target User-Visible UI Goal
+
+This preflight preserves the project goal of eventually validating smooth macOS UI compositor behavior:
+
+- Dock animation
+- Dock magnification
+- transparency
+- blur
+- window movement
+- window resizing
+- Mission Control
+- Launchpad
+- Stage Manager
+
+No success is claimed in this phase.
 
 ## Safety Policy Checks
 
 | Check Name | Status | Detail |
 | --- | --- | --- |
-| `contract_file_exists` | PASS | docs/metal/runtime-probe-preflight-contract.md가 존재합니다. |
-| `term_check:PREFLIGHT_STAGE_3_CONTRACT_READY` | PASS | 필수 계약 단어 'PREFLIGHT_STAGE_3_CONTRACT_READY' 가 확인되었습니다. |
-| `term_check:CLASSIFICATION_STATIC_CONTRACT` | PASS | 필수 계약 단어 'CLASSIFICATION_STATIC_CONTRACT' 가 확인되었습니다. |
-| `term_check:CLASSIFICATION_RUNTIME_PROBE_PREFLIGHT` | PASS | 필수 계약 단어 'CLASSIFICATION_RUNTIME_PROBE_PREFLIGHT' 가 확인되었습니다. |
-| `term_check:FUTURE_EVIDENCE_CHECKLIST` | PASS | 필수 계약 단어 'FUTURE_EVIDENCE_CHECKLIST' 가 확인되었습니다. |
-| `term_check:DRIVERKIT_PREREQUISITES` | PASS | 필수 계약 단어 'DRIVERKIT_PREREQUISITES' 가 확인되었습니다. |
-| `term_check:BAR_MMIO_SUBMISSION_FORBIDDEN` | PASS | 필수 계약 단어 'BAR_MMIO_SUBMISSION_FORBIDDEN' 가 확인되었습니다. |
-| `safety_check_forbidden_pattern:OS_System_Extension_Manager` | PASS | 해당 침습적 패턴의 실행/참조가 감지되지 않아 안전합니다. |
-| `safety_check_forbidden_pattern:activation_Request` | PASS | 해당 침습적 패턴의 실행/참조가 감지되지 않아 안전합니다. |
-| `safety_check_forbidden_pattern:map_Device_Memory` | PASS | 해당 침습적 패턴의 실행/참조가 감지되지 않아 안전합니다. |
-| `safety_check_forbidden_pattern:Create_Memory_Map` | PASS | 해당 침습적 패턴의 실행/참조가 감지되지 않아 안전합니다. |
-| `safety_check_forbidden_pattern:Configuration_Write` | PASS | 해당 침습적 패턴의 실행/참조가 감지되지 않아 안전합니다. |
-| `safety_check_forbidden_pattern:Memory_Write` | PASS | 해당 침습적 패턴의 실행/참조가 감지되지 않아 안전합니다. |
-| `read_only_harness_policy` | PASS | 프리플라이트 정적 계약 범위만을 검증하도록 보장합니다. |
+| `contract_file_exists` | PASS | /Users/h1meka/Dev/H1mekaRTX/docs/metal/runtime-probe-preflight-contract.md |
+| `requires_token_classification_static_contract` | PASS | CLASSIFICATION_STATIC_CONTRACT |
+| `requires_token_classification_runtime_probe_preflight` | PASS | CLASSIFICATION_RUNTIME_PROBE_PREFLIGHT |
+| `requires_token_read_only_preflight_only_true` | PASS | READ_ONLY_PREFLIGHT_ONLY: True |
+| `requires_token_no_bar_mmio_mutation_true` | PASS | NO_BAR_MMIO_MUTATION: True |
+| `requires_token_no_command_submission_true` | PASS | NO_COMMAND_SUBMISSION: True |
+| `requires_token_no_gsp_firmware_load_true` | PASS | NO_GSP_FIRMWARE_LOAD: True |
+| `requires_token_no_gpu_reset_true` | PASS | NO_GPU_RESET: True |
+| `requires_token_no_system_modification_true` | PASS | NO_SYSTEM_MODIFICATION: True |
+| `requires_token_no_driver_activation_true` | PASS | NO_DRIVER_ACTIVATION: True |
+| `requires_token_no_kernel_or_process_injection_true` | PASS | NO_KERNEL_OR_PROCESS_INJECTION: True |
+| `requires_token_no_sip_amfi_bypass_true` | PASS | NO_SIP_AMFI_BYPASS: True |
+| `requires_token_no_private_framework_patching_true` | PASS | NO_PRIVATE_FRAMEWORK_PATCHING: True |
+| `requires_token_no_fake_metal_device_spoofing_true` | PASS | NO_FAKE_METAL_DEVICE_SPOOFING: True |
+| `requires_token_driverkit_prerequisites` | PASS | DRIVERKIT_PREREQUISITES |
+| `requires_token_future_ui_compositor_evidence_checklist` | PASS | FUTURE_UI_COMPOSITOR_EVIDENCE_CHECKLIST |
+| `requires_token_windowserver` | PASS | WindowServer |
+| `requires_token_core_animation` | PASS | Core Animation |
+| `requires_token_quartzcore` | PASS | QuartzCore |
+| `requires_token_metal_compositor` | PASS | Metal compositor |
+| `requires_token_dock` | PASS | Dock |
+| `requires_token_transparency` | PASS | transparency |
+| `requires_token_blur` | PASS | blur |
+| `requires_token_real_gpu_acceleration_claimed_false` | PASS | REAL_GPU_ACCELERATION_CLAIMED: False |
+| `requires_token_ui_compositor_proof_claimed_false` | PASS | UI_COMPOSITOR_PROOF_CLAIMED: False |
+| `requires_token_metal_proof_claimed_false` | PASS | METAL_PROOF_CLAIMED: False |
+| `requires_token_real_gpu_command_execution_attempted_false` | PASS | REAL_GPU_COMMAND_EXECUTION_ATTEMPTED: False |
 
 ## Safety Boundary
-이 Phase 3 프리플라이트는 전적으로 비침습적 정적 검증으로만 실행됩니다. 하드웨어 접근 시도가 없으며 드라이버를 임의로 활성화하지 않습니다.
+
+This Phase 3 preflight is non-invasive. It does not attempt hardware access, driver activation, BAR/MMIO mutation, GPU reset, firmware loading, or GPU command submission.
 
 ## Next Phase Recommendation
-이 단계가 통과되면 Phase 4 DriverKit / PCIDriverKit 스켈레톤 설계 및 서명(Entitlements) 템플릿 준비로 전환할 것을 권장합니다.
+
+If this preflight passes, the next phase may prepare DriverKit / PCIDriverKit skeleton planning and entitlement documentation. Real runtime access, command execution, UI compositor proof, and Metal proof remain blocked until later evidence gates.
