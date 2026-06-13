@@ -56,6 +56,37 @@ print("Phase 1 host + UI compositor diagnostics validation passed")
 PY
 
 echo
+echo "== Phase 1 static contract: diagnostics bundle runner =="
+PHASE1_RUNNER_OUT="$TMP_ROOT/phase1-diagnostics-bundle-runner-check"
+./scripts/check-phase1-diagnostics-bundle-runner.py --root "$ROOT" --out-dir "$PHASE1_RUNNER_OUT"
+test -s "$PHASE1_RUNNER_OUT/phase1-diagnostics-bundle-runner-check.json"
+test -s "$PHASE1_RUNNER_OUT/phase1-diagnostics-bundle-runner-check.md"
+
+python3 - <<PY
+import json
+from pathlib import Path
+
+p = Path("$PHASE1_RUNNER_OUT/phase1-diagnostics-bundle-runner-check.json")
+data = json.loads(p.read_text())
+
+assert data["schema"] == "h1mekartx.phase1_diagnostics_bundle_runner_check.v1"
+assert data["decision"] == "PASS_PHASE1_DIAGNOSTICS_BUNDLE_RUNNER_READY"
+assert data["failed_count"] == 0
+assert data["safety_boundary"]["read_only_static_check"] is True
+assert data["safety_boundary"]["driverkit_activation"] is False
+assert data["safety_boundary"]["system_extension_activation"] is False
+assert data["safety_boundary"]["pci_config_writes"] is False
+assert data["safety_boundary"]["mmio_reads"] is False
+assert data["safety_boundary"]["mmio_writes"] is False
+assert data["safety_boundary"]["bar_mapping"] is False
+assert data["safety_boundary"]["gpu_command_submission"] is False
+assert data["safety_boundary"]["ui_compositor_proof"] is False
+assert data["safety_boundary"]["metal_proof"] is False
+
+print("Phase 1 diagnostics bundle runner validation passed")
+PY
+
+echo
 echo "== Stage 4 fixture: BAR inventory summary =="
 BAR_INV="$TMP_ROOT/bar-inventory-fixture"
 mkdir -p "$BAR_INV"

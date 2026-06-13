@@ -65,6 +65,20 @@ REPORT_CANDIDATES = [
         "description": "Optional Phase 1 host and graphics stack diagnostics Markdown summary.",
     },
     {
+        "source": "bar-inventory-summary.json",
+        "dest": "reports/bar-inventory-summary.json",
+        "kind": "host_diagnostics",
+        "required": False,
+        "description": "Optional Phase 1 BAR inventory diagnostics JSON summary.",
+    },
+    {
+        "source": "bar-inventory-summary.md",
+        "dest": "reports/bar-inventory-summary.md",
+        "kind": "host_diagnostics",
+        "required": False,
+        "description": "Optional Phase 1 BAR inventory diagnostics Markdown summary.",
+    },
+    {
         "source": "rendered-host-status-report.md",
         "dest": "reports/rendered-host-status-report.md",
         "kind": "local_report",

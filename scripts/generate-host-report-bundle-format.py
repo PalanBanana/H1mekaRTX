@@ -69,6 +69,18 @@ BUNDLE_LAYOUT = [
         "description": "Optional Phase 1 host and graphics stack diagnostics Markdown summary.",
     },
     {
+        "path": "reports/bar-inventory-summary.json",
+        "required": False,
+        "kind": "host_diagnostics",
+        "description": "Optional Phase 1 BAR inventory diagnostics JSON summary.",
+    },
+    {
+        "path": "reports/bar-inventory-summary.md",
+        "required": False,
+        "kind": "host_diagnostics",
+        "description": "Optional Phase 1 BAR inventory diagnostics Markdown summary.",
+    },
+    {
         "path": "reports/rendered-host-status-report.md",
         "required": False,
         "kind": "local_report",

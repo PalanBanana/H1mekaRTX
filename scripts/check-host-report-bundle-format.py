@@ -25,6 +25,8 @@ REQUIRED_LAYOUT_PATHS = [
     "reports/host-status.json",
     "reports/host-diagnostics-summary.json",
     "reports/host-diagnostics-summary.md",
+    "reports/bar-inventory-summary.json",
+    "reports/bar-inventory-summary.md",
     "reports/rendered-host-status-report.md",
     "reports/safety-gates.md",
 ]

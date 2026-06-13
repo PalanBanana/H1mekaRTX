@@ -56,6 +56,8 @@ The generator copies these files only if they already exist:
 - host-status.json
 - host-diagnostics-summary.json
 - host-diagnostics-summary.md
+- bar-inventory-summary.json
+- bar-inventory-summary.md
 - rendered-host-status-report.md
 - forbidden-bar-operation-audit.md
 

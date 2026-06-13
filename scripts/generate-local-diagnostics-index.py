@@ -78,6 +78,27 @@ INDEX_ITEMS = [
         "description": "Generated Phase 1 host and graphics stack diagnostics fixture check.",
     },
     {
+        "path": "bar-inventory-summary.json",
+        "category": "host_diagnostics",
+        "kind": "json_report",
+        "required": False,
+        "description": "Generated Phase 1 BAR inventory diagnostics JSON summary.",
+    },
+    {
+        "path": "bar-inventory-summary.md",
+        "category": "host_diagnostics",
+        "kind": "markdown_report",
+        "required": False,
+        "description": "Generated Phase 1 BAR inventory diagnostics Markdown summary.",
+    },
+    {
+        "path": "phase1-diagnostics-bundle-runner-check.json",
+        "category": "host_diagnostics",
+        "kind": "json_report",
+        "required": False,
+        "description": "Generated Phase 1 diagnostics bundle runner static check.",
+    },
+    {
         "path": "rendered-host-status-report.md",
         "category": "host_tooling",
         "kind": "markdown_report",
