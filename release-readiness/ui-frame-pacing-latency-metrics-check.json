@@ -1,0 +1,1050 @@
+{
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/hackintosh/ui-frame-pacing-latency-metrics.md",
+      "name": "contract_file_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-activation/ui-frame-pacing-latency-metrics.json",
+      "name": "metrics_schema_json_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-activation/windowserver-ca-quartzcore-attribution.json",
+      "name": "attribution_schema_json_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-activation/ui-compositor-scenario-matrix.json",
+      "name": "scenario_matrix_json_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-activation/ui-compositor-proof-preconditions.json",
+      "name": "preconditions_json_exists",
+      "passed": true
+    },
+    {
+      "detail": "CLASSIFICATION_UI_FRAME_PACING_LATENCY_METRIC_SCHEMA",
+      "name": "requires_contract_token_classification_ui_frame_pacing_latency_metric_schema",
+      "passed": true
+    },
+    {
+      "detail": "CLASSIFICATION_WINDOWSERVER_CA_QUARTZCORE_ATTRIBUTION_SCHEMA",
+      "name": "requires_contract_token_classification_windowserver_ca_quartzcore_attribution_schema",
+      "passed": true
+    },
+    {
+      "detail": "CLASSIFICATION_UI_COMPOSITOR_SCENARIO_MATRIX",
+      "name": "requires_contract_token_classification_ui_compositor_scenario_matrix",
+      "passed": true
+    },
+    {
+      "detail": "CLASSIFICATION_STATIC_CONTRACT",
+      "name": "requires_contract_token_classification_static_contract",
+      "passed": true
+    },
+    {
+      "detail": "UI_FRAME_PACING_LATENCY_METRIC_SCHEMA_ONLY: True",
+      "name": "requires_contract_token_ui_frame_pacing_latency_metric_schema_only_true",
+      "passed": true
+    },
+    {
+      "detail": "METRIC_SCHEMA_ONLY: True",
+      "name": "requires_contract_token_metric_schema_only_true",
+      "passed": true
+    },
+    {
+      "detail": "MEASUREMENT_NOT_COLLECTED: True",
+      "name": "requires_contract_token_measurement_not_collected_true",
+      "passed": true
+    },
+    {
+      "detail": "UI_COMPOSITOR_PROOF_NOT_CLAIMED: True",
+      "name": "requires_contract_token_ui_compositor_proof_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "METAL_PROOF_NOT_CLAIMED: True",
+      "name": "requires_contract_token_metal_proof_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "DOCK_ACCELERATION_NOT_CLAIMED: True",
+      "name": "requires_contract_token_dock_acceleration_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "TRANSPARENCY_ACCELERATION_NOT_CLAIMED: True",
+      "name": "requires_contract_token_transparency_acceleration_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "BLUR_ACCELERATION_NOT_CLAIMED: True",
+      "name": "requires_contract_token_blur_acceleration_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "MISSION_CONTROL_ACCELERATION_NOT_CLAIMED: True",
+      "name": "requires_contract_token_mission_control_acceleration_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "LAUNCHPAD_ACCELERATION_NOT_CLAIMED: True",
+      "name": "requires_contract_token_launchpad_acceleration_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "STAGE_MANAGER_ACCELERATION_NOT_CLAIMED: True",
+      "name": "requires_contract_token_stage_manager_acceleration_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "OBJECTIVE_METRICS_REQUIRED: True",
+      "name": "requires_contract_token_objective_metrics_required_true",
+      "passed": true
+    },
+    {
+      "detail": "BEFORE_AFTER_BASELINE_REQUIRED: True",
+      "name": "requires_contract_token_before_after_baseline_required_true",
+      "passed": true
+    },
+    {
+      "detail": "WINDOWSERVER_ATTRIBUTION_REQUIRED: True",
+      "name": "requires_contract_token_windowserver_attribution_required_true",
+      "passed": true
+    },
+    {
+      "detail": "CORE_ANIMATION_QUARTZCORE_EVIDENCE_REQUIRED: True",
+      "name": "requires_contract_token_core_animation_quartzcore_evidence_required_true",
+      "passed": true
+    },
+    {
+      "detail": "METAL_COMPOSITOR_EVIDENCE_REQUIRED: True",
+      "name": "requires_contract_token_metal_compositor_evidence_required_true",
+      "passed": true
+    },
+    {
+      "detail": "REAL_GPU_COMMAND_EVIDENCE_REQUIRED: True",
+      "name": "requires_contract_token_real_gpu_command_evidence_required_true",
+      "passed": true
+    },
+    {
+      "detail": "RTX5070_WORKLOAD_ATTRIBUTION_REQUIRED: True",
+      "name": "requires_contract_token_rtx5070_workload_attribution_required_true",
+      "passed": true
+    },
+    {
+      "detail": "UI_FRAME_PACING_LATENCY_METRIC_BUCKETS",
+      "name": "requires_contract_token_ui_frame_pacing_latency_metric_buckets",
+      "passed": true
+    },
+    {
+      "detail": "UI_FRAME_PACING_LATENCY_REQUIRED_FIELDS",
+      "name": "requires_contract_token_ui_frame_pacing_latency_required_fields",
+      "passed": true
+    },
+    {
+      "detail": "UI_FRAME_PACING_LATENCY_SCENARIOS",
+      "name": "requires_contract_token_ui_frame_pacing_latency_scenarios",
+      "passed": true
+    },
+    {
+      "detail": "VALID_UI_FRAME_PACING_LATENCY_METRIC_STATES",
+      "name": "requires_contract_token_valid_ui_frame_pacing_latency_metric_states",
+      "passed": true
+    },
+    {
+      "detail": "UI_FRAME_PACING_LATENCY_DEPENDENCY_CHAIN",
+      "name": "requires_contract_token_ui_frame_pacing_latency_dependency_chain",
+      "passed": true
+    },
+    {
+      "detail": "frame_interval_ms_average",
+      "name": "requires_contract_token_frame_interval_ms_average",
+      "passed": true
+    },
+    {
+      "detail": "frame_interval_ms_p95",
+      "name": "requires_contract_token_frame_interval_ms_p95",
+      "passed": true
+    },
+    {
+      "detail": "frame_time_ms_p99",
+      "name": "requires_contract_token_frame_time_ms_p99",
+      "passed": true
+    },
+    {
+      "detail": "dropped_frame_count",
+      "name": "requires_contract_token_dropped_frame_count",
+      "passed": true
+    },
+    {
+      "detail": "latency_ms_average",
+      "name": "requires_contract_token_latency_ms_average",
+      "passed": true
+    },
+    {
+      "detail": "latency_ms_p95",
+      "name": "requires_contract_token_latency_ms_p95",
+      "passed": true
+    },
+    {
+      "detail": "baseline_candidate_delta_percent",
+      "name": "requires_contract_token_baseline_candidate_delta_percent",
+      "passed": true
+    },
+    {
+      "detail": "WindowServer_attribution_reference",
+      "name": "requires_contract_token_windowserver_attribution_reference",
+      "passed": true
+    },
+    {
+      "detail": "Core_Animation_QuartzCore_attribution_reference",
+      "name": "requires_contract_token_core_animation_quartzcore_attribution_reference",
+      "passed": true
+    },
+    {
+      "detail": "Metal_compositor_attribution_reference",
+      "name": "requires_contract_token_metal_compositor_attribution_reference",
+      "passed": true
+    },
+    {
+      "detail": "real_GPU_command_evidence_reference",
+      "name": "requires_contract_token_real_gpu_command_evidence_reference",
+      "passed": true
+    },
+    {
+      "detail": "RTX5070_workload_attribution_reference",
+      "name": "requires_contract_token_rtx5070_workload_attribution_reference",
+      "passed": true
+    },
+    {
+      "detail": "Dock magnification",
+      "name": "requires_contract_token_dock_magnification",
+      "passed": true
+    },
+    {
+      "detail": "transparency",
+      "name": "requires_contract_token_transparency",
+      "passed": true
+    },
+    {
+      "detail": "blur",
+      "name": "requires_contract_token_blur",
+      "passed": true
+    },
+    {
+      "detail": "Mission Control",
+      "name": "requires_contract_token_mission_control",
+      "passed": true
+    },
+    {
+      "detail": "Launchpad",
+      "name": "requires_contract_token_launchpad",
+      "passed": true
+    },
+    {
+      "detail": "Stage Manager",
+      "name": "requires_contract_token_stage_manager",
+      "passed": true
+    },
+    {
+      "detail": "UI_FRAME_PACING_LATENCY_METRIC_SCHEMA_STATE: SCHEMA_ONLY",
+      "name": "requires_contract_token_ui_frame_pacing_latency_metric_schema_state_schema_only",
+      "passed": true
+    },
+    {
+      "detail": "UI_FRAME_PACING_LATENCY_MEASUREMENT_STATE: NOT_ATTEMPTED",
+      "name": "requires_contract_token_ui_frame_pacing_latency_measurement_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "WINDOWSERVER_ATTRIBUTION_SCHEMA_STATE: SCHEMA_ONLY",
+      "name": "requires_contract_token_windowserver_attribution_schema_state_schema_only",
+      "passed": true
+    },
+    {
+      "detail": "WINDOWSERVER_ATTRIBUTION_PROOF_STATE: NOT_ATTEMPTED",
+      "name": "requires_contract_token_windowserver_attribution_proof_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "UI_COMPOSITOR_PROOF_STATE: NOT_ATTEMPTED",
+      "name": "requires_contract_token_ui_compositor_proof_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "METAL_PROOF_STATE: NOT_ATTEMPTED",
+      "name": "requires_contract_token_metal_proof_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "REAL_GPU_COMMAND_EXECUTION_ATTEMPTED: False",
+      "name": "requires_contract_token_real_gpu_command_execution_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "RTX5070_WORKLOAD_ATTRIBUTION_CLAIMED: False",
+      "name": "requires_contract_token_rtx5070_workload_attribution_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "REAL_GPU_ACCELERATION_CLAIMED: False",
+      "name": "requires_contract_token_real_gpu_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "UI_COMPOSITOR_PROOF_CLAIMED: False",
+      "name": "requires_contract_token_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "METAL_PROOF_CLAIMED: False",
+      "name": "requires_contract_token_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metrics schema",
+      "name": "metrics_schema_matches",
+      "passed": true
+    },
+    {
+      "detail": "metric_schema_only=true",
+      "name": "metric_schema_only_true",
+      "passed": true
+    },
+    {
+      "detail": "measurement_not_collected=true",
+      "name": "measurement_not_collected",
+      "passed": true
+    },
+    {
+      "detail": "NOT_ATTEMPTED",
+      "name": "measurement_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "attribution schema",
+      "name": "attribution_schema_loaded",
+      "passed": true
+    },
+    {
+      "detail": "scenario matrix",
+      "name": "scenario_matrix_loaded",
+      "passed": true
+    },
+    {
+      "detail": "preconditions",
+      "name": "preconditions_loaded",
+      "passed": true
+    },
+    {
+      "detail": "ATTRIBUTED,BASELINE_PENDING,BLOCKED,CANDIDATE_PENDING,MEASURED,NOT_ATTEMPTED,PROVEN,SCHEMA_ONLY",
+      "name": "valid_metric_states_match",
+      "passed": true
+    },
+    {
+      "detail": "Core_Animation_QuartzCore_attribution_reference,Metal_compositor_attribution_reference,RTX5070_workload_attribution_reference,WindowServer_attribution_reference,baseline_candidate_delta_percent,baseline_reference,candidate_reference,display_refresh_hz,dropped_frame_count,frame_interval_ms_average,frame_interval_ms_p50,frame_interval_ms_p95,frame_interval_ms_p99,frame_time_ms_average,frame_time_ms_p50,frame_time_ms_p95,frame_time_ms_p99,hitch_count,jitter_ms,latency_ms_average,latency_ms_p95,measurement_state,real_GPU_command_evidence_reference,rollback_reference,sample_duration_seconds,scenario_name,spoofing_or_patching_absent,trace_or_recording_reference",
+      "name": "required_fields_complete",
+      "passed": true
+    },
+    {
+      "detail": "Dock hide/show,Dock magnification,Launchpad,Mission Control,Stage Manager,blur,desktop space switching,menu bar translucency,transparency,window movement,window resizing",
+      "name": "required_scenarios_present",
+      "passed": true
+    },
+    {
+      "detail": "Dock magnification",
+      "name": "scenario_Dock magnification_measurement_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "Dock magnification",
+      "name": "scenario_Dock magnification_proof_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "Dock magnification",
+      "name": "scenario_Dock magnification_not_claimed",
+      "passed": true
+    },
+    {
+      "detail": "Dock magnification",
+      "name": "scenario_Dock magnification_fields_complete",
+      "passed": true
+    },
+    {
+      "detail": "Dock magnification",
+      "name": "scenario_Dock magnification_requires_baseline",
+      "passed": true
+    },
+    {
+      "detail": "Dock magnification",
+      "name": "scenario_Dock magnification_requires_frame_pacing",
+      "passed": true
+    },
+    {
+      "detail": "Dock magnification",
+      "name": "scenario_Dock magnification_requires_latency",
+      "passed": true
+    },
+    {
+      "detail": "Dock magnification",
+      "name": "scenario_Dock magnification_requires_windowserver",
+      "passed": true
+    },
+    {
+      "detail": "Dock magnification",
+      "name": "scenario_Dock magnification_requires_metal",
+      "passed": true
+    },
+    {
+      "detail": "Dock magnification",
+      "name": "scenario_Dock magnification_requires_gpu_command",
+      "passed": true
+    },
+    {
+      "detail": "Dock magnification",
+      "name": "scenario_Dock magnification_requires_rtx5070",
+      "passed": true
+    },
+    {
+      "detail": "Dock hide/show",
+      "name": "scenario_Dock hide/show_measurement_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "Dock hide/show",
+      "name": "scenario_Dock hide/show_proof_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "Dock hide/show",
+      "name": "scenario_Dock hide/show_not_claimed",
+      "passed": true
+    },
+    {
+      "detail": "Dock hide/show",
+      "name": "scenario_Dock hide/show_fields_complete",
+      "passed": true
+    },
+    {
+      "detail": "Dock hide/show",
+      "name": "scenario_Dock hide/show_requires_baseline",
+      "passed": true
+    },
+    {
+      "detail": "Dock hide/show",
+      "name": "scenario_Dock hide/show_requires_frame_pacing",
+      "passed": true
+    },
+    {
+      "detail": "Dock hide/show",
+      "name": "scenario_Dock hide/show_requires_latency",
+      "passed": true
+    },
+    {
+      "detail": "Dock hide/show",
+      "name": "scenario_Dock hide/show_requires_windowserver",
+      "passed": true
+    },
+    {
+      "detail": "Dock hide/show",
+      "name": "scenario_Dock hide/show_requires_metal",
+      "passed": true
+    },
+    {
+      "detail": "Dock hide/show",
+      "name": "scenario_Dock hide/show_requires_gpu_command",
+      "passed": true
+    },
+    {
+      "detail": "Dock hide/show",
+      "name": "scenario_Dock hide/show_requires_rtx5070",
+      "passed": true
+    },
+    {
+      "detail": "transparency",
+      "name": "scenario_transparency_measurement_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "transparency",
+      "name": "scenario_transparency_proof_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "transparency",
+      "name": "scenario_transparency_not_claimed",
+      "passed": true
+    },
+    {
+      "detail": "transparency",
+      "name": "scenario_transparency_fields_complete",
+      "passed": true
+    },
+    {
+      "detail": "transparency",
+      "name": "scenario_transparency_requires_baseline",
+      "passed": true
+    },
+    {
+      "detail": "transparency",
+      "name": "scenario_transparency_requires_frame_pacing",
+      "passed": true
+    },
+    {
+      "detail": "transparency",
+      "name": "scenario_transparency_requires_latency",
+      "passed": true
+    },
+    {
+      "detail": "transparency",
+      "name": "scenario_transparency_requires_windowserver",
+      "passed": true
+    },
+    {
+      "detail": "transparency",
+      "name": "scenario_transparency_requires_metal",
+      "passed": true
+    },
+    {
+      "detail": "transparency",
+      "name": "scenario_transparency_requires_gpu_command",
+      "passed": true
+    },
+    {
+      "detail": "transparency",
+      "name": "scenario_transparency_requires_rtx5070",
+      "passed": true
+    },
+    {
+      "detail": "blur",
+      "name": "scenario_blur_measurement_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "blur",
+      "name": "scenario_blur_proof_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "blur",
+      "name": "scenario_blur_not_claimed",
+      "passed": true
+    },
+    {
+      "detail": "blur",
+      "name": "scenario_blur_fields_complete",
+      "passed": true
+    },
+    {
+      "detail": "blur",
+      "name": "scenario_blur_requires_baseline",
+      "passed": true
+    },
+    {
+      "detail": "blur",
+      "name": "scenario_blur_requires_frame_pacing",
+      "passed": true
+    },
+    {
+      "detail": "blur",
+      "name": "scenario_blur_requires_latency",
+      "passed": true
+    },
+    {
+      "detail": "blur",
+      "name": "scenario_blur_requires_windowserver",
+      "passed": true
+    },
+    {
+      "detail": "blur",
+      "name": "scenario_blur_requires_metal",
+      "passed": true
+    },
+    {
+      "detail": "blur",
+      "name": "scenario_blur_requires_gpu_command",
+      "passed": true
+    },
+    {
+      "detail": "blur",
+      "name": "scenario_blur_requires_rtx5070",
+      "passed": true
+    },
+    {
+      "detail": "menu bar translucency",
+      "name": "scenario_menu bar translucency_measurement_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "menu bar translucency",
+      "name": "scenario_menu bar translucency_proof_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "menu bar translucency",
+      "name": "scenario_menu bar translucency_not_claimed",
+      "passed": true
+    },
+    {
+      "detail": "menu bar translucency",
+      "name": "scenario_menu bar translucency_fields_complete",
+      "passed": true
+    },
+    {
+      "detail": "menu bar translucency",
+      "name": "scenario_menu bar translucency_requires_baseline",
+      "passed": true
+    },
+    {
+      "detail": "menu bar translucency",
+      "name": "scenario_menu bar translucency_requires_frame_pacing",
+      "passed": true
+    },
+    {
+      "detail": "menu bar translucency",
+      "name": "scenario_menu bar translucency_requires_latency",
+      "passed": true
+    },
+    {
+      "detail": "menu bar translucency",
+      "name": "scenario_menu bar translucency_requires_windowserver",
+      "passed": true
+    },
+    {
+      "detail": "menu bar translucency",
+      "name": "scenario_menu bar translucency_requires_metal",
+      "passed": true
+    },
+    {
+      "detail": "menu bar translucency",
+      "name": "scenario_menu bar translucency_requires_gpu_command",
+      "passed": true
+    },
+    {
+      "detail": "menu bar translucency",
+      "name": "scenario_menu bar translucency_requires_rtx5070",
+      "passed": true
+    },
+    {
+      "detail": "window movement",
+      "name": "scenario_window movement_measurement_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "window movement",
+      "name": "scenario_window movement_proof_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "window movement",
+      "name": "scenario_window movement_not_claimed",
+      "passed": true
+    },
+    {
+      "detail": "window movement",
+      "name": "scenario_window movement_fields_complete",
+      "passed": true
+    },
+    {
+      "detail": "window movement",
+      "name": "scenario_window movement_requires_baseline",
+      "passed": true
+    },
+    {
+      "detail": "window movement",
+      "name": "scenario_window movement_requires_frame_pacing",
+      "passed": true
+    },
+    {
+      "detail": "window movement",
+      "name": "scenario_window movement_requires_latency",
+      "passed": true
+    },
+    {
+      "detail": "window movement",
+      "name": "scenario_window movement_requires_windowserver",
+      "passed": true
+    },
+    {
+      "detail": "window movement",
+      "name": "scenario_window movement_requires_metal",
+      "passed": true
+    },
+    {
+      "detail": "window movement",
+      "name": "scenario_window movement_requires_gpu_command",
+      "passed": true
+    },
+    {
+      "detail": "window movement",
+      "name": "scenario_window movement_requires_rtx5070",
+      "passed": true
+    },
+    {
+      "detail": "window resizing",
+      "name": "scenario_window resizing_measurement_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "window resizing",
+      "name": "scenario_window resizing_proof_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "window resizing",
+      "name": "scenario_window resizing_not_claimed",
+      "passed": true
+    },
+    {
+      "detail": "window resizing",
+      "name": "scenario_window resizing_fields_complete",
+      "passed": true
+    },
+    {
+      "detail": "window resizing",
+      "name": "scenario_window resizing_requires_baseline",
+      "passed": true
+    },
+    {
+      "detail": "window resizing",
+      "name": "scenario_window resizing_requires_frame_pacing",
+      "passed": true
+    },
+    {
+      "detail": "window resizing",
+      "name": "scenario_window resizing_requires_latency",
+      "passed": true
+    },
+    {
+      "detail": "window resizing",
+      "name": "scenario_window resizing_requires_windowserver",
+      "passed": true
+    },
+    {
+      "detail": "window resizing",
+      "name": "scenario_window resizing_requires_metal",
+      "passed": true
+    },
+    {
+      "detail": "window resizing",
+      "name": "scenario_window resizing_requires_gpu_command",
+      "passed": true
+    },
+    {
+      "detail": "window resizing",
+      "name": "scenario_window resizing_requires_rtx5070",
+      "passed": true
+    },
+    {
+      "detail": "Mission Control",
+      "name": "scenario_Mission Control_measurement_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "Mission Control",
+      "name": "scenario_Mission Control_proof_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "Mission Control",
+      "name": "scenario_Mission Control_not_claimed",
+      "passed": true
+    },
+    {
+      "detail": "Mission Control",
+      "name": "scenario_Mission Control_fields_complete",
+      "passed": true
+    },
+    {
+      "detail": "Mission Control",
+      "name": "scenario_Mission Control_requires_baseline",
+      "passed": true
+    },
+    {
+      "detail": "Mission Control",
+      "name": "scenario_Mission Control_requires_frame_pacing",
+      "passed": true
+    },
+    {
+      "detail": "Mission Control",
+      "name": "scenario_Mission Control_requires_latency",
+      "passed": true
+    },
+    {
+      "detail": "Mission Control",
+      "name": "scenario_Mission Control_requires_windowserver",
+      "passed": true
+    },
+    {
+      "detail": "Mission Control",
+      "name": "scenario_Mission Control_requires_metal",
+      "passed": true
+    },
+    {
+      "detail": "Mission Control",
+      "name": "scenario_Mission Control_requires_gpu_command",
+      "passed": true
+    },
+    {
+      "detail": "Mission Control",
+      "name": "scenario_Mission Control_requires_rtx5070",
+      "passed": true
+    },
+    {
+      "detail": "Launchpad",
+      "name": "scenario_Launchpad_measurement_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "Launchpad",
+      "name": "scenario_Launchpad_proof_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "Launchpad",
+      "name": "scenario_Launchpad_not_claimed",
+      "passed": true
+    },
+    {
+      "detail": "Launchpad",
+      "name": "scenario_Launchpad_fields_complete",
+      "passed": true
+    },
+    {
+      "detail": "Launchpad",
+      "name": "scenario_Launchpad_requires_baseline",
+      "passed": true
+    },
+    {
+      "detail": "Launchpad",
+      "name": "scenario_Launchpad_requires_frame_pacing",
+      "passed": true
+    },
+    {
+      "detail": "Launchpad",
+      "name": "scenario_Launchpad_requires_latency",
+      "passed": true
+    },
+    {
+      "detail": "Launchpad",
+      "name": "scenario_Launchpad_requires_windowserver",
+      "passed": true
+    },
+    {
+      "detail": "Launchpad",
+      "name": "scenario_Launchpad_requires_metal",
+      "passed": true
+    },
+    {
+      "detail": "Launchpad",
+      "name": "scenario_Launchpad_requires_gpu_command",
+      "passed": true
+    },
+    {
+      "detail": "Launchpad",
+      "name": "scenario_Launchpad_requires_rtx5070",
+      "passed": true
+    },
+    {
+      "detail": "Stage Manager",
+      "name": "scenario_Stage Manager_measurement_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "Stage Manager",
+      "name": "scenario_Stage Manager_proof_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "Stage Manager",
+      "name": "scenario_Stage Manager_not_claimed",
+      "passed": true
+    },
+    {
+      "detail": "Stage Manager",
+      "name": "scenario_Stage Manager_fields_complete",
+      "passed": true
+    },
+    {
+      "detail": "Stage Manager",
+      "name": "scenario_Stage Manager_requires_baseline",
+      "passed": true
+    },
+    {
+      "detail": "Stage Manager",
+      "name": "scenario_Stage Manager_requires_frame_pacing",
+      "passed": true
+    },
+    {
+      "detail": "Stage Manager",
+      "name": "scenario_Stage Manager_requires_latency",
+      "passed": true
+    },
+    {
+      "detail": "Stage Manager",
+      "name": "scenario_Stage Manager_requires_windowserver",
+      "passed": true
+    },
+    {
+      "detail": "Stage Manager",
+      "name": "scenario_Stage Manager_requires_metal",
+      "passed": true
+    },
+    {
+      "detail": "Stage Manager",
+      "name": "scenario_Stage Manager_requires_gpu_command",
+      "passed": true
+    },
+    {
+      "detail": "Stage Manager",
+      "name": "scenario_Stage Manager_requires_rtx5070",
+      "passed": true
+    },
+    {
+      "detail": "desktop space switching",
+      "name": "scenario_desktop space switching_measurement_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "desktop space switching",
+      "name": "scenario_desktop space switching_proof_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "desktop space switching",
+      "name": "scenario_desktop space switching_not_claimed",
+      "passed": true
+    },
+    {
+      "detail": "desktop space switching",
+      "name": "scenario_desktop space switching_fields_complete",
+      "passed": true
+    },
+    {
+      "detail": "desktop space switching",
+      "name": "scenario_desktop space switching_requires_baseline",
+      "passed": true
+    },
+    {
+      "detail": "desktop space switching",
+      "name": "scenario_desktop space switching_requires_frame_pacing",
+      "passed": true
+    },
+    {
+      "detail": "desktop space switching",
+      "name": "scenario_desktop space switching_requires_latency",
+      "passed": true
+    },
+    {
+      "detail": "desktop space switching",
+      "name": "scenario_desktop space switching_requires_windowserver",
+      "passed": true
+    },
+    {
+      "detail": "desktop space switching",
+      "name": "scenario_desktop space switching_requires_metal",
+      "passed": true
+    },
+    {
+      "detail": "desktop space switching",
+      "name": "scenario_desktop space switching_requires_gpu_command",
+      "passed": true
+    },
+    {
+      "detail": "desktop space switching",
+      "name": "scenario_desktop space switching_requires_rtx5070",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_state=NOT_ATTEMPTED",
+      "name": "metrics_ui_compositor_proof_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_state=NOT_ATTEMPTED",
+      "name": "metrics_metal_proof_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "real_gpu_command_execution_proof_state=NOT_ATTEMPTED",
+      "name": "metrics_real_gpu_command_execution_proof_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_workload_attribution_proof_state=NOT_ATTEMPTED",
+      "name": "metrics_rtx5070_workload_attribution_proof_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "windowserver_attribution_proof_state=NOT_ATTEMPTED",
+      "name": "metrics_windowserver_attribution_proof_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "core_animation_attribution_proof_state=NOT_ATTEMPTED",
+      "name": "metrics_core_animation_attribution_proof_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "quartzcore_attribution_proof_state=NOT_ATTEMPTED",
+      "name": "metrics_quartzcore_attribution_proof_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "metal_compositor_attribution_proof_state=NOT_ATTEMPTED",
+      "name": "metrics_metal_compositor_attribution_proof_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "real_gpu_command_execution_attempted=false",
+      "name": "metrics_real_gpu_command_execution_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_workload_attribution_claimed=false",
+      "name": "metrics_rtx5070_workload_attribution_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "real_gpu_acceleration_claimed=false",
+      "name": "metrics_real_gpu_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed=false",
+      "name": "metrics_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed=false",
+      "name": "metrics_metal_proof_claimed_false",
+      "passed": true
+    }
+  ],
+  "classification": "CLASSIFICATION_UI_FRAME_PACING_LATENCY_METRIC_SCHEMA",
+  "decision": "PASS_UI_FRAME_PACING_LATENCY_METRIC_SCHEMA_READY",
+  "failed_count": 0,
+  "generated_at_utc": "2026-06-13T16:56:10.327655+00:00",
+  "measurement_not_collected": true,
+  "metal_proof_claimed": false,
+  "metal_proof_not_claimed": true,
+  "metric_schema_only": true,
+  "passed_count": 205,
+  "real_gpu_acceleration_claimed": false,
+  "real_gpu_command_execution_attempted": false,
+  "rtx5070_workload_attribution_claimed": false,
+  "schema": "h1mekartx.ui_frame_pacing_latency_metrics_check.v1",
+  "scope": "Phase 35 UI frame pacing / latency metric schema",
+  "secondary_classification": "CLASSIFICATION_WINDOWSERVER_CA_QUARTZCORE_ATTRIBUTION_SCHEMA",
+  "tertiary_classification": "CLASSIFICATION_STATIC_CONTRACT",
+  "ui_compositor_proof_claimed": false,
+  "ui_compositor_proof_not_claimed": true,
+  "ui_frame_pacing_latency_measurement_state": "NOT_ATTEMPTED",
+  "ui_frame_pacing_latency_metric_schema_only": true,
+  "ui_frame_pacing_latency_metric_schema_state": "SCHEMA_ONLY"
+}
