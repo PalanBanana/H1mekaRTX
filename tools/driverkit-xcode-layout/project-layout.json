@@ -1,0 +1,67 @@
+{
+  "schema": "h1mekartx.deterministic_xcode_project_layout.v1",
+  "classification": "CLASSIFICATION_DETERMINISTIC_XCODE_PROJECT_LAYOUT",
+  "secondary_classification": "CLASSIFICATION_DRIVERKIT_FEASIBILITY_PREFLIGHT",
+  "tertiary_classification": "CLASSIFICATION_STATIC_CONTRACT",
+  "project_layout_contract_only": true,
+  "xcodeproj_generation_attempted": false,
+  "build_attempted": false,
+  "signing_attempted": false,
+  "install_attempted": false,
+  "driverkit_activation_attempted": false,
+  "system_extension_activation_attempted": false,
+  "dext_load_attempted": false,
+  "device_ownership_request_attempted": false,
+  "provider_open_attempted": false,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "real_gpu_command_execution_attempted": false,
+  "rtx5070_workload_attribution_claimed": false,
+  "real_gpu_acceleration_claimed": false,
+  "ui_compositor_proof_claimed": false,
+  "metal_proof_claimed": false,
+  "project": {
+    "project_name": "H1mekaRTXDriverKit",
+    "host_target_name": "H1mekaRTXHost",
+    "dext_target_name": "H1mekaRTXDriver",
+    "team_id_placeholder": "TEAMID_PLACEHOLDER"
+  },
+  "targets": {
+    "host": {
+      "bundle_id": "dev.h1meka.H1mekaRTXHost",
+      "info_plist": "tools/driverkit-skeleton/H1mekaRTXHost.app.template/Info.plist",
+      "entitlements": "tools/driverkit-skeleton/H1mekaRTXHost.entitlements.template.plist",
+      "expected_entitlements": [
+        "com.apple.developer.system-extension.install"
+      ]
+    },
+    "dext": {
+      "bundle_id": "dev.h1meka.H1mekaRTXDriver",
+      "extension_point": "com.apple.driverkit",
+      "info_plist": "tools/driverkit-skeleton/H1mekaRTXDriver.dext.template/Info.plist",
+      "entitlements": "tools/driverkit-skeleton/H1mekaRTXDriver.entitlements.template.plist",
+      "expected_entitlements": [
+        "com.apple.developer.driverkit",
+        "com.apple.developer.driverkit.transport.pci"
+      ]
+    }
+  },
+  "pci_matching": {
+    "target_gpu": "NVIDIA RTX 5070",
+    "architecture_family": "NVIDIA Blackwell",
+    "vendor_id": "0x10de",
+    "device_id": "0x2f04",
+    "io_pci_match": "0x2f0410de",
+    "expected_provider_class": "IOPCIDevice",
+    "expected_driver_family": "PCIDriverKit"
+  },
+  "target_user_visible_goal": [
+    "smooth Dock animation",
+    "working transparency",
+    "working blur",
+    "smooth window movement and resizing",
+    "smooth Mission Control",
+    "smooth Launchpad",
+    "smooth Stage Manager"
+  ]
+}
