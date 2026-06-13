@@ -105,6 +105,18 @@ BUNDLE_LAYOUT = [
         "description": "Optional Phase 2 UI compositor sample diagnostics Markdown summary.",
     },
     {
+        "path": "reports/ui-compositor-readiness-matrix.json",
+        "required": False,
+        "kind": "graphics_stack_diagnostics",
+        "description": "Optional Phase 2 UI compositor readiness matrix JSON.",
+    },
+    {
+        "path": "reports/ui-compositor-readiness-matrix.md",
+        "required": False,
+        "kind": "graphics_stack_diagnostics",
+        "description": "Optional Phase 2 UI compositor readiness matrix Markdown.",
+    },
+    {
         "path": "reports/rendered-host-status-report.md",
         "required": False,
         "kind": "local_report",

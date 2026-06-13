@@ -141,6 +141,27 @@ INDEX_ITEMS = [
         "description": "Generated Phase 2 UI compositor sample diagnostics check.",
     },
     {
+        "path": "ui-compositor-readiness-matrix.json",
+        "category": "ui_compositor_readiness",
+        "kind": "json_report",
+        "required": False,
+        "description": "Generated Phase 2 UI compositor readiness matrix JSON.",
+    },
+    {
+        "path": "ui-compositor-readiness-matrix.md",
+        "category": "ui_compositor_readiness",
+        "kind": "markdown_report",
+        "required": False,
+        "description": "Generated Phase 2 UI compositor readiness matrix Markdown.",
+    },
+    {
+        "path": "ui-compositor-readiness-matrix-check.json",
+        "category": "ui_compositor_readiness",
+        "kind": "json_report",
+        "required": False,
+        "description": "Generated Phase 2 UI compositor readiness matrix check.",
+    },
+    {
         "path": "rendered-host-status-report.md",
         "category": "host_tooling",
         "kind": "markdown_report",

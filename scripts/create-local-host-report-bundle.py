@@ -107,6 +107,20 @@ REPORT_CANDIDATES = [
         "description": "Optional Phase 2 UI compositor sample diagnostics Markdown summary.",
     },
     {
+        "source": "ui-compositor-readiness-matrix.json",
+        "dest": "reports/ui-compositor-readiness-matrix.json",
+        "kind": "graphics_stack_diagnostics",
+        "required": False,
+        "description": "Optional Phase 2 UI compositor readiness matrix JSON.",
+    },
+    {
+        "source": "ui-compositor-readiness-matrix.md",
+        "dest": "reports/ui-compositor-readiness-matrix.md",
+        "kind": "graphics_stack_diagnostics",
+        "required": False,
+        "description": "Optional Phase 2 UI compositor readiness matrix Markdown.",
+    },
+    {
         "source": "rendered-host-status-report.md",
         "dest": "reports/rendered-host-status-report.md",
         "kind": "local_report",

@@ -12,6 +12,7 @@ This runner combines:
 - BAR inventory JSON/Markdown summary
 - UI compositor proof schema generation
 - baseline UI compositor sample diagnostics
+- UI compositor readiness matrix generation
 - local host report bundle creation
 - local diagnostics index creation
 
@@ -35,6 +36,8 @@ Optional output path:
 - ui-compositor-proof-schema.md
 - ui-compositor-sample-summary.json
 - ui-compositor-sample-summary.md
+- ui-compositor-readiness-matrix.json
+- ui-compositor-readiness-matrix.md
 - local-diagnostics-index.json
 - local-diagnostics-index.md
 - host-report-bundle/bundle.json
