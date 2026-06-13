@@ -1,0 +1,164 @@
+{
+  "schema": "h1mekartx.activation_prerequisites_ledger.v1",
+  "classification": "CLASSIFICATION_ACTIVATION_PREREQUISITES_LEDGER",
+  "secondary_classification": "CLASSIFICATION_DRIVERKIT_FEASIBILITY_PREFLIGHT",
+  "tertiary_classification": "CLASSIFICATION_STATIC_CONTRACT",
+  "activation_prerequisites_ledger_only": true,
+  "real_activation_not_attempted": true,
+  "activation_gate_state": "BLOCKED_MISSING_PREREQUISITES",
+  "driverkit_activation_attempted": false,
+  "system_extension_activation_attempted": false,
+  "dext_load_attempted": false,
+  "device_ownership_request_attempted": false,
+  "provider_open_attempted": false,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "real_gpu_command_execution_attempted": false,
+  "rtx5070_workload_attribution_claimed": false,
+  "real_gpu_acceleration_claimed": false,
+  "ui_compositor_proof_claimed": false,
+  "metal_proof_claimed": false,
+  "real_activation_start_rule": "Only when every required ledger item is READY.",
+  "ledger": [
+    {
+      "key": "apple_developer_team_id",
+      "description": "Apple Developer Team ID documented.",
+      "status": "MISSING",
+      "required_for_activation": true,
+      "evidence_path": "docs/driverkit/local-signing-evidence.md",
+      "blocker_reason": "Team ID not recorded in repo."
+    },
+    {
+      "key": "approved_driverkit_entitlement",
+      "description": "Apple-approved DriverKit entitlement.",
+      "status": "MISSING",
+      "required_for_activation": true,
+      "evidence_path": "docs/driverkit/local-entitlement-evidence.md",
+      "blocker_reason": "DriverKit entitlement approval not recorded."
+    },
+    {
+      "key": "approved_pci_transport_entitlement",
+      "description": "Apple-approved PCI transport entitlement for matching target provider.",
+      "status": "MISSING",
+      "required_for_activation": true,
+      "evidence_path": "docs/driverkit/local-entitlement-evidence.md",
+      "blocker_reason": "PCI transport entitlement approval not recorded."
+    },
+    {
+      "key": "valid_signing_identity",
+      "description": "Valid signing identity for host app and dext.",
+      "status": "MISSING",
+      "required_for_activation": true,
+      "evidence_path": "docs/driverkit/local-signing-evidence.md",
+      "blocker_reason": "Signing identity evidence not recorded."
+    },
+    {
+      "key": "buildable_host_app_and_dext_project",
+      "description": "Buildable host app and dext project exists.",
+      "status": "BLOCKED",
+      "required_for_activation": true,
+      "evidence_path": "tools/driverkit-xcode-layout/",
+      "blocker_reason": "Only non-building dry-run metadata exists."
+    },
+    {
+      "key": "signed_artifacts",
+      "description": "Signed host app and dext artifacts exist.",
+      "status": "BLOCKED",
+      "required_for_activation": true,
+      "evidence_path": "artifacts/local-only/",
+      "blocker_reason": "Build/signing not attempted."
+    },
+    {
+      "key": "disposable_rollback_capable_test_install",
+      "description": "Disposable test install or snapshot rollback environment available.",
+      "status": "MISSING",
+      "required_for_activation": true,
+      "evidence_path": "docs/driverkit/local-rollback-evidence.md",
+      "blocker_reason": "Rollback environment evidence not recorded."
+    },
+    {
+      "key": "reversible_activation_implementation",
+      "description": "Activation request implementation exists.",
+      "status": "BLOCKED",
+      "required_for_activation": true,
+      "evidence_path": "tools/driverkit-activation/",
+      "blocker_reason": "Activation code not implemented."
+    },
+    {
+      "key": "reversible_deactivation_implementation",
+      "description": "Deactivation request implementation exists.",
+      "status": "BLOCKED",
+      "required_for_activation": true,
+      "evidence_path": "tools/driverkit-activation/",
+      "blocker_reason": "Deactivation code not implemented."
+    },
+    {
+      "key": "explicit_user_approval_flow",
+      "description": "User approval and settings flow documented.",
+      "status": "MISSING",
+      "required_for_activation": true,
+      "evidence_path": "docs/driverkit/user-approval-flow.md",
+      "blocker_reason": "User approval flow not documented."
+    },
+    {
+      "key": "logs_status_capture_plan",
+      "description": "systemextensionsctl/sysextd/log capture plan exists.",
+      "status": "MISSING",
+      "required_for_activation": true,
+      "evidence_path": "docs/driverkit/activation-status-capture-plan.md",
+      "blocker_reason": "Status capture plan not documented."
+    },
+    {
+      "key": "no_provider_open_policy",
+      "description": "First activation test must not open provider.",
+      "status": "READY",
+      "required_for_activation": true,
+      "evidence_path": "docs/driverkit/activation-prerequisites-ledger.md",
+      "blocker_reason": ""
+    },
+    {
+      "key": "no_bar_mapping_policy",
+      "description": "First activation test must not map BAR memory.",
+      "status": "READY",
+      "required_for_activation": true,
+      "evidence_path": "docs/driverkit/activation-prerequisites-ledger.md",
+      "blocker_reason": ""
+    },
+    {
+      "key": "no_bar_mmio_mutation_policy",
+      "description": "No BAR/MMIO mutation allowed.",
+      "status": "READY",
+      "required_for_activation": true,
+      "evidence_path": "docs/driverkit/activation-prerequisites-ledger.md",
+      "blocker_reason": ""
+    },
+    {
+      "key": "no_gpu_command_submission_policy",
+      "description": "No GPU command submission allowed.",
+      "status": "READY",
+      "required_for_activation": true,
+      "evidence_path": "docs/driverkit/activation-prerequisites-ledger.md",
+      "blocker_reason": ""
+    }
+  ],
+  "target_pci_provider_matching_manifest": {
+    "target_gpu": "NVIDIA RTX 5070",
+    "architecture_family": "NVIDIA Blackwell",
+    "vendor_id": "0x10de",
+    "device_id": "0x2f04",
+    "io_pci_match": "0x2f0410de",
+    "expected_provider_class": "IOPCIDevice",
+    "expected_driver_family": "PCIDriverKit",
+    "expected_pci_transport_entitlement": "com.apple.developer.driverkit.transport.pci",
+    "expected_system_extension_entitlement": "com.apple.developer.system-extension.install"
+  },
+  "target_user_visible_goal": [
+    "smooth Dock animation",
+    "working transparency",
+    "working blur",
+    "smooth window movement and resizing",
+    "smooth Mission Control",
+    "smooth Launchpad",
+    "smooth Stage Manager"
+  ]
+}
