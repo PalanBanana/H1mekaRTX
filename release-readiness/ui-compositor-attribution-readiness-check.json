@@ -1,0 +1,309 @@
+{
+  "bar_mmio_mutation_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/hackintosh/ui-compositor-attribution-readiness-matrix.md",
+      "name": "contract_file_exists",
+      "passed": true
+    },
+    {
+      "detail": "CLASSIFICATION_UI_COMPOSITOR_ATTRIBUTION_READINESS",
+      "name": "requires_token_classification_ui_compositor_attribution_readiness",
+      "passed": true
+    },
+    {
+      "detail": "CLASSIFICATION_GRAPHICS_STACK_DIAGNOSTICS",
+      "name": "requires_token_classification_graphics_stack_diagnostics",
+      "passed": true
+    },
+    {
+      "detail": "CLASSIFICATION_STATIC_CONTRACT",
+      "name": "requires_token_classification_static_contract",
+      "passed": true
+    },
+    {
+      "detail": "OBSERVATION_ONLY: True",
+      "name": "requires_token_observation_only_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_DRIVER_ACTIVATION: True",
+      "name": "requires_token_no_driver_activation_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_SYSTEM_EXTENSION_ACTIVATION: True",
+      "name": "requires_token_no_system_extension_activation_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_DEVICE_OWNERSHIP_REQUEST: True",
+      "name": "requires_token_no_device_ownership_request_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_BAR_MMIO_MUTATION: True",
+      "name": "requires_token_no_bar_mmio_mutation_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_COMMAND_SUBMISSION: True",
+      "name": "requires_token_no_command_submission_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_GSP_FIRMWARE_LOAD: True",
+      "name": "requires_token_no_gsp_firmware_load_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_GPU_RESET: True",
+      "name": "requires_token_no_gpu_reset_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_FRAMEBUFFER_INIT: True",
+      "name": "requires_token_no_framebuffer_init_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_DISPLAY_ENGINE_INIT: True",
+      "name": "requires_token_no_display_engine_init_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_KERNEL_OR_PROCESS_INJECTION: True",
+      "name": "requires_token_no_kernel_or_process_injection_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_SIP_AMFI_BYPASS: True",
+      "name": "requires_token_no_sip_amfi_bypass_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_PRIVATE_FRAMEWORK_PATCHING: True",
+      "name": "requires_token_no_private_framework_patching_true",
+      "passed": true
+    },
+    {
+      "detail": "NO_FAKE_METAL_DEVICE_SPOOFING: True",
+      "name": "requires_token_no_fake_metal_device_spoofing_true",
+      "passed": true
+    },
+    {
+      "detail": "UI_COMPOSITOR_ATTRIBUTION_REQUIREMENTS",
+      "name": "requires_token_ui_compositor_attribution_requirements",
+      "passed": true
+    },
+    {
+      "detail": "UI_COMPOSITOR_ATTRIBUTION_MATRIX_ROWS",
+      "name": "requires_token_ui_compositor_attribution_matrix_rows",
+      "passed": true
+    },
+    {
+      "detail": "WindowServer",
+      "name": "requires_token_windowserver",
+      "passed": true
+    },
+    {
+      "detail": "Core Animation",
+      "name": "requires_token_core_animation",
+      "passed": true
+    },
+    {
+      "detail": "QuartzCore",
+      "name": "requires_token_quartzcore",
+      "passed": true
+    },
+    {
+      "detail": "Metal compositor",
+      "name": "requires_token_metal_compositor",
+      "passed": true
+    },
+    {
+      "detail": "IOGraphics",
+      "name": "requires_token_iographics",
+      "passed": true
+    },
+    {
+      "detail": "IOAccelerator",
+      "name": "requires_token_ioaccelerator",
+      "passed": true
+    },
+    {
+      "detail": "IODisplay",
+      "name": "requires_token_iodisplay",
+      "passed": true
+    },
+    {
+      "detail": "Dock",
+      "name": "requires_token_dock",
+      "passed": true
+    },
+    {
+      "detail": "transparency",
+      "name": "requires_token_transparency",
+      "passed": true
+    },
+    {
+      "detail": "blur",
+      "name": "requires_token_blur",
+      "passed": true
+    },
+    {
+      "detail": "Mission Control",
+      "name": "requires_token_mission_control",
+      "passed": true
+    },
+    {
+      "detail": "Launchpad",
+      "name": "requires_token_launchpad",
+      "passed": true
+    },
+    {
+      "detail": "Stage Manager",
+      "name": "requires_token_stage_manager",
+      "passed": true
+    },
+    {
+      "detail": "RTX5070_WORKLOAD_ATTRIBUTION_CLAIMED: False",
+      "name": "requires_token_rtx5070_workload_attribution_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "REAL_GPU_ACCELERATION_CLAIMED: False",
+      "name": "requires_token_real_gpu_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "UI_COMPOSITOR_PROOF_CLAIMED: False",
+      "name": "requires_token_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "METAL_PROOF_CLAIMED: False",
+      "name": "requires_token_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "REAL_GPU_COMMAND_EXECUTION_ATTEMPTED: False",
+      "name": "requires_token_real_gpu_command_execution_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/host-report-bundle/hackintosh-ui-observability/hackintosh-ui-observability-baseline-check.json",
+      "name": "optional_local_baseline_json_parseable_or_absent",
+      "passed": true
+    }
+  ],
+  "classification": "CLASSIFICATION_UI_COMPOSITOR_ATTRIBUTION_READINESS",
+  "decision": "PASS_UI_COMPOSITOR_ATTRIBUTION_READINESS_MATRIX_READY",
+  "driver_activation_attempted": false,
+  "failed_count": 0,
+  "generated_at_utc": "2026-06-13T15:34:47.189301+00:00",
+  "hardware_access_attempted": false,
+  "matrix_rows": [
+    {
+      "current_status": "BASELINE_OBSERVABLE_ONLY",
+      "name": "WindowServer process visibility",
+      "promotion_needed": "correlate WindowServer workload with target GPU",
+      "required_for": "UI compositor routing evidence"
+    },
+    {
+      "current_status": "EVIDENCE_PATH_DEFINED",
+      "name": "Core Animation / QuartzCore evidence path",
+      "promotion_needed": "capture frame timing and compositor routing evidence",
+      "required_for": "animation and compositor stack evidence"
+    },
+    {
+      "current_status": "EVIDENCE_PATH_DEFINED",
+      "name": "Metal compositor visibility",
+      "promotion_needed": "prove real target GPU-backed Metal workload",
+      "required_for": "Metal-facing compositor path evidence"
+    },
+    {
+      "current_status": "DIAGNOSTIC_HINTS_ONLY",
+      "name": "IOGraphics / IOAccelerator / IODisplay hints",
+      "promotion_needed": "tie hints to real runtime workload",
+      "required_for": "graphics stack visibility"
+    },
+    {
+      "current_status": "HOST_DIAGNOSTIC_INPUT",
+      "name": "RTX 5070 PCI identity",
+      "promotion_needed": "bind identity to runtime workload evidence",
+      "required_for": "target device identity"
+    },
+    {
+      "current_status": "TARGET_ONLY",
+      "name": "Dock smoothness target",
+      "promotion_needed": "frame timing plus workload attribution",
+      "required_for": "user-visible UI goal"
+    },
+    {
+      "current_status": "TARGET_ONLY",
+      "name": "transparency target",
+      "promotion_needed": "compositor effect path attribution",
+      "required_for": "user-visible UI goal"
+    },
+    {
+      "current_status": "TARGET_ONLY",
+      "name": "blur target",
+      "promotion_needed": "compositor effect path attribution",
+      "required_for": "user-visible UI goal"
+    },
+    {
+      "current_status": "TARGET_ONLY",
+      "name": "Mission Control / Launchpad / Stage Manager targets",
+      "promotion_needed": "frame timing plus compositor routing evidence",
+      "required_for": "user-visible UI goal"
+    },
+    {
+      "current_status": "UNPROVEN",
+      "name": "workload attribution blocker",
+      "promotion_needed": "GPU counters, routing logs, or command evidence",
+      "required_for": "UI compositor proof"
+    },
+    {
+      "current_status": "NOT_ATTEMPTED",
+      "name": "real GPU command execution blocker",
+      "promotion_needed": "safe later-phase command execution proof",
+      "required_for": "real GPU work proof"
+    },
+    {
+      "current_status": "UNPROVEN",
+      "name": "UI compositor proof blocker",
+      "promotion_needed": "all higher evidence gates",
+      "required_for": "claiming UI acceleration"
+    },
+    {
+      "current_status": "UNPROVEN",
+      "name": "Metal proof blocker",
+      "promotion_needed": "real Metal-facing target GPU workload proof",
+      "required_for": "claiming Metal acceleration"
+    }
+  ],
+  "metal_proof_claimed": false,
+  "observation_only": true,
+  "optional_local_baseline_loaded": true,
+  "overall_attribution_state": "UNPROVEN_BLOCKED_BY_MISSING_RUNTIME_AND_WORKLOAD_EVIDENCE",
+  "passed_count": 39,
+  "real_gpu_acceleration_claimed": false,
+  "real_gpu_command_execution_attempted": false,
+  "rtx5070_workload_attribution_claimed": false,
+  "schema": "h1mekartx.ui_compositor_attribution_readiness.v1",
+  "scope": "Phase 6 UI compositor attribution readiness matrix",
+  "secondary_classification": "CLASSIFICATION_GRAPHICS_STACK_DIAGNOSTICS",
+  "system_extension_activation_attempted": false,
+  "target_user_visible_goal": [
+    "smooth Dock animation",
+    "working transparency",
+    "working blur",
+    "smooth window movement and resizing",
+    "smooth Mission Control",
+    "smooth Launchpad",
+    "smooth Stage Manager"
+  ],
+  "tertiary_classification": "CLASSIFICATION_STATIC_CONTRACT",
+  "ui_compositor_proof_claimed": false
+}
