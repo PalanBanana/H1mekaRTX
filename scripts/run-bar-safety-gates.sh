@@ -122,6 +122,39 @@ print("Phase 2 UI compositor proof schema validation passed")
 PY
 
 echo
+echo "== Phase 2 fixture: UI compositor sample diagnostics =="
+UI_SAMPLE_OUT="$TMP_ROOT/ui-compositor-sample-diagnostics-check"
+./scripts/check-ui-compositor-sample-diagnostics.py --root "$ROOT" --out-dir "$UI_SAMPLE_OUT"
+test -s "$UI_SAMPLE_OUT/ui-compositor-sample-diagnostics-check.json"
+test -s "$UI_SAMPLE_OUT/ui-compositor-sample-diagnostics-check.md"
+
+python3 - <<PY
+import json
+from pathlib import Path
+
+p = Path("$UI_SAMPLE_OUT/ui-compositor-sample-diagnostics-check.json")
+data = json.loads(p.read_text())
+
+assert data["schema"] == "h1mekartx.ui_compositor_sample_diagnostics_check.v1"
+assert data["decision"] == "PASS_UI_COMPOSITOR_SAMPLE_DIAGNOSTICS_READY"
+assert data["failed_count"] == 0
+assert data["safety_boundary"]["read_only_fixture_check"] is True
+assert data["safety_boundary"]["driverkit_activation"] is False
+assert data["safety_boundary"]["system_extension_activation"] is False
+assert data["safety_boundary"]["process_injection"] is False
+assert data["safety_boundary"]["windowserver_injection"] is False
+assert data["safety_boundary"]["dock_injection"] is False
+assert data["safety_boundary"]["private_framework_patching"] is False
+assert data["safety_boundary"]["mmio_reads"] is False
+assert data["safety_boundary"]["mmio_writes"] is False
+assert data["safety_boundary"]["gpu_command_submission"] is False
+assert data["safety_boundary"]["ui_compositor_proof"] is False
+assert data["safety_boundary"]["metal_proof"] is False
+
+print("Phase 2 UI compositor sample diagnostics validation passed")
+PY
+
+echo
 echo "== Stage 4 fixture: BAR inventory summary =="
 BAR_INV="$TMP_ROOT/bar-inventory-fixture"
 mkdir -p "$BAR_INV"

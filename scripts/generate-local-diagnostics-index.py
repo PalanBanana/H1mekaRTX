@@ -120,6 +120,27 @@ INDEX_ITEMS = [
         "description": "Generated Phase 2 UI compositor proof schema check.",
     },
     {
+        "path": "ui-compositor-sample-summary.json",
+        "category": "ui_compositor_sample",
+        "kind": "json_report",
+        "required": False,
+        "description": "Generated Phase 2 UI compositor sample diagnostics JSON summary.",
+    },
+    {
+        "path": "ui-compositor-sample-summary.md",
+        "category": "ui_compositor_sample",
+        "kind": "markdown_report",
+        "required": False,
+        "description": "Generated Phase 2 UI compositor sample diagnostics Markdown summary.",
+    },
+    {
+        "path": "ui-compositor-sample-diagnostics-check.json",
+        "category": "ui_compositor_sample",
+        "kind": "json_report",
+        "required": False,
+        "description": "Generated Phase 2 UI compositor sample diagnostics check.",
+    },
+    {
         "path": "rendered-host-status-report.md",
         "category": "host_tooling",
         "kind": "markdown_report",

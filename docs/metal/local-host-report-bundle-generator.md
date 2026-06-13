@@ -60,6 +60,8 @@ The generator copies these files only if they already exist:
 - bar-inventory-summary.md
 - ui-compositor-proof-schema.json
 - ui-compositor-proof-schema.md
+- ui-compositor-sample-summary.json
+- ui-compositor-sample-summary.md
 - rendered-host-status-report.md
 - forbidden-bar-operation-audit.md
 

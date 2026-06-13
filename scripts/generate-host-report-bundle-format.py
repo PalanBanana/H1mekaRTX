@@ -93,6 +93,18 @@ BUNDLE_LAYOUT = [
         "description": "Optional Phase 2 UI compositor proof schema Markdown.",
     },
     {
+        "path": "reports/ui-compositor-sample-summary.json",
+        "required": False,
+        "kind": "graphics_stack_diagnostics",
+        "description": "Optional Phase 2 UI compositor sample diagnostics JSON summary.",
+    },
+    {
+        "path": "reports/ui-compositor-sample-summary.md",
+        "required": False,
+        "kind": "graphics_stack_diagnostics",
+        "description": "Optional Phase 2 UI compositor sample diagnostics Markdown summary.",
+    },
+    {
         "path": "reports/rendered-host-status-report.md",
         "required": False,
         "kind": "local_report",

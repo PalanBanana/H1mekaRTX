@@ -29,6 +29,8 @@ REQUIRED_LAYOUT_PATHS = [
     "reports/bar-inventory-summary.md",
     "reports/ui-compositor-proof-schema.json",
     "reports/ui-compositor-proof-schema.md",
+    "reports/ui-compositor-sample-summary.json",
+    "reports/ui-compositor-sample-summary.md",
     "reports/rendered-host-status-report.md",
     "reports/safety-gates.md",
 ]

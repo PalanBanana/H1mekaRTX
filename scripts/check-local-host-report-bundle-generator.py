@@ -32,6 +32,8 @@ EXPECTED_OPTIONAL_REPORTS = [
     "reports/bar-inventory-summary.md",
     "reports/ui-compositor-proof-schema.json",
     "reports/ui-compositor-proof-schema.md",
+    "reports/ui-compositor-sample-summary.json",
+    "reports/ui-compositor-sample-summary.md",
     "reports/rendered-host-status-report.md",
     "reports/safety-gates.md",
 ]
@@ -144,6 +146,22 @@ def write_fixture_reports(fixture_dir: Path) -> None:
         + "\n"
     )
     (fixture_dir / "ui-compositor-proof-schema.md").write_text("# UI Compositor Proof Schema\n\nFixture.\n")
+    (fixture_dir / "ui-compositor-sample-summary.json").write_text(
+        json.dumps(
+            {
+                "schema": "h1mekartx.ui_compositor_sample_summary.v1",
+                "decisions": {
+                    "sample_result": "UI_COMPOSITOR_SAMPLE_DIAGNOSTICS_CAPTURED",
+                    "ui_compositor_proof_result": "UNPROVEN",
+                    "metal_proof_result": "UNPROVEN",
+                },
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n"
+    )
+    (fixture_dir / "ui-compositor-sample-summary.md").write_text("# UI Compositor Sample Summary\n\nFixture.\n")
     (fixture_dir / "rendered-host-status-report.md").write_text("# Rendered Host Status Report\n\nFixture.\n")
     (fixture_dir / "forbidden-bar-operation-audit.md").write_text("# Safety Gates\n\nFixture.\n")
 
@@ -237,7 +255,7 @@ def build_report(root: Path, out_dir: Path) -> dict[str, Any]:
     add("bundle_schema", manifest.get("schema") == "h1mekartx.host_report_bundle.v1", f"schema={manifest.get('schema')!r}")
     add("bundle_decision", manifest.get("bundleDecision") == "LOCAL_HOST_REPORT_BUNDLE_CREATED", f"decision={manifest.get('bundleDecision')!r}")
     add("bundle_type", manifest.get("bundleType") == "LOCAL_ONLY_REPORT_BUNDLE", f"type={manifest.get('bundleType')!r}")
-    add("present_report_count", manifest.get("presentReportCount") == 12, f"presentReportCount={manifest.get('presentReportCount')!r}")
+    add("present_report_count", manifest.get("presentReportCount") == 14, f"presentReportCount={manifest.get('presentReportCount')!r}")
 
     bundle_reports = {item.get("path") for item in manifest.get("reports", []) if isinstance(item, dict)}
 

@@ -93,6 +93,20 @@ REPORT_CANDIDATES = [
         "description": "Optional Phase 2 UI compositor proof schema Markdown.",
     },
     {
+        "source": "ui-compositor-sample-summary.json",
+        "dest": "reports/ui-compositor-sample-summary.json",
+        "kind": "graphics_stack_diagnostics",
+        "required": False,
+        "description": "Optional Phase 2 UI compositor sample diagnostics JSON summary.",
+    },
+    {
+        "source": "ui-compositor-sample-summary.md",
+        "dest": "reports/ui-compositor-sample-summary.md",
+        "kind": "graphics_stack_diagnostics",
+        "required": False,
+        "description": "Optional Phase 2 UI compositor sample diagnostics Markdown summary.",
+    },
+    {
         "source": "rendered-host-status-report.md",
         "dest": "reports/rendered-host-status-report.md",
         "kind": "local_report",
