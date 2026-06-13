@@ -1,0 +1,61 @@
+{
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "build_attempted": false,
+  "classification": "CLASSIFICATION_PBXPROJ_DRYRUN_DIFF_GUARD",
+  "device_ownership_request_attempted": false,
+  "dext_load_attempted": false,
+  "driverkit_activation_attempted": false,
+  "future_project_graph": {
+    "actually_generated": [],
+    "dext_bundle_id": "dev.h1meka.H1mekaRTXDriver",
+    "dext_entitlements": [
+      "com.apple.developer.driverkit",
+      "com.apple.developer.driverkit.transport.pci"
+    ],
+    "dext_extension_point": "com.apple.driverkit",
+    "dext_target_name": "H1mekaRTXDriver",
+    "host_bundle_id": "dev.h1meka.H1mekaRTXHost",
+    "host_entitlements": [
+      "com.apple.developer.system-extension.install"
+    ],
+    "host_target_name": "H1mekaRTXHost",
+    "project_name": "H1mekaRTXDriverKit",
+    "source_files": [
+      "tools/driverkit-skeleton/H1mekaRTXHost.app.template/Info.plist",
+      "tools/driverkit-skeleton/H1mekaRTXDriver.dext.template/Info.plist",
+      "tools/driverkit-skeleton/H1mekaRTXHost.entitlements.template.plist",
+      "tools/driverkit-skeleton/H1mekaRTXDriver.entitlements.template.plist"
+    ],
+    "would_generate": [
+      "H1mekaRTXDriverKit.xcodeproj/project.pbxproj"
+    ]
+  },
+  "generated_at_utc": "2026-06-13T15:52:08.243856+00:00",
+  "install_attempted": false,
+  "metal_proof_claimed": false,
+  "provider_open_attempted": false,
+  "real_gpu_acceleration_claimed": false,
+  "real_gpu_command_execution_attempted": false,
+  "real_pbxproj_generation_attempted": false,
+  "real_xcodeproj_generation_attempted": false,
+  "rtx5070_workload_attribution_claimed": false,
+  "sanitizer_report_only": true,
+  "schema": "h1mekartx.pbxproj_sanitized_metadata.v1",
+  "secondary_classification": "CLASSIFICATION_PBXPROJ_METADATA_DRYRUN",
+  "signing_attempted": false,
+  "source_layout_schema": "h1mekartx.deterministic_xcode_project_layout.v1",
+  "source_metadata_schema": "h1mekartx.pbxproj_metadata_dryrun.v1",
+  "system_extension_activation_attempted": false,
+  "target_user_visible_goal": [
+    "smooth Dock animation",
+    "working transparency",
+    "working blur",
+    "smooth window movement and resizing",
+    "smooth Mission Control",
+    "smooth Launchpad",
+    "smooth Stage Manager"
+  ],
+  "ui_compositor_proof_claimed": false,
+  "xcodebuild_invocation_attempted": false
+}
