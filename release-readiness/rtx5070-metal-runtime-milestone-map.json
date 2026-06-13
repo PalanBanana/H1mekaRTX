@@ -1,0 +1,93 @@
+{
+  "schema": "h1mekartx.rtx5070_metal_runtime_milestone_map.v1",
+  "title": "RTX 5070 Metal Runtime Milestone Map",
+  "target": {
+    "gpu": "NVIDIA RTX 5070",
+    "architecture": "Blackwell",
+    "vendor_id": "0x10de",
+    "device_id": "0x2f04",
+    "iopcimatch": "0x2f0410de"
+  },
+  "requested_state": {
+    "metal_full_graphics_acceleration_requested": true,
+    "desired_rtx5070_metal_runtime_state": true,
+    "requested_true_recorded": true
+  },
+  "effective_state": {
+    "metal_injection_goal": true,
+    "metal_injection_runtime_allowed_now": false,
+    "runtime_allowed_after_milestone_map": false,
+    "rtx5070_metal_runtime_allowed": false,
+    "driver_runtime_allowed": false,
+    "driver_installation_allowed": false,
+    "driver_activation_allowed": false,
+    "provider_attach_allowed": false,
+    "device_ownership_allowed": false,
+    "low_level_hardware_path_allowed": false
+  },
+  "milestones": [
+    {
+      "id": "m00_intent_recorded",
+      "label": "Runtime request intent recorded",
+      "status": "COMPLETE",
+      "requested_true": true,
+      "effective_runtime_allowed": false
+    },
+    {
+      "id": "m01_static_evidence_gate",
+      "label": "Entitlement and packaging evidence gates",
+      "status": "COMPLETE_MANUAL_REVIEW_ONLY",
+      "requested_true": true,
+      "effective_runtime_allowed": false
+    },
+    {
+      "id": "m02_release_readiness_ci",
+      "label": "Release-readiness CI wrapper",
+      "status": "COMPLETE_NO_RUNTIME",
+      "requested_true": true,
+      "effective_runtime_allowed": false
+    },
+    {
+      "id": "m03_external_authorization",
+      "label": "External entitlement and signing authorization",
+      "status": "NOT_RECORDED",
+      "requested_true": true,
+      "effective_runtime_allowed": false
+    },
+    {
+      "id": "m04_runtime_design_review",
+      "label": "Runtime design review",
+      "status": "NOT_STARTED",
+      "requested_true": true,
+      "effective_runtime_allowed": false
+    },
+    {
+      "id": "m05_runtime_candidate_gate",
+      "label": "Future runtime candidate gate",
+      "status": "BLOCKED",
+      "requested_true": true,
+      "effective_runtime_allowed": false
+    }
+  ],
+  "promotion_rules": {
+    "requested_true_is_not_effective_permission": true,
+    "manual_review_is_not_runtime_permission": true,
+    "effective_runtime_true_requires_future_stage": true,
+    "effective_runtime_true_requires_separate_review": true,
+    "effective_runtime_true_requires_all_safety_gates_to_pass": true,
+    "current_stage_must_keep_runtime_false": true
+  },
+  "decision": "REQUESTED_TRUE_RECORDED_EFFECTIVE_RUNTIME_FALSE",
+  "safety_boundary": {
+    "read_only": true,
+    "milestone_map_only": true,
+    "manual_review_only": true,
+    "no_runtime": true,
+    "no_driver_installation": true,
+    "no_driver_activation": true,
+    "no_provider_attach": true,
+    "no_device_ownership": true,
+    "no_low_level_hardware_path": true,
+    "no_rtx5070_metal_runtime": true
+  }
+}
