@@ -51,6 +51,20 @@ REPORT_CANDIDATES = [
         "description": "Optional no-activation host status JSON saved by the user.",
     },
     {
+        "source": "host-diagnostics-summary.json",
+        "dest": "reports/host-diagnostics-summary.json",
+        "kind": "host_diagnostics",
+        "required": False,
+        "description": "Optional Phase 1 host and graphics stack diagnostics JSON summary.",
+    },
+    {
+        "source": "host-diagnostics-summary.md",
+        "dest": "reports/host-diagnostics-summary.md",
+        "kind": "host_diagnostics",
+        "required": False,
+        "description": "Optional Phase 1 host and graphics stack diagnostics Markdown summary.",
+    },
+    {
         "source": "rendered-host-status-report.md",
         "dest": "reports/rendered-host-status-report.md",
         "kind": "local_report",

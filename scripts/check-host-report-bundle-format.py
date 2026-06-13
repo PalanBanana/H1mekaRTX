@@ -23,6 +23,8 @@ REQUIRED_LAYOUT_PATHS = [
     "reports/metal-workload-result-schema.json",
     "reports/metal-workload-regression-manifest.json",
     "reports/host-status.json",
+    "reports/host-diagnostics-summary.json",
+    "reports/host-diagnostics-summary.md",
     "reports/rendered-host-status-report.md",
     "reports/safety-gates.md",
 ]

@@ -22,6 +22,9 @@ EXPECTED_ITEMS = [
     "workload-schema-regression-sync-report.json",
     "p1-arithmetic-workload-implementation-report.json",
     "local-host-report-renderer-report.json",
+    "host-diagnostics-summary.json",
+    "host-diagnostics-summary.md",
+    "host-ui-diagnostics-check.json",
     "rendered-host-status-report.md",
     "host-report-bundle-format.json",
     "host-report-bundle-format-check.json",
@@ -50,6 +53,8 @@ def write_fixture_reports(fixture_root: Path) -> None:
         "workload-schema-regression-sync-report.json",
         "p1-arithmetic-workload-implementation-report.json",
         "local-host-report-renderer-report.json",
+        "host-diagnostics-summary.json",
+        "host-ui-diagnostics-check.json",
         "host-report-bundle-format.json",
         "host-report-bundle-format-check.json",
         "local-host-report-bundle-generator-check.json",
@@ -74,6 +79,7 @@ def write_fixture_reports(fixture_root: Path) -> None:
 
     md_files = [
         "rendered-host-status-report.md",
+        "host-diagnostics-summary.md",
         "host-report-bundle/README.md",
         "forbidden-bar-operation-audit.md",
         "release-readiness-check.md",

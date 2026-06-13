@@ -57,6 +57,27 @@ INDEX_ITEMS = [
         "description": "Generated local host report renderer check report.",
     },
     {
+        "path": "host-diagnostics-summary.json",
+        "category": "host_diagnostics",
+        "kind": "json_report",
+        "required": False,
+        "description": "Generated Phase 1 host and graphics stack diagnostics JSON summary.",
+    },
+    {
+        "path": "host-diagnostics-summary.md",
+        "category": "host_diagnostics",
+        "kind": "markdown_report",
+        "required": False,
+        "description": "Generated Phase 1 host and graphics stack diagnostics Markdown summary.",
+    },
+    {
+        "path": "host-ui-diagnostics-check.json",
+        "category": "host_diagnostics",
+        "kind": "json_report",
+        "required": False,
+        "description": "Generated Phase 1 host and graphics stack diagnostics fixture check.",
+    },
+    {
         "path": "rendered-host-status-report.md",
         "category": "host_tooling",
         "kind": "markdown_report",

@@ -54,6 +54,8 @@ The generator copies these files only if they already exist:
 - metal-workload-result-schema.json
 - metal-workload-regression-manifest.json
 - host-status.json
+- host-diagnostics-summary.json
+- host-diagnostics-summary.md
 - rendered-host-status-report.md
 - forbidden-bar-operation-audit.md
 

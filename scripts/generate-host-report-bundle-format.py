@@ -57,6 +57,18 @@ BUNDLE_LAYOUT = [
         "description": "Optional no-activation host status JSON.",
     },
     {
+        "path": "reports/host-diagnostics-summary.json",
+        "required": False,
+        "kind": "host_diagnostics",
+        "description": "Optional Phase 1 host and graphics stack diagnostics JSON summary.",
+    },
+    {
+        "path": "reports/host-diagnostics-summary.md",
+        "required": False,
+        "kind": "host_diagnostics",
+        "description": "Optional Phase 1 host and graphics stack diagnostics Markdown summary.",
+    },
+    {
         "path": "reports/rendered-host-status-report.md",
         "required": False,
         "kind": "local_report",

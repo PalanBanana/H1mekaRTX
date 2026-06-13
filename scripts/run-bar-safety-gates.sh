@@ -26,6 +26,36 @@ fi
 python3 -m py_compile "${PY_FILES[@]}"
 
 echo
+echo "== Phase 1 fixture: host + UI compositor diagnostics =="
+HOST_UI_OUT="$TMP_ROOT/host-ui-diagnostics-check"
+./scripts/check-host-diagnostics-report.py --root "$ROOT" --out-dir "$HOST_UI_OUT"
+test -s "$HOST_UI_OUT/host-ui-diagnostics-check.json"
+test -s "$HOST_UI_OUT/host-ui-diagnostics-check.md"
+
+python3 - <<PY
+import json
+from pathlib import Path
+
+p = Path("$HOST_UI_OUT/host-ui-diagnostics-check.json")
+data = json.loads(p.read_text())
+
+assert data["schema"] == "h1mekartx.host_ui_diagnostics_check.v1"
+assert data["decision"] == "PASS_HOST_UI_DIAGNOSTICS_READY"
+assert data["failed_count"] == 0
+assert data["safety_boundary"]["read_only_static_check"] is True
+assert data["safety_boundary"]["driverkit_activation"] is False
+assert data["safety_boundary"]["system_extension_activation"] is False
+assert data["safety_boundary"]["pci_config_writes"] is False
+assert data["safety_boundary"]["mmio_reads"] is False
+assert data["safety_boundary"]["mmio_writes"] is False
+assert data["safety_boundary"]["gpu_command_submission"] is False
+assert data["safety_boundary"]["ui_compositor_proof"] is False
+assert data["safety_boundary"]["metal_proof"] is False
+
+print("Phase 1 host + UI compositor diagnostics validation passed")
+PY
+
+echo
 echo "== Stage 4 fixture: BAR inventory summary =="
 BAR_INV="$TMP_ROOT/bar-inventory-fixture"
 mkdir -p "$BAR_INV"
