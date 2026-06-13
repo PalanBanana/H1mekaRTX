@@ -1,0 +1,51 @@
+{
+  "schema": "h1mekartx.activation_status_capture_plan.v1",
+  "classification": "CLASSIFICATION_ACTIVATION_STATUS_CAPTURE_HARNESS",
+  "secondary_classification": "CLASSIFICATION_ACTIVATION_EXECUTION_GATE",
+  "tertiary_classification": "CLASSIFICATION_STATIC_CONTRACT",
+  "activation_status_capture_harness_only": true,
+  "read_only_status_capture_only": true,
+  "execute_mode_still_blocked": true,
+  "ledger_ready_required_for_execute": true,
+  "activation_execution_gate_decision": "BLOCK_EXECUTE",
+  "real_activation_not_attempted": true,
+  "real_deactivation_not_attempted": true,
+  "driverkit_activation_attempted": false,
+  "system_extension_activation_attempted": false,
+  "system_extension_deactivation_attempted": false,
+  "dext_load_attempted": false,
+  "device_ownership_request_attempted": false,
+  "provider_open_attempted": false,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "real_gpu_command_execution_attempted": false,
+  "rtx5070_workload_attribution_claimed": false,
+  "real_gpu_acceleration_claimed": false,
+  "ui_compositor_proof_claimed": false,
+  "metal_proof_claimed": false,
+  "safe_status_commands": [
+    "systemextensionsctl list",
+    "log show --style compact --last 10m --predicate process == sysextd OR subsystem CONTAINS systemextensions",
+    "sw_vers",
+    "uname -a"
+  ],
+  "local_outputs_ignored": [
+    "host-report-bundle/activation-status-capture/activation-status-capture.json",
+    "host-report-bundle/activation-status-capture/activation-status-capture.md"
+  ],
+  "committed_check_outputs": [
+    "release-readiness/activation-status-capture-harness-check.json",
+    "release-readiness/activation-status-capture-harness-check.md"
+  ],
+  "ui_compositor_timing": {
+    "status_capture_alone_is_not_acceleration": true,
+    "dock_transparency_blur_blocked_until": [
+      "dext load proof",
+      "provider matching proof",
+      "real GPU command execution",
+      "WindowServer/Core Animation/QuartzCore/Metal compositor attribution",
+      "UI compositor proof",
+      "Metal proof"
+    ]
+  }
+}
