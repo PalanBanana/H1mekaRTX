@@ -149,6 +149,20 @@ REPORT_CANDIDATES = [
         "description": "Optional Phase 2 UI workload correlation candidate Markdown report.",
     },
     {
+        "source": "metal-acceleration-entry-gate.json",
+        "dest": "reports/metal-acceleration-entry-gate.json",
+        "kind": "static_contract",
+        "required": False,
+        "description": "Optional Metal acceleration entry gate JSON report.",
+    },
+    {
+        "source": "metal-acceleration-entry-gate.md",
+        "dest": "reports/metal-acceleration-entry-gate.md",
+        "kind": "static_contract",
+        "required": False,
+        "description": "Optional Metal acceleration entry gate Markdown report.",
+    },
+    {
         "source": "rendered-host-status-report.md",
         "dest": "reports/rendered-host-status-report.md",
         "kind": "local_report",

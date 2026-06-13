@@ -37,6 +37,8 @@ REQUIRED_LAYOUT_PATHS = [
     "reports/ui-gpu-attribution-summary.md",
     "reports/ui-workload-correlation-report.json",
     "reports/ui-workload-correlation-report.md",
+    "reports/metal-acceleration-entry-gate.json",
+    "reports/metal-acceleration-entry-gate.md",
     "reports/rendered-host-status-report.md",
     "reports/safety-gates.md",
 ]

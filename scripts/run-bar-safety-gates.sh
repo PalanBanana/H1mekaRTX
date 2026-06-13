@@ -261,6 +261,36 @@ print("Phase 2 UI compositor readiness matrix validation passed")
 PY
 
 echo
+echo "== Phase 3 entry: Metal acceleration gate =="
+METAL_ENTRY_OUT="$TMP_ROOT/metal-acceleration-entry-gate-check"
+./scripts/check-metal-acceleration-entry-gate.py --root "$ROOT" --out-dir "$METAL_ENTRY_OUT"
+test -s "$METAL_ENTRY_OUT/metal-acceleration-entry-gate-check.json"
+test -s "$METAL_ENTRY_OUT/metal-acceleration-entry-gate-check.md"
+
+python3 - <<PY
+import json
+from pathlib import Path
+
+p = Path("$METAL_ENTRY_OUT/metal-acceleration-entry-gate-check.json")
+data = json.loads(p.read_text())
+
+assert data["schema"] == "h1mekartx.metal_acceleration_entry_gate_check.v1"
+assert data["decision"] == "PASS_METAL_ACCELERATION_ENTRY_GATE_READY"
+assert data["failed_count"] == 0
+assert data["safety_boundary"]["read_only_fixture_check"] is True
+assert data["safety_boundary"]["uses_existing_reports_only"] is True
+assert data["safety_boundary"]["driverkit_activation"] is False
+assert data["safety_boundary"]["system_extension_activation"] is False
+assert data["safety_boundary"]["device_ownership_request"] is False
+assert data["safety_boundary"]["gpu_command_submission"] is False
+assert data["safety_boundary"]["rtx5070_shader_execution"] is False
+assert data["safety_boundary"]["ui_compositor_proof"] is False
+assert data["safety_boundary"]["metal_proof"] is False
+
+print("Phase 3 Metal acceleration entry gate validation passed")
+PY
+
+echo
 echo "== Stage 4 fixture: BAR inventory summary =="
 BAR_INV="$TMP_ROOT/bar-inventory-fixture"
 mkdir -p "$BAR_INV"

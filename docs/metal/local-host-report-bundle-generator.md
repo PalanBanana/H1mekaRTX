@@ -68,6 +68,8 @@ The generator copies these files only if they already exist:
 - ui-gpu-attribution-summary.md
 - ui-workload-correlation-report.json
 - ui-workload-correlation-report.md
+- metal-acceleration-entry-gate.json
+- metal-acceleration-entry-gate.md
 - rendered-host-status-report.md
 - forbidden-bar-operation-audit.md
 

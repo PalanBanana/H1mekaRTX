@@ -15,6 +15,7 @@ This runner combines:
 - UI GPU attribution candidate diagnostics
 - UI workload correlation candidate report
 - UI compositor readiness matrix generation
+- Metal acceleration entry gate generation
 - local host report bundle creation
 - local diagnostics index creation
 
@@ -44,6 +45,8 @@ Optional output path:
 - ui-workload-correlation-report.md
 - ui-compositor-readiness-matrix.json
 - ui-compositor-readiness-matrix.md
+- metal-acceleration-entry-gate.json
+- metal-acceleration-entry-gate.md
 - local-diagnostics-index.json
 - local-diagnostics-index.md
 - host-report-bundle/bundle.json

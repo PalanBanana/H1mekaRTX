@@ -141,6 +141,18 @@ BUNDLE_LAYOUT = [
         "description": "Optional Phase 2 UI workload correlation candidate Markdown report.",
     },
     {
+        "path": "reports/metal-acceleration-entry-gate.json",
+        "required": False,
+        "kind": "static_contract",
+        "description": "Optional Metal acceleration entry gate JSON report.",
+    },
+    {
+        "path": "reports/metal-acceleration-entry-gate.md",
+        "required": False,
+        "kind": "static_contract",
+        "description": "Optional Metal acceleration entry gate Markdown report.",
+    },
+    {
         "path": "reports/rendered-host-status-report.md",
         "required": False,
         "kind": "local_report",

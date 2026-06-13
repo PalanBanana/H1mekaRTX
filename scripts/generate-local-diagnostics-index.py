@@ -204,6 +204,27 @@ INDEX_ITEMS = [
         "description": "Generated Phase 2 UI workload correlation report check.",
     },
     {
+        "path": "metal-acceleration-entry-gate.json",
+        "category": "metal_acceleration_entry",
+        "kind": "json_report",
+        "required": False,
+        "description": "Generated Metal acceleration entry gate JSON report.",
+    },
+    {
+        "path": "metal-acceleration-entry-gate.md",
+        "category": "metal_acceleration_entry",
+        "kind": "markdown_report",
+        "required": False,
+        "description": "Generated Metal acceleration entry gate Markdown report.",
+    },
+    {
+        "path": "metal-acceleration-entry-gate-check.json",
+        "category": "metal_acceleration_entry",
+        "kind": "json_report",
+        "required": False,
+        "description": "Generated Metal acceleration entry gate check.",
+    },
+    {
         "path": "rendered-host-status-report.md",
         "category": "host_tooling",
         "kind": "markdown_report",
