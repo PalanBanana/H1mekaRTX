@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleIdentifier</key>
+  <string>dev.h1meka.H1mekaRTXHost</string>
+  <key>CFBundleName</key>
+  <string>H1mekaRTXHost</string>
+  <key>CFBundleDisplayName</key>
+  <string>H1mekaRTX Host Template</string>
+  <key>CFBundleVersion</key>
+  <string>0.0.0-static-template</string>
+  <key>CFBundleShortVersionString</key>
+  <string>0.0.0</string>
+  <key>H1mekaRTXTemplateKind</key>
+  <string>NONACTIVATING_HOST_APP_TEMPLATE</string>
+  <key>H1mekaRTXSafetyBoundary</key>
+  <dict>
+    <key>NO_SYSTEM_EXTENSION_ACTIVATION</key>
+    <true/>
+    <key>NO_DRIVERKIT_ACTIVATION</key>
+    <true/>
+    <key>NO_DEVICE_OWNERSHIP_REQUEST</key>
+    <true/>
+    <key>NO_BAR_MMIO_MUTATION</key>
+    <true/>
+    <key>NO_COMMAND_SUBMISSION</key>
+    <true/>
+  </dict>
+</dict>
+</plist>
