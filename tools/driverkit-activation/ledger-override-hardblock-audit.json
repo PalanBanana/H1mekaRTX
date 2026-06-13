@@ -1,0 +1,73 @@
+{
+  "activation_execution_gate_decision": "BLOCK_EXECUTE",
+  "audit_scope": [
+    "tools/driverkit-activation/H1mekaRTXSystemExtensionActivationDryRun.swift",
+    "tools/driverkit-activation/activation-deactivation-dryrun-plan.json",
+    "tools/driverkit-activation/activation-execution-gate.json"
+  ],
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "classification": "CLASSIFICATION_LEDGER_OVERRIDE_HARDBLOCK_AUDIT",
+  "device_ownership_request_attempted": false,
+  "dext_load_attempted": false,
+  "driverkit_activation_attempted": false,
+  "execute_mode_still_blocked": true,
+  "forbidden_override_markers": [
+    "--execute",
+    "--force",
+    "--force-activate",
+    "--force-deactivate",
+    "--allow-unsafe",
+    "--bypass-ledger",
+    "--override-ledger",
+    "H1MEKARTX_FORCE_EXECUTE",
+    "H1MEKARTX_ALLOW_UNSAFE",
+    "H1MEKARTX_BYPASS_LEDGER",
+    "H1MEKARTX_OVERRIDE_LEDGER",
+    "FORCE_ACTIVATION",
+    "FORCE_DEACTIVATION",
+    "BYPASS_ACTIVATION_GATE",
+    "OVERRIDE_ACTIVATION_GATE"
+  ],
+  "forbidden_runtime_submit_markers": [
+    "OSSystemExtensionManager.shared.submitRequest",
+    "submitRequest(",
+    "submitRequest:",
+    "provider.open",
+    "IOServiceOpen",
+    "mapDeviceMemory",
+    "mapMemory",
+    "writeMemory",
+    "commandSubmission",
+    "submitCommands"
+  ],
+  "force_execute_forbidden": true,
+  "ledger_override_hardblock_audit_only": true,
+  "ledger_ready_required_for_execute": true,
+  "metal_proof_claimed": false,
+  "override_paths_forbidden": true,
+  "provider_open_attempted": false,
+  "real_activation_not_attempted": true,
+  "real_deactivation_not_attempted": true,
+  "real_gpu_acceleration_claimed": false,
+  "real_gpu_command_execution_attempted": false,
+  "rtx5070_workload_attribution_claimed": false,
+  "schema": "h1mekartx.ledger_override_hardblock_audit.v1",
+  "scope_note": "Runtime activation artifacts only. Static checkers/reports are excluded because they may contain explanatory blocked execute text.",
+  "secondary_classification": "CLASSIFICATION_ACTIVATION_EXECUTION_GATE",
+  "system_extension_activation_attempted": false,
+  "system_extension_deactivation_attempted": false,
+  "tertiary_classification": "CLASSIFICATION_STATIC_CONTRACT",
+  "ui_compositor_proof_claimed": false,
+  "ui_compositor_timing": {
+    "activation_execution_alone_is_not_acceleration": true,
+    "dock_transparency_blur_blocked_until": [
+      "dext load proof",
+      "provider matching proof",
+      "real GPU command execution",
+      "WindowServer/Core Animation/QuartzCore/Metal compositor attribution",
+      "UI compositor proof",
+      "Metal proof"
+    ]
+  }
+}
