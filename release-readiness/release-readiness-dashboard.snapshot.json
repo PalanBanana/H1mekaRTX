@@ -1,0 +1,100 @@
+{
+  "combined_gate_badge": {
+    "color": "yellow",
+    "contract_ready": true,
+    "label": "combined-gate",
+    "message": "manual-review-only",
+    "rtx5070_metal_runtime_allowed": false,
+    "runtime_allowed_after_combined_gate": false,
+    "schema": "h1mekartx.combined_gate_status_badge.v1"
+  },
+  "dashboard_only": true,
+  "dashboard_row_count": 8,
+  "dashboard_rows": [
+    {
+      "id": "swiftui_host_app",
+      "label": "SwiftUI host app",
+      "runtime_allowed": false,
+      "status": "READY_STATIC_ONLY"
+    },
+    {
+      "id": "local_report_import",
+      "label": "Local report import",
+      "runtime_allowed": false,
+      "status": "READY_STATIC_ONLY"
+    },
+    {
+      "id": "entitlement_evidence",
+      "label": "Entitlement evidence",
+      "runtime_allowed": false,
+      "status": "MANUAL_REVIEW_ONLY"
+    },
+    {
+      "id": "packaging_plan",
+      "label": "Signed extension packaging plan",
+      "runtime_allowed": false,
+      "status": "MANUAL_REVIEW_ONLY"
+    },
+    {
+      "id": "combined_gate",
+      "label": "Combined entitlement packaging gate",
+      "runtime_allowed": false,
+      "status": "MANUAL_REVIEW_ONLY"
+    },
+    {
+      "id": "combined_gate_badge",
+      "label": "Combined gate badge",
+      "runtime_allowed": false,
+      "status": "MANUAL_REVIEW_ONLY"
+    },
+    {
+      "id": "safety_gates",
+      "label": "Repository safety gates",
+      "runtime_allowed": false,
+      "status": "PASS_REQUIRED"
+    },
+    {
+      "id": "rtx5070_metal_runtime",
+      "label": "RTX 5070 Metal runtime",
+      "runtime_allowed": false,
+      "status": "BLOCKED"
+    }
+  ],
+  "device_ownership_allowed": false,
+  "driver_activation_allowed": false,
+  "driver_installation_allowed": false,
+  "driver_runtime_allowed": false,
+  "frozen_contract": {
+    "badge_message": "manual-review-only",
+    "manual_review_is_runtime_permission": false,
+    "release_readiness_status": "MANUAL_REVIEW_ONLY_NO_RUNTIME",
+    "runtime_policy": "NO_RUNTIME"
+  },
+  "live_system_queries_allowed": false,
+  "low_level_hardware_path_allowed": false,
+  "manual_review_only": true,
+  "metal_injection_goal": true,
+  "metal_injection_runtime_allowed_now": false,
+  "provider_attach_allowed": false,
+  "release_readiness_dashboard_ready": true,
+  "rtx5070_metal_runtime_allowed": false,
+  "runtime_allowed_after_release_readiness": false,
+  "runtime_buttons_enabled": false,
+  "safety_boundary": {
+    "frozen_snapshot_only": true,
+    "manual_review_only": true,
+    "no_device_ownership": true,
+    "no_driver_activation": true,
+    "no_driver_installation": true,
+    "no_low_level_hardware_path": true,
+    "no_provider_attach": true,
+    "no_rtx5070_metal_runtime": true,
+    "no_runtime": true,
+    "read_only": true
+  },
+  "schema": "h1mekartx.release_readiness_dashboard_snapshot.v1",
+  "snapshot_version": 1,
+  "source_decision": "PASS_RELEASE_READINESS_DASHBOARD_NO_RUNTIME",
+  "source_schema": "h1mekartx.release_readiness_dashboard_report.v1",
+  "status": "MANUAL_REVIEW_ONLY_NO_RUNTIME"
+}
