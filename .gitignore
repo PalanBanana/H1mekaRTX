@@ -235,3 +235,7 @@ tools/host-app-no-runtime-swiftui/.build/
 /combined-gate-static-contract-badge-check.md
 /combined-gate-status-badge.json
 /combined-gate-status-badge.md
+/release-readiness-dashboard-report.json
+/release-readiness-dashboard-report.md
+/release-readiness-dashboard-check.json
+/release-readiness-dashboard-check.md

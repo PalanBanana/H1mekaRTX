@@ -1,0 +1,70 @@
+{
+  "schema": "h1mekartx.release_readiness_dashboard.v1",
+  "title": "H1mekaRTX Release Readiness Dashboard",
+  "status": "MANUAL_REVIEW_ONLY_NO_RUNTIME",
+  "metal_injection_goal": true,
+  "metal_injection_runtime_allowed_now": false,
+  "runtime_allowed_after_release_readiness": false,
+  "rtx5070_metal_runtime_allowed": false,
+  "driver_runtime_allowed": false,
+  "driver_installation_allowed": false,
+  "driver_activation_allowed": false,
+  "provider_attach_allowed": false,
+  "device_ownership_allowed": false,
+  "low_level_hardware_path_allowed": false,
+  "dashboard_rows": [
+    {
+      "id": "swiftui_host_app",
+      "label": "SwiftUI host app",
+      "status": "READY_STATIC_ONLY",
+      "runtime_allowed": false
+    },
+    {
+      "id": "local_report_import",
+      "label": "Local report import",
+      "status": "READY_STATIC_ONLY",
+      "runtime_allowed": false
+    },
+    {
+      "id": "entitlement_evidence",
+      "label": "Entitlement evidence",
+      "status": "MANUAL_REVIEW_ONLY",
+      "runtime_allowed": false
+    },
+    {
+      "id": "packaging_plan",
+      "label": "Signed extension packaging plan",
+      "status": "MANUAL_REVIEW_ONLY",
+      "runtime_allowed": false
+    },
+    {
+      "id": "combined_gate",
+      "label": "Combined entitlement packaging gate",
+      "status": "MANUAL_REVIEW_ONLY",
+      "runtime_allowed": false
+    },
+    {
+      "id": "combined_gate_badge",
+      "label": "Combined gate badge",
+      "status": "MANUAL_REVIEW_ONLY",
+      "runtime_allowed": false
+    },
+    {
+      "id": "safety_gates",
+      "label": "Repository safety gates",
+      "status": "PASS_REQUIRED",
+      "runtime_allowed": false
+    },
+    {
+      "id": "rtx5070_metal_runtime",
+      "label": "RTX 5070 Metal runtime",
+      "status": "BLOCKED",
+      "runtime_allowed": false
+    }
+  ],
+  "notes": [
+    "This dashboard is release-readiness documentation only.",
+    "Manual review only is not runtime permission.",
+    "This dashboard does not enable driver runtime or RTX 5070 Metal runtime."
+  ]
+}
