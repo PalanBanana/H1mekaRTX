@@ -1,0 +1,72 @@
+{
+  "schema": "h1mekartx.provider_match_candidate_collector_plan.v1",
+  "classification": "CLASSIFICATION_PROVIDER_MATCH_CANDIDATE_COLLECTOR",
+  "secondary_classification": "CLASSIFICATION_DEXT_LOAD_PROVIDER_MATCH_PROOF_SCHEMA",
+  "tertiary_classification": "CLASSIFICATION_STATIC_CONTRACT",
+  "provider_match_candidate_collector_only": true,
+  "read_only_provider_candidate_collection_only": true,
+  "candidate_report_only": true,
+  "provider_match_proof_not_claimed": true,
+  "execute_mode_still_blocked": true,
+  "ledger_ready_required_for_execute": true,
+  "activation_execution_gate_decision": "BLOCK_EXECUTE",
+  "provider_match_candidate_state": "CANDIDATE_COLLECTION_ONLY",
+  "provider_match_proof_state": "NOT_ATTEMPTED",
+  "dext_load_proof_state": "NOT_ATTEMPTED",
+  "real_gpu_command_execution_proof_state": "NOT_ATTEMPTED",
+  "ui_compositor_proof_state": "NOT_ATTEMPTED",
+  "metal_proof_state": "NOT_ATTEMPTED",
+  "real_activation_not_attempted": true,
+  "real_deactivation_not_attempted": true,
+  "driverkit_activation_attempted": false,
+  "system_extension_activation_attempted": false,
+  "system_extension_deactivation_attempted": false,
+  "dext_load_attempted": false,
+  "device_ownership_request_attempted": false,
+  "provider_open_attempted": false,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "real_gpu_command_execution_attempted": false,
+  "rtx5070_workload_attribution_claimed": false,
+  "real_gpu_acceleration_claimed": false,
+  "ui_compositor_proof_claimed": false,
+  "metal_proof_claimed": false,
+  "safe_read_only_commands": [
+    "ioreg -r -c IOPCIDevice -l -w0",
+    "system_profiler SPPCIDataType",
+    "sw_vers",
+    "uname -a"
+  ],
+  "target_pci_provider_matching_manifest": {
+    "target_gpu": "NVIDIA RTX 5070",
+    "architecture_family": "NVIDIA Blackwell",
+    "vendor_id": "0x10de",
+    "device_id": "0x2f04",
+    "io_pci_match": "0x2f0410de",
+    "expected_provider_class": "IOPCIDevice",
+    "expected_driver_family": "PCIDriverKit",
+    "expected_pci_transport_entitlement": "com.apple.developer.driverkit.transport.pci",
+    "expected_system_extension_entitlement": "com.apple.developer.system-extension.install",
+    "expected_dext_bundle_id": "dev.h1meka.H1mekaRTXDriver",
+    "expected_host_bundle_id": "dev.h1meka.H1mekaRTXHost"
+  },
+  "local_outputs_ignored": [
+    "host-report-bundle/provider-match-candidate/provider-match-candidate-report.json",
+    "host-report-bundle/provider-match-candidate/provider-match-candidate-report.md"
+  ],
+  "committed_check_outputs": [
+    "release-readiness/provider-match-candidate-collector-check.json",
+    "release-readiness/provider-match-candidate-collector-check.md"
+  ],
+  "ui_compositor_timing": {
+    "provider_candidate_observation_alone_is_not_acceleration": true,
+    "dock_transparency_blur_blocked_until": [
+      "dext load proof",
+      "provider matching proof",
+      "real GPU command execution",
+      "WindowServer/Core Animation/QuartzCore/Metal compositor attribution",
+      "UI compositor proof",
+      "Metal proof"
+    ]
+  }
+}
