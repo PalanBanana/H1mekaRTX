@@ -79,6 +79,20 @@ REPORT_CANDIDATES = [
         "description": "Optional Phase 1 BAR inventory diagnostics Markdown summary.",
     },
     {
+        "source": "ui-compositor-proof-schema.json",
+        "dest": "reports/ui-compositor-proof-schema.json",
+        "kind": "static_contract",
+        "required": False,
+        "description": "Optional Phase 2 UI compositor proof schema JSON.",
+    },
+    {
+        "source": "ui-compositor-proof-schema.md",
+        "dest": "reports/ui-compositor-proof-schema.md",
+        "kind": "static_contract",
+        "required": False,
+        "description": "Optional Phase 2 UI compositor proof schema Markdown.",
+    },
+    {
         "source": "rendered-host-status-report.md",
         "dest": "reports/rendered-host-status-report.md",
         "kind": "local_report",

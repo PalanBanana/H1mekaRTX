@@ -99,6 +99,27 @@ INDEX_ITEMS = [
         "description": "Generated Phase 1 diagnostics bundle runner static check.",
     },
     {
+        "path": "ui-compositor-proof-schema.json",
+        "category": "ui_compositor_proof",
+        "kind": "json_report",
+        "required": False,
+        "description": "Generated Phase 2 UI compositor proof schema.",
+    },
+    {
+        "path": "ui-compositor-proof-schema.md",
+        "category": "ui_compositor_proof",
+        "kind": "markdown_report",
+        "required": False,
+        "description": "Generated Phase 2 UI compositor proof schema Markdown.",
+    },
+    {
+        "path": "ui-compositor-proof-schema-check.json",
+        "category": "ui_compositor_proof",
+        "kind": "json_report",
+        "required": False,
+        "description": "Generated Phase 2 UI compositor proof schema check.",
+    },
+    {
         "path": "rendered-host-status-report.md",
         "category": "host_tooling",
         "kind": "markdown_report",

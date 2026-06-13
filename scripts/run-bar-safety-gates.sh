@@ -87,6 +87,41 @@ print("Phase 1 diagnostics bundle runner validation passed")
 PY
 
 echo
+echo "== Phase 2 static contract: UI compositor proof schema =="
+UI_SCHEMA_OUT="$TMP_ROOT/ui-compositor-proof-schema-check"
+./scripts/check-ui-compositor-proof-schema.py --root "$ROOT" --out-dir "$UI_SCHEMA_OUT"
+test -s "$UI_SCHEMA_OUT/ui-compositor-proof-schema-check.json"
+test -s "$UI_SCHEMA_OUT/ui-compositor-proof-schema-check.md"
+
+python3 - <<PY
+import json
+from pathlib import Path
+
+p = Path("$UI_SCHEMA_OUT/ui-compositor-proof-schema-check.json")
+data = json.loads(p.read_text())
+
+assert data["schema"] == "h1mekartx.ui_compositor_proof_schema_check.v1"
+assert data["decision"] == "PASS_UI_COMPOSITOR_PROOF_SCHEMA_READY"
+assert data["failed_count"] == 0
+assert data["safety_boundary"]["read_only_static_check"] is True
+assert data["safety_boundary"]["runs_live_diagnostics"] is False
+assert data["safety_boundary"]["driverkit_activation"] is False
+assert data["safety_boundary"]["system_extension_activation"] is False
+assert data["safety_boundary"]["pci_config_writes"] is False
+assert data["safety_boundary"]["mmio_reads"] is False
+assert data["safety_boundary"]["mmio_writes"] is False
+assert data["safety_boundary"]["gpu_command_submission"] is False
+assert data["safety_boundary"]["windowserver_injection"] is False
+assert data["safety_boundary"]["dock_injection"] is False
+assert data["safety_boundary"]["private_framework_patching"] is False
+assert data["safety_boundary"]["fake_metal_device_spoofing"] is False
+assert data["safety_boundary"]["ui_compositor_proof_claim"] is False
+assert data["safety_boundary"]["metal_proof_claim"] is False
+
+print("Phase 2 UI compositor proof schema validation passed")
+PY
+
+echo
 echo "== Stage 4 fixture: BAR inventory summary =="
 BAR_INV="$TMP_ROOT/bar-inventory-fixture"
 mkdir -p "$BAR_INV"

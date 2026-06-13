@@ -10,6 +10,7 @@ This runner combines:
 - host diagnostics JSON/Markdown summary
 - BAR inventory collection
 - BAR inventory JSON/Markdown summary
+- UI compositor proof schema generation
 - local host report bundle creation
 - local diagnostics index creation
 
@@ -29,6 +30,8 @@ Optional output path:
 - host-diagnostics-summary.md
 - bar-inventory-summary.json
 - bar-inventory-summary.md
+- ui-compositor-proof-schema.json
+- ui-compositor-proof-schema.md
 - local-diagnostics-index.json
 - local-diagnostics-index.md
 - host-report-bundle/bundle.json

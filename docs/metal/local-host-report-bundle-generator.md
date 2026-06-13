@@ -58,6 +58,8 @@ The generator copies these files only if they already exist:
 - host-diagnostics-summary.md
 - bar-inventory-summary.json
 - bar-inventory-summary.md
+- ui-compositor-proof-schema.json
+- ui-compositor-proof-schema.md
 - rendered-host-status-report.md
 - forbidden-bar-operation-audit.md
 

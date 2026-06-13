@@ -81,6 +81,18 @@ BUNDLE_LAYOUT = [
         "description": "Optional Phase 1 BAR inventory diagnostics Markdown summary.",
     },
     {
+        "path": "reports/ui-compositor-proof-schema.json",
+        "required": False,
+        "kind": "static_contract",
+        "description": "Optional Phase 2 UI compositor proof schema JSON.",
+    },
+    {
+        "path": "reports/ui-compositor-proof-schema.md",
+        "required": False,
+        "kind": "static_contract",
+        "description": "Optional Phase 2 UI compositor proof schema Markdown.",
+    },
+    {
         "path": "reports/rendered-host-status-report.md",
         "required": False,
         "kind": "local_report",
