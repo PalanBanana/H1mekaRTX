@@ -54,6 +54,22 @@ The generator copies these files only if they already exist:
 - metal-workload-result-schema.json
 - metal-workload-regression-manifest.json
 - host-status.json
+- host-diagnostics-summary.json
+- host-diagnostics-summary.md
+- bar-inventory-summary.json
+- bar-inventory-summary.md
+- ui-compositor-proof-schema.json
+- ui-compositor-proof-schema.md
+- ui-compositor-sample-summary.json
+- ui-compositor-sample-summary.md
+- ui-compositor-readiness-matrix.json
+- ui-compositor-readiness-matrix.md
+- ui-gpu-attribution-summary.json
+- ui-gpu-attribution-summary.md
+- ui-workload-correlation-report.json
+- ui-workload-correlation-report.md
+- metal-acceleration-entry-gate.json
+- metal-acceleration-entry-gate.md
 - rendered-host-status-report.md
 - forbidden-bar-operation-audit.md
 

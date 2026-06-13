@@ -26,6 +26,271 @@ fi
 python3 -m py_compile "${PY_FILES[@]}"
 
 echo
+echo "== Phase 1 fixture: host + UI compositor diagnostics =="
+HOST_UI_OUT="$TMP_ROOT/host-ui-diagnostics-check"
+./scripts/check-host-diagnostics-report.py --root "$ROOT" --out-dir "$HOST_UI_OUT"
+test -s "$HOST_UI_OUT/host-ui-diagnostics-check.json"
+test -s "$HOST_UI_OUT/host-ui-diagnostics-check.md"
+
+python3 - <<PY
+import json
+from pathlib import Path
+
+p = Path("$HOST_UI_OUT/host-ui-diagnostics-check.json")
+data = json.loads(p.read_text())
+
+assert data["schema"] == "h1mekartx.host_ui_diagnostics_check.v1"
+assert data["decision"] == "PASS_HOST_UI_DIAGNOSTICS_READY"
+assert data["failed_count"] == 0
+assert data["safety_boundary"]["read_only_static_check"] is True
+assert data["safety_boundary"]["driverkit_activation"] is False
+assert data["safety_boundary"]["system_extension_activation"] is False
+assert data["safety_boundary"]["pci_config_writes"] is False
+assert data["safety_boundary"]["mmio_reads"] is False
+assert data["safety_boundary"]["mmio_writes"] is False
+assert data["safety_boundary"]["gpu_command_submission"] is False
+assert data["safety_boundary"]["ui_compositor_proof"] is False
+assert data["safety_boundary"]["metal_proof"] is False
+
+print("Phase 1 host + UI compositor diagnostics validation passed")
+PY
+
+echo
+echo "== Phase 1 static contract: diagnostics bundle runner =="
+PHASE1_RUNNER_OUT="$TMP_ROOT/phase1-diagnostics-bundle-runner-check"
+./scripts/check-phase1-diagnostics-bundle-runner.py --root "$ROOT" --out-dir "$PHASE1_RUNNER_OUT"
+test -s "$PHASE1_RUNNER_OUT/phase1-diagnostics-bundle-runner-check.json"
+test -s "$PHASE1_RUNNER_OUT/phase1-diagnostics-bundle-runner-check.md"
+
+python3 - <<PY
+import json
+from pathlib import Path
+
+p = Path("$PHASE1_RUNNER_OUT/phase1-diagnostics-bundle-runner-check.json")
+data = json.loads(p.read_text())
+
+assert data["schema"] == "h1mekartx.phase1_diagnostics_bundle_runner_check.v1"
+assert data["decision"] == "PASS_PHASE1_DIAGNOSTICS_BUNDLE_RUNNER_READY"
+assert data["failed_count"] == 0
+assert data["safety_boundary"]["read_only_static_check"] is True
+assert data["safety_boundary"]["driverkit_activation"] is False
+assert data["safety_boundary"]["system_extension_activation"] is False
+assert data["safety_boundary"]["pci_config_writes"] is False
+assert data["safety_boundary"]["mmio_reads"] is False
+assert data["safety_boundary"]["mmio_writes"] is False
+assert data["safety_boundary"]["bar_mapping"] is False
+assert data["safety_boundary"]["gpu_command_submission"] is False
+assert data["safety_boundary"]["ui_compositor_proof"] is False
+assert data["safety_boundary"]["metal_proof"] is False
+
+print("Phase 1 diagnostics bundle runner validation passed")
+PY
+
+echo
+echo "== Phase 2 static contract: UI compositor proof schema =="
+UI_SCHEMA_OUT="$TMP_ROOT/ui-compositor-proof-schema-check"
+./scripts/check-ui-compositor-proof-schema.py --root "$ROOT" --out-dir "$UI_SCHEMA_OUT"
+test -s "$UI_SCHEMA_OUT/ui-compositor-proof-schema-check.json"
+test -s "$UI_SCHEMA_OUT/ui-compositor-proof-schema-check.md"
+
+python3 - <<PY
+import json
+from pathlib import Path
+
+p = Path("$UI_SCHEMA_OUT/ui-compositor-proof-schema-check.json")
+data = json.loads(p.read_text())
+
+assert data["schema"] == "h1mekartx.ui_compositor_proof_schema_check.v1"
+assert data["decision"] == "PASS_UI_COMPOSITOR_PROOF_SCHEMA_READY"
+assert data["failed_count"] == 0
+assert data["safety_boundary"]["read_only_static_check"] is True
+assert data["safety_boundary"]["runs_live_diagnostics"] is False
+assert data["safety_boundary"]["driverkit_activation"] is False
+assert data["safety_boundary"]["system_extension_activation"] is False
+assert data["safety_boundary"]["pci_config_writes"] is False
+assert data["safety_boundary"]["mmio_reads"] is False
+assert data["safety_boundary"]["mmio_writes"] is False
+assert data["safety_boundary"]["gpu_command_submission"] is False
+assert data["safety_boundary"]["windowserver_injection"] is False
+assert data["safety_boundary"]["dock_injection"] is False
+assert data["safety_boundary"]["private_framework_patching"] is False
+assert data["safety_boundary"]["fake_metal_device_spoofing"] is False
+assert data["safety_boundary"]["ui_compositor_proof_claim"] is False
+assert data["safety_boundary"]["metal_proof_claim"] is False
+
+print("Phase 2 UI compositor proof schema validation passed")
+PY
+
+echo
+echo "== Phase 2 fixture: UI compositor sample diagnostics =="
+UI_SAMPLE_OUT="$TMP_ROOT/ui-compositor-sample-diagnostics-check"
+./scripts/check-ui-compositor-sample-diagnostics.py --root "$ROOT" --out-dir "$UI_SAMPLE_OUT"
+test -s "$UI_SAMPLE_OUT/ui-compositor-sample-diagnostics-check.json"
+test -s "$UI_SAMPLE_OUT/ui-compositor-sample-diagnostics-check.md"
+
+python3 - <<PY
+import json
+from pathlib import Path
+
+p = Path("$UI_SAMPLE_OUT/ui-compositor-sample-diagnostics-check.json")
+data = json.loads(p.read_text())
+
+assert data["schema"] == "h1mekartx.ui_compositor_sample_diagnostics_check.v1"
+assert data["decision"] == "PASS_UI_COMPOSITOR_SAMPLE_DIAGNOSTICS_READY"
+assert data["failed_count"] == 0
+assert data["safety_boundary"]["read_only_fixture_check"] is True
+assert data["safety_boundary"]["driverkit_activation"] is False
+assert data["safety_boundary"]["system_extension_activation"] is False
+assert data["safety_boundary"]["process_injection"] is False
+assert data["safety_boundary"]["windowserver_injection"] is False
+assert data["safety_boundary"]["dock_injection"] is False
+assert data["safety_boundary"]["private_framework_patching"] is False
+assert data["safety_boundary"]["mmio_reads"] is False
+assert data["safety_boundary"]["mmio_writes"] is False
+assert data["safety_boundary"]["gpu_command_submission"] is False
+assert data["safety_boundary"]["ui_compositor_proof"] is False
+assert data["safety_boundary"]["metal_proof"] is False
+
+print("Phase 2 UI compositor sample diagnostics validation passed")
+PY
+
+echo
+echo "== Phase 2 fixture: UI GPU attribution diagnostics =="
+UI_ATTRIBUTION_OUT="$TMP_ROOT/ui-gpu-attribution-diagnostics-check"
+./scripts/check-ui-gpu-attribution-diagnostics.py --root "$ROOT" --out-dir "$UI_ATTRIBUTION_OUT"
+test -s "$UI_ATTRIBUTION_OUT/ui-gpu-attribution-diagnostics-check.json"
+test -s "$UI_ATTRIBUTION_OUT/ui-gpu-attribution-diagnostics-check.md"
+
+python3 - <<PY
+import json
+from pathlib import Path
+
+p = Path("$UI_ATTRIBUTION_OUT/ui-gpu-attribution-diagnostics-check.json")
+data = json.loads(p.read_text())
+
+assert data["schema"] == "h1mekartx.ui_gpu_attribution_diagnostics_check.v1"
+assert data["decision"] == "PASS_UI_GPU_ATTRIBUTION_DIAGNOSTICS_READY"
+assert data["failed_count"] == 0
+assert data["safety_boundary"]["read_only_fixture_check"] is True
+assert data["safety_boundary"]["driverkit_activation"] is False
+assert data["safety_boundary"]["system_extension_activation"] is False
+assert data["safety_boundary"]["process_injection"] is False
+assert data["safety_boundary"]["windowserver_injection"] is False
+assert data["safety_boundary"]["dock_injection"] is False
+assert data["safety_boundary"]["private_framework_patching"] is False
+assert data["safety_boundary"]["sip_bypass"] is False
+assert data["safety_boundary"]["amfi_bypass"] is False
+assert data["safety_boundary"]["pci_config_writes"] is False
+assert data["safety_boundary"]["mmio_reads"] is False
+assert data["safety_boundary"]["mmio_writes"] is False
+assert data["safety_boundary"]["bar_mapping"] is False
+assert data["safety_boundary"]["gpu_command_submission"] is False
+assert data["safety_boundary"]["trusted_ui_gpu_attribution_claim"] is False
+assert data["safety_boundary"]["ui_compositor_proof"] is False
+assert data["safety_boundary"]["metal_proof"] is False
+
+print("Phase 2 UI GPU attribution diagnostics validation passed")
+PY
+
+echo
+echo "== Phase 2 fixture: UI workload correlation report =="
+UI_WORKLOAD_OUT="$TMP_ROOT/ui-workload-correlation-report-check"
+./scripts/check-ui-workload-correlation-report.py --root "$ROOT" --out-dir "$UI_WORKLOAD_OUT"
+test -s "$UI_WORKLOAD_OUT/ui-workload-correlation-report-check.json"
+test -s "$UI_WORKLOAD_OUT/ui-workload-correlation-report-check.md"
+
+python3 - <<PY
+import json
+from pathlib import Path
+
+p = Path("$UI_WORKLOAD_OUT/ui-workload-correlation-report-check.json")
+data = json.loads(p.read_text())
+
+assert data["schema"] == "h1mekartx.ui_workload_correlation_report_check.v1"
+assert data["decision"] == "PASS_UI_WORKLOAD_CORRELATION_REPORT_READY"
+assert data["failed_count"] == 0
+assert data["safety_boundary"]["read_only_fixture_check"] is True
+assert data["safety_boundary"]["uses_existing_reports_only"] is True
+assert data["safety_boundary"]["driverkit_activation"] is False
+assert data["safety_boundary"]["system_extension_activation"] is False
+assert data["safety_boundary"]["device_ownership_request"] is False
+assert data["safety_boundary"]["windowserver_injection"] is False
+assert data["safety_boundary"]["dock_injection"] is False
+assert data["safety_boundary"]["pci_config_writes"] is False
+assert data["safety_boundary"]["mmio_reads"] is False
+assert data["safety_boundary"]["mmio_writes"] is False
+assert data["safety_boundary"]["bar_mapping"] is False
+assert data["safety_boundary"]["gpu_command_submission"] is False
+assert data["safety_boundary"]["rtx5070_shader_execution"] is False
+assert data["safety_boundary"]["trusted_rtx5070_workload_attribution_claim"] is False
+assert data["safety_boundary"]["ui_compositor_proof"] is False
+assert data["safety_boundary"]["metal_proof"] is False
+
+print("Phase 2 UI workload correlation report validation passed")
+PY
+
+echo
+echo "== Phase 2 fixture: UI compositor readiness matrix =="
+UI_READINESS_OUT="$TMP_ROOT/ui-compositor-readiness-matrix-check"
+./scripts/check-ui-compositor-readiness-matrix.py --root "$ROOT" --out-dir "$UI_READINESS_OUT"
+test -s "$UI_READINESS_OUT/ui-compositor-readiness-matrix-check.json"
+test -s "$UI_READINESS_OUT/ui-compositor-readiness-matrix-check.md"
+
+python3 - <<PY
+import json
+from pathlib import Path
+
+p = Path("$UI_READINESS_OUT/ui-compositor-readiness-matrix-check.json")
+data = json.loads(p.read_text())
+
+assert data["schema"] == "h1mekartx.ui_compositor_readiness_matrix_check.v1"
+assert data["decision"] == "PASS_UI_COMPOSITOR_READINESS_MATRIX_READY"
+assert data["failed_count"] == 0
+assert data["safety_boundary"]["read_only_fixture_check"] is True
+assert data["safety_boundary"]["uses_existing_reports_only"] is True
+assert data["safety_boundary"]["driverkit_activation"] is False
+assert data["safety_boundary"]["system_extension_activation"] is False
+assert data["safety_boundary"]["pci_config_writes"] is False
+assert data["safety_boundary"]["mmio_reads"] is False
+assert data["safety_boundary"]["mmio_writes"] is False
+assert data["safety_boundary"]["gpu_command_submission"] is False
+assert data["safety_boundary"]["ui_compositor_proof_claim"] is False
+assert data["safety_boundary"]["metal_proof_claim"] is False
+
+print("Phase 2 UI compositor readiness matrix validation passed")
+PY
+
+echo
+echo "== Phase 3 entry: Metal acceleration gate =="
+METAL_ENTRY_OUT="$TMP_ROOT/metal-acceleration-entry-gate-check"
+./scripts/check-metal-acceleration-entry-gate.py --root "$ROOT" --out-dir "$METAL_ENTRY_OUT"
+test -s "$METAL_ENTRY_OUT/metal-acceleration-entry-gate-check.json"
+test -s "$METAL_ENTRY_OUT/metal-acceleration-entry-gate-check.md"
+
+python3 - <<PY
+import json
+from pathlib import Path
+
+p = Path("$METAL_ENTRY_OUT/metal-acceleration-entry-gate-check.json")
+data = json.loads(p.read_text())
+
+assert data["schema"] == "h1mekartx.metal_acceleration_entry_gate_check.v1"
+assert data["decision"] == "PASS_METAL_ACCELERATION_ENTRY_GATE_READY"
+assert data["failed_count"] == 0
+assert data["safety_boundary"]["read_only_fixture_check"] is True
+assert data["safety_boundary"]["uses_existing_reports_only"] is True
+assert data["safety_boundary"]["driverkit_activation"] is False
+assert data["safety_boundary"]["system_extension_activation"] is False
+assert data["safety_boundary"]["device_ownership_request"] is False
+assert data["safety_boundary"]["gpu_command_submission"] is False
+assert data["safety_boundary"]["rtx5070_shader_execution"] is False
+assert data["safety_boundary"]["ui_compositor_proof"] is False
+assert data["safety_boundary"]["metal_proof"] is False
+
+print("Phase 3 Metal acceleration entry gate validation passed")
+PY
+
+echo
 echo "== Stage 4 fixture: BAR inventory summary =="
 BAR_INV="$TMP_ROOT/bar-inventory-fixture"
 mkdir -p "$BAR_INV"

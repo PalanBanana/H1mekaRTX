@@ -26,6 +26,22 @@ EXPECTED_OPTIONAL_REPORTS = [
     "reports/metal-workload-result-schema.json",
     "reports/metal-workload-regression-manifest.json",
     "reports/host-status.json",
+    "reports/host-diagnostics-summary.json",
+    "reports/host-diagnostics-summary.md",
+    "reports/bar-inventory-summary.json",
+    "reports/bar-inventory-summary.md",
+    "reports/ui-compositor-proof-schema.json",
+    "reports/ui-compositor-proof-schema.md",
+    "reports/ui-compositor-sample-summary.json",
+    "reports/ui-compositor-sample-summary.md",
+    "reports/ui-compositor-readiness-matrix.json",
+    "reports/ui-compositor-readiness-matrix.md",
+    "reports/ui-gpu-attribution-summary.json",
+    "reports/ui-gpu-attribution-summary.md",
+    "reports/ui-workload-correlation-report.json",
+    "reports/ui-workload-correlation-report.md",
+    "reports/metal-acceleration-entry-gate.json",
+    "reports/metal-acceleration-entry-gate.md",
     "reports/rendered-host-status-report.md",
     "reports/safety-gates.md",
 ]
@@ -90,6 +106,133 @@ def write_fixture_reports(fixture_dir: Path) -> None:
         + "\n"
     )
 
+    (fixture_dir / "host-diagnostics-summary.json").write_text(
+        json.dumps(
+            {
+                "schema": "h1mekartx.host_ui_diagnostics_summary.v1",
+                "decisions": {
+                    "host_diagnostics_result": "TARGET_PRESENT_HOST_DIAGNOSTICS",
+                    "graphics_stack_diagnostics_result": "GRAPHICS_STACK_HINTS_PRESENT",
+                    "ui_compositor_proof_result": "UNPROVEN",
+                    "metal_proof_result": "UNPROVEN",
+                },
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n"
+    )
+    (fixture_dir / "host-diagnostics-summary.md").write_text("# Host Diagnostics Summary\n\nFixture.\n")
+    (fixture_dir / "bar-inventory-summary.json").write_text(
+        json.dumps(
+            {
+                "schema": "h1mekartx.bar_inventory_summary.v1",
+                "likely_target_present": True,
+                "safety_boundary": {
+                    "read_only": True,
+                    "mmio_writes": False,
+                    "driverkit_activation": False,
+                },
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n"
+    )
+    (fixture_dir / "bar-inventory-summary.md").write_text("# BAR Inventory Summary\n\nFixture.\n")
+    (fixture_dir / "ui-compositor-proof-schema.json").write_text(
+        json.dumps(
+            {
+                "schema": "h1mekartx.ui_compositor_proof_schema.v1",
+                "decision": "UI_COMPOSITOR_PROOF_SCHEMA_READY",
+                "ui_compositor_acceleration_claim_allowed_now": False,
+                "metal_acceleration_claim_allowed_now": False,
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n"
+    )
+    (fixture_dir / "ui-compositor-proof-schema.md").write_text("# UI Compositor Proof Schema\n\nFixture.\n")
+    (fixture_dir / "ui-compositor-sample-summary.json").write_text(
+        json.dumps(
+            {
+                "schema": "h1mekartx.ui_compositor_sample_summary.v1",
+                "decisions": {
+                    "sample_result": "UI_COMPOSITOR_SAMPLE_DIAGNOSTICS_CAPTURED",
+                    "ui_compositor_proof_result": "UNPROVEN",
+                    "metal_proof_result": "UNPROVEN",
+                },
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n"
+    )
+    (fixture_dir / "ui-compositor-sample-summary.md").write_text("# UI Compositor Sample Summary\n\nFixture.\n")
+    (fixture_dir / "ui-compositor-readiness-matrix.json").write_text(
+        json.dumps(
+            {
+                "schema": "h1mekartx.ui_compositor_readiness_matrix.v1",
+                "decision": "NOT_PROVEN",
+                "ui_compositor_acceleration_claim_allowed": False,
+                "metal_acceleration_claim_allowed": False,
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n"
+    )
+    (fixture_dir / "ui-compositor-readiness-matrix.md").write_text("# UI Compositor Readiness Matrix\n\nFixture.\n")
+    (fixture_dir / "ui-gpu-attribution-summary.json").write_text(
+        json.dumps(
+            {
+                "schema": "h1mekartx.ui_gpu_attribution_summary.v1",
+                "decisions": {
+                    "ui_gpu_attribution_result": "UI_GPU_ATTRIBUTION_CANDIDATES_CAPTURED",
+                    "trusted_ui_gpu_attribution_result": "UNPROVEN",
+                },
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n"
+    )
+    (fixture_dir / "ui-gpu-attribution-summary.md").write_text("# UI GPU Attribution Summary\n\nFixture.\n")
+    (fixture_dir / "ui-workload-correlation-report.json").write_text(
+        json.dumps(
+            {
+                "schema": "h1mekartx.ui_workload_correlation_report.v1",
+                "decisions": {
+                    "ui_workload_correlation_result": "UI_WORKLOAD_CORRELATION_CANDIDATES_CAPTURED",
+                    "rtx5070_workload_attribution_result": "UNPROVEN",
+                    "ui_compositor_proof_result": "UNPROVEN",
+                    "metal_proof_result": "UNPROVEN",
+                },
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n"
+    )
+    (fixture_dir / "ui-workload-correlation-report.md").write_text("# UI Workload Correlation Report\n\nFixture.\n")
+    (fixture_dir / "metal-acceleration-entry-gate.json").write_text(
+        json.dumps(
+            {
+                "schema": "h1mekartx.metal_acceleration_entry_gate.v1",
+                "decision": "METAL_ACCELERATION_IMPLEMENTATION_NOT_READY",
+                "claims": {
+                    "rtx5070_ui_acceleration_claim_allowed": False,
+                    "rtx5070_metal_acceleration_claim_allowed": False,
+                    "real_gpu_command_execution_claim_allowed": False,
+                },
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n"
+    )
+    (fixture_dir / "metal-acceleration-entry-gate.md").write_text("# Metal Acceleration Entry Gate\n\nFixture.\n")
     (fixture_dir / "rendered-host-status-report.md").write_text("# Rendered Host Status Report\n\nFixture.\n")
     (fixture_dir / "forbidden-bar-operation-audit.md").write_text("# Safety Gates\n\nFixture.\n")
 
@@ -183,7 +326,7 @@ def build_report(root: Path, out_dir: Path) -> dict[str, Any]:
     add("bundle_schema", manifest.get("schema") == "h1mekartx.host_report_bundle.v1", f"schema={manifest.get('schema')!r}")
     add("bundle_decision", manifest.get("bundleDecision") == "LOCAL_HOST_REPORT_BUNDLE_CREATED", f"decision={manifest.get('bundleDecision')!r}")
     add("bundle_type", manifest.get("bundleType") == "LOCAL_ONLY_REPORT_BUNDLE", f"type={manifest.get('bundleType')!r}")
-    add("present_report_count", manifest.get("presentReportCount") == 6, f"presentReportCount={manifest.get('presentReportCount')!r}")
+    add("present_report_count", manifest.get("presentReportCount") == 22, f"presentReportCount={manifest.get('presentReportCount')!r}")
 
     bundle_reports = {item.get("path") for item in manifest.get("reports", []) if isinstance(item, dict)}
 
