@@ -247,3 +247,7 @@ tools/host-app-no-runtime-swiftui/.build/
 /release-readiness-dashboard-diff-guard-report.md
 /release-readiness-dashboard-diff-guard-check.json
 /release-readiness-dashboard-diff-guard-check.md
+/release-readiness-dashboard-ci-report.json
+/release-readiness-dashboard-ci-report.md
+/release-readiness-dashboard-ci-entrypoint-check.json
+/release-readiness-dashboard-ci-entrypoint-check.md
