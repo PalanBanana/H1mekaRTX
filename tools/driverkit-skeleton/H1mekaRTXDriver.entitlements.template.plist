@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>com.apple.developer.driverkit</key>
+  <true/>
+  <key>com.apple.developer.driverkit.transport.pci</key>
+  <array>
+    <dict>
+      <key>H1mekaRTXTemplateOnly</key>
+      <true/>
+      <key>vendor_id</key>
+      <string>0x10de</string>
+      <key>device_id</key>
+      <string>0x2f04</string>
+      <key>io_pci_match</key>
+      <string>0x2f0410de</string>
+      <key>target_gpu</key>
+      <string>NVIDIA RTX 5070</string>
+    </dict>
+  </array>
+  <key>H1mekaRTXEntitlementTemplateOnly</key>
+  <true/>
+  <key>H1mekaRTXSigningStateInThisPhase</key>
+  <string>NOT_ATTEMPTED</string>
+</dict>
+</plist>
