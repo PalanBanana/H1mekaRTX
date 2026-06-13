@@ -261,3 +261,7 @@ tools/host-app-no-runtime-swiftui/.build/
 /rtx5070-metal-runtime-milestone-map-report.md
 /rtx5070-metal-runtime-milestone-map-check.json
 /rtx5070-metal-runtime-milestone-map-check.md
+/rtx5070-metal-runtime-milestone-map-snapshot-report.json
+/rtx5070-metal-runtime-milestone-map-snapshot-report.md
+/rtx5070-metal-runtime-milestone-map-static-contract-check.json
+/rtx5070-metal-runtime-milestone-map-static-contract-check.md
