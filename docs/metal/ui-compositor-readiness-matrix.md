@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Combine existing host diagnostics, UI compositor sample diagnostics, and the UI compositor proof schema into a readiness matrix.
+Combine existing host diagnostics, UI compositor sample diagnostics, optional UI GPU attribution candidate diagnostics, and the UI compositor proof schema into a readiness matrix.
 
 This matrix shows which prerequisites are present and which proof requirements remain blocked.
 
@@ -18,6 +18,7 @@ This is not Metal proof.
 
 - host-diagnostics-summary.json
 - ui-compositor-sample-summary.json
+- ui-gpu-attribution-summary.json
 - ui-compositor-proof-schema.json
 
 ## Output
@@ -40,6 +41,7 @@ The expected result is `NOT_PROVEN` until the project has:
     ./scripts/generate-ui-compositor-readiness-matrix.py \
       --host-summary ./host-diagnostics-summary.json \
       --ui-sample-summary ./ui-compositor-sample-summary.json \
+      --ui-gpu-attribution-summary ./ui-gpu-attribution-summary.json \
       --proof-schema ./ui-compositor-proof-schema.json \
       --out-dir .
 

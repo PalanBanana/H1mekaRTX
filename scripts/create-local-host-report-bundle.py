@@ -121,6 +121,20 @@ REPORT_CANDIDATES = [
         "description": "Optional Phase 2 UI compositor readiness matrix Markdown.",
     },
     {
+        "source": "ui-gpu-attribution-summary.json",
+        "dest": "reports/ui-gpu-attribution-summary.json",
+        "kind": "graphics_stack_diagnostics",
+        "required": False,
+        "description": "Optional Phase 2 UI GPU attribution candidate diagnostics JSON summary.",
+    },
+    {
+        "source": "ui-gpu-attribution-summary.md",
+        "dest": "reports/ui-gpu-attribution-summary.md",
+        "kind": "graphics_stack_diagnostics",
+        "required": False,
+        "description": "Optional Phase 2 UI GPU attribution candidate diagnostics Markdown summary.",
+    },
+    {
         "source": "rendered-host-status-report.md",
         "dest": "reports/rendered-host-status-report.md",
         "kind": "local_report",

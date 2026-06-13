@@ -56,6 +56,8 @@ def build_matrix(
     host_path: Path,
     sample_path: Path,
     schema_path: Path,
+    ui_gpu_attribution: dict[str, Any] | None = None,
+    ui_gpu_attribution_path: Path | None = None,
 ) -> dict[str, Any]:
     host_decisions = host_summary.get("decisions", {})
     sample_decisions = ui_sample.get("decisions", {})
@@ -65,6 +67,10 @@ def build_matrix(
     host_result = host_decisions.get("host_diagnostics_result")
     graphics_result = host_decisions.get("graphics_stack_diagnostics_result")
     sample_result = sample_decisions.get("sample_result")
+    attribution_decisions = ui_gpu_attribution.get("decisions", {}) if ui_gpu_attribution else {}
+    attribution_result = attribution_decisions.get("ui_gpu_attribution_result")
+    trusted_attribution_result = attribution_decisions.get("trusted_ui_gpu_attribution_result")
+    rtx_attribution_result = attribution_decisions.get("rtx5070_ui_gpu_attribution_result")
 
     target_hits = host_summary.get("target_hits", {})
     bar_hints = host_summary.get("bar_inventory_hints", {})
@@ -144,8 +150,14 @@ def build_matrix(
             "Current UI compositor backend is attributed to a concrete GPU path.",
             "graphics_stack_diagnostics",
             "BLOCKED",
-            "No trusted WindowServer/Core Animation GPU attribution field is captured yet.",
-            "Add an attribution-oriented diagnostic before claiming compositor acceleration.",
+            (
+                f"candidate_attribution={attribution_result!r}, "
+                f"trusted_attribution={trusted_attribution_result!r}, "
+                f"rtx5070_attribution={rtx_attribution_result!r}"
+                if ui_gpu_attribution
+                else "No UI GPU attribution candidate report is present."
+            ),
+            "Use UI GPU attribution diagnostics as candidate evidence only; add a trusted attribution source before claiming compositor acceleration.",
         ),
         requirement(
             "rtx5070_workload_attribution",
@@ -180,6 +192,7 @@ def build_matrix(
             "host_summary": str(host_path),
             "ui_sample_summary": str(sample_path),
             "ui_compositor_proof_schema": str(schema_path),
+            "ui_gpu_attribution_summary": str(ui_gpu_attribution_path) if ui_gpu_attribution_path else None,
         },
         "decision": readiness,
         "ui_compositor_acceleration_claim_allowed": False,
@@ -243,6 +256,7 @@ def markdown_report(matrix: dict[str, Any]) -> str:
             f"- Host summary: `{matrix['inputs']['host_summary']}`",
             f"- UI sample summary: `{matrix['inputs']['ui_sample_summary']}`",
             f"- UI compositor proof schema: `{matrix['inputs']['ui_compositor_proof_schema']}`",
+            f"- UI GPU attribution summary: `{matrix['inputs']['ui_gpu_attribution_summary']}`",
             "",
             "## Requirements",
             "",
@@ -263,12 +277,14 @@ def main() -> int:
     parser.add_argument("--host-summary", required=True, help="host-diagnostics-summary.json")
     parser.add_argument("--ui-sample-summary", required=True, help="ui-compositor-sample-summary.json")
     parser.add_argument("--proof-schema", required=True, help="ui-compositor-proof-schema.json")
+    parser.add_argument("--ui-gpu-attribution-summary", default=None, help="Optional ui-gpu-attribution-summary.json")
     parser.add_argument("--out-dir", default=".", help="Output directory. Defaults to current directory.")
     args = parser.parse_args()
 
     host_path = Path(args.host_summary).expanduser().resolve()
     sample_path = Path(args.ui_sample_summary).expanduser().resolve()
     schema_path = Path(args.proof_schema).expanduser().resolve()
+    attribution_path = Path(args.ui_gpu_attribution_summary).expanduser().resolve() if args.ui_gpu_attribution_summary else None
     out_dir = Path(args.out_dir).expanduser().resolve()
     out_dir.mkdir(parents=True, exist_ok=True)
 
@@ -279,6 +295,8 @@ def main() -> int:
         host_path,
         sample_path,
         schema_path,
+        load_json(attribution_path) if attribution_path else None,
+        attribution_path,
     )
 
     json_path = out_dir / "ui-compositor-readiness-matrix.json"

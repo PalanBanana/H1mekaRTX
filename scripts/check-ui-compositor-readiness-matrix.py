@@ -24,11 +24,12 @@ def read_text(path: Path) -> str:
         return ""
 
 
-def write_fixture(fixture_dir: Path) -> tuple[Path, Path, Path]:
+def write_fixture(fixture_dir: Path) -> tuple[Path, Path, Path, Path]:
     fixture_dir.mkdir(parents=True, exist_ok=True)
     host = fixture_dir / "host-diagnostics-summary.json"
     sample = fixture_dir / "ui-compositor-sample-summary.json"
     schema = fixture_dir / "ui-compositor-proof-schema.json"
+    attribution = fixture_dir / "ui-gpu-attribution-summary.json"
 
     host.write_text(
         json.dumps(
@@ -85,10 +86,25 @@ def write_fixture(fixture_dir: Path) -> tuple[Path, Path, Path]:
         )
         + "\n"
     )
-    return host, sample, schema
+    attribution.write_text(
+        json.dumps(
+            {
+                "schema": "h1mekartx.ui_gpu_attribution_summary.v1",
+                "decisions": {
+                    "ui_gpu_attribution_result": "UI_GPU_ATTRIBUTION_CANDIDATES_CAPTURED",
+                    "trusted_ui_gpu_attribution_result": "UNPROVEN",
+                    "rtx5070_ui_gpu_attribution_result": "UNPROVEN",
+                },
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n"
+    )
+    return host, sample, schema, attribution
 
 
-def run_generator(root: Path, host: Path, sample: Path, schema: Path, out_dir: Path) -> dict[str, Any]:
+def run_generator(root: Path, host: Path, sample: Path, schema: Path, attribution: Path, out_dir: Path) -> dict[str, Any]:
     proc = subprocess.run(
         [
             "python3",
@@ -99,6 +115,8 @@ def run_generator(root: Path, host: Path, sample: Path, schema: Path, out_dir: P
             str(sample),
             "--proof-schema",
             str(schema),
+            "--ui-gpu-attribution-summary",
+            str(attribution),
             "--out-dir",
             str(out_dir),
         ],
@@ -127,6 +145,8 @@ def build_report(root: Path, out_dir: Path) -> dict[str, Any]:
     required_terms = [
         "h1mekartx.ui_compositor_readiness_matrix.v1",
         "NOT_PROVEN",
+        "ui_gpu_attribution_summary",
+        "candidate_attribution",
         "ui_compositor_acceleration_claim_allowed",
         "metal_acceleration_claim_allowed",
         "current_ui_gpu_attribution",
@@ -156,8 +176,8 @@ def build_report(root: Path, out_dir: Path) -> dict[str, Any]:
 
     fixture_dir = out_dir / "fixture" / "inputs"
     matrix_out = out_dir / "fixture" / "matrix"
-    host, sample, schema = write_fixture(fixture_dir)
-    generator = run_generator(root, host, sample, schema, matrix_out)
+    host, sample, schema, attribution = write_fixture(fixture_dir)
+    generator = run_generator(root, host, sample, schema, attribution, matrix_out)
     add("generator_returncode", generator["returncode"] == 0, f"returncode={generator['returncode']}")
 
     json_path = matrix_out / "ui-compositor-readiness-matrix.json"
@@ -171,6 +191,7 @@ def build_report(root: Path, out_dir: Path) -> dict[str, Any]:
     add("ui_claim_false", data.get("ui_compositor_acceleration_claim_allowed") is False, f"value={data.get('ui_compositor_acceleration_claim_allowed')!r}")
     add("metal_claim_false", data.get("metal_acceleration_claim_allowed") is False, f"value={data.get('metal_acceleration_claim_allowed')!r}")
     add("blocked_count", data.get("blocked_count", 0) >= 1, f"blocked_count={data.get('blocked_count')!r}")
+    add("attribution_input_recorded", data.get("inputs", {}).get("ui_gpu_attribution_summary") is not None, f"value={data.get('inputs', {}).get('ui_gpu_attribution_summary')!r}")
 
     req_ids = {item.get("id") for item in data.get("requirements", []) if isinstance(item, dict)}
     for req_id in [

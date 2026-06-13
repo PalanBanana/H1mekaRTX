@@ -155,6 +155,44 @@ print("Phase 2 UI compositor sample diagnostics validation passed")
 PY
 
 echo
+echo "== Phase 2 fixture: UI GPU attribution diagnostics =="
+UI_ATTRIBUTION_OUT="$TMP_ROOT/ui-gpu-attribution-diagnostics-check"
+./scripts/check-ui-gpu-attribution-diagnostics.py --root "$ROOT" --out-dir "$UI_ATTRIBUTION_OUT"
+test -s "$UI_ATTRIBUTION_OUT/ui-gpu-attribution-diagnostics-check.json"
+test -s "$UI_ATTRIBUTION_OUT/ui-gpu-attribution-diagnostics-check.md"
+
+python3 - <<PY
+import json
+from pathlib import Path
+
+p = Path("$UI_ATTRIBUTION_OUT/ui-gpu-attribution-diagnostics-check.json")
+data = json.loads(p.read_text())
+
+assert data["schema"] == "h1mekartx.ui_gpu_attribution_diagnostics_check.v1"
+assert data["decision"] == "PASS_UI_GPU_ATTRIBUTION_DIAGNOSTICS_READY"
+assert data["failed_count"] == 0
+assert data["safety_boundary"]["read_only_fixture_check"] is True
+assert data["safety_boundary"]["driverkit_activation"] is False
+assert data["safety_boundary"]["system_extension_activation"] is False
+assert data["safety_boundary"]["process_injection"] is False
+assert data["safety_boundary"]["windowserver_injection"] is False
+assert data["safety_boundary"]["dock_injection"] is False
+assert data["safety_boundary"]["private_framework_patching"] is False
+assert data["safety_boundary"]["sip_bypass"] is False
+assert data["safety_boundary"]["amfi_bypass"] is False
+assert data["safety_boundary"]["pci_config_writes"] is False
+assert data["safety_boundary"]["mmio_reads"] is False
+assert data["safety_boundary"]["mmio_writes"] is False
+assert data["safety_boundary"]["bar_mapping"] is False
+assert data["safety_boundary"]["gpu_command_submission"] is False
+assert data["safety_boundary"]["trusted_ui_gpu_attribution_claim"] is False
+assert data["safety_boundary"]["ui_compositor_proof"] is False
+assert data["safety_boundary"]["metal_proof"] is False
+
+print("Phase 2 UI GPU attribution diagnostics validation passed")
+PY
+
+echo
 echo "== Phase 2 fixture: UI compositor readiness matrix =="
 UI_READINESS_OUT="$TMP_ROOT/ui-compositor-readiness-matrix-check"
 ./scripts/check-ui-compositor-readiness-matrix.py --root "$ROOT" --out-dir "$UI_READINESS_OUT"

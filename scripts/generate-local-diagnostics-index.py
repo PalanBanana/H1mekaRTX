@@ -162,6 +162,27 @@ INDEX_ITEMS = [
         "description": "Generated Phase 2 UI compositor readiness matrix check.",
     },
     {
+        "path": "ui-gpu-attribution-summary.json",
+        "category": "ui_gpu_attribution",
+        "kind": "json_report",
+        "required": False,
+        "description": "Generated Phase 2 UI GPU attribution candidate diagnostics JSON summary.",
+    },
+    {
+        "path": "ui-gpu-attribution-summary.md",
+        "category": "ui_gpu_attribution",
+        "kind": "markdown_report",
+        "required": False,
+        "description": "Generated Phase 2 UI GPU attribution candidate diagnostics Markdown summary.",
+    },
+    {
+        "path": "ui-gpu-attribution-diagnostics-check.json",
+        "category": "ui_gpu_attribution",
+        "kind": "json_report",
+        "required": False,
+        "description": "Generated Phase 2 UI GPU attribution diagnostics check.",
+    },
+    {
         "path": "rendered-host-status-report.md",
         "category": "host_tooling",
         "kind": "markdown_report",

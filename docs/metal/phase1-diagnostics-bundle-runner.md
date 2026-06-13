@@ -12,6 +12,7 @@ This runner combines:
 - BAR inventory JSON/Markdown summary
 - UI compositor proof schema generation
 - baseline UI compositor sample diagnostics
+- UI GPU attribution candidate diagnostics
 - UI compositor readiness matrix generation
 - local host report bundle creation
 - local diagnostics index creation
@@ -36,6 +37,8 @@ Optional output path:
 - ui-compositor-proof-schema.md
 - ui-compositor-sample-summary.json
 - ui-compositor-sample-summary.md
+- ui-gpu-attribution-summary.json
+- ui-gpu-attribution-summary.md
 - ui-compositor-readiness-matrix.json
 - ui-compositor-readiness-matrix.md
 - local-diagnostics-index.json
@@ -48,6 +51,7 @@ Optional output path:
 - host-diagnostics-raw/
 - bar-inventory-raw/
 - ui-compositor-sample-raw/
+- ui-gpu-attribution-raw/
 
 ## Classification
 
