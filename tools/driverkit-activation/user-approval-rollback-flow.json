@@ -1,0 +1,73 @@
+{
+  "schema": "h1mekartx.user_approval_rollback_flow.v1",
+  "classification": "CLASSIFICATION_USER_APPROVAL_ROLLBACK_FLOW",
+  "secondary_classification": "CLASSIFICATION_ACTIVATION_PREREQUISITES_LEDGER",
+  "tertiary_classification": "CLASSIFICATION_STATIC_CONTRACT",
+  "user_approval_rollback_flow_only": true,
+  "real_activation_not_attempted": true,
+  "driverkit_activation_attempted": false,
+  "system_extension_activation_attempted": false,
+  "dext_load_attempted": false,
+  "device_ownership_request_attempted": false,
+  "provider_open_attempted": false,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "real_gpu_command_execution_attempted": false,
+  "rtx5070_workload_attribution_claimed": false,
+  "real_gpu_acceleration_claimed": false,
+  "ui_compositor_proof_claimed": false,
+  "metal_proof_claimed": false,
+  "direct_dock_injection_attempted": false,
+  "windowserver_patching_attempted": false,
+  "activation_flow": [
+    "capture_pre_activation_systemextensionsctl_status",
+    "capture_pre_activation_sysextd_logs",
+    "submit_activation_request_only_in_future_phase",
+    "wait_for_user_approval_if_requested",
+    "capture_post_activation_status",
+    "do_not_open_provider",
+    "do_not_map_bar",
+    "do_not_submit_gpu_commands"
+  ],
+  "deactivation_flow": [
+    "capture_pre_deactivation_status",
+    "submit_deactivation_request_only_in_future_phase",
+    "document_restart_if_required",
+    "capture_post_deactivation_status",
+    "verify_rollback_state"
+  ],
+  "rollback_requirements": [
+    "disposable test install or snapshot",
+    "user approval notes",
+    "systemextensionsctl status capture",
+    "sysextd log capture",
+    "deactivation path",
+    "restart-required note",
+    "no UI acceleration claim"
+  ],
+  "real_ui_compositor_acceleration_rule": {
+    "activation_alone_is_not_acceleration": true,
+    "dock_transparency_blur_proof_blocked_until": [
+      "reversible activation/deactivation",
+      "dext load proof",
+      "provider matching proof",
+      "provider open policy",
+      "BAR mapping policy",
+      "real GPU command execution",
+      "WindowServer/Core Animation/QuartzCore/Metal compositor attribution",
+      "UI compositor proof",
+      "Metal proof"
+    ]
+  },
+  "target_pci_provider_matching_manifest": {
+    "target_gpu": "NVIDIA RTX 5070",
+    "architecture_family": "NVIDIA Blackwell",
+    "vendor_id": "0x10de",
+    "device_id": "0x2f04",
+    "io_pci_match": "0x2f0410de",
+    "expected_provider_class": "IOPCIDevice",
+    "expected_driver_family": "PCIDriverKit",
+    "expected_pci_transport_entitlement": "com.apple.developer.driverkit.transport.pci",
+    "expected_system_extension_entitlement": "com.apple.developer.system-extension.install"
+  }
+}
