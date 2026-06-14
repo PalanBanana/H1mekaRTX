@@ -1,0 +1,75 @@
+{
+  "activation_attempted": false,
+  "actual_signing_executed_by_this_phase": false,
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/local-signing-run-instructions-identity-selector.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/driverkit/local-signing-run-instructions-identity-selector.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/scripts/select-local-signing-identity.py",
+      "name": "selector_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/manual-activation-preflight-after-signed-verification-check.json",
+      "name": "phase56_check_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase57a required",
+      "name": "phase57a_required_true",
+      "passed": true
+    },
+    {
+      "detail": "phase57b blocked",
+      "name": "phase57b_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "no signing",
+      "name": "actual_signing_not_executed_by_this_phase",
+      "passed": true
+    },
+    {
+      "detail": "no activation",
+      "name": "activation_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "security find-identity",
+      "name": "selector_uses_security_find_identity",
+      "passed": true
+    },
+    {
+      "detail": "hard opt-in",
+      "name": "selector_prints_hard_optin_command",
+      "passed": true
+    },
+    {
+      "detail": "phase56 blocked",
+      "name": "phase56_blocks_activation_or_missing_signed_proof",
+      "passed": true
+    }
+  ],
+  "decision": "PASS_PHASE57A_LOCAL_SIGNING_IDENTITY_SELECTOR_READY",
+  "generated_at_utc": "2026-06-14T02:48:35.349614+00:00",
+  "gpu_command_submission_attempted": false,
+  "install_attempted": false,
+  "phase57a_required": true,
+  "phase57b_allowed_now": false,
+  "provider_open_attempted": false,
+  "schema": "h1mekartx.local_signing_run_instructions_identity_selector_check.v1"
+}

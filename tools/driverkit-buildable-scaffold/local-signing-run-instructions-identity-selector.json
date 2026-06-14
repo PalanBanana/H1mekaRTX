@@ -1,0 +1,24 @@
+{
+  "activation_attempted": false,
+  "actual_signing_executed_by_this_phase": false,
+  "bar_mapping_attempted": false,
+  "classification": "CLASSIFICATION_LOCAL_SIGNING_RUN_INSTRUCTIONS_IDENTITY_SELECTOR",
+  "dext_load_attempted": false,
+  "gpu_command_submission_attempted": false,
+  "install_attempted": false,
+  "metal_proof_claimed": false,
+  "next_manual_steps": [
+    "run identity selector helper",
+    "choose explicit signing identity",
+    "run scripts/actual-local-signing-hard-optin.py with hard opt-in flags",
+    "rerun Phase 55 sanitizer",
+    "rerun Phase 56 activation preflight",
+    "go to Phase 57B only if activation_preflight_ready is true"
+  ],
+  "phase57a_required": true,
+  "phase57b_allowed_now": false,
+  "provider_open_attempted": false,
+  "reason": "activation preflight is blocked until signed artifact verification is proven",
+  "schema": "h1mekartx.local_signing_run_instructions_identity_selector.v1",
+  "ui_compositor_proof_claimed": false
+}
