@@ -1,0 +1,31 @@
+{
+  "activation_submitted_by_this_phase": false,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "ci_xcodebuild_attempted": false,
+  "classification": "CLASSIFICATION_REAL_DRIVERKIT_DEXT_BUILD_GATE",
+  "configuration_writes_attempted": false,
+  "deactivation_submitted_by_this_phase": false,
+  "default_refuses_build": true,
+  "expected_dext_identifier": "dev.h1meka.H1mekaRTXDriver",
+  "gpu_command_submission_attempted": false,
+  "hard_optin_flags_required": true,
+  "install_attempted": false,
+  "ioserviceopen_attempted": false,
+  "manual_dext_load_attempted": false,
+  "metal_proof_claimed": false,
+  "next_gate_if_project_missing": "phase60m-xcode-driverkit-project-materialization-plan",
+  "next_gate_if_real_dext_built": "rerun_signing_preflight_then_phase60i",
+  "provider_open_attempted": false,
+  "real_driverkit_dext_build_gate_ready": true,
+  "required_flags": [
+    "--i-understand-local-driverkit-build",
+    "--output-under-host-report-bundle",
+    "--scheme",
+    "--project OR --workspace"
+  ],
+  "schema": "h1mekartx.real_driverkit_dext_build_gate.v1",
+  "secondary_classification": "CLASSIFICATION_VALIDATIONFAILED_ROOT_CAUSE_GATE",
+  "tertiary_classification": "CLASSIFICATION_LOCAL_BUILD_GATE_ONLY",
+  "ui_compositor_proof_claimed": false
+}
