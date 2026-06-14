@@ -1,0 +1,239 @@
+{
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/signed-host-dext-packaging-preflight.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/driverkit/signed-host-dext-packaging-preflight.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/manual-activation-approval-readiness-gate.json",
+      "name": "phase47_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/user-approved-system-extension-activation-path.json",
+      "name": "phase46_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase47 user approval",
+      "name": "phase47_user_approval_allowed",
+      "passed": true
+    },
+    {
+      "detail": "phase46 activation path",
+      "name": "phase46_activation_code_exists",
+      "passed": true
+    },
+    {
+      "detail": "packaging_preflight_only",
+      "name": "manifest_packaging_preflight_only_true",
+      "passed": true
+    },
+    {
+      "detail": "signed_host_dext_packaging_preflight_ready",
+      "name": "manifest_signed_host_dext_packaging_preflight_ready_true",
+      "passed": true
+    },
+    {
+      "detail": "signed_package_created",
+      "name": "manifest_signed_package_created_false",
+      "passed": true
+    },
+    {
+      "detail": "codesign_attempted",
+      "name": "manifest_codesign_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "manifest_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "submit_activation_allowed_now",
+      "name": "manifest_submit_activation_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "submit_deactivation_allowed_now",
+      "name": "manifest_submit_deactivation_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_activation_attempted",
+      "name": "manifest_system_extension_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_deactivation_attempted",
+      "name": "manifest_system_extension_deactivation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "dext_load_attempted",
+      "name": "manifest_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "H1mekaRTXHost.app/Contents/Library/SystemExtensions/dev.h1meka.H1mekaRTXDriver.dext",
+      "name": "layout_contains_H1mekaRTXHost.app_Contents_Library_SystemExtensions_dev.h1meka.H1mekaRTXDriver.dext",
+      "passed": true
+    },
+    {
+      "detail": "H1mekaRTXHost.app/Contents/Library/SystemExtensions/dev.h1meka.H1mekaRTXDriver.dext/Contents/Info.plist",
+      "name": "layout_contains_H1mekaRTXHost.app_Contents_Library_SystemExtensions_dev.h1meka.H1mekaRTXDriver.dext_Contents_Info.plist",
+      "passed": true
+    },
+    {
+      "detail": "H1mekaRTXHost.app/Contents/Library/SystemExtensions/dev.h1meka.H1mekaRTXDriver.dext/Contents/MacOS/H1mekaRTXDriver",
+      "name": "layout_contains_H1mekaRTXHost.app_Contents_Library_SystemExtensions_dev.h1meka.H1mekaRTXDriver.dext_Contents_MacOS_H1mekaRTXDriver",
+      "passed": true
+    },
+    {
+      "detail": "Apple Developer Team ID",
+      "name": "signing_contains_Apple_Developer_Team_ID",
+      "passed": true
+    },
+    {
+      "detail": "com.apple.developer.system-extension.install",
+      "name": "signing_contains_com_apple_developer_system-extension_install",
+      "passed": true
+    },
+    {
+      "detail": "com.apple.developer.driverkit",
+      "name": "signing_contains_com_apple_developer_driverkit",
+      "passed": true
+    },
+    {
+      "detail": "com.apple.developer.driverkit.transport.pci",
+      "name": "signing_contains_com_apple_developer_driverkit_transport_pci",
+      "passed": true
+    },
+    {
+      "detail": "bundle ID dev.h1meka.H1mekaRTXHost",
+      "name": "signing_contains_bundle_ID_dev_h1meka_H1mekaRTXHost",
+      "passed": true
+    },
+    {
+      "detail": "bundle ID dev.h1meka.H1mekaRTXDriver",
+      "name": "signing_contains_bundle_ID_dev_h1meka_H1mekaRTXDriver",
+      "passed": true
+    },
+    {
+      "detail": "codesign verification passes for host app",
+      "name": "pre_activation_contains_codesign_verification_passes_for_host_app",
+      "passed": true
+    },
+    {
+      "detail": "codesign verification passes for dext",
+      "name": "pre_activation_contains_codesign_verification_passes_for_dext",
+      "passed": true
+    },
+    {
+      "detail": "entitlements are dumped and checked",
+      "name": "pre_activation_contains_entitlements_are_dumped_and_checked",
+      "passed": true
+    },
+    {
+      "detail": "dext nested under Contents/Library/SystemExtensions",
+      "name": "pre_activation_contains_dext_nested_under_Contents_Library_SystemExtensions",
+      "passed": true
+    },
+    {
+      "detail": "systemextensionsctl status captured before activation",
+      "name": "pre_activation_contains_systemextensionsctl_status_captured_before_activation",
+      "passed": true
+    },
+    {
+      "detail": "rollback/deactivation command available",
+      "name": "pre_activation_contains_rollback_deactivation_command_available",
+      "passed": true
+    },
+    {
+      "detail": "user approval is expected and allowed",
+      "name": "pre_activation_contains_user_approval_is_expected_and_allowed",
+      "passed": true
+    },
+    {
+      "detail": "provider open remains disabled",
+      "name": "pre_activation_contains_provider_open_remains_disabled",
+      "passed": true
+    },
+    {
+      "detail": "BAR mapping remains disabled",
+      "name": "pre_activation_contains_BAR_mapping_remains_disabled",
+      "passed": true
+    },
+    {
+      "detail": "GPU command submission remains disabled",
+      "name": "pre_activation_contains_GPU_command_submission_remains_disabled",
+      "passed": true
+    }
+  ],
+  "classification": "CLASSIFICATION_SIGNED_HOST_DEXT_PACKAGING_PREFLIGHT",
+  "codesign_attempted": false,
+  "decision": "PASS_SIGNED_HOST_DEXT_PACKAGING_PREFLIGHT_READY",
+  "dext_load_attempted": false,
+  "failed_count": 0,
+  "generated_at_utc": "2026-06-14T02:27:28.520381+00:00",
+  "gpu_command_submission_attempted": false,
+  "install_attempted": false,
+  "metal_proof_claimed": false,
+  "packaging_preflight_only": true,
+  "passed_count": 43,
+  "provider_open_attempted": false,
+  "schema": "h1mekartx.signed_host_dext_packaging_preflight_check.v1",
+  "signed_package_created": false,
+  "submit_activation_allowed_now": false,
+  "submit_deactivation_allowed_now": false,
+  "system_extension_activation_attempted": false,
+  "system_extension_deactivation_attempted": false,
+  "ui_compositor_proof_claimed": false
+}
