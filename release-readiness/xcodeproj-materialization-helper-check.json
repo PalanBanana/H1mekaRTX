@@ -1,0 +1,362 @@
+{
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-xcode-materialization/xcodeproj-materialization-helper.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/driverkit/xcodeproj-materialization-helper.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/scripts/xcodeproj-materialization-helper.py",
+      "name": "helper_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/xcodeproj-materialization-helper-summary.json",
+      "name": "summary_json_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/xcodeproj-materialization-helper-summary.md",
+      "name": "summary_md_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-xcode-materialization/xcode-driverkit-project-materialization-plan.json",
+      "name": "phase60m_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "summary schema",
+      "name": "summary_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase60m schema",
+      "name": "phase60m_schema",
+      "passed": true
+    },
+    {
+      "detail": "xcodeproj_materialization_helper_ready",
+      "name": "manifest_xcodeproj_materialization_helper_ready_true",
+      "passed": true
+    },
+    {
+      "detail": "default_refuses_generation",
+      "name": "manifest_default_refuses_generation_true",
+      "passed": true
+    },
+    {
+      "detail": "hard_optin_flags_required",
+      "name": "manifest_hard_optin_flags_required_true",
+      "passed": true
+    },
+    {
+      "detail": "ci_project_generation_attempted",
+      "name": "manifest_ci_project_generation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ci_xcodebuild_attempted",
+      "name": "manifest_ci_xcodebuild_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "activation_submitted_by_this_phase",
+      "name": "manifest_activation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "deactivation_submitted_by_this_phase",
+      "name": "manifest_deactivation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "manifest_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manual_dext_load_attempted",
+      "name": "manifest_manual_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "manifest_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "--i-understand-xcodeproj-materialization",
+      "name": "helper_contains___i_understand_xcodeproj_materialization",
+      "passed": true
+    },
+    {
+      "detail": "--output-under-host-report-bundle",
+      "name": "helper_contains___output_under_host_report_bundle",
+      "passed": true
+    },
+    {
+      "detail": "--emit-xcodegen-spec",
+      "name": "helper_contains___emit_xcodegen_spec",
+      "passed": true
+    },
+    {
+      "detail": "--materialize-with-xcodegen",
+      "name": "helper_contains___materialize_with_xcodegen",
+      "passed": true
+    },
+    {
+      "detail": "--replace-existing",
+      "name": "helper_contains___replace_existing",
+      "passed": true
+    },
+    {
+      "detail": "xcodegen",
+      "name": "helper_contains_xcodegen",
+      "passed": true
+    },
+    {
+      "detail": "project.yml",
+      "name": "helper_contains_project_yml",
+      "passed": true
+    },
+    {
+      "detail": "H1mekaRTXHost",
+      "name": "helper_contains_H1mekaRTXHost",
+      "passed": true
+    },
+    {
+      "detail": "H1mekaRTXDriver",
+      "name": "helper_contains_H1mekaRTXDriver",
+      "passed": true
+    },
+    {
+      "detail": "dev.h1meka.H1mekaRTXDriver",
+      "name": "helper_contains_dev_h1meka_H1mekaRTXDriver",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "helper_contains_provider_open_attempted",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "helper_contains_ioserviceopen_attempted",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "helper_contains_bar_mapping_attempted",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "helper_contains_gpu_command_submission_attempted",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_not_committed",
+      "name": "summary_raw_stdout_not_committed_true",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_not_committed",
+      "name": "summary_raw_stderr_not_committed_true",
+      "passed": true
+    },
+    {
+      "detail": "xcodebuild_attempted_by_this_phase",
+      "name": "summary_xcodebuild_attempted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "activation_submitted_by_this_phase",
+      "name": "summary_activation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "deactivation_submitted_by_this_phase",
+      "name": "summary_deactivation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "summary_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manual_dext_load_attempted",
+      "name": "summary_manual_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "summary_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "summary_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "summary_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "summary_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "summary_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "summary_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "summary_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "summary_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "project_exists_after",
+      "name": "summary_project_exists_after_recorded",
+      "passed": true
+    },
+    {
+      "detail": "phase61 false",
+      "name": "summary_phase61_allowed_false",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_key",
+      "name": "no_raw_stdout_key_in_xcodeproj-materialization-helper-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_key",
+      "name": "no_raw_stderr_key_in_xcodeproj-materialization-helper-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "command_key",
+      "name": "no_command_key_in_xcodeproj-materialization-helper-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "home_path",
+      "name": "no_home_path_in_xcodeproj-materialization-helper-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "tmp_path",
+      "name": "no_tmp_path_in_xcodeproj-materialization-helper-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "email_like",
+      "name": "no_email_like_in_xcodeproj-materialization-helper-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_key",
+      "name": "no_raw_stdout_key_in_xcodeproj-materialization-helper-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_key",
+      "name": "no_raw_stderr_key_in_xcodeproj-materialization-helper-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "command_key",
+      "name": "no_command_key_in_xcodeproj-materialization-helper-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "home_path",
+      "name": "no_home_path_in_xcodeproj-materialization-helper-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "tmp_path",
+      "name": "no_tmp_path_in_xcodeproj-materialization-helper-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "email_like",
+      "name": "no_email_like_in_xcodeproj-materialization-helper-summary.md",
+      "passed": true
+    }
+  ],
+  "ci_project_generation_attempted": false,
+  "ci_xcodebuild_attempted": false,
+  "decision": "PASS_XCODEPROJ_MATERIALIZATION_HELPER_READY",
+  "generated_at_utc": "2026-06-14T04:23:21.562341+00:00",
+  "gpu_command_submission_attempted": false,
+  "ioserviceopen_attempted": false,
+  "local_project_helper_only": true,
+  "metal_proof_claimed": false,
+  "phase61_allowed_now": false,
+  "provider_open_attempted": false,
+  "schema": "h1mekartx.xcodeproj_materialization_helper_check.v1",
+  "ui_compositor_proof_claimed": false
+}
