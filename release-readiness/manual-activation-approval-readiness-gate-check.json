@@ -1,0 +1,293 @@
+{
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/manual-activation-approval-readiness-gate.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/driverkit/manual-activation-approval-readiness-gate.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/user-approved-system-extension-activation-path.json",
+      "name": "phase46_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/H1mekaRTXHost/H1mekaRTXHost.swift",
+      "name": "host_swift_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase46 schema",
+      "name": "phase46_schema",
+      "passed": true
+    },
+    {
+      "detail": "activation request",
+      "name": "activation_path_present",
+      "passed": true
+    },
+    {
+      "detail": "deactivation request",
+      "name": "deactivation_path_present",
+      "passed": true
+    },
+    {
+      "detail": "--submit-activation",
+      "name": "manual_submit_activation_flag_present",
+      "passed": true
+    },
+    {
+      "detail": "--submit-deactivation",
+      "name": "manual_submit_deactivation_flag_present",
+      "passed": true
+    },
+    {
+      "detail": "manual_activation_approval_readiness_gate_ready",
+      "name": "manifest_manual_activation_approval_readiness_gate_ready_true",
+      "passed": true
+    },
+    {
+      "detail": "user_will_approve_future_local_prompt",
+      "name": "manifest_user_will_approve_future_local_prompt_true",
+      "passed": true
+    },
+    {
+      "detail": "manual_approval_allowed_for_future_local_test",
+      "name": "manifest_manual_approval_allowed_for_future_local_test_true",
+      "passed": true
+    },
+    {
+      "detail": "auto_approval_not_possible",
+      "name": "manifest_auto_approval_not_possible_true",
+      "passed": true
+    },
+    {
+      "detail": "user_must_approve_in_system_settings_if_prompted",
+      "name": "manifest_user_must_approve_in_system_settings_if_prompted_true",
+      "passed": true
+    },
+    {
+      "detail": "submit_activation_allowed_now",
+      "name": "manifest_submit_activation_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "submit_deactivation_allowed_now",
+      "name": "manifest_submit_deactivation_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "ci_activation_attempted",
+      "name": "manifest_ci_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ci_deactivation_attempted",
+      "name": "manifest_ci_deactivation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_activation_attempted",
+      "name": "manifest_system_extension_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_deactivation_attempted",
+      "name": "manifest_system_extension_deactivation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "dext_load_attempted",
+      "name": "manifest_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "signed host app exists",
+      "name": "before_submit_contains_signed_host_app_exists",
+      "passed": true
+    },
+    {
+      "detail": "signed dext exists",
+      "name": "before_submit_contains_signed_dext_exists",
+      "passed": true
+    },
+    {
+      "detail": "host app contains the dext under Contents/Library/SystemExtensions",
+      "name": "before_submit_contains_host_app_contains_the_dext_under_Contents_Library_SystemExtensions",
+      "passed": true
+    },
+    {
+      "detail": "entitlements are valid",
+      "name": "before_submit_contains_entitlements_are_valid",
+      "passed": true
+    },
+    {
+      "detail": "DriverKit entitlement is approved",
+      "name": "before_submit_contains_DriverKit_entitlement_is_approved",
+      "passed": true
+    },
+    {
+      "detail": "PCI transport entitlement is approved",
+      "name": "before_submit_contains_PCI_transport_entitlement_is_approved",
+      "passed": true
+    },
+    {
+      "detail": "rollback/deactivation command is available",
+      "name": "before_submit_contains_rollback_deactivation_command_is_available",
+      "passed": true
+    },
+    {
+      "detail": "disposable test environment is confirmed",
+      "name": "before_submit_contains_disposable_test_environment_is_confirmed",
+      "passed": true
+    },
+    {
+      "detail": "no provider-open path is enabled",
+      "name": "before_submit_contains_no_provider-open_path_is_enabled",
+      "passed": true
+    },
+    {
+      "detail": "no BAR mapping path is enabled",
+      "name": "before_submit_contains_no_BAR_mapping_path_is_enabled",
+      "passed": true
+    },
+    {
+      "detail": "no GPU command submission path is enabled",
+      "name": "before_submit_contains_no_GPU_command_submission_path_is_enabled",
+      "passed": true
+    },
+    {
+      "detail": "signed host+dext packaging proof",
+      "name": "dock_timing_contains_signed_host+dext_packaging_proof",
+      "passed": true
+    },
+    {
+      "detail": "manual user-approved activation proof",
+      "name": "dock_timing_contains_manual_user-approved_activation_proof",
+      "passed": true
+    },
+    {
+      "detail": "manual deactivation/rollback proof",
+      "name": "dock_timing_contains_manual_deactivation_rollback_proof",
+      "passed": true
+    },
+    {
+      "detail": "dext load proof",
+      "name": "dock_timing_contains_dext_load_proof",
+      "passed": true
+    },
+    {
+      "detail": "provider match proof",
+      "name": "dock_timing_contains_provider_match_proof",
+      "passed": true
+    },
+    {
+      "detail": "safe provider-open proof",
+      "name": "dock_timing_contains_safe_provider-open_proof",
+      "passed": true
+    },
+    {
+      "detail": "real GPU command execution proof",
+      "name": "dock_timing_contains_real_GPU_command_execution_proof",
+      "passed": true
+    },
+    {
+      "detail": "RTX 5070 workload attribution proof",
+      "name": "dock_timing_contains_RTX_5070_workload_attribution_proof",
+      "passed": true
+    },
+    {
+      "detail": "WindowServer/Core Animation/QuartzCore/Metal compositor attribution proof",
+      "name": "dock_timing_contains_WindowServer_Core_Animation_QuartzCore_Metal_compositor_attribution_proof",
+      "passed": true
+    },
+    {
+      "detail": "before/after UI frame pacing and latency measurement proof",
+      "name": "dock_timing_contains_before_after_UI_frame_pacing_and_latency_measurement_proof",
+      "passed": true
+    },
+    {
+      "detail": "Dock/transparency/blur scenario proof",
+      "name": "dock_timing_contains_Dock_transparency_blur_scenario_proof",
+      "passed": true
+    }
+  ],
+  "ci_activation_attempted": false,
+  "ci_deactivation_attempted": false,
+  "classification": "CLASSIFICATION_MANUAL_ACTIVATION_APPROVAL_READINESS_GATE",
+  "decision": "PASS_MANUAL_ACTIVATION_APPROVAL_READINESS_GATE_READY",
+  "dext_load_attempted": false,
+  "dock_transparency_blur_next_after": [
+    "signed host+dext packaging proof",
+    "manual user-approved activation proof",
+    "manual deactivation/rollback proof",
+    "dext load proof",
+    "provider match proof",
+    "safe provider-open proof",
+    "read-only device evidence proof",
+    "real GPU command execution proof",
+    "RTX 5070 workload attribution proof",
+    "WindowServer/Core Animation/QuartzCore/Metal compositor attribution proof",
+    "before/after UI frame pacing and latency measurement proof",
+    "Dock/transparency/blur scenario proof"
+  ],
+  "failed_count": 0,
+  "generated_at_utc": "2026-06-14T02:25:37.531290+00:00",
+  "gpu_command_submission_attempted": false,
+  "manual_approval_allowed_for_future_local_test": true,
+  "metal_proof_claimed": false,
+  "passed_count": 51,
+  "provider_open_attempted": false,
+  "schema": "h1mekartx.manual_activation_approval_readiness_gate_check.v1",
+  "submit_activation_allowed_now": false,
+  "submit_deactivation_allowed_now": false,
+  "system_extension_activation_attempted": false,
+  "system_extension_deactivation_attempted": false,
+  "ui_compositor_proof_claimed": false,
+  "user_will_approve_future_local_prompt": true
+}
