@@ -1,0 +1,42 @@
+{
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "build_artifact_created": false,
+  "classification": "CLASSIFICATION_COMPILE_ONLY_TARGET_SMOKE_TEST",
+  "compile_only_evidence_only": true,
+  "compile_only_target_smoke_test_ready": true,
+  "compile_only_targets": [
+    {
+      "allowed_failure": true,
+      "kind": "swift_typecheck",
+      "name": "H1mekaRTXHost.swift",
+      "source": "tools/driverkit-buildable-scaffold/H1mekaRTXHost/H1mekaRTXHost.swift"
+    },
+    {
+      "allowed_failure": true,
+      "kind": "clangxx_fsyntax_only",
+      "name": "H1mekaRTXDriver.cpp",
+      "source": "tools/driverkit-buildable-scaffold/H1mekaRTXDriver.dext/Sources/H1mekaRTXDriver.cpp"
+    }
+  ],
+  "configuration_writes_attempted": false,
+  "dext_load_attempted": false,
+  "gpu_command_submission_attempted": false,
+  "install_attempted": false,
+  "metal_proof_claimed": false,
+  "plist_targets": [
+    "tools/driverkit-buildable-scaffold/H1mekaRTXHost/Info.plist",
+    "tools/driverkit-buildable-scaffold/H1mekaRTXHost/H1mekaRTXHost.entitlements",
+    "tools/driverkit-buildable-scaffold/H1mekaRTXDriver.dext/Info.plist",
+    "tools/driverkit-buildable-scaffold/H1mekaRTXDriver.dext/H1mekaRTXDriver.entitlements"
+  ],
+  "provider_open_attempted": false,
+  "real_development_build_scope_continues": true,
+  "schema": "h1mekartx.compile_only_target_smoke_test.v1",
+  "secondary_classification": "CLASSIFICATION_REAL_DEVELOPMENT_BUILD_SCOPE",
+  "signing_attempted": false,
+  "system_extension_activation_attempted": false,
+  "system_extension_deactivation_attempted": false,
+  "tertiary_classification": "CLASSIFICATION_NO_RUNTIME_ACTIVATION",
+  "ui_compositor_proof_claimed": false
+}
