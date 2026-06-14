@@ -1,0 +1,453 @@
+{
+  "activation_submitted_by_this_phase": false,
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/local-apple-team-capability-evidence-collector.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/driverkit/local-apple-team-capability-evidence-collector.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/scripts/collect-local-apple-team-capability-evidence.py",
+      "name": "collector_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/local-apple-team-capability-evidence-summary.json",
+      "name": "summary_json_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/local-apple-team-capability-evidence-summary.md",
+      "name": "summary_md_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/apple-developer-entitlement-request-checklist.json",
+      "name": "phase60r_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/provisioning-entitlement-hardblock-gate.json",
+      "name": "phase60q_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "summary schema",
+      "name": "summary_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase60r schema",
+      "name": "phase60r_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase60q schema",
+      "name": "phase60q_schema",
+      "passed": true
+    },
+    {
+      "detail": "local_apple_team_capability_evidence_collector_ready",
+      "name": "manifest_local_apple_team_capability_evidence_collector_ready_true",
+      "passed": true
+    },
+    {
+      "detail": "local_evidence_only",
+      "name": "manifest_local_evidence_only_true",
+      "passed": true
+    },
+    {
+      "detail": "raw_outputs_local_only",
+      "name": "manifest_raw_outputs_local_only_true",
+      "passed": true
+    },
+    {
+      "detail": "xcodebuild_build_attempted_by_this_phase",
+      "name": "manifest_xcodebuild_build_attempted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "xcodebuild_build_attempted_by_this_phase",
+      "name": "summary_xcodebuild_build_attempted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "activation_submitted_by_this_phase",
+      "name": "manifest_activation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "activation_submitted_by_this_phase",
+      "name": "summary_activation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "deactivation_submitted_by_this_phase",
+      "name": "manifest_deactivation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "deactivation_submitted_by_this_phase",
+      "name": "summary_deactivation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "manifest_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "summary_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manual_dext_load_attempted",
+      "name": "manifest_manual_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manual_dext_load_attempted",
+      "name": "summary_manual_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "summary_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "manifest_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "summary_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "summary_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "summary_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "summary_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "summary_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "summary_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "summary_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "xcodebuild",
+      "name": "collector_contains_xcodebuild",
+      "passed": true
+    },
+    {
+      "detail": "-showBuildSettings",
+      "name": "collector_contains__showBuildSettings",
+      "passed": true
+    },
+    {
+      "detail": "security",
+      "name": "collector_contains_security",
+      "passed": true
+    },
+    {
+      "detail": "find-identity",
+      "name": "collector_contains_find_identity",
+      "passed": true
+    },
+    {
+      "detail": "Personal development teams",
+      "name": "collector_contains_Personal_development_teams",
+      "passed": true
+    },
+    {
+      "detail": "Please enable Driverkit",
+      "name": "collector_contains_Please_enable_Driverkit",
+      "passed": true
+    },
+    {
+      "detail": "dev.h1meka.H1mekaRTXHost",
+      "name": "collector_contains_dev_h1meka_H1mekaRTXHost",
+      "passed": true
+    },
+    {
+      "detail": "dev.h1meka.H1mekaRTXDriver",
+      "name": "collector_contains_dev_h1meka_H1mekaRTXDriver",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "collector_contains_provider_open_attempted",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "collector_contains_ioserviceopen_attempted",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "collector_contains_bar_mapping_attempted",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "collector_contains_gpu_command_submission_attempted",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_not_committed",
+      "name": "summary_raw_stdout_not_committed_true",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_not_committed",
+      "name": "summary_raw_stderr_not_committed_true",
+      "passed": true
+    },
+    {
+      "detail": "xcode_present",
+      "name": "summary_xcode_present_recorded",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_sdk_present",
+      "name": "summary_driverkit_sdk_present_recorded",
+      "passed": true
+    },
+    {
+      "detail": "macosx_sdk_present",
+      "name": "summary_macosx_sdk_present_recorded",
+      "passed": true
+    },
+    {
+      "detail": "apple_development_identity_present",
+      "name": "summary_apple_development_identity_present_recorded",
+      "passed": true
+    },
+    {
+      "detail": "xcode_project_present",
+      "name": "summary_xcode_project_present_recorded",
+      "passed": true
+    },
+    {
+      "detail": "personal_team_blocker_observed",
+      "name": "summary_personal_team_blocker_observed_recorded",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_capability_blocker_observed",
+      "name": "summary_system_extension_capability_blocker_observed_recorded",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_enable_blocker_observed",
+      "name": "summary_driverkit_enable_blocker_observed_recorded",
+      "passed": true
+    },
+    {
+      "detail": "host_profile_missing_observed",
+      "name": "summary_host_profile_missing_observed_recorded",
+      "passed": true
+    },
+    {
+      "detail": "dext_profile_missing_observed",
+      "name": "summary_dext_profile_missing_observed_recorded",
+      "passed": true
+    },
+    {
+      "detail": "paid_team_proven",
+      "name": "summary_paid_team_proven_recorded",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_entitlement_approval_proven",
+      "name": "summary_driverkit_entitlement_approval_proven_recorded",
+      "passed": true
+    },
+    {
+      "detail": "pci_transport_entitlement_approval_proven",
+      "name": "summary_pci_transport_entitlement_approval_proven_recorded",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_capability_proven",
+      "name": "summary_system_extension_capability_proven_recorded",
+      "passed": true
+    },
+    {
+      "detail": "phase61_allowed_now",
+      "name": "summary_phase61_allowed_now_recorded",
+      "passed": true
+    },
+    {
+      "detail": "phase61 false",
+      "name": "summary_phase61_false",
+      "passed": true
+    },
+    {
+      "detail": "provider false",
+      "name": "summary_provider_open_false",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_key",
+      "name": "no_raw_stdout_key_in_local-apple-team-capability-evidence-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_key",
+      "name": "no_raw_stderr_key_in_local-apple-team-capability-evidence-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "command_key",
+      "name": "no_command_key_in_local-apple-team-capability-evidence-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "home_path",
+      "name": "no_home_path_in_local-apple-team-capability-evidence-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "tmp_path",
+      "name": "no_tmp_path_in_local-apple-team-capability-evidence-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "email_like",
+      "name": "no_email_like_in_local-apple-team-capability-evidence-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "apple_development",
+      "name": "no_apple_development_in_local-apple-team-capability-evidence-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "developer_id_application",
+      "name": "no_developer_id_application_in_local-apple-team-capability-evidence-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_key",
+      "name": "no_raw_stdout_key_in_local-apple-team-capability-evidence-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_key",
+      "name": "no_raw_stderr_key_in_local-apple-team-capability-evidence-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "command_key",
+      "name": "no_command_key_in_local-apple-team-capability-evidence-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "home_path",
+      "name": "no_home_path_in_local-apple-team-capability-evidence-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "tmp_path",
+      "name": "no_tmp_path_in_local-apple-team-capability-evidence-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "email_like",
+      "name": "no_email_like_in_local-apple-team-capability-evidence-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "apple_development",
+      "name": "no_apple_development_in_local-apple-team-capability-evidence-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "developer_id_application",
+      "name": "no_developer_id_application_in_local-apple-team-capability-evidence-summary.md",
+      "passed": true
+    }
+  ],
+  "decision": "PASS_LOCAL_APPLE_TEAM_CAPABILITY_EVIDENCE_READY",
+  "generated_at_utc": "2026-06-14T04:42:13.110658+00:00",
+  "gpu_command_submission_attempted": false,
+  "ioserviceopen_attempted": false,
+  "local_evidence_only": true,
+  "metal_proof_claimed": false,
+  "phase61_allowed_now": false,
+  "provider_open_attempted": false,
+  "raw_outputs_local_only": true,
+  "schema": "h1mekartx.local_apple_team_capability_evidence_check.v1",
+  "ui_compositor_proof_claimed": false,
+  "xcodebuild_build_attempted_by_this_phase": false
+}
