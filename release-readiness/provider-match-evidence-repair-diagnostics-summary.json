@@ -1,0 +1,129 @@
+{
+  "activation_submitted_by_this_phase": false,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "bundle_parse_summary": {
+    "dext_info_key_count": 6,
+    "dext_personality_count": 1,
+    "host_info_key_count": 6
+  },
+  "classification": "CLASSIFICATION_PROVIDER_MATCH_EVIDENCE_REPAIR_DIAGNOSTICS",
+  "configuration_writes_attempted": false,
+  "deactivation_submitted_by_this_phase": false,
+  "derived": {
+    "bar_mapping_still_blocked": true,
+    "dext_bundle_exists": true,
+    "dext_bundle_id_matches": true,
+    "dext_info_parse_ok": true,
+    "dext_personalities_present": true,
+    "dext_personality_iopcimatch_matches": true,
+    "dext_personality_provider_class_matches": true,
+    "display_profiler_nvidia_observed": true,
+    "display_profiler_rtx_observed": false,
+    "dock_transparency_blur_proof_still_blocked": true,
+    "extension_identifier_observed_in_ioreg": false,
+    "extension_identifier_observed_in_systemextensionsctl": false,
+    "gpu_command_submission_still_blocked": true,
+    "h1meka_string_observed_in_ioreg": false,
+    "host_bundle_exists": true,
+    "host_bundle_id_matches": true,
+    "host_info_parse_ok": true,
+    "ioreg_available": true,
+    "ioreg_iopcidevice_returncode": 0,
+    "ioserviceopen_still_blocked": true,
+    "nvidia_string_observed_in_ioreg": false,
+    "provider_match_blocked_reason_hint": [
+      "extension_identifier_not_observed_in_systemextensionsctl"
+    ],
+    "provider_open_still_blocked": true,
+    "rtx_device_2f04_observed_in_ioreg": true,
+    "rtx_iopcimatch_2f0410de_observed_in_ioreg": false,
+    "rtx_vendor_10de_observed_in_ioreg": true,
+    "systemextension_status_tokens": [],
+    "systemextensionsctl_available": true,
+    "systemextensionsctl_returncode": 0
+  },
+  "generated_at_utc": "2026-06-14T03:22:13.199282+00:00",
+  "gpu_command_submission_attempted": false,
+  "host_report_bundle_local_only": true,
+  "install_attempted": false,
+  "ioserviceopen_attempted": false,
+  "local_report_present": true,
+  "manual_dext_load_attempted": false,
+  "metal_proof_claimed": false,
+  "private_raw_detected_locally": true,
+  "private_text_committed": false,
+  "provider_open_attempted": false,
+  "raw_stderr_not_committed": true,
+  "raw_stdout_not_committed": true,
+  "read_only_diagnostics_only": true,
+  "repair_decision": {
+    "bundle_ids_match": true,
+    "extension_status_observed": false,
+    "next_gate_if_blocked": "fix system extension activation/provider personality/PCI identity evidence",
+    "next_gate_if_ready": "rerun provider-match-without-open readiness gate",
+    "pci_identity_observed": true,
+    "personality_matches": true,
+    "provider_open_allowed": false,
+    "repaired_provider_match_ready": false
+  },
+  "sanitized_commands": {
+    "codesign_display_dext": {
+      "available": true,
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": true,
+      "stdout_present": false
+    },
+    "codesign_display_host": {
+      "available": true,
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": true,
+      "stdout_present": false
+    },
+    "ioreg_h1meka_filtered": {
+      "available": true,
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    },
+    "ioreg_iopcidevice": {
+      "available": true,
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    },
+    "system_profiler_displays": {
+      "available": true,
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    },
+    "systemextensionsctl_list": {
+      "available": true,
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    }
+  },
+  "schema": "h1mekartx.provider_match_evidence_repair_diagnostics_summary.v1",
+  "summary_only": true,
+  "ui_compositor_proof_claimed": false
+}

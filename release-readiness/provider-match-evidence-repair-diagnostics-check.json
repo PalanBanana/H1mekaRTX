@@ -1,0 +1,391 @@
+{
+  "activation_submitted_by_this_phase": false,
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/provider-match-evidence-repair-diagnostics.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/driverkit/provider-match-evidence-repair-diagnostics.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/provider-match-evidence-repair-diagnostics-summary.json",
+      "name": "summary_json_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/provider-match-evidence-repair-diagnostics-summary.md",
+      "name": "summary_md_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/provider-match-without-open-readiness-gate.json",
+      "name": "phase60_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/dext-load-provider-match-status-evidence.json",
+      "name": "phase59_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "summary schema",
+      "name": "summary_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase60 schema",
+      "name": "phase60_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase59 schema",
+      "name": "phase59_schema",
+      "passed": true
+    },
+    {
+      "detail": "read_only_diagnostics_only",
+      "name": "manifest_read_only_diagnostics_only_true",
+      "passed": true
+    },
+    {
+      "detail": "read_only_diagnostics_only",
+      "name": "summary_read_only_diagnostics_only_true",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_not_committed",
+      "name": "manifest_raw_stdout_not_committed_true",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_not_committed",
+      "name": "summary_raw_stdout_not_committed_true",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_not_committed",
+      "name": "manifest_raw_stderr_not_committed_true",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_not_committed",
+      "name": "summary_raw_stderr_not_committed_true",
+      "passed": true
+    },
+    {
+      "detail": "activation_submitted_by_this_phase",
+      "name": "manifest_activation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "activation_submitted_by_this_phase",
+      "name": "summary_activation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "deactivation_submitted_by_this_phase",
+      "name": "manifest_deactivation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "deactivation_submitted_by_this_phase",
+      "name": "summary_deactivation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "manifest_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "summary_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manual_dext_load_attempted",
+      "name": "manifest_manual_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manual_dext_load_attempted",
+      "name": "summary_manual_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "summary_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "manifest_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "summary_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "summary_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "summary_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "summary_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "summary_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "summary_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "summary_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "host_bundle_exists",
+      "name": "derived_host_bundle_exists_recorded",
+      "passed": true
+    },
+    {
+      "detail": "dext_bundle_exists",
+      "name": "derived_dext_bundle_exists_recorded",
+      "passed": true
+    },
+    {
+      "detail": "host_info_parse_ok",
+      "name": "derived_host_info_parse_ok_recorded",
+      "passed": true
+    },
+    {
+      "detail": "dext_info_parse_ok",
+      "name": "derived_dext_info_parse_ok_recorded",
+      "passed": true
+    },
+    {
+      "detail": "host_bundle_id_matches",
+      "name": "derived_host_bundle_id_matches_recorded",
+      "passed": true
+    },
+    {
+      "detail": "dext_bundle_id_matches",
+      "name": "derived_dext_bundle_id_matches_recorded",
+      "passed": true
+    },
+    {
+      "detail": "dext_personalities_present",
+      "name": "derived_dext_personalities_present_recorded",
+      "passed": true
+    },
+    {
+      "detail": "dext_personality_provider_class_matches",
+      "name": "derived_dext_personality_provider_class_matches_recorded",
+      "passed": true
+    },
+    {
+      "detail": "dext_personality_iopcimatch_matches",
+      "name": "derived_dext_personality_iopcimatch_matches_recorded",
+      "passed": true
+    },
+    {
+      "detail": "systemextensionsctl_available",
+      "name": "derived_systemextensionsctl_available_recorded",
+      "passed": true
+    },
+    {
+      "detail": "ioreg_available",
+      "name": "derived_ioreg_available_recorded",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_still_blocked",
+      "name": "derived_provider_open_still_blocked_recorded",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_still_blocked",
+      "name": "derived_ioserviceopen_still_blocked_recorded",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_still_blocked",
+      "name": "derived_bar_mapping_still_blocked_recorded",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_still_blocked",
+      "name": "derived_gpu_command_submission_still_blocked_recorded",
+      "passed": true
+    },
+    {
+      "detail": "dock_transparency_blur_proof_still_blocked",
+      "name": "derived_dock_transparency_blur_proof_still_blocked_recorded",
+      "passed": true
+    },
+    {
+      "detail": "repair decision",
+      "name": "repair_decision_present",
+      "passed": true
+    },
+    {
+      "detail": "provider open false",
+      "name": "repair_provider_open_allowed_false",
+      "passed": true
+    },
+    {
+      "detail": "repair ready",
+      "name": "repair_ready_recorded",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_key",
+      "name": "no_raw_stdout_key_in_provider-match-evidence-repair-diagnostics-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_key",
+      "name": "no_raw_stderr_key_in_provider-match-evidence-repair-diagnostics-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "command_key",
+      "name": "no_command_key_in_provider-match-evidence-repair-diagnostics-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "home_path",
+      "name": "no_home_path_in_provider-match-evidence-repair-diagnostics-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "tmp_path",
+      "name": "no_tmp_path_in_provider-match-evidence-repair-diagnostics-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "email_like",
+      "name": "no_email_like_in_provider-match-evidence-repair-diagnostics-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "developer_id_application",
+      "name": "no_developer_id_application_in_provider-match-evidence-repair-diagnostics-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "apple_development",
+      "name": "no_apple_development_in_provider-match-evidence-repair-diagnostics-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_key",
+      "name": "no_raw_stdout_key_in_provider-match-evidence-repair-diagnostics-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_key",
+      "name": "no_raw_stderr_key_in_provider-match-evidence-repair-diagnostics-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "command_key",
+      "name": "no_command_key_in_provider-match-evidence-repair-diagnostics-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "home_path",
+      "name": "no_home_path_in_provider-match-evidence-repair-diagnostics-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "tmp_path",
+      "name": "no_tmp_path_in_provider-match-evidence-repair-diagnostics-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "email_like",
+      "name": "no_email_like_in_provider-match-evidence-repair-diagnostics-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "developer_id_application",
+      "name": "no_developer_id_application_in_provider-match-evidence-repair-diagnostics-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "apple_development",
+      "name": "no_apple_development_in_provider-match-evidence-repair-diagnostics-summary.md",
+      "passed": true
+    }
+  ],
+  "deactivation_submitted_by_this_phase": false,
+  "decision": "PASS_PROVIDER_MATCH_EVIDENCE_REPAIR_DIAGNOSTICS_READY",
+  "generated_at_utc": "2026-06-14T03:22:13.230293+00:00",
+  "gpu_command_submission_attempted": false,
+  "ioserviceopen_attempted": false,
+  "metal_proof_claimed": false,
+  "provider_open_attempted": false,
+  "read_only_diagnostics_only": true,
+  "schema": "h1mekartx.provider_match_evidence_repair_diagnostics_check.v1",
+  "ui_compositor_proof_claimed": false
+}
