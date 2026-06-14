@@ -1,0 +1,466 @@
+{
+  "blur_acceleration_not_claimed": true,
+  "chain_summary": {
+    "baseline_privacy_redaction_audit_state": "ENFORCED",
+    "core_animation_attribution_proof_state": "NOT_ATTEMPTED",
+    "local_readonly_ui_baseline_state": "COLLECTED_OR_UNAVAILABLE",
+    "local_ui_baseline_artifact_summary_state": "SUMMARY_ONLY",
+    "metal_compositor_attribution_proof_state": "NOT_ATTEMPTED",
+    "metal_proof_state": "NOT_ATTEMPTED",
+    "quartzcore_attribution_proof_state": "NOT_ATTEMPTED",
+    "real_gpu_command_execution_proof_state": "NOT_ATTEMPTED",
+    "rtx5070_workload_attribution_proof_state": "NOT_ATTEMPTED",
+    "ui_compositor_proof_precondition_state": "PRECONDITIONS_INCOMPLETE",
+    "ui_compositor_proof_state": "NOT_ATTEMPTED",
+    "ui_compositor_scenario_matrix_state": "MATRIX_ONLY",
+    "ui_frame_pacing_latency_measurement_state": "NOT_ATTEMPTED",
+    "ui_frame_pacing_latency_metric_schema_state": "SCHEMA_ONLY",
+    "windowserver_attribution_proof_state": "NOT_ATTEMPTED",
+    "windowserver_attribution_schema_state": "SCHEMA_ONLY"
+  },
+  "checks": [
+    {
+      "detail": "tools/driverkit-activation/ui-compositor-proof-preconditions.json",
+      "name": "input_ui_preconditions_exists",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-activation/ui-compositor-proof-preconditions.json",
+      "name": "input_ui_preconditions_json_parse_ok",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-activation/ui-compositor-scenario-matrix.json",
+      "name": "input_scenario_matrix_exists",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-activation/ui-compositor-scenario-matrix.json",
+      "name": "input_scenario_matrix_json_parse_ok",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-activation/windowserver-ca-quartzcore-attribution.json",
+      "name": "input_attribution_schema_exists",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-activation/windowserver-ca-quartzcore-attribution.json",
+      "name": "input_attribution_schema_json_parse_ok",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-activation/ui-frame-pacing-latency-metrics.json",
+      "name": "input_metric_schema_exists",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-activation/ui-frame-pacing-latency-metrics.json",
+      "name": "input_metric_schema_json_parse_ok",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-activation/local-readonly-ui-baseline-collector.json",
+      "name": "input_baseline_collector_exists",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-activation/local-readonly-ui-baseline-collector.json",
+      "name": "input_baseline_collector_json_parse_ok",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-activation/local-ui-baseline-artifact-summarizer.json",
+      "name": "input_baseline_summary_exists",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-activation/local-ui-baseline-artifact-summarizer.json",
+      "name": "input_baseline_summary_json_parse_ok",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-activation/baseline-privacy-redaction-audit.json",
+      "name": "input_privacy_audit_exists",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-activation/baseline-privacy-redaction-audit.json",
+      "name": "input_privacy_audit_json_parse_ok",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/baseline-privacy-redaction-audit-check.json",
+      "name": "input_privacy_audit_check_exists",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/baseline-privacy-redaction-audit-check.json",
+      "name": "input_privacy_audit_check_json_parse_ok",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/baseline-privacy-redaction-audit-contract-check.json",
+      "name": "input_privacy_audit_contract_check_exists",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/baseline-privacy-redaction-audit-contract-check.json",
+      "name": "input_privacy_audit_contract_check_json_parse_ok",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_not_claimed",
+      "name": "ui_preconditions_ui_compositor_proof_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_not_claimed",
+      "name": "ui_preconditions_metal_proof_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "real_gpu_command_execution_attempted",
+      "name": "ui_preconditions_real_gpu_command_execution_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_workload_attribution_claimed",
+      "name": "ui_preconditions_rtx5070_workload_attribution_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "real_gpu_acceleration_claimed",
+      "name": "ui_preconditions_real_gpu_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "ui_preconditions_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "ui_preconditions_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_not_claimed",
+      "name": "scenario_matrix_ui_compositor_proof_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_not_claimed",
+      "name": "scenario_matrix_metal_proof_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "real_gpu_command_execution_attempted",
+      "name": "scenario_matrix_real_gpu_command_execution_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_workload_attribution_claimed",
+      "name": "scenario_matrix_rtx5070_workload_attribution_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "real_gpu_acceleration_claimed",
+      "name": "scenario_matrix_real_gpu_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "scenario_matrix_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "scenario_matrix_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_not_claimed",
+      "name": "attribution_schema_ui_compositor_proof_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_not_claimed",
+      "name": "attribution_schema_metal_proof_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "real_gpu_command_execution_attempted",
+      "name": "attribution_schema_real_gpu_command_execution_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_workload_attribution_claimed",
+      "name": "attribution_schema_rtx5070_workload_attribution_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "real_gpu_acceleration_claimed",
+      "name": "attribution_schema_real_gpu_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "attribution_schema_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "attribution_schema_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_not_claimed",
+      "name": "metric_schema_ui_compositor_proof_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_not_claimed",
+      "name": "metric_schema_metal_proof_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "real_gpu_command_execution_attempted",
+      "name": "metric_schema_real_gpu_command_execution_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_workload_attribution_claimed",
+      "name": "metric_schema_rtx5070_workload_attribution_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "real_gpu_acceleration_claimed",
+      "name": "metric_schema_real_gpu_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "metric_schema_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "metric_schema_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_not_claimed",
+      "name": "baseline_collector_ui_compositor_proof_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_not_claimed",
+      "name": "baseline_collector_metal_proof_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "real_gpu_command_execution_attempted",
+      "name": "baseline_collector_real_gpu_command_execution_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_workload_attribution_claimed",
+      "name": "baseline_collector_rtx5070_workload_attribution_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "real_gpu_acceleration_claimed",
+      "name": "baseline_collector_real_gpu_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "baseline_collector_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "baseline_collector_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_not_claimed",
+      "name": "baseline_summary_ui_compositor_proof_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_not_claimed",
+      "name": "baseline_summary_metal_proof_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "real_gpu_command_execution_attempted",
+      "name": "baseline_summary_real_gpu_command_execution_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_workload_attribution_claimed",
+      "name": "baseline_summary_rtx5070_workload_attribution_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "real_gpu_acceleration_claimed",
+      "name": "baseline_summary_real_gpu_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "baseline_summary_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "baseline_summary_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_not_claimed",
+      "name": "privacy_audit_ui_compositor_proof_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_not_claimed",
+      "name": "privacy_audit_metal_proof_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "real_gpu_command_execution_attempted",
+      "name": "privacy_audit_real_gpu_command_execution_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_workload_attribution_claimed",
+      "name": "privacy_audit_rtx5070_workload_attribution_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "real_gpu_acceleration_claimed",
+      "name": "privacy_audit_real_gpu_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "privacy_audit_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "privacy_audit_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "PASS_BASELINE_PRIVACY_REDACTION_AUDIT",
+      "name": "privacy_audit_decision_pass",
+      "passed": true
+    },
+    {
+      "detail": "PASS_BASELINE_PRIVACY_REDACTION_AUDIT_CONTRACT_READY",
+      "name": "privacy_contract_decision_pass",
+      "passed": true
+    },
+    {
+      "detail": "forbidden_hits=[]",
+      "name": "privacy_forbidden_hits_empty",
+      "passed": true
+    },
+    {
+      "detail": "staged_host_report_paths=[]",
+      "name": "privacy_staged_host_report_paths_empty",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_precondition_state=PRECONDITIONS_INCOMPLETE",
+      "name": "state_ui_compositor_proof_precondition_state_preconditions_incomplete",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_scenario_matrix_state=MATRIX_ONLY",
+      "name": "state_ui_compositor_scenario_matrix_state_matrix_only",
+      "passed": true
+    },
+    {
+      "detail": "windowserver_attribution_schema_state=SCHEMA_ONLY",
+      "name": "state_windowserver_attribution_schema_state_schema_only",
+      "passed": true
+    },
+    {
+      "detail": "ui_frame_pacing_latency_metric_schema_state=SCHEMA_ONLY",
+      "name": "state_ui_frame_pacing_latency_metric_schema_state_schema_only",
+      "passed": true
+    },
+    {
+      "detail": "local_ui_baseline_artifact_summary_state=SUMMARY_ONLY",
+      "name": "state_local_ui_baseline_artifact_summary_state_summary_only",
+      "passed": true
+    },
+    {
+      "detail": "baseline_privacy_redaction_audit_state=ENFORCED",
+      "name": "state_baseline_privacy_redaction_audit_state_enforced",
+      "passed": true
+    },
+    {
+      "detail": "ui_frame_pacing_latency_measurement_state=NOT_ATTEMPTED",
+      "name": "state_ui_frame_pacing_latency_measurement_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "windowserver_attribution_proof_state=NOT_ATTEMPTED",
+      "name": "state_windowserver_attribution_proof_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_state=NOT_ATTEMPTED",
+      "name": "state_ui_compositor_proof_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_state=NOT_ATTEMPTED",
+      "name": "state_metal_proof_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "real_gpu_command_execution_proof_state=NOT_ATTEMPTED",
+      "name": "state_real_gpu_command_execution_proof_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_workload_attribution_proof_state=NOT_ATTEMPTED",
+      "name": "state_rtx5070_workload_attribution_proof_state_not_attempted",
+      "passed": true
+    }
+  ],
+  "classification": "CLASSIFICATION_UI_EVIDENCE_CHAIN_ROLLUP",
+  "decision": "PASS_UI_EVIDENCE_CHAIN_ROLLUP_READY",
+  "dock_acceleration_not_claimed": true,
+  "email_like_identifiers_not_committed": true,
+  "failed_count": 0,
+  "generated_at_utc": "2026-06-14T01:58:47.841024+00:00",
+  "host_report_bundle_local_only": true,
+  "measurement_not_acceleration_proof": true,
+  "metal_proof_claimed": false,
+  "metal_proof_not_claimed": true,
+  "passed_count": 83,
+  "private_paths_not_committed": true,
+  "raw_command_stderr_not_committed": true,
+  "raw_command_stdout_not_committed": true,
+  "raw_local_logs_not_committed": true,
+  "real_gpu_acceleration_claimed": false,
+  "real_gpu_command_execution_attempted": false,
+  "release_readiness_rollup_only": true,
+  "rtx5070_workload_attribution_claimed": false,
+  "schema": "h1mekartx.ui_evidence_chain_rollup_check.v1",
+  "scope": "Phase 39 release-readiness UI evidence chain rollup",
+  "secondary_classification": "CLASSIFICATION_BASELINE_PRIVACY_REDACTION_AUDIT_GATE",
+  "tertiary_classification": "CLASSIFICATION_STATIC_CONTRACT",
+  "transparency_acceleration_not_claimed": true,
+  "ui_compositor_proof_claimed": false,
+  "ui_compositor_proof_not_claimed": true,
+  "ui_evidence_chain_rollup_only": true,
+  "ui_evidence_chain_rollup_state": "ROLLUP_ONLY"
+}

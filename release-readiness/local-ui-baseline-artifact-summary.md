@@ -1,6 +1,6 @@
 # Local UI Baseline Artifact Summary
 
-- Generated At UTC: `2026-06-14T01:54:02.288879+00:00`
+- Generated At UTC: `2026-06-14T01:58:35.401938+00:00`
 - Classification: `CLASSIFICATION_LOCAL_UI_BASELINE_ARTIFACT_SUMMARIZER`
 - Local Baseline Summary Only: `True`
 - Host Report Bundle Local Only: `True`
@@ -16,7 +16,7 @@
 - WindowServer Visibility Recorded: `True`
 - Dock Visibility Recorded: `True`
 - WindowServer Visible: `False`
-- Dock Visible: `False`
+- Dock Visible: `True`
 - Displays JSON Parse OK: `True`
 - Hardware JSON Parse OK: `True`
 - UI Frame Pacing / Latency Measurement State: `NOT_ATTEMPTED`
