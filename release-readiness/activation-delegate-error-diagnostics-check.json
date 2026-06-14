@@ -1,0 +1,213 @@
+{
+  "activation_delegate_error_diagnostics_ready": true,
+  "activation_submitted_by_default": false,
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/activation-delegate-error-diagnostics.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/driverkit/activation-delegate-error-diagnostics.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/H1mekaRTXActivationDiagnosticsHost.swift",
+      "name": "swift_diagnostics_host_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/scripts/activation-delegate-error-diagnostics.py",
+      "name": "script_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/activation-wait-system-extension-visibility-hardening.json",
+      "name": "phase60d_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase60d schema",
+      "name": "phase60d_schema",
+      "passed": true
+    },
+    {
+      "detail": "activation_delegate_error_diagnostics_ready",
+      "name": "manifest_activation_delegate_error_diagnostics_ready_true",
+      "passed": true
+    },
+    {
+      "detail": "default_refuses_activation",
+      "name": "manifest_default_refuses_activation_true",
+      "passed": true
+    },
+    {
+      "detail": "hard_optin_flags_required",
+      "name": "manifest_hard_optin_flags_required_true",
+      "passed": true
+    },
+    {
+      "detail": "ci_activation_attempted",
+      "name": "manifest_ci_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "activation_submitted_by_default",
+      "name": "manifest_activation_submitted_by_default_false",
+      "passed": true
+    },
+    {
+      "detail": "deactivation_submitted_by_default",
+      "name": "manifest_deactivation_submitted_by_default_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "manifest_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "OSSystemExtensionRequestDelegate",
+      "name": "swift_contains_OSSystemExtensionRequestDelegate",
+      "passed": true
+    },
+    {
+      "detail": "requestNeedsUserApproval",
+      "name": "swift_contains_requestNeedsUserApproval",
+      "passed": true
+    },
+    {
+      "detail": "didFinishWithResult",
+      "name": "swift_contains_didFinishWithResult",
+      "passed": true
+    },
+    {
+      "detail": "didFailWithError",
+      "name": "swift_contains_didFailWithError",
+      "passed": true
+    },
+    {
+      "detail": "actionForReplacingExtension",
+      "name": "swift_contains_actionForReplacingExtension",
+      "passed": true
+    },
+    {
+      "detail": "OSSystemExtensionManager.shared.submitRequest",
+      "name": "swift_contains_OSSystemExtensionManager_shared_submitRequest",
+      "passed": true
+    },
+    {
+      "detail": "--i-understand-activation-delegate-diagnostics",
+      "name": "script_contains___i_understand_activation_delegate_diagnostics",
+      "passed": true
+    },
+    {
+      "detail": "--submit-activation",
+      "name": "script_contains___submit_activation",
+      "passed": true
+    },
+    {
+      "detail": "--signing-identity",
+      "name": "script_contains___signing_identity",
+      "passed": true
+    },
+    {
+      "detail": "--output-under-host-report-bundle",
+      "name": "script_contains___output_under_host_report_bundle",
+      "passed": true
+    },
+    {
+      "detail": "\"log\", \"show\"",
+      "name": "script_contains_\"log\",_\"show\"",
+      "passed": true
+    },
+    {
+      "detail": "sysextd",
+      "name": "script_contains_sysextd",
+      "passed": true
+    },
+    {
+      "detail": "kernelmanagerd",
+      "name": "script_contains_kernelmanagerd",
+      "passed": true
+    },
+    {
+      "detail": "systemextensionsctl",
+      "name": "script_contains_systemextensionsctl",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "script_contains_provider_open_attempted",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "script_contains_ioserviceopen_attempted",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "script_contains_bar_mapping_attempted",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "script_contains_gpu_command_submission_attempted",
+      "passed": true
+    }
+  ],
+  "ci_activation_attempted": false,
+  "decision": "PASS_ACTIVATION_DELEGATE_ERROR_DIAGNOSTICS_READY",
+  "default_refuses_activation": true,
+  "generated_at_utc": "2026-06-14T03:49:22.124186+00:00",
+  "gpu_command_submission_attempted": false,
+  "hard_optin_flags_required": true,
+  "ioserviceopen_attempted": false,
+  "metal_proof_claimed": false,
+  "provider_open_attempted": false,
+  "schema": "h1mekartx.activation_delegate_error_diagnostics_check.v1",
+  "ui_compositor_proof_claimed": false
+}\n
