@@ -1,14 +1,14 @@
-# Local UI Baseline Artifact Summarizer
+# Baseline Privacy / Redaction Audit Gate
 
 ## Purpose
 
-This Phase 37 contract defines a local UI baseline artifact summarizer for H1mekaRTX.
+This Phase 38 contract defines a privacy and redaction audit gate for local UI baseline summaries.
 
-This phase summarizes the local-only Phase 36 UI baseline report into committed release-readiness output.
+This phase audits committed release-readiness outputs to ensure local baseline summaries do not include raw local logs, raw command stdout, private home paths, email-like identifiers, or host-report-bundle raw artifacts.
+
+This phase does not collect new local logs.
 
 This phase does not commit host-report-bundle outputs.
-
-This phase does not collect new hardware access data.
 
 This phase does not measure real acceleration.
 
@@ -46,92 +46,106 @@ This phase does not load a dext.
 
 This phase does not execute activation or deactivation.
 
-## Input Policy
 
-LOCAL_UI_BASELINE_SUMMARIZER_INPUTS:
+## Sanitization Step
 
-- host-report-bundle/ui-baseline/local-readonly-ui-baseline.json
-- host-report-bundle/ui-baseline/local-readonly-ui-baseline.md
+Before the privacy/redaction audit runs, committed release-readiness local UI baseline summaries are sanitized:
 
-These inputs are local-only and must not be committed.
+- repository root paths are replaced with `<REPO_ROOT>`
+- user home paths are replaced with `<USER_HOME>`
+- temporary folder paths are replaced with `<TMP_PATH>`
+- raw local host-report-bundle artifact paths are replaced with symbolic placeholders
+- raw stdout and stderr content remains excluded
 
-## Summary Policy
+## Audit Policy
 
-The summarizer may commit only derived release-readiness summary fields:
+BASELINE_PRIVACY_REDACTION_AUDIT_POLICY:
 
-- baseline artifact present
-- baseline schema valid
-- generated timestamp present
-- WindowServer visibility recorded
-- Dock visibility recorded
-- display system_profiler JSON parse status
-- hardware system_profiler JSON parse status
-- read-only command keys present
-- command availability and return code summary
-- proof states remain NOT_ATTEMPTED
-- acceleration claims remain false
+1. host-report-bundle paths must not be staged for commit.
+2. release-readiness summaries must not contain raw command stdout.
+3. release-readiness summaries must not contain raw command stderr.
+4. release-readiness summaries must not contain raw unified log content.
+5. release-readiness summaries must not contain private absolute home paths.
+6. release-readiness summaries must not contain email-like identifiers.
+7. release-readiness summaries must not contain long raw process-table lines.
+8. release-readiness summaries may contain boolean summaries and return-code summaries.
+9. release-readiness summaries may contain proof-state fields.
+10. release-readiness summaries may contain command-key names only.
 
-The summarizer must not commit raw command stdout or machine-specific logs.
+## Input Scope
 
-## Output Policy
-
-COMMITTED_SUMMARY_OUTPUTS:
+BASELINE_PRIVACY_REDACTION_AUDIT_INPUTS:
 
 - release-readiness/local-ui-baseline-artifact-summary.json
 - release-readiness/local-ui-baseline-artifact-summary.md
 - release-readiness/local-ui-baseline-artifact-summary-check.json
 - release-readiness/local-ui-baseline-artifact-summary-check.md
+- release-readiness/local-readonly-ui-baseline-check.json
+- release-readiness/local-readonly-ui-baseline-check.md
 
-LOCAL_OUTPUTS_IGNORED_BY_GIT:
+## Local-Only Paths
 
+LOCAL_ONLY_PATHS:
+
+- host-report-bundle/
+- host-report-bundle/ui-baseline/
 - host-report-bundle/ui-baseline/local-readonly-ui-baseline.json
 - host-report-bundle/ui-baseline/local-readonly-ui-baseline.md
 
-## Long-Term UI Goal
+These paths must not be staged or committed.
 
-The long-term user-visible goal remains Hackintosh macOS UI compositor acceleration research:
+## Allowed Summary Fields
 
-- Dock smoothness
-- Dock magnification
-- transparency
-- blur
-- menu bar translucency
-- window movement
-- window resizing
-- Mission Control
-- Launchpad
-- Stage Manager
-- desktop space switching
-- WindowServer / Core Animation / QuartzCore / Metal compositor evidence path
+ALLOWED_SUMMARY_FIELDS:
+
+- baseline_artifact_present
+- baseline_schema_valid
+- baseline_generated_at_utc_present
+- windowserver_visibility_recorded
+- dock_visibility_recorded
+- windowserver_visible
+- dock_visible
+- windowserver_matching_line_count
+- dock_matching_line_count
+- displays_json_parse_ok
+- hardware_json_parse_ok
+- command_summary
+- present
+- available
+- returncode
+- stdout_present
+- stderr_present
+- proof states
+- false acceleration claim flags
 
 ## Classification
 
-All Phase 37 outputs must be labeled only as:
+All Phase 38 outputs must be labeled only as:
 
+- CLASSIFICATION_BASELINE_PRIVACY_REDACTION_AUDIT_GATE
 - CLASSIFICATION_LOCAL_UI_BASELINE_ARTIFACT_SUMMARIZER
 - CLASSIFICATION_LOCAL_READONLY_UI_BASELINE_COLLECTOR
-- CLASSIFICATION_UI_FRAME_PACING_LATENCY_METRIC_SCHEMA
 - CLASSIFICATION_STATIC_CONTRACT
 
 ## Safety Boundary
 
 Required safety markers:
 
-- LOCAL_UI_BASELINE_ARTIFACT_SUMMARIZER_ONLY: True
-- LOCAL_BASELINE_SUMMARY_ONLY: True
+- BASELINE_PRIVACY_REDACTION_AUDIT_GATE_ONLY: True
+- PRIVACY_REDACTION_AUDIT_ONLY: True
 - HOST_REPORT_BUNDLE_LOCAL_ONLY: True
+- HOST_REPORT_BUNDLE_NOT_STAGED: True
 - RAW_LOCAL_LOGS_NOT_COMMITTED: True
 - RAW_COMMAND_STDOUT_NOT_COMMITTED: True
 - RAW_COMMAND_STDERR_NOT_COMMITTED: True
+- PRIVATE_PATHS_NOT_COMMITTED: True
+- EMAIL_LIKE_IDENTIFIERS_NOT_COMMITTED: True
 - MEASUREMENT_NOT_ACCELERATION_PROOF: True
 - UI_COMPOSITOR_PROOF_NOT_CLAIMED: True
 - METAL_PROOF_NOT_CLAIMED: True
 - DOCK_ACCELERATION_NOT_CLAIMED: True
 - TRANSPARENCY_ACCELERATION_NOT_CLAIMED: True
 - BLUR_ACCELERATION_NOT_CLAIMED: True
-- MISSION_CONTROL_ACCELERATION_NOT_CLAIMED: True
-- LAUNCHPAD_ACCELERATION_NOT_CLAIMED: True
-- STAGE_MANAGER_ACCELERATION_NOT_CLAIMED: True
 - WINDOWSERVER_ATTRIBUTION_PROOF_NOT_CLAIMED: True
 - CORE_ANIMATION_ATTRIBUTION_PROOF_NOT_CLAIMED: True
 - QUARTZCORE_ATTRIBUTION_PROOF_NOT_CLAIMED: True
@@ -167,23 +181,9 @@ Required safety markers:
 - NO_PRIVATE_FRAMEWORK_PATCHING: True
 - NO_FAKE_METAL_DEVICE_SPOOFING: True
 
-## Summary Buckets
-
-LOCAL_UI_BASELINE_ARTIFACT_SUMMARY_BUCKETS:
-
-1. local artifact availability
-2. schema validation
-3. timestamp availability
-4. WindowServer process visibility summary
-5. Dock process visibility summary
-6. system_profiler display parse summary
-7. system_profiler hardware parse summary
-8. read-only command summary
-9. proof-state summary
-10. acceleration-claim summary
-
 ## Current Proof States
 
+- BASELINE_PRIVACY_REDACTION_AUDIT_STATE: ENFORCED
 - LOCAL_UI_BASELINE_ARTIFACT_SUMMARY_STATE: SUMMARY_ONLY
 - LOCAL_READONLY_UI_BASELINE_STATE: COLLECTED_OR_UNAVAILABLE
 - UI_FRAME_PACING_LATENCY_MEASUREMENT_STATE: NOT_ATTEMPTED
@@ -198,20 +198,24 @@ LOCAL_UI_BASELINE_ARTIFACT_SUMMARY_BUCKETS:
 
 ## Current Contract State
 
-- PHASE37_LOCAL_UI_BASELINE_ARTIFACT_SUMMARIZER_READY: True
-- LOCAL_UI_BASELINE_ARTIFACT_SUMMARIZER_ONLY: True
-- LOCAL_BASELINE_SUMMARY_ONLY: True
+- PHASE38_BASELINE_PRIVACY_REDACTION_AUDIT_GATE_READY: True
+- BASELINE_PRIVACY_REDACTION_AUDIT_GATE_ONLY: True
+- PRIVACY_REDACTION_AUDIT_ONLY: True
 - HOST_REPORT_BUNDLE_LOCAL_ONLY: True
+- HOST_REPORT_BUNDLE_NOT_STAGED: True
 - RAW_LOCAL_LOGS_NOT_COMMITTED: True
 - RAW_COMMAND_STDOUT_NOT_COMMITTED: True
 - RAW_COMMAND_STDERR_NOT_COMMITTED: True
+- PRIVATE_PATHS_NOT_COMMITTED: True
+- EMAIL_LIKE_IDENTIFIERS_NOT_COMMITTED: True
+- BASELINE_PRIVACY_REDACTION_AUDIT_STATE: ENFORCED
 - MEASUREMENT_NOT_ACCELERATION_PROOF: True
-- LOCAL_UI_BASELINE_ARTIFACT_SUMMARY_STATE: SUMMARY_ONLY
 - UI_COMPOSITOR_PROOF_NOT_CLAIMED: True
 - METAL_PROOF_NOT_CLAIMED: True
 - DOCK_ACCELERATION_NOT_CLAIMED: True
 - TRANSPARENCY_ACCELERATION_NOT_CLAIMED: True
 - BLUR_ACCELERATION_NOT_CLAIMED: True
+- LOCAL_UI_BASELINE_ARTIFACT_SUMMARY_STATE: SUMMARY_ONLY
 - UI_COMPOSITOR_PROOF_STATE: NOT_ATTEMPTED
 - METAL_PROOF_STATE: NOT_ATTEMPTED
 - REAL_GPU_COMMAND_EXECUTION_ATTEMPTED: False

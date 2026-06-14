@@ -1,0 +1,436 @@
+{
+  "baseline_privacy_redaction_audit_gate_only": true,
+  "baseline_privacy_redaction_audit_state": "ENFORCED",
+  "checks": [
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary.json",
+      "name": "audit_input_exists_release-readiness_local-ui-baseline-artifact-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary.json",
+      "name": "no_raw_stdout_key_in_release-readiness_local-ui-baseline-artifact-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary.json",
+      "name": "no_raw_stderr_key_in_release-readiness_local-ui-baseline-artifact-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary.json",
+      "name": "no_raw_stdout_line_in_release-readiness_local-ui-baseline-artifact-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary.json",
+      "name": "no_raw_stderr_line_in_release-readiness_local-ui-baseline-artifact-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary.json",
+      "name": "no_home_path_in_release-readiness_local-ui-baseline-artifact-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary.json",
+      "name": "no_email_like_in_release-readiness_local-ui-baseline-artifact-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary.json",
+      "name": "no_host_report_bundle_raw_json_in_release-readiness_local-ui-baseline-artifact-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary.json",
+      "name": "no_host_report_bundle_raw_md_in_release-readiness_local-ui-baseline-artifact-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary.md",
+      "name": "audit_input_exists_release-readiness_local-ui-baseline-artifact-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary.md",
+      "name": "no_raw_stdout_key_in_release-readiness_local-ui-baseline-artifact-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary.md",
+      "name": "no_raw_stderr_key_in_release-readiness_local-ui-baseline-artifact-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary.md",
+      "name": "no_raw_stdout_line_in_release-readiness_local-ui-baseline-artifact-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary.md",
+      "name": "no_raw_stderr_line_in_release-readiness_local-ui-baseline-artifact-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary.md",
+      "name": "no_home_path_in_release-readiness_local-ui-baseline-artifact-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary.md",
+      "name": "no_email_like_in_release-readiness_local-ui-baseline-artifact-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary.md",
+      "name": "no_host_report_bundle_raw_json_in_release-readiness_local-ui-baseline-artifact-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary.md",
+      "name": "no_host_report_bundle_raw_md_in_release-readiness_local-ui-baseline-artifact-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary-check.json",
+      "name": "audit_input_exists_release-readiness_local-ui-baseline-artifact-summary-check.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary-check.json",
+      "name": "no_raw_stdout_key_in_release-readiness_local-ui-baseline-artifact-summary-check.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary-check.json",
+      "name": "no_raw_stderr_key_in_release-readiness_local-ui-baseline-artifact-summary-check.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary-check.json",
+      "name": "no_raw_stdout_line_in_release-readiness_local-ui-baseline-artifact-summary-check.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary-check.json",
+      "name": "no_raw_stderr_line_in_release-readiness_local-ui-baseline-artifact-summary-check.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary-check.json",
+      "name": "no_home_path_in_release-readiness_local-ui-baseline-artifact-summary-check.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary-check.json",
+      "name": "no_email_like_in_release-readiness_local-ui-baseline-artifact-summary-check.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary-check.json",
+      "name": "no_host_report_bundle_raw_json_in_release-readiness_local-ui-baseline-artifact-summary-check.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary-check.json",
+      "name": "no_host_report_bundle_raw_md_in_release-readiness_local-ui-baseline-artifact-summary-check.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary-check.md",
+      "name": "audit_input_exists_release-readiness_local-ui-baseline-artifact-summary-check.md",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary-check.md",
+      "name": "no_raw_stdout_key_in_release-readiness_local-ui-baseline-artifact-summary-check.md",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary-check.md",
+      "name": "no_raw_stderr_key_in_release-readiness_local-ui-baseline-artifact-summary-check.md",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary-check.md",
+      "name": "no_raw_stdout_line_in_release-readiness_local-ui-baseline-artifact-summary-check.md",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary-check.md",
+      "name": "no_raw_stderr_line_in_release-readiness_local-ui-baseline-artifact-summary-check.md",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary-check.md",
+      "name": "no_home_path_in_release-readiness_local-ui-baseline-artifact-summary-check.md",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary-check.md",
+      "name": "no_email_like_in_release-readiness_local-ui-baseline-artifact-summary-check.md",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary-check.md",
+      "name": "no_host_report_bundle_raw_json_in_release-readiness_local-ui-baseline-artifact-summary-check.md",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-ui-baseline-artifact-summary-check.md",
+      "name": "no_host_report_bundle_raw_md_in_release-readiness_local-ui-baseline-artifact-summary-check.md",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-readonly-ui-baseline-check.json",
+      "name": "audit_input_exists_release-readiness_local-readonly-ui-baseline-check.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-readonly-ui-baseline-check.json",
+      "name": "no_raw_stdout_key_in_release-readiness_local-readonly-ui-baseline-check.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-readonly-ui-baseline-check.json",
+      "name": "no_raw_stderr_key_in_release-readiness_local-readonly-ui-baseline-check.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-readonly-ui-baseline-check.json",
+      "name": "no_raw_stdout_line_in_release-readiness_local-readonly-ui-baseline-check.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-readonly-ui-baseline-check.json",
+      "name": "no_raw_stderr_line_in_release-readiness_local-readonly-ui-baseline-check.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-readonly-ui-baseline-check.json",
+      "name": "no_home_path_in_release-readiness_local-readonly-ui-baseline-check.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-readonly-ui-baseline-check.json",
+      "name": "no_email_like_in_release-readiness_local-readonly-ui-baseline-check.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-readonly-ui-baseline-check.json",
+      "name": "no_host_report_bundle_raw_json_in_release-readiness_local-readonly-ui-baseline-check.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-readonly-ui-baseline-check.json",
+      "name": "no_host_report_bundle_raw_md_in_release-readiness_local-readonly-ui-baseline-check.json",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-readonly-ui-baseline-check.md",
+      "name": "audit_input_exists_release-readiness_local-readonly-ui-baseline-check.md",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-readonly-ui-baseline-check.md",
+      "name": "no_raw_stdout_key_in_release-readiness_local-readonly-ui-baseline-check.md",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-readonly-ui-baseline-check.md",
+      "name": "no_raw_stderr_key_in_release-readiness_local-readonly-ui-baseline-check.md",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-readonly-ui-baseline-check.md",
+      "name": "no_raw_stdout_line_in_release-readiness_local-readonly-ui-baseline-check.md",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-readonly-ui-baseline-check.md",
+      "name": "no_raw_stderr_line_in_release-readiness_local-readonly-ui-baseline-check.md",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-readonly-ui-baseline-check.md",
+      "name": "no_home_path_in_release-readiness_local-readonly-ui-baseline-check.md",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-readonly-ui-baseline-check.md",
+      "name": "no_email_like_in_release-readiness_local-readonly-ui-baseline-check.md",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-readonly-ui-baseline-check.md",
+      "name": "no_host_report_bundle_raw_json_in_release-readiness_local-readonly-ui-baseline-check.md",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/local-readonly-ui-baseline-check.md",
+      "name": "no_host_report_bundle_raw_md_in_release-readiness_local-readonly-ui-baseline-check.md",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/local-ui-baseline-artifact-summary.json",
+      "name": "summary_json_parse_ok",
+      "passed": true
+    },
+    {
+      "detail": "raw_local_logs_not_committed",
+      "name": "summary_raw_local_logs_not_committed_true",
+      "passed": true
+    },
+    {
+      "detail": "raw_command_stdout_not_committed",
+      "name": "summary_raw_command_stdout_not_committed_true",
+      "passed": true
+    },
+    {
+      "detail": "raw_command_stderr_not_committed",
+      "name": "summary_raw_command_stderr_not_committed_true",
+      "passed": true
+    },
+    {
+      "detail": "measurement_not_acceleration_proof",
+      "name": "summary_measurement_not_acceleration_proof_true",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_not_claimed",
+      "name": "summary_ui_compositor_proof_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_not_claimed",
+      "name": "summary_metal_proof_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "dock_recent_log",
+      "name": "command_dock_recent_log_omits_stdout",
+      "passed": true
+    },
+    {
+      "detail": "dock_recent_log",
+      "name": "command_dock_recent_log_omits_stderr",
+      "passed": true
+    },
+    {
+      "detail": "ioreg_display_connect",
+      "name": "command_ioreg_display_connect_omits_stdout",
+      "passed": true
+    },
+    {
+      "detail": "ioreg_display_connect",
+      "name": "command_ioreg_display_connect_omits_stderr",
+      "passed": true
+    },
+    {
+      "detail": "ioreg_framebuffer",
+      "name": "command_ioreg_framebuffer_omits_stdout",
+      "passed": true
+    },
+    {
+      "detail": "ioreg_framebuffer",
+      "name": "command_ioreg_framebuffer_omits_stderr",
+      "passed": true
+    },
+    {
+      "detail": "process_table",
+      "name": "command_process_table_omits_stdout",
+      "passed": true
+    },
+    {
+      "detail": "process_table",
+      "name": "command_process_table_omits_stderr",
+      "passed": true
+    },
+    {
+      "detail": "sw_vers",
+      "name": "command_sw_vers_omits_stdout",
+      "passed": true
+    },
+    {
+      "detail": "sw_vers",
+      "name": "command_sw_vers_omits_stderr",
+      "passed": true
+    },
+    {
+      "detail": "system_profiler_displays_json",
+      "name": "command_system_profiler_displays_json_omits_stdout",
+      "passed": true
+    },
+    {
+      "detail": "system_profiler_displays_json",
+      "name": "command_system_profiler_displays_json_omits_stderr",
+      "passed": true
+    },
+    {
+      "detail": "system_profiler_hardware_json",
+      "name": "command_system_profiler_hardware_json_omits_stdout",
+      "passed": true
+    },
+    {
+      "detail": "system_profiler_hardware_json",
+      "name": "command_system_profiler_hardware_json_omits_stderr",
+      "passed": true
+    },
+    {
+      "detail": "uname",
+      "name": "command_uname_omits_stdout",
+      "passed": true
+    },
+    {
+      "detail": "uname",
+      "name": "command_uname_omits_stderr",
+      "passed": true
+    },
+    {
+      "detail": "windowserver_recent_log",
+      "name": "command_windowserver_recent_log_omits_stdout",
+      "passed": true
+    },
+    {
+      "detail": "windowserver_recent_log",
+      "name": "command_windowserver_recent_log_omits_stderr",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "host_report_bundle_not_staged",
+      "passed": true
+    }
+  ],
+  "classification": "CLASSIFICATION_BASELINE_PRIVACY_REDACTION_AUDIT_GATE",
+  "decision": "PASS_BASELINE_PRIVACY_REDACTION_AUDIT",
+  "email_like_identifiers_not_committed": true,
+  "failed_count": 0,
+  "forbidden_hits": [],
+  "generated_at_utc": "2026-06-14T01:54:08.470116+00:00",
+  "host_report_bundle_local_only": true,
+  "host_report_bundle_not_staged": true,
+  "local_ui_baseline_artifact_summary_state": "SUMMARY_ONLY",
+  "measurement_not_acceleration_proof": true,
+  "metal_proof_claimed": false,
+  "metal_proof_not_claimed": true,
+  "metal_proof_state": "NOT_ATTEMPTED",
+  "passed_count": 80,
+  "privacy_redaction_audit_only": true,
+  "private_paths_not_committed": true,
+  "raw_command_stderr_not_committed": true,
+  "raw_command_stdout_not_committed": true,
+  "raw_local_logs_not_committed": true,
+  "real_gpu_acceleration_claimed": false,
+  "real_gpu_command_execution_attempted": false,
+  "rtx5070_workload_attribution_claimed": false,
+  "schema": "h1mekartx.baseline_privacy_redaction_audit_report.v1",
+  "scope": "Phase 38 baseline privacy/redaction audit gate",
+  "secondary_classification": "CLASSIFICATION_LOCAL_UI_BASELINE_ARTIFACT_SUMMARIZER",
+  "staged_host_report_paths": [],
+  "tertiary_classification": "CLASSIFICATION_STATIC_CONTRACT",
+  "ui_compositor_proof_claimed": false,
+  "ui_compositor_proof_not_claimed": true,
+  "ui_compositor_proof_state": "NOT_ATTEMPTED"
+}

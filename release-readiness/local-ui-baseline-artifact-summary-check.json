@@ -1,32 +1,32 @@
 {
   "checks": [
     {
-      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/hackintosh/local-ui-baseline-artifact-summarizer.md",
+      "detail": "<REPO_ROOT>/docs/hackintosh/local-ui-baseline-artifact-summarizer.md",
       "name": "contract_file_exists",
       "passed": true
     },
     {
-      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-activation/local-ui-baseline-artifact-summarizer.json",
+      "detail": "<REPO_ROOT>/tools/driverkit-activation/local-ui-baseline-artifact-summarizer.json",
       "name": "summarizer_manifest_json_exists",
       "passed": true
     },
     {
-      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/local-ui-baseline-artifact-summary.json",
+      "detail": "<REPO_ROOT>/release-readiness/local-ui-baseline-artifact-summary.json",
       "name": "summary_json_exists",
       "passed": true
     },
     {
-      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/local-ui-baseline-artifact-summary.md",
+      "detail": "<REPO_ROOT>/release-readiness/local-ui-baseline-artifact-summary.md",
       "name": "summary_md_exists",
       "passed": true
     },
     {
-      "detail": "/Users/h1meka/Dev/H1mekaRTX/host-report-bundle/ui-baseline/local-readonly-ui-baseline.json",
+      "detail": "<LOCAL_READONLY_UI_BASELINE_JSON>",
       "name": "local_baseline_input_exists",
       "passed": true
     },
     {
-      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-activation/local-readonly-ui-baseline-collector.json",
+      "detail": "<REPO_ROOT>/tools/driverkit-activation/local-readonly-ui-baseline-collector.json",
       "name": "collector_manifest_exists",
       "passed": true
     },
@@ -449,7 +449,7 @@
   "classification": "CLASSIFICATION_LOCAL_UI_BASELINE_ARTIFACT_SUMMARIZER",
   "decision": "PASS_LOCAL_UI_BASELINE_ARTIFACT_SUMMARY_READY",
   "failed_count": 0,
-  "generated_at_utc": "2026-06-14T01:46:52.405089+00:00",
+  "generated_at_utc": "2026-06-14T01:54:02.328916+00:00",
   "host_report_bundle_local_only": true,
   "local_baseline_input_present": true,
   "local_baseline_summary_only": true,

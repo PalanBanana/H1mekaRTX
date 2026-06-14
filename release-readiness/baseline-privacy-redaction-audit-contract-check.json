@@ -1,0 +1,322 @@
+{
+  "baseline_privacy_redaction_audit_gate_only": true,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/hackintosh/baseline-privacy-redaction-audit.md",
+      "name": "contract_file_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-activation/baseline-privacy-redaction-audit.json",
+      "name": "manifest_json_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/baseline-privacy-redaction-audit-check.json",
+      "name": "audit_report_json_exists",
+      "passed": true
+    },
+    {
+      "detail": "CLASSIFICATION_BASELINE_PRIVACY_REDACTION_AUDIT_GATE",
+      "name": "requires_contract_token_classification_baseline_privacy_redaction_audit_gate",
+      "passed": true
+    },
+    {
+      "detail": "CLASSIFICATION_LOCAL_UI_BASELINE_ARTIFACT_SUMMARIZER",
+      "name": "requires_contract_token_classification_local_ui_baseline_artifact_summarizer",
+      "passed": true
+    },
+    {
+      "detail": "CLASSIFICATION_LOCAL_READONLY_UI_BASELINE_COLLECTOR",
+      "name": "requires_contract_token_classification_local_readonly_ui_baseline_collector",
+      "passed": true
+    },
+    {
+      "detail": "CLASSIFICATION_STATIC_CONTRACT",
+      "name": "requires_contract_token_classification_static_contract",
+      "passed": true
+    },
+    {
+      "detail": "BASELINE_PRIVACY_REDACTION_AUDIT_GATE_ONLY: True",
+      "name": "requires_contract_token_baseline_privacy_redaction_audit_gate_only_true",
+      "passed": true
+    },
+    {
+      "detail": "PRIVACY_REDACTION_AUDIT_ONLY: True",
+      "name": "requires_contract_token_privacy_redaction_audit_only_true",
+      "passed": true
+    },
+    {
+      "detail": "HOST_REPORT_BUNDLE_LOCAL_ONLY: True",
+      "name": "requires_contract_token_host_report_bundle_local_only_true",
+      "passed": true
+    },
+    {
+      "detail": "HOST_REPORT_BUNDLE_NOT_STAGED: True",
+      "name": "requires_contract_token_host_report_bundle_not_staged_true",
+      "passed": true
+    },
+    {
+      "detail": "RAW_LOCAL_LOGS_NOT_COMMITTED: True",
+      "name": "requires_contract_token_raw_local_logs_not_committed_true",
+      "passed": true
+    },
+    {
+      "detail": "RAW_COMMAND_STDOUT_NOT_COMMITTED: True",
+      "name": "requires_contract_token_raw_command_stdout_not_committed_true",
+      "passed": true
+    },
+    {
+      "detail": "RAW_COMMAND_STDERR_NOT_COMMITTED: True",
+      "name": "requires_contract_token_raw_command_stderr_not_committed_true",
+      "passed": true
+    },
+    {
+      "detail": "PRIVATE_PATHS_NOT_COMMITTED: True",
+      "name": "requires_contract_token_private_paths_not_committed_true",
+      "passed": true
+    },
+    {
+      "detail": "EMAIL_LIKE_IDENTIFIERS_NOT_COMMITTED: True",
+      "name": "requires_contract_token_email_like_identifiers_not_committed_true",
+      "passed": true
+    },
+    {
+      "detail": "MEASUREMENT_NOT_ACCELERATION_PROOF: True",
+      "name": "requires_contract_token_measurement_not_acceleration_proof_true",
+      "passed": true
+    },
+    {
+      "detail": "UI_COMPOSITOR_PROOF_NOT_CLAIMED: True",
+      "name": "requires_contract_token_ui_compositor_proof_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "METAL_PROOF_NOT_CLAIMED: True",
+      "name": "requires_contract_token_metal_proof_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "DOCK_ACCELERATION_NOT_CLAIMED: True",
+      "name": "requires_contract_token_dock_acceleration_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "TRANSPARENCY_ACCELERATION_NOT_CLAIMED: True",
+      "name": "requires_contract_token_transparency_acceleration_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "BLUR_ACCELERATION_NOT_CLAIMED: True",
+      "name": "requires_contract_token_blur_acceleration_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "WINDOWSERVER_ATTRIBUTION_PROOF_NOT_CLAIMED: True",
+      "name": "requires_contract_token_windowserver_attribution_proof_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "CORE_ANIMATION_ATTRIBUTION_PROOF_NOT_CLAIMED: True",
+      "name": "requires_contract_token_core_animation_attribution_proof_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "QUARTZCORE_ATTRIBUTION_PROOF_NOT_CLAIMED: True",
+      "name": "requires_contract_token_quartzcore_attribution_proof_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "METAL_COMPOSITOR_ATTRIBUTION_PROOF_NOT_CLAIMED: True",
+      "name": "requires_contract_token_metal_compositor_attribution_proof_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "BASELINE_PRIVACY_REDACTION_AUDIT_POLICY",
+      "name": "requires_contract_token_baseline_privacy_redaction_audit_policy",
+      "passed": true
+    },
+    {
+      "detail": "BASELINE_PRIVACY_REDACTION_AUDIT_INPUTS",
+      "name": "requires_contract_token_baseline_privacy_redaction_audit_inputs",
+      "passed": true
+    },
+    {
+      "detail": "LOCAL_ONLY_PATHS",
+      "name": "requires_contract_token_local_only_paths",
+      "passed": true
+    },
+    {
+      "detail": "ALLOWED_SUMMARY_FIELDS",
+      "name": "requires_contract_token_allowed_summary_fields",
+      "passed": true
+    },
+    {
+      "detail": "BASELINE_PRIVACY_REDACTION_AUDIT_STATE: ENFORCED",
+      "name": "requires_contract_token_baseline_privacy_redaction_audit_state_enforced",
+      "passed": true
+    },
+    {
+      "detail": "LOCAL_UI_BASELINE_ARTIFACT_SUMMARY_STATE: SUMMARY_ONLY",
+      "name": "requires_contract_token_local_ui_baseline_artifact_summary_state_summary_only",
+      "passed": true
+    },
+    {
+      "detail": "UI_COMPOSITOR_PROOF_STATE: NOT_ATTEMPTED",
+      "name": "requires_contract_token_ui_compositor_proof_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "METAL_PROOF_STATE: NOT_ATTEMPTED",
+      "name": "requires_contract_token_metal_proof_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "REAL_GPU_COMMAND_EXECUTION_ATTEMPTED: False",
+      "name": "requires_contract_token_real_gpu_command_execution_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "RTX5070_WORKLOAD_ATTRIBUTION_CLAIMED: False",
+      "name": "requires_contract_token_rtx5070_workload_attribution_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "REAL_GPU_ACCELERATION_CLAIMED: False",
+      "name": "requires_contract_token_real_gpu_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "UI_COMPOSITOR_PROOF_CLAIMED: False",
+      "name": "requires_contract_token_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "METAL_PROOF_CLAIMED: False",
+      "name": "requires_contract_token_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema_matches",
+      "passed": true
+    },
+    {
+      "detail": "audit report schema",
+      "name": "audit_report_schema_matches",
+      "passed": true
+    },
+    {
+      "detail": "privacy audit only",
+      "name": "manifest_privacy_audit_only",
+      "passed": true
+    },
+    {
+      "detail": "host report local only",
+      "name": "manifest_host_report_local_only",
+      "passed": true
+    },
+    {
+      "detail": "raw logs not committed",
+      "name": "manifest_raw_logs_not_committed",
+      "passed": true
+    },
+    {
+      "detail": "raw stdout not committed",
+      "name": "manifest_raw_stdout_not_committed",
+      "passed": true
+    },
+    {
+      "detail": "raw stderr not committed",
+      "name": "manifest_raw_stderr_not_committed",
+      "passed": true
+    },
+    {
+      "detail": "not acceleration proof",
+      "name": "manifest_not_acceleration_proof",
+      "passed": true
+    },
+    {
+      "detail": "UI not claimed",
+      "name": "manifest_ui_not_claimed",
+      "passed": true
+    },
+    {
+      "detail": "Metal not claimed",
+      "name": "manifest_metal_not_claimed",
+      "passed": true
+    },
+    {
+      "detail": "privacy audit only",
+      "name": "audit_report_privacy_audit_only",
+      "passed": true
+    },
+    {
+      "detail": "host report local only",
+      "name": "audit_report_host_report_local_only",
+      "passed": true
+    },
+    {
+      "detail": "raw logs not committed",
+      "name": "audit_report_raw_logs_not_committed",
+      "passed": true
+    },
+    {
+      "detail": "raw stdout not committed",
+      "name": "audit_report_raw_stdout_not_committed",
+      "passed": true
+    },
+    {
+      "detail": "raw stderr not committed",
+      "name": "audit_report_raw_stderr_not_committed",
+      "passed": true
+    },
+    {
+      "detail": "not acceleration proof",
+      "name": "audit_report_not_acceleration_proof",
+      "passed": true
+    },
+    {
+      "detail": "UI not claimed",
+      "name": "audit_report_ui_not_claimed",
+      "passed": true
+    },
+    {
+      "detail": "Metal not claimed",
+      "name": "audit_report_metal_not_claimed",
+      "passed": true
+    },
+    {
+      "detail": "audit decision",
+      "name": "audit_decision_pass",
+      "passed": true
+    },
+    {
+      "detail": "forbidden hits",
+      "name": "forbidden_hits_empty",
+      "passed": true
+    },
+    {
+      "detail": "staged host-report-bundle paths",
+      "name": "staged_host_paths_empty",
+      "passed": true
+    }
+  ],
+  "classification": "CLASSIFICATION_BASELINE_PRIVACY_REDACTION_AUDIT_GATE",
+  "decision": "PASS_BASELINE_PRIVACY_REDACTION_AUDIT_CONTRACT_READY",
+  "failed_count": 0,
+  "generated_at_utc": "2026-06-14T01:54:08.511023+00:00",
+  "host_report_bundle_local_only": true,
+  "measurement_not_acceleration_proof": true,
+  "metal_proof_not_claimed": true,
+  "passed_count": 60,
+  "privacy_redaction_audit_only": true,
+  "raw_command_stderr_not_committed": true,
+  "raw_command_stdout_not_committed": true,
+  "raw_local_logs_not_committed": true,
+  "schema": "h1mekartx.baseline_privacy_redaction_audit_contract_check.v1",
+  "scope": "Phase 38 baseline privacy/redaction audit contract",
+  "secondary_classification": "CLASSIFICATION_LOCAL_UI_BASELINE_ARTIFACT_SUMMARIZER",
+  "tertiary_classification": "CLASSIFICATION_STATIC_CONTRACT",
+  "ui_compositor_proof_not_claimed": true
+}

@@ -67,6 +67,7 @@ def main() -> int:
         "host_report_bundle_local_only": True,
         "raw_local_logs_not_committed": True,
         "raw_command_stdout_not_committed": True,
+        "raw_command_stderr_not_committed": True,
         "measurement_not_acceleration_proof": True,
         "ui_compositor_proof_not_claimed": True,
         "metal_proof_not_claimed": True,
@@ -126,6 +127,7 @@ def main() -> int:
 - Host Report Bundle Local Only: `{summary['host_report_bundle_local_only']}`
 - Raw Local Logs Not Committed: `{summary['raw_local_logs_not_committed']}`
 - Raw Command Stdout Not Committed: `{summary['raw_command_stdout_not_committed']}`
+- Raw Command Stderr Not Committed: `{summary['raw_command_stderr_not_committed']}`
 - Measurement Not Acceleration Proof: `{summary['measurement_not_acceleration_proof']}`
 - UI Compositor Proof Not Claimed: `{summary['ui_compositor_proof_not_claimed']}`
 - Metal Proof Not Claimed: `{summary['metal_proof_not_claimed']}`
