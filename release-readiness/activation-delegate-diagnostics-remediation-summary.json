@@ -1,0 +1,135 @@
+{
+  "activation_submitted_by_this_phase": false,
+  "activation_submitted_locally": true,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "classification": "CLASSIFICATION_ACTIVATION_DELEGATE_DIAGNOSTICS_REMEDIATION_GATE",
+  "configuration_writes_attempted": false,
+  "deactivation_submitted_by_this_phase": false,
+  "delegate_did_fail": true,
+  "delegate_did_finish": false,
+  "delegate_error_code": "\\(nsError.code)",
+  "delegate_error_domain": "\\(nsError.domain)",
+  "delegate_error_text_present": true,
+  "delegate_needs_user_approval": false,
+  "delegate_timeout": false,
+  "derived": {
+    "bar_mapping_still_blocked": true,
+    "build_delegate_diagnostics_host_ok": true,
+    "delegate_did_fail": true,
+    "delegate_did_finish": false,
+    "delegate_error_text_present": true,
+    "delegate_needs_user_approval": false,
+    "delegate_timeout": false,
+    "dock_transparency_blur_proof_still_blocked": true,
+    "extension_visibility_observed_after_delegate": false,
+    "gpu_command_submission_still_blocked": true,
+    "ioserviceopen_still_blocked": true,
+    "provider_open_still_blocked": true,
+    "resign_embedded_dext_ok": true,
+    "resign_host_app_ok": true,
+    "verify_embedded_dext_ok": true,
+    "verify_host_app_ok": true
+  },
+  "extension_identifier_observed": false,
+  "generated_at_utc": "2026-06-14T03:53:01.593479+00:00",
+  "gpu_command_submission_attempted": false,
+  "host_report_bundle_local_only": true,
+  "install_attempted": false,
+  "ioserviceopen_attempted": false,
+  "local_delegate_decision": "PASS_DELEGATE_DIAGNOSTICS_CAPTURED_EXTENSION_NOT_VISIBLE",
+  "local_delegate_report_present": true,
+  "manual_dext_load_attempted": false,
+  "metal_proof_claimed": false,
+  "private_raw_detected_locally": true,
+  "private_text_committed": false,
+  "provider_open_attempted": false,
+  "raw_stderr_not_committed": true,
+  "raw_stdout_not_committed": true,
+  "remediation": {
+    "bar_mapping_allowed_now": false,
+    "gpu_command_submission_allowed_now": false,
+    "next_gate": "phase60g_activation_error_remediation_plan",
+    "phase61_allowed_now": false,
+    "provider_open_allowed_now": false,
+    "reason": "delegate_did_fail"
+  },
+  "sanitized_commands": {
+    "build_delegate_diagnostics_host": {
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": true,
+      "stdout_present": false
+    },
+    "log_show_sysext_kernelmanagerd": {
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    },
+    "resign_embedded_dext": {
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": true,
+      "stdout_present": false
+    },
+    "resign_host_app": {
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": false
+    },
+    "submit_activation_with_delegate": {
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 4,
+      "stderr_present": false,
+      "stdout_present": true
+    },
+    "systemextensionsctl_after": {
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    },
+    "systemextensionsctl_before": {
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    },
+    "verify_embedded_dext": {
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": true,
+      "stdout_present": false
+    },
+    "verify_host_app": {
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": true,
+      "stdout_present": false
+    }
+  },
+  "schema": "h1mekartx.activation_delegate_diagnostics_remediation_summary.v1",
+  "status_tokens": [],
+  "summary_only": true,
+  "ui_compositor_proof_claimed": false
+}

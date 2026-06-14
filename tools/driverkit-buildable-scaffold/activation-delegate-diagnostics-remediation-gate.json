@@ -1,0 +1,27 @@
+{
+  "activation_submitted_by_this_phase": false,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "classification": "CLASSIFICATION_ACTIVATION_DELEGATE_DIAGNOSTICS_REMEDIATION_GATE",
+  "committed_outputs": [
+    "release-readiness/activation-delegate-diagnostics-remediation-summary.json",
+    "release-readiness/activation-delegate-diagnostics-remediation-summary.md",
+    "release-readiness/activation-delegate-diagnostics-remediation-check.json",
+    "release-readiness/activation-delegate-diagnostics-remediation-check.md"
+  ],
+  "configuration_writes_attempted": false,
+  "deactivation_submitted_by_this_phase": false,
+  "gpu_command_submission_attempted": false,
+  "install_attempted": false,
+  "ioserviceopen_attempted": false,
+  "local_input": "host-report-bundle/activation-delegate-diagnostics/activation-delegate-error-diagnostics-report.json",
+  "manual_dext_load_attempted": false,
+  "metal_proof_claimed": false,
+  "provider_open_attempted": false,
+  "remediation_gate_only": true,
+  "remediation_gate_ready": true,
+  "schema": "h1mekartx.activation_delegate_diagnostics_remediation_gate.v1",
+  "secondary_classification": "CLASSIFICATION_ACTIVATION_DELEGATE_ERROR_DIAGNOSTICS",
+  "tertiary_classification": "CLASSIFICATION_REMEDIATION_GATE_ONLY",
+  "ui_compositor_proof_claimed": false
+}
