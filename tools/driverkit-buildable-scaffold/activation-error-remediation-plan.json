@@ -1,0 +1,29 @@
+{
+  "activation_error_remediation_plan_ready": true,
+  "activation_submitted_by_this_phase": false,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "classification": "CLASSIFICATION_ACTIVATION_ERROR_REMEDIATION_PLAN",
+  "configuration_writes_attempted": false,
+  "deactivation_submitted_by_this_phase": false,
+  "diagnostics_patch_only": true,
+  "gpu_command_submission_attempted": false,
+  "install_attempted": false,
+  "ioserviceopen_attempted": false,
+  "manual_dext_load_attempted": false,
+  "metal_proof_claimed": false,
+  "next_gate_after_merge": "rerun_phase60e_then_phase60f",
+  "observed_phase60f": {
+    "delegate_did_fail": true,
+    "delegate_needs_user_approval": false,
+    "delegate_timeout": false,
+    "extension_identifier_observed": false,
+    "next_gate": "phase60g_activation_error_remediation_plan"
+  },
+  "patch_goal": "capture real NSError domain/code/description instead of escaped placeholders",
+  "provider_open_attempted": false,
+  "schema": "h1mekartx.activation_error_remediation_plan.v1",
+  "secondary_classification": "CLASSIFICATION_ACTIVATION_DELEGATE_DIAGNOSTICS_REMEDIATION_GATE",
+  "tertiary_classification": "CLASSIFICATION_DIAGNOSTICS_PATCH_ONLY",
+  "ui_compositor_proof_claimed": false
+}
