@@ -1,0 +1,117 @@
+{
+  "baseline_artifact_present": true,
+  "baseline_generated_at_utc_present": true,
+  "baseline_schema_valid": true,
+  "blur_acceleration_not_claimed": true,
+  "classification": "CLASSIFICATION_LOCAL_UI_BASELINE_ARTIFACT_SUMMARIZER",
+  "command_summary": {
+    "dock_recent_log": {
+      "available": true,
+      "present": true,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    },
+    "ioreg_display_connect": {
+      "available": true,
+      "present": true,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    },
+    "ioreg_framebuffer": {
+      "available": true,
+      "present": true,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    },
+    "process_table": {
+      "available": true,
+      "present": true,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    },
+    "sw_vers": {
+      "available": true,
+      "present": true,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    },
+    "system_profiler_displays_json": {
+      "available": true,
+      "present": true,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    },
+    "system_profiler_hardware_json": {
+      "available": true,
+      "present": true,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    },
+    "uname": {
+      "available": true,
+      "present": true,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    },
+    "windowserver_recent_log": {
+      "available": true,
+      "present": true,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    }
+  },
+  "core_animation_attribution_proof_not_claimed": true,
+  "core_animation_attribution_proof_state": "NOT_ATTEMPTED",
+  "displays_json_parse_ok": true,
+  "dock_acceleration_not_claimed": true,
+  "dock_matching_line_count": 1,
+  "dock_visibility_recorded": true,
+  "dock_visible": true,
+  "generated_at_utc": "2026-06-14T01:46:52.365754+00:00",
+  "hardware_json_parse_ok": true,
+  "host_report_bundle_local_only": true,
+  "launchpad_acceleration_not_claimed": true,
+  "local_baseline_summary_only": true,
+  "local_readonly_ui_baseline_state": "COLLECTED_OR_UNAVAILABLE",
+  "local_ui_baseline_artifact_summarizer_only": true,
+  "local_ui_baseline_artifact_summary_state": "SUMMARY_ONLY",
+  "measurement_not_acceleration_proof": true,
+  "metal_compositor_attribution_proof_not_claimed": true,
+  "metal_compositor_attribution_proof_state": "NOT_ATTEMPTED",
+  "metal_proof_claimed": false,
+  "metal_proof_not_claimed": true,
+  "metal_proof_state": "NOT_ATTEMPTED",
+  "mission_control_acceleration_not_claimed": true,
+  "quartzcore_attribution_proof_not_claimed": true,
+  "quartzcore_attribution_proof_state": "NOT_ATTEMPTED",
+  "raw_command_stdout_not_committed": true,
+  "raw_local_logs_not_committed": true,
+  "real_gpu_acceleration_claimed": false,
+  "real_gpu_command_execution_attempted": false,
+  "real_gpu_command_execution_proof_state": "NOT_ATTEMPTED",
+  "rtx5070_workload_attribution_claimed": false,
+  "rtx5070_workload_attribution_proof_state": "NOT_ATTEMPTED",
+  "schema": "h1mekartx.local_ui_baseline_artifact_summary.v1",
+  "secondary_classification": "CLASSIFICATION_LOCAL_READONLY_UI_BASELINE_COLLECTOR",
+  "stage_manager_acceleration_not_claimed": true,
+  "tertiary_classification": "CLASSIFICATION_STATIC_CONTRACT",
+  "transparency_acceleration_not_claimed": true,
+  "ui_compositor_proof_claimed": false,
+  "ui_compositor_proof_not_claimed": true,
+  "ui_compositor_proof_state": "NOT_ATTEMPTED",
+  "ui_frame_pacing_latency_measurement_state": "NOT_ATTEMPTED",
+  "windowserver_attribution_proof_not_claimed": true,
+  "windowserver_attribution_proof_state": "NOT_ATTEMPTED",
+  "windowserver_matching_line_count": 0,
+  "windowserver_visibility_recorded": true,
+  "windowserver_visible": false
+}
