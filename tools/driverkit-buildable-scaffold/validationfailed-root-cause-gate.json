@@ -1,0 +1,26 @@
+{
+  "activation_submitted_by_this_phase": false,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "classification": "CLASSIFICATION_VALIDATIONFAILED_ROOT_CAUSE_GATE",
+  "configuration_writes_attempted": false,
+  "deactivation_submitted_by_this_phase": false,
+  "expected_error": {
+    "code": "9",
+    "domain": "OSSystemExtensionErrorDomain"
+  },
+  "gpu_command_submission_attempted": false,
+  "install_attempted": false,
+  "ioserviceopen_attempted": false,
+  "local_input_root": "host-report-bundle/validation-failed-diagnostics",
+  "manual_dext_load_attempted": false,
+  "metal_proof_claimed": false,
+  "next_gate": "phase60l-real-driverkit-dext-build-gate",
+  "provider_open_attempted": false,
+  "remediation_gate_only": true,
+  "schema": "h1mekartx.validationfailed_root_cause_gate.v1",
+  "secondary_classification": "CLASSIFICATION_APPLICATIONS_LOCATION_ACTIVATION_REMEDIATION",
+  "tertiary_classification": "CLASSIFICATION_REMEDIATION_GATE_ONLY",
+  "ui_compositor_proof_claimed": false,
+  "validationfailed_root_cause_gate_ready": true
+}
