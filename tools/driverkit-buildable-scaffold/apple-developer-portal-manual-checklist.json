@@ -1,0 +1,61 @@
+{
+  "items": [
+    {
+      "id": "paid_team",
+      "required": true,
+      "status": "BLOCKED_UNTIL_USER_COMPLETES_IN_PORTAL",
+      "title": "Join paid Apple Developer Program"
+    },
+    {
+      "id": "host_app_id",
+      "required": true,
+      "status": "BLOCKED_UNTIL_USER_COMPLETES_IN_PORTAL",
+      "title": "Create App ID dev.h1meka.H1mekaRTXHost"
+    },
+    {
+      "entitlement": "com.apple.developer.system-extension.install",
+      "id": "host_system_extension_capability",
+      "required": true,
+      "status": "BLOCKED_UNTIL_USER_COMPLETES_IN_PORTAL",
+      "title": "Enable System Extension capability for host App ID"
+    },
+    {
+      "id": "dext_app_id",
+      "required": true,
+      "status": "BLOCKED_UNTIL_USER_COMPLETES_IN_PORTAL",
+      "title": "Create App ID dev.h1meka.H1mekaRTXDriver"
+    },
+    {
+      "entitlement": "com.apple.developer.driverkit",
+      "id": "driverkit_entitlement",
+      "required": true,
+      "status": "BLOCKED_UNTIL_APPLE_APPROVES",
+      "title": "Request DriverKit entitlement approval"
+    },
+    {
+      "device_id": "0x2f04",
+      "entitlement": "com.apple.developer.driverkit.transport.pci",
+      "id": "driverkit_pci_transport",
+      "iopcimatch": "0x2f0410de",
+      "required": true,
+      "status": "BLOCKED_UNTIL_APPLE_APPROVES",
+      "title": "Request DriverKit PCI transport entitlement",
+      "vendor_id": "0x10de"
+    },
+    {
+      "bundle_id": "dev.h1meka.H1mekaRTXHost",
+      "id": "host_profile",
+      "required": true,
+      "status": "BLOCKED_UNTIL_USER_COMPLETES_IN_PORTAL_OR_XCODE",
+      "title": "Create Mac App Development profile for host"
+    },
+    {
+      "bundle_id": "dev.h1meka.H1mekaRTXDriver",
+      "id": "dext_profile",
+      "required": true,
+      "status": "BLOCKED_UNTIL_USER_COMPLETES_IN_PORTAL_OR_XCODE",
+      "title": "Create DriverKit Development profile for dext"
+    }
+  ],
+  "schema": "h1mekartx.apple_developer_portal_manual_checklist.v1"
+}
