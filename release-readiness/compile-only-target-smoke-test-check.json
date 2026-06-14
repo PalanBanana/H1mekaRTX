@@ -1,0 +1,211 @@
+{
+  "bar_mapping_attempted": false,
+  "build_artifact_created": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/compile-only-target-smoke-test.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/host-report-bundle/compile-only-smoke/compile-only-target-smoke-test.json",
+      "name": "local_report_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/driverkit/compile-only-target-smoke-test.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "local report schema",
+      "name": "local_report_schema",
+      "passed": true
+    },
+    {
+      "detail": "build_artifact_created",
+      "name": "manifest_build_artifact_created_false",
+      "passed": true
+    },
+    {
+      "detail": "signing_attempted",
+      "name": "manifest_signing_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "manifest_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_activation_attempted",
+      "name": "manifest_system_extension_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_deactivation_attempted",
+      "name": "manifest_system_extension_deactivation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "dext_load_attempted",
+      "name": "manifest_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "build_artifact_created",
+      "name": "local_report_build_artifact_created_false",
+      "passed": true
+    },
+    {
+      "detail": "signing_attempted",
+      "name": "local_report_signing_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "local_report_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_activation_attempted",
+      "name": "local_report_system_extension_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_deactivation_attempted",
+      "name": "local_report_system_extension_deactivation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "dext_load_attempted",
+      "name": "local_report_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "local_report_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "local_report_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "local_report_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "local_report_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "local_report_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "local_report_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "local_report_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "compile-only attempts recorded",
+      "name": "compile_only_attempts_recorded",
+      "passed": true
+    },
+    {
+      "detail": "commands recorded",
+      "name": "commands_recorded",
+      "passed": true
+    },
+    {
+      "detail": "plist results recorded",
+      "name": "plist_results_recorded",
+      "passed": true
+    },
+    {
+      "detail": "plist parse all ok",
+      "name": "plist_parse_all_ok",
+      "passed": true
+    },
+    {
+      "detail": "failures recorded only",
+      "name": "compile_failures_allowed_at_preflight_stage",
+      "passed": true
+    }
+  ],
+  "classification": "CLASSIFICATION_COMPILE_ONLY_TARGET_SMOKE_TEST",
+  "compile_only_evidence_only": true,
+  "decision": "PASS_COMPILE_ONLY_TARGET_SMOKE_TEST_READY",
+  "derived": {
+    "compile_failures_allowed_at_preflight_stage": true,
+    "compile_only_attempts_recorded": true,
+    "driverkit_cpp_fsyntax_only_ran": true,
+    "driverkit_cpp_fsyntax_only_returncode": 1,
+    "host_swift_typecheck_ran": true,
+    "host_swift_typecheck_returncode": 0,
+    "plist_parse_all_ok": true
+  },
+  "dext_load_attempted": false,
+  "failed_count": 0,
+  "generated_at_utc": "2026-06-14T02:18:13.652242+00:00",
+  "gpu_command_submission_attempted": false,
+  "host_report_bundle_local_only": true,
+  "install_attempted": false,
+  "metal_proof_claimed": false,
+  "passed_count": 36,
+  "provider_open_attempted": false,
+  "schema": "h1mekartx.compile_only_target_smoke_test_check.v1",
+  "signing_attempted": false,
+  "system_extension_activation_attempted": false,
+  "ui_compositor_proof_claimed": false
+}
