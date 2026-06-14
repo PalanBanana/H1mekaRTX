@@ -1,0 +1,60 @@
+{
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "classification": "CLASSIFICATION_CODESIGN_IDENTITY_ENTITLEMENT_DRYRUN_EVIDENCE",
+  "codesign_identity_discovery_attempted": true,
+  "codesign_signing_attempted": false,
+  "command_summary": {
+    "codesign_help_probe": {
+      "available": true,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 2,
+      "stderr_present": true,
+      "stdout_present": false
+    },
+    "security_find_identity_codesigning": {
+      "available": true,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    }
+  },
+  "configuration_writes_attempted": false,
+  "derived": {
+    "codesign_available": true,
+    "codesigning_identity_detected": true,
+    "codesigning_identity_line_count": 1,
+    "dext_bundle_id_matches": true,
+    "dext_driverkit_entitlement_present": true,
+    "dext_entitlements_parse_ok": true,
+    "dext_info_parse_ok": true,
+    "dext_pci_transport_entitlement_present": true,
+    "host_bundle_id_matches": true,
+    "host_entitlements_parse_ok": true,
+    "host_info_parse_ok": true,
+    "host_system_extension_entitlement_present": true,
+    "security_available": true
+  },
+  "dext_load_attempted": false,
+  "dryrun_summary_only": true,
+  "generated_at_utc": "2026-06-14T02:31:25.236002+00:00",
+  "gpu_command_submission_attempted": false,
+  "host_report_bundle_local_only": true,
+  "install_attempted": false,
+  "local_input_present": true,
+  "metal_proof_claimed": false,
+  "private_raw_output_detected_locally": true,
+  "private_text_committed": false,
+  "provider_open_attempted": false,
+  "raw_stderr_not_committed": true,
+  "raw_stdout_not_committed": true,
+  "schema": "h1mekartx.codesign_identity_entitlement_dryrun_summary.v1",
+  "signed_package_created": false,
+  "submit_activation_allowed_now": false,
+  "system_extension_activation_attempted": false,
+  "system_extension_deactivation_attempted": false,
+  "ui_compositor_proof_claimed": false
+}

@@ -1,0 +1,419 @@
+{
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/codesign-identity-entitlement-dryrun-evidence.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/host-report-bundle/codesign-entitlement-dryrun/codesign-identity-entitlement-dryrun.json",
+      "name": "local_report_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/codesign-identity-entitlement-dryrun-summary.json",
+      "name": "summary_json_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/codesign-identity-entitlement-dryrun-summary.md",
+      "name": "summary_md_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/driverkit/codesign-identity-entitlement-dryrun-evidence.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "local report schema",
+      "name": "local_report_schema",
+      "passed": true
+    },
+    {
+      "detail": "summary schema",
+      "name": "summary_schema",
+      "passed": true
+    },
+    {
+      "detail": "codesign_signing_attempted",
+      "name": "manifest_codesign_signing_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "signed_package_created",
+      "name": "manifest_signed_package_created_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "manifest_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "submit_activation_allowed_now",
+      "name": "manifest_submit_activation_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_activation_attempted",
+      "name": "manifest_system_extension_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_deactivation_attempted",
+      "name": "manifest_system_extension_deactivation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "dext_load_attempted",
+      "name": "manifest_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "codesign_signing_attempted",
+      "name": "local_report_codesign_signing_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "signed_package_created",
+      "name": "local_report_signed_package_created_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "local_report_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "submit_activation_allowed_now",
+      "name": "local_report_submit_activation_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_activation_attempted",
+      "name": "local_report_system_extension_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_deactivation_attempted",
+      "name": "local_report_system_extension_deactivation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "dext_load_attempted",
+      "name": "local_report_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "local_report_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "local_report_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "local_report_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "local_report_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "local_report_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "local_report_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "local_report_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "codesign_signing_attempted",
+      "name": "summary_codesign_signing_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "signed_package_created",
+      "name": "summary_signed_package_created_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "summary_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "submit_activation_allowed_now",
+      "name": "summary_submit_activation_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_activation_attempted",
+      "name": "summary_system_extension_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_deactivation_attempted",
+      "name": "summary_system_extension_deactivation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "dext_load_attempted",
+      "name": "summary_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "summary_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "summary_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "summary_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "summary_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "summary_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "summary_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "summary_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "host_info_parse_ok",
+      "name": "summary_host_info_parse_ok_true",
+      "passed": true
+    },
+    {
+      "detail": "dext_info_parse_ok",
+      "name": "summary_dext_info_parse_ok_true",
+      "passed": true
+    },
+    {
+      "detail": "host_entitlements_parse_ok",
+      "name": "summary_host_entitlements_parse_ok_true",
+      "passed": true
+    },
+    {
+      "detail": "dext_entitlements_parse_ok",
+      "name": "summary_dext_entitlements_parse_ok_true",
+      "passed": true
+    },
+    {
+      "detail": "host_bundle_id_matches",
+      "name": "summary_host_bundle_id_matches_true",
+      "passed": true
+    },
+    {
+      "detail": "dext_bundle_id_matches",
+      "name": "summary_dext_bundle_id_matches_true",
+      "passed": true
+    },
+    {
+      "detail": "host_system_extension_entitlement_present",
+      "name": "summary_host_system_extension_entitlement_present_true",
+      "passed": true
+    },
+    {
+      "detail": "dext_driverkit_entitlement_present",
+      "name": "summary_dext_driverkit_entitlement_present_true",
+      "passed": true
+    },
+    {
+      "detail": "dext_pci_transport_entitlement_present",
+      "name": "summary_dext_pci_transport_entitlement_present_true",
+      "passed": true
+    },
+    {
+      "detail": "command summary",
+      "name": "command_summary_present",
+      "passed": true
+    },
+    {
+      "detail": "codesign_help_probe",
+      "name": "codesign_help_probe_raw_stdout_not_committed",
+      "passed": true
+    },
+    {
+      "detail": "codesign_help_probe",
+      "name": "codesign_help_probe_raw_stderr_not_committed",
+      "passed": true
+    },
+    {
+      "detail": "security_find_identity_codesigning",
+      "name": "security_find_identity_codesigning_raw_stdout_not_committed",
+      "passed": true
+    },
+    {
+      "detail": "security_find_identity_codesigning",
+      "name": "security_find_identity_codesigning_raw_stderr_not_committed",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_key",
+      "name": "no_raw_stdout_key_in_codesign-identity-entitlement-dryrun-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_key",
+      "name": "no_raw_stderr_key_in_codesign-identity-entitlement-dryrun-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "home_path",
+      "name": "no_home_path_in_codesign-identity-entitlement-dryrun-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "tmp_path",
+      "name": "no_tmp_path_in_codesign-identity-entitlement-dryrun-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "email_like",
+      "name": "no_email_like_in_codesign-identity-entitlement-dryrun-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "host_report_bundle_raw_path",
+      "name": "no_host_report_bundle_raw_path_in_codesign-identity-entitlement-dryrun-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_key",
+      "name": "no_raw_stdout_key_in_codesign-identity-entitlement-dryrun-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_key",
+      "name": "no_raw_stderr_key_in_codesign-identity-entitlement-dryrun-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "home_path",
+      "name": "no_home_path_in_codesign-identity-entitlement-dryrun-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "tmp_path",
+      "name": "no_tmp_path_in_codesign-identity-entitlement-dryrun-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "email_like",
+      "name": "no_email_like_in_codesign-identity-entitlement-dryrun-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "host_report_bundle_raw_path",
+      "name": "no_host_report_bundle_raw_path_in_codesign-identity-entitlement-dryrun-summary.md",
+      "passed": true
+    }
+  ],
+  "classification": "CLASSIFICATION_CODESIGN_IDENTITY_ENTITLEMENT_DRYRUN_EVIDENCE",
+  "codesign_identity_discovery_attempted": true,
+  "codesign_signing_attempted": false,
+  "decision": "PASS_CODESIGN_IDENTITY_ENTITLEMENT_DRYRUN_READY",
+  "derived": {
+    "codesign_available": true,
+    "codesigning_identity_detected": true,
+    "codesigning_identity_line_count": 1,
+    "dext_bundle_id_matches": true,
+    "dext_driverkit_entitlement_present": true,
+    "dext_entitlements_parse_ok": true,
+    "dext_info_parse_ok": true,
+    "dext_pci_transport_entitlement_present": true,
+    "host_bundle_id_matches": true,
+    "host_entitlements_parse_ok": true,
+    "host_info_parse_ok": true,
+    "host_system_extension_entitlement_present": true,
+    "security_available": true
+  },
+  "dext_load_attempted": false,
+  "dryrun_evidence_only": true,
+  "failed_count": 0,
+  "generated_at_utc": "2026-06-14T02:31:25.276018+00:00",
+  "gpu_command_submission_attempted": false,
+  "host_report_bundle_local_only": true,
+  "install_attempted": false,
+  "metal_proof_claimed": false,
+  "passed_count": 76,
+  "provider_open_attempted": false,
+  "schema": "h1mekartx.codesign_identity_entitlement_dryrun_check.v1",
+  "signed_package_created": false,
+  "submit_activation_allowed_now": false,
+  "system_extension_activation_attempted": false,
+  "ui_compositor_proof_claimed": false
+}
