@@ -1,0 +1,335 @@
+{
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/hackintosh/provider-match-readiness-gate.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/hackintosh/provider-match-readiness-gate.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/local-entitlement-request-status-summary.json",
+      "name": "entitlement_summary_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/hackintosh/local-entitlement-request-status-collector.json",
+      "name": "collector_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "collector manifest schema",
+      "name": "collector_manifest_schema_if_present",
+      "passed": true
+    },
+    {
+      "detail": "provider_match_readiness_gate_ready",
+      "name": "manifest_provider_match_readiness_gate_ready_true",
+      "passed": true
+    },
+    {
+      "detail": "provider_match_gate_not_provider_open",
+      "name": "manifest_provider_match_gate_not_provider_open_true",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_target_retained",
+      "name": "manifest_rtx5070_target_retained_true",
+      "passed": true
+    },
+    {
+      "detail": "fallback_gpu_substitution_allowed",
+      "name": "manifest_fallback_gpu_substitution_allowed_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_match_attempted_by_this_phase",
+      "name": "manifest_provider_match_attempted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_allowed_by_this_phase",
+      "name": "manifest_provider_open_allowed_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "manifest_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_allowed_by_this_phase",
+      "name": "manifest_bar_mapping_allowed_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_allowed_by_this_phase",
+      "name": "manifest_gpu_command_submission_allowed_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "framebuffer_init_attempted",
+      "name": "manifest_framebuffer_init_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "display_engine_init_attempted",
+      "name": "manifest_display_engine_init_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "current_rtx5070_metal_acceleration_claimed",
+      "name": "manifest_current_rtx5070_metal_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "current_rtx5070_ui_smoothness_claimed",
+      "name": "manifest_current_rtx5070_ui_smoothness_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_vendor_id=0x10de",
+      "name": "manifest_rtx5070_vendor_id",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_device_id=0x2f04",
+      "name": "manifest_rtx5070_device_id",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_iopcimatch=0x2f0410de",
+      "name": "manifest_rtx5070_iopcimatch",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_subsystem_vendor_id=0x1458",
+      "name": "manifest_rtx5070_subsystem_vendor_id",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_subsystem_id=0x417e",
+      "name": "manifest_rtx5070_subsystem_id",
+      "passed": true
+    },
+    {
+      "detail": "next_gate=phase62e-provider-match-dryrun-observer-contract",
+      "name": "manifest_next_gate",
+      "passed": true
+    },
+    {
+      "detail": "apple_developer_program_active",
+      "name": "manifest_requires_apple_developer_program_active",
+      "passed": true
+    },
+    {
+      "detail": "apple_developer_program_active",
+      "name": "doc_mentions_apple_developer_program_active",
+      "passed": true
+    },
+    {
+      "detail": "apple_team_id_available",
+      "name": "manifest_requires_apple_team_id_available",
+      "passed": true
+    },
+    {
+      "detail": "apple_team_id_available",
+      "name": "doc_mentions_apple_team_id_available",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_entitlement_request_submitted",
+      "name": "manifest_requires_driverkit_entitlement_request_submitted",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_entitlement_request_submitted",
+      "name": "doc_mentions_driverkit_entitlement_request_submitted",
+      "passed": true
+    },
+    {
+      "detail": "pcidriverkit_transport_entitlement_request_submitted",
+      "name": "manifest_requires_pcidriverkit_transport_entitlement_request_submitted",
+      "passed": true
+    },
+    {
+      "detail": "pcidriverkit_transport_entitlement_request_submitted",
+      "name": "doc_mentions_pcidriverkit_transport_entitlement_request_submitted",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_capability_requested",
+      "name": "manifest_requires_system_extension_capability_requested",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_capability_requested",
+      "name": "doc_mentions_system_extension_capability_requested",
+      "passed": true
+    },
+    {
+      "detail": "host_app_id_configured",
+      "name": "manifest_requires_host_app_id_configured",
+      "passed": true
+    },
+    {
+      "detail": "host_app_id_configured",
+      "name": "doc_mentions_host_app_id_configured",
+      "passed": true
+    },
+    {
+      "detail": "driver_app_id_configured",
+      "name": "manifest_requires_driver_app_id_configured",
+      "passed": true
+    },
+    {
+      "detail": "driver_app_id_configured",
+      "name": "doc_mentions_driver_app_id_configured",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_entitlement_approved",
+      "name": "manifest_requires_driverkit_entitlement_approved",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_entitlement_approved",
+      "name": "doc_mentions_driverkit_entitlement_approved",
+      "passed": true
+    },
+    {
+      "detail": "pcidriverkit_transport_entitlement_approved",
+      "name": "manifest_requires_pcidriverkit_transport_entitlement_approved",
+      "passed": true
+    },
+    {
+      "detail": "pcidriverkit_transport_entitlement_approved",
+      "name": "doc_mentions_pcidriverkit_transport_entitlement_approved",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_capability_approved",
+      "name": "manifest_requires_system_extension_capability_approved",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_capability_approved",
+      "name": "doc_mentions_system_extension_capability_approved",
+      "passed": true
+    },
+    {
+      "detail": "provisioning_profiles_regenerated_after_approval",
+      "name": "manifest_requires_provisioning_profiles_regenerated_after_approval",
+      "passed": true
+    },
+    {
+      "detail": "provisioning_profiles_regenerated_after_approval",
+      "name": "doc_mentions_provisioning_profiles_regenerated_after_approval",
+      "passed": true
+    },
+    {
+      "detail": "summary ready field",
+      "name": "summary_ready_for_provider_match_recorded",
+      "passed": true
+    },
+    {
+      "detail": "no provider match",
+      "name": "summary_provider_match_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "provider open blocked",
+      "name": "summary_provider_open_blocked",
+      "passed": true
+    },
+    {
+      "detail": "gpu commands blocked",
+      "name": "summary_gpu_commands_blocked",
+      "passed": true
+    },
+    {
+      "detail": "Provider match is blocked until entitlement status is ready",
+      "name": "doc_contains_Provider_match_is_blocked_until_entitlement_status_is_ready",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not open a provider",
+      "name": "doc_contains_This_phase_does_not_open_a_provider",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not call IOServiceOpen",
+      "name": "doc_contains_This_phase_does_not_call_IOServiceOpen",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not submit GPU commands",
+      "name": "doc_contains_This_phase_does_not_submit_GPU_commands",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not claim Dock/transparency/blur acceleration",
+      "name": "doc_contains_This_phase_does_not_claim_Dock/transparency/blur_acceleration",
+      "passed": true
+    }
+  ],
+  "current_rtx5070_metal_acceleration_claimed": false,
+  "current_rtx5070_ui_smoothness_claimed": false,
+  "decision": "PASS_PROVIDER_MATCH_READINESS_GATE_READY",
+  "fallback_gpu_substitution_allowed": false,
+  "generated_at_utc": "2026-06-14T08:34:24.423293+00:00",
+  "gpu_command_submission_attempted": false,
+  "ioserviceopen_attempted": false,
+  "next_gate": "phase62e-provider-match-dryrun-observer-contract",
+  "provider_match_attempted_by_this_phase": false,
+  "provider_match_gate_not_provider_open": true,
+  "provider_open_allowed_by_this_phase": false,
+  "provider_open_attempted": false,
+  "ready_for_provider_match": false,
+  "rtx5070_target_retained": true,
+  "schema": "h1mekartx.provider_match_readiness_gate_check.v1"
+}
