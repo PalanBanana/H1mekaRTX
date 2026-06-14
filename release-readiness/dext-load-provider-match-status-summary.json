@@ -1,0 +1,81 @@
+{
+  "activation_submitted_by_this_phase": false,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "classification": "CLASSIFICATION_DEXT_LOAD_PROVIDER_MATCH_STATUS_EVIDENCE",
+  "configuration_writes_attempted": false,
+  "deactivation_submitted_by_this_phase": false,
+  "derived": {
+    "activation_command_completed": true,
+    "activation_report_present": true,
+    "activation_submitted_locally": true,
+    "bar_mapping_still_blocked": true,
+    "dock_transparency_blur_proof_still_blocked": true,
+    "extension_identifier_observed_in_ioreg": false,
+    "extension_identifier_observed_in_systemextensionsctl": false,
+    "gpu_command_submission_still_blocked": true,
+    "ioreg_available": true,
+    "ioreg_iopcidevice_returncode": 0,
+    "ioserviceopen_still_blocked": true,
+    "provider_open_still_blocked": true,
+    "rtx_device_2f04_observed": true,
+    "rtx_iopcimatch_2f0410de_observed": false,
+    "rtx_vendor_10de_observed": true,
+    "status_contains_activated": false,
+    "status_contains_enabled": false,
+    "status_contains_waiting_or_needs_user": false,
+    "systemextensionsctl_available": true,
+    "systemextensionsctl_returncode": 0
+  },
+  "generated_at_utc": "2026-06-14T03:10:42.613160+00:00",
+  "gpu_command_submission_attempted": false,
+  "host_report_bundle_local_only": true,
+  "install_attempted": false,
+  "ioserviceopen_attempted": false,
+  "local_report_present": true,
+  "manual_dext_load_attempted": false,
+  "metal_proof_claimed": false,
+  "private_raw_detected_locally": true,
+  "private_text_committed": false,
+  "provider_match_readiness": {
+    "next_gate": "provider_match_without_open_readiness_gate",
+    "provider_open_allowed": false,
+    "rtx_pci_identity_observed": true,
+    "system_extension_status_observed": false
+  },
+  "provider_open_attempted": false,
+  "raw_stderr_not_committed": true,
+  "raw_stdout_not_committed": true,
+  "sanitized_commands": {
+    "ioreg_iopcidevice": {
+      "available": true,
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    },
+    "ioreg_ioservice_h1meka": {
+      "available": true,
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    },
+    "systemextensionsctl_list": {
+      "available": true,
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    }
+  },
+  "schema": "h1mekartx.dext_load_provider_match_status_summary.v1",
+  "summary_only": true,
+  "ui_compositor_proof_claimed": false
+}

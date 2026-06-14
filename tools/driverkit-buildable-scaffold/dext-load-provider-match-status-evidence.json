@@ -1,0 +1,35 @@
+{
+  "activation_submitted_by_this_phase": false,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "classification": "CLASSIFICATION_DEXT_LOAD_PROVIDER_MATCH_STATUS_EVIDENCE",
+  "committed_outputs": [
+    "release-readiness/dext-load-provider-match-status-summary.json",
+    "release-readiness/dext-load-provider-match-status-summary.md",
+    "release-readiness/dext-load-provider-match-status-check.json",
+    "release-readiness/dext-load-provider-match-status-check.md"
+  ],
+  "configuration_writes_attempted": false,
+  "deactivation_submitted_by_this_phase": false,
+  "dext_load_provider_match_status_evidence_ready": true,
+  "extension_identifier": "dev.h1meka.H1mekaRTXDriver",
+  "gpu_command_submission_attempted": false,
+  "install_attempted": false,
+  "ioserviceopen_attempted": false,
+  "local_raw_output_root": "host-report-bundle/dext-provider-status",
+  "manual_dext_load_attempted": false,
+  "metal_proof_claimed": false,
+  "provider_open_attempted": false,
+  "raw_stderr_not_committed": true,
+  "raw_stdout_not_committed": true,
+  "read_only_status_evidence_only": true,
+  "schema": "h1mekartx.dext_load_provider_match_status_evidence.v1",
+  "secondary_classification": "CLASSIFICATION_LOCAL_ACTIVATION_REPORT_STATUS_SANITIZER",
+  "target_identity": {
+    "device_id": "0x2f04",
+    "iopcimatch": "0x2f0410de",
+    "vendor_id": "0x10de"
+  },
+  "tertiary_classification": "CLASSIFICATION_READ_ONLY_IOREG_STATUS",
+  "ui_compositor_proof_claimed": false
+}
