@@ -1,0 +1,176 @@
+{
+  "activation_command_completed": true,
+  "bar_mapping_allowed_now": false,
+  "bar_mapping_still_blocked": true,
+  "block_reasons": [
+    "extension_identifier_not_observed_in_systemextensionsctl"
+  ],
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/provider-match-without-open-readiness-gate.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/driverkit/provider-match-without-open-readiness-gate.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/dext-load-provider-match-status-summary.json",
+      "name": "phase59_summary_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/dext-load-provider-match-status-evidence.json",
+      "name": "phase59_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase59 summary schema",
+      "name": "phase59_summary_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase59 manifest schema",
+      "name": "phase59_manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "provider_match_without_open_readiness_gate_ready",
+      "name": "manifest_provider_match_without_open_readiness_gate_ready_true",
+      "passed": true
+    },
+    {
+      "detail": "preflight_gate_only",
+      "name": "manifest_preflight_gate_only_true",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_allowed_now",
+      "name": "manifest_provider_open_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_allowed_now",
+      "name": "manifest_ioserviceopen_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_allowed_now",
+      "name": "manifest_bar_mapping_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_allowed_now",
+      "name": "manifest_gpu_command_submission_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "activation_submitted_by_this_phase",
+      "name": "manifest_activation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "deactivation_submitted_by_this_phase",
+      "name": "manifest_deactivation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "manifest_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manual_dext_load_attempted",
+      "name": "manifest_manual_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "manifest_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "provider open allowed false",
+      "name": "phase59_readiness_provider_open_allowed_false",
+      "passed": true
+    },
+    {
+      "detail": "provider open blocked",
+      "name": "phase59_derived_provider_open_still_blocked",
+      "passed": true
+    },
+    {
+      "detail": "IOServiceOpen blocked",
+      "name": "phase59_derived_ioserviceopen_still_blocked",
+      "passed": true
+    },
+    {
+      "detail": "BAR mapping blocked",
+      "name": "phase59_derived_bar_mapping_still_blocked",
+      "passed": true
+    },
+    {
+      "detail": "GPU command blocked",
+      "name": "phase59_derived_gpu_command_submission_still_blocked",
+      "passed": true
+    }
+  ],
+  "decision": "PASS_PROVIDER_MATCH_WITHOUT_OPEN_BLOCKED_PENDING_EVIDENCE",
+  "extension_identifier_observed_in_systemextensionsctl": false,
+  "generated_at_utc": "2026-06-14T03:19:08.073927+00:00",
+  "gpu_command_submission_allowed_now": false,
+  "gpu_command_submission_still_blocked": true,
+  "ioserviceopen_allowed_now": false,
+  "ioserviceopen_still_blocked": true,
+  "next_gate_if_blocked": "collect or fix Phase 59 dext/provider status evidence",
+  "next_gate_if_ready": "provider_open_hard_optin_preflight_no_bar_no_gpu_commands",
+  "provider_match_without_open_ready": false,
+  "provider_open_allowed_now": false,
+  "provider_open_still_blocked": true,
+  "rtx_device_2f04_observed": true,
+  "rtx_iopcimatch_2f0410de_observed": false,
+  "rtx_vendor_10de_observed": true,
+  "schema": "h1mekartx.provider_match_without_open_readiness_gate_check.v1"
+}
