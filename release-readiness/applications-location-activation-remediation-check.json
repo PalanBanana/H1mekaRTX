@@ -1,0 +1,213 @@
+{
+  "applications_location_activation_remediation_ready": true,
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/applications-location-activation-remediation.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/driverkit/applications-location-activation-remediation.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/scripts/applications-location-activation-remediation.py",
+      "name": "script_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/activation-error-remediation-plan.json",
+      "name": "phase60g_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/activation-delegate-diagnostics-remediation-summary.json",
+      "name": "phase60f_summary_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase60g schema",
+      "name": "phase60g_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase60f summary schema",
+      "name": "phase60f_summary_schema",
+      "passed": true
+    },
+    {
+      "detail": "applications_location_activation_remediation_ready",
+      "name": "manifest_applications_location_activation_remediation_ready_true",
+      "passed": true
+    },
+    {
+      "detail": "default_refuses_staging",
+      "name": "manifest_default_refuses_staging_true",
+      "passed": true
+    },
+    {
+      "detail": "default_refuses_activation",
+      "name": "manifest_default_refuses_activation_true",
+      "passed": true
+    },
+    {
+      "detail": "hard_optin_flags_required",
+      "name": "manifest_hard_optin_flags_required_true",
+      "passed": true
+    },
+    {
+      "detail": "ci_staging_attempted",
+      "name": "manifest_ci_staging_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ci_activation_attempted",
+      "name": "manifest_ci_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "activation_submitted_by_default",
+      "name": "manifest_activation_submitted_by_default_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "manifest_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "--i-understand-applications-staging",
+      "name": "script_contains___i_understand_applications_staging",
+      "passed": true
+    },
+    {
+      "detail": "--stage-to-applications",
+      "name": "script_contains___stage_to_applications",
+      "passed": true
+    },
+    {
+      "detail": "--submit-activation",
+      "name": "script_contains___submit_activation",
+      "passed": true
+    },
+    {
+      "detail": "--signing-identity",
+      "name": "script_contains___signing_identity",
+      "passed": true
+    },
+    {
+      "detail": "--output-under-host-report-bundle",
+      "name": "script_contains___output_under_host_report_bundle",
+      "passed": true
+    },
+    {
+      "detail": "--replace-existing",
+      "name": "script_contains___replace_existing",
+      "passed": true
+    },
+    {
+      "detail": "--use-sudo",
+      "name": "script_contains___use_sudo",
+      "passed": true
+    },
+    {
+      "detail": "/Applications/H1mekaRTXHost.app",
+      "name": "script_contains__Applications_H1mekaRTXHost.app",
+      "passed": true
+    },
+    {
+      "detail": "ditto",
+      "name": "script_contains_ditto",
+      "passed": true
+    },
+    {
+      "detail": "systemextensionsctl",
+      "name": "script_contains_systemextensionsctl",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "script_contains_provider_open_attempted",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "script_contains_ioserviceopen_attempted",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "script_contains_bar_mapping_attempted",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "script_contains_gpu_command_submission_attempted",
+      "passed": true
+    },
+    {
+      "detail": "OSSystemExtensionErrorDomain",
+      "name": "phase60f_error_domain_os_system_extension",
+      "passed": true
+    },
+    {
+      "detail": "3",
+      "name": "phase60f_error_code_3",
+      "passed": true
+    }
+  ],
+  "ci_activation_attempted": false,
+  "ci_staging_attempted": false,
+  "decision": "PASS_APPLICATIONS_LOCATION_ACTIVATION_REMEDIATION_READY",
+  "default_refuses_activation": true,
+  "default_refuses_staging": true,
+  "generated_at_utc": "2026-06-14T04:02:35.137774+00:00",
+  "gpu_command_submission_attempted": false,
+  "ioserviceopen_attempted": false,
+  "metal_proof_claimed": false,
+  "provider_open_attempted": false,
+  "schema": "h1mekartx.applications_location_activation_remediation_check.v1",
+  "ui_compositor_proof_claimed": false
+}

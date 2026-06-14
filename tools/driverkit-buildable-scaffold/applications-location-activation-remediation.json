@@ -1,0 +1,33 @@
+{
+  "activation_submitted_by_default": false,
+  "applications_bundle": "/Applications/H1mekaRTXHost.app",
+  "applications_location_activation_remediation_ready": true,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "ci_activation_attempted": false,
+  "ci_staging_attempted": false,
+  "classification": "CLASSIFICATION_APPLICATIONS_LOCATION_ACTIVATION_REMEDIATION",
+  "configuration_writes_attempted": false,
+  "default_refuses_activation": true,
+  "default_refuses_staging": true,
+  "extension_identifier": "dev.h1meka.H1mekaRTXDriver",
+  "gpu_command_submission_attempted": false,
+  "hard_optin_flags_required": true,
+  "ioserviceopen_attempted": false,
+  "metal_proof_claimed": false,
+  "next_gate_if_error": "phase60j_applications_staging_error_remediation",
+  "next_gate_if_visible": "rerun_phase58_phase59_phase60a_phase60b_then_phase61_if_ready",
+  "provider_open_attempted": false,
+  "required_flags": [
+    "--i-understand-applications-staging",
+    "--stage-to-applications",
+    "--submit-activation",
+    "--signing-identity",
+    "--output-under-host-report-bundle"
+  ],
+  "schema": "h1mekartx.applications_location_activation_remediation.v1",
+  "secondary_classification": "CLASSIFICATION_ACTIVATION_ERROR_REMEDIATION_PLAN",
+  "source_bundle": "host-report-bundle/unsigned-app-bundle/H1mekaRTXHost.app",
+  "tertiary_classification": "CLASSIFICATION_OFFICIAL_SYSTEMEXTENSIONS_PATH",
+  "ui_compositor_proof_claimed": false
+}
