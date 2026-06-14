@@ -1,0 +1,265 @@
+{
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/actual-local-signing-hard-optin.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/driverkit/actual-local-signing-hard-optin.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/scripts/actual-local-signing-hard-optin.py",
+      "name": "signer_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/manual-local-signing-opt-in-gate.json",
+      "name": "phase53_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/codesign-dryrun-command-plan.json",
+      "name": "phase52_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase53 schema",
+      "name": "phase53_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase52 schema",
+      "name": "phase52_schema",
+      "passed": true
+    },
+    {
+      "detail": "actual_local_signing_hard_optin_ready",
+      "name": "manifest_actual_local_signing_hard_optin_ready_true",
+      "passed": true
+    },
+    {
+      "detail": "default_refuses_signing",
+      "name": "manifest_default_refuses_signing_true",
+      "passed": true
+    },
+    {
+      "detail": "hard_optin_flags_required",
+      "name": "manifest_hard_optin_flags_required_true",
+      "passed": true
+    },
+    {
+      "detail": "ci_signing_attempted",
+      "name": "manifest_ci_signing_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "codesign_executed_by_default",
+      "name": "manifest_codesign_executed_by_default_false",
+      "passed": true
+    },
+    {
+      "detail": "codesign_signing_attempted_in_ci",
+      "name": "manifest_codesign_signing_attempted_in_ci_false",
+      "passed": true
+    },
+    {
+      "detail": "signed_package_created_in_ci",
+      "name": "manifest_signed_package_created_in_ci_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "manifest_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "submit_activation_allowed_now",
+      "name": "manifest_submit_activation_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "submit_deactivation_allowed_now",
+      "name": "manifest_submit_deactivation_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_activation_attempted",
+      "name": "manifest_system_extension_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_deactivation_attempted",
+      "name": "manifest_system_extension_deactivation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "dext_load_attempted",
+      "name": "manifest_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "--i-understand-local-signing",
+      "name": "manifest_requires___i_understand_local_signing",
+      "passed": true
+    },
+    {
+      "detail": "--i-understand-local-signing",
+      "name": "signer_parses___i_understand_local_signing",
+      "passed": true
+    },
+    {
+      "detail": "--signing-identity",
+      "name": "manifest_requires___signing_identity",
+      "passed": true
+    },
+    {
+      "detail": "--signing-identity",
+      "name": "signer_parses___signing_identity",
+      "passed": true
+    },
+    {
+      "detail": "--output-under-host-report-bundle",
+      "name": "manifest_requires___output_under_host_report_bundle",
+      "passed": true
+    },
+    {
+      "detail": "--output-under-host-report-bundle",
+      "name": "signer_parses___output_under_host_report_bundle",
+      "passed": true
+    },
+    {
+      "detail": "REFUSE_SIGNING_HARD_OPTIN_NOT_SATISFIED",
+      "name": "signer_contains_REFUSE_SIGNING_HARD_OPTIN_NOT_SATISFIED",
+      "passed": true
+    },
+    {
+      "detail": "local_scope_ok",
+      "name": "signer_contains_local_scope_ok",
+      "passed": true
+    },
+    {
+      "detail": "host-report-bundle",
+      "name": "signer_contains_host_report_bundle",
+      "passed": true
+    },
+    {
+      "detail": "codesign",
+      "name": "signer_contains_codesign",
+      "passed": true
+    },
+    {
+      "detail": "sign_embedded_dext",
+      "name": "signer_contains_sign_embedded_dext",
+      "passed": true
+    },
+    {
+      "detail": "verify_embedded_dext",
+      "name": "signer_contains_verify_embedded_dext",
+      "passed": true
+    },
+    {
+      "detail": "sign_host_app",
+      "name": "signer_contains_sign_host_app",
+      "passed": true
+    },
+    {
+      "detail": "verify_host_app",
+      "name": "signer_contains_verify_host_app",
+      "passed": true
+    },
+    {
+      "detail": "dump_host_entitlements",
+      "name": "signer_contains_dump_host_entitlements",
+      "passed": true
+    },
+    {
+      "detail": "dump_dext_entitlements",
+      "name": "signer_contains_dump_dext_entitlements",
+      "passed": true
+    },
+    {
+      "detail": "activation_still_blocked",
+      "name": "signer_contains_activation_still_blocked",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_still_blocked",
+      "name": "signer_contains_provider_open_still_blocked",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_still_blocked",
+      "name": "signer_contains_bar_mapping_still_blocked",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_still_blocked",
+      "name": "signer_contains_gpu_command_submission_still_blocked",
+      "passed": true
+    }
+  ],
+  "ci_signing_attempted": false,
+  "classification": "CLASSIFICATION_ACTUAL_LOCAL_SIGNING_HARD_OPTIN",
+  "codesign_executed_by_default": false,
+  "codesign_signing_attempted_in_ci": false,
+  "decision": "PASS_ACTUAL_LOCAL_SIGNING_HARD_OPTIN_READY",
+  "default_refuses_signing": true,
+  "dext_load_attempted": false,
+  "failed_count": 0,
+  "generated_at_utc": "2026-06-14T02:40:01.465150+00:00",
+  "gpu_command_submission_attempted": false,
+  "hard_optin_flags_required": true,
+  "install_attempted": false,
+  "metal_proof_claimed": false,
+  "passed_count": 48,
+  "provider_open_attempted": false,
+  "schema": "h1mekartx.actual_local_signing_hard_optin_check.v1",
+  "signed_package_created_in_ci": false,
+  "submit_activation_allowed_now": false,
+  "system_extension_activation_attempted": false,
+  "ui_compositor_proof_claimed": false
+}
