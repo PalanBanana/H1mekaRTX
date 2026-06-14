@@ -1,0 +1,300 @@
+{
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/hackintosh/rtx5070-ui-smoothness-roadmap.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/hackintosh/rtx5070-ui-smoothness-roadmap.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "True",
+      "name": "phase60r_manifest_present_or_non_blocking",
+      "passed": true
+    },
+    {
+      "detail": "True",
+      "name": "phase60q_manifest_present_or_non_blocking",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase60r schema",
+      "name": "phase60r_schema_if_present",
+      "passed": true
+    },
+    {
+      "detail": "phase60q schema",
+      "name": "phase60q_schema_if_present",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_target_retained",
+      "name": "manifest_rtx5070_target_retained_true",
+      "passed": true
+    },
+    {
+      "detail": "dock_transparency_blur_scope_retained",
+      "name": "manifest_dock_transparency_blur_scope_retained_true",
+      "passed": true
+    },
+    {
+      "detail": "must_not_switch_to_fallback_gpu",
+      "name": "manifest_must_not_switch_to_fallback_gpu_true",
+      "passed": true
+    },
+    {
+      "detail": "paid_developer_team_required",
+      "name": "manifest_paid_developer_team_required_true",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_entitlement_approval_required",
+      "name": "manifest_driverkit_entitlement_approval_required_true",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_capability_required",
+      "name": "manifest_system_extension_capability_required_true",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_pci_transport_entitlement_required",
+      "name": "manifest_driverkit_pci_transport_entitlement_required_true",
+      "passed": true
+    },
+    {
+      "detail": "real_driverkit_dext_built_required",
+      "name": "manifest_real_driverkit_dext_built_required_true",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_activation_required",
+      "name": "manifest_system_extension_activation_required_true",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_provider_visibility_required",
+      "name": "manifest_rtx5070_provider_visibility_required_true",
+      "passed": true
+    },
+    {
+      "detail": "future_provider_open_gate_required",
+      "name": "manifest_future_provider_open_gate_required_true",
+      "passed": true
+    },
+    {
+      "detail": "future_bar_mapping_gate_required",
+      "name": "manifest_future_bar_mapping_gate_required_true",
+      "passed": true
+    },
+    {
+      "detail": "future_gpu_command_submission_gate_required",
+      "name": "manifest_future_gpu_command_submission_gate_required_true",
+      "passed": true
+    },
+    {
+      "detail": "amd_igpu_apple_silicon_substitution_allowed",
+      "name": "manifest_amd_igpu_apple_silicon_substitution_allowed_false",
+      "passed": true
+    },
+    {
+      "detail": "current_rtx5070_metal_acceleration_claimed",
+      "name": "manifest_current_rtx5070_metal_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "current_rtx5070_ui_smoothness_claimed",
+      "name": "manifest_current_rtx5070_ui_smoothness_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "current_windowserver_attribution_to_rtx5070_proven",
+      "name": "manifest_current_windowserver_attribution_to_rtx5070_proven_false",
+      "passed": true
+    },
+    {
+      "detail": "current_core_animation_attribution_to_rtx5070_proven",
+      "name": "manifest_current_core_animation_attribution_to_rtx5070_proven_false",
+      "passed": true
+    },
+    {
+      "detail": "current_quartzcore_attribution_to_rtx5070_proven",
+      "name": "manifest_current_quartzcore_attribution_to_rtx5070_proven_false",
+      "passed": true
+    },
+    {
+      "detail": "current_metal_compositor_attribution_to_rtx5070_proven",
+      "name": "manifest_current_metal_compositor_attribution_to_rtx5070_proven_false",
+      "passed": true
+    },
+    {
+      "detail": "xcodebuild_build_attempted_by_this_phase",
+      "name": "manifest_xcodebuild_build_attempted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "activation_submitted_by_this_phase",
+      "name": "manifest_activation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "deactivation_submitted_by_this_phase",
+      "name": "manifest_deactivation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "manifest_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manual_dext_load_attempted",
+      "name": "manifest_manual_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "manifest_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_vendor_id=0x10de",
+      "name": "manifest_rtx5070_vendor_id",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_device_id=0x2f04",
+      "name": "manifest_rtx5070_device_id",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_iopcimatch=0x2f0410de",
+      "name": "manifest_rtx5070_iopcimatch",
+      "passed": true
+    },
+    {
+      "detail": "next_gate=phase60u-rtx5070-ui-smoothness-evidence-matrix",
+      "name": "manifest_next_gate",
+      "passed": true
+    },
+    {
+      "detail": "RTX 5070",
+      "name": "doc_contains_RTX_5070",
+      "passed": true
+    },
+    {
+      "detail": "Dock smoothness must remain in scope",
+      "name": "doc_contains_Dock_smoothness_must_remain_in_scope",
+      "passed": true
+    },
+    {
+      "detail": "Transparency / blur smoothness must remain in scope",
+      "name": "doc_contains_Transparency___blur_smoothness_must_remain_in_scope",
+      "passed": true
+    },
+    {
+      "detail": "The target GPU remains RTX 5070",
+      "name": "doc_contains_The_target_GPU_remains_RTX_5070",
+      "passed": true
+    },
+    {
+      "detail": "does not switch the project goal to AMD",
+      "name": "doc_contains_does_not_switch_the_project_goal_to_AMD",
+      "passed": true
+    },
+    {
+      "detail": "No spoofed Metal support is used",
+      "name": "doc_contains_No_spoofed_Metal_support_is_used",
+      "passed": true
+    },
+    {
+      "detail": "WindowServer / Core Animation / QuartzCore / Metal compositor path can be attributed to RTX 5070",
+      "name": "doc_contains_WindowServer___Core_Animation___QuartzCore___Metal_compositor_path_can_be_attributed_to_RTX_5070",
+      "passed": true
+    },
+    {
+      "detail": "provider open remains blocked",
+      "name": "doc_contains_provider_open_remains_blocked",
+      "passed": true
+    },
+    {
+      "detail": "BAR mapping remains blocked",
+      "name": "doc_contains_BAR_mapping_remains_blocked",
+      "passed": true
+    },
+    {
+      "detail": "GPU command submission remains blocked",
+      "name": "doc_contains_GPU_command_submission_remains_blocked",
+      "passed": true
+    },
+    {
+      "detail": "Metal proof remains blocked",
+      "name": "doc_contains_Metal_proof_remains_blocked",
+      "passed": true
+    },
+    {
+      "detail": "Dock/transparency/blur proof remains blocked",
+      "name": "doc_contains_Dock_transparency_blur_proof_remains_blocked",
+      "passed": true
+    }
+  ],
+  "current_rtx5070_metal_acceleration_claimed": false,
+  "current_rtx5070_ui_smoothness_claimed": false,
+  "decision": "PASS_RTX5070_UI_SMOOTHNESS_ROADMAP_READY",
+  "dock_transparency_blur_scope_retained": true,
+  "fallback_gpu_substitution_allowed": false,
+  "generated_at_utc": "2026-06-14T04:50:17.139989+00:00",
+  "gpu_command_submission_attempted": false,
+  "ioserviceopen_attempted": false,
+  "metal_proof_claimed": false,
+  "next_gate": "phase60u-rtx5070-ui-smoothness-evidence-matrix",
+  "phase61_allowed_now": false,
+  "provider_open_attempted": false,
+  "rtx5070_target_retained": true,
+  "schema": "h1mekartx.rtx5070_ui_smoothness_roadmap_check.v1",
+  "ui_compositor_proof_claimed": false
+}
