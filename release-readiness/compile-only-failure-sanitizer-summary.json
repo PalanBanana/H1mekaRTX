@@ -1,0 +1,81 @@
+{
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "build_artifact_created": false,
+  "classification": "CLASSIFICATION_COMPILE_ONLY_FAILURE_SANITIZER_SUMMARY",
+  "compile_only_failure_sanitizer_summary_only": true,
+  "configuration_writes_attempted": false,
+  "derived": {
+    "all_raw_output_local_only": true,
+    "any_compile_command_failed": true,
+    "compile_failures_allowed_at_preflight_stage": true,
+    "compile_only_attempts_recorded": true,
+    "plist_parse_all_ok": true
+  },
+  "dext_load_attempted": false,
+  "generated_at_utc": "2026-06-14T02:20:01.243037+00:00",
+  "gpu_command_submission_attempted": false,
+  "host_report_bundle_local_only": true,
+  "install_attempted": false,
+  "local_input_present": true,
+  "metal_proof_claimed": false,
+  "private_text_committed": false,
+  "private_text_detected_in_local_raw_output": true,
+  "provider_open_attempted": false,
+  "raw_stderr_not_committed": true,
+  "raw_stdout_not_committed": true,
+  "sanitized_commands": {
+    "driverkit_cpp_fsyntax_only": {
+      "available": true,
+      "command_key": "driverkit_cpp_fsyntax_only",
+      "failed": true,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 1,
+      "stderr_present": true,
+      "stdout_present": false
+    },
+    "host_swift_typecheck": {
+      "available": true,
+      "command_key": "host_swift_typecheck",
+      "failed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": false
+    }
+  },
+  "sanitized_plists": {
+    "tools/driverkit-buildable-scaffold/H1mekaRTXDriver.dext/H1mekaRTXDriver.entitlements": {
+      "error_present": false,
+      "parse_ok": true,
+      "present": true,
+      "raw_error_committed": false
+    },
+    "tools/driverkit-buildable-scaffold/H1mekaRTXDriver.dext/Info.plist": {
+      "error_present": false,
+      "parse_ok": true,
+      "present": true,
+      "raw_error_committed": false
+    },
+    "tools/driverkit-buildable-scaffold/H1mekaRTXHost/H1mekaRTXHost.entitlements": {
+      "error_present": false,
+      "parse_ok": true,
+      "present": true,
+      "raw_error_committed": false
+    },
+    "tools/driverkit-buildable-scaffold/H1mekaRTXHost/Info.plist": {
+      "error_present": false,
+      "parse_ok": true,
+      "present": true,
+      "raw_error_committed": false
+    }
+  },
+  "schema": "h1mekartx.compile_only_failure_sanitizer_summary_report.v1",
+  "secondary_classification": "CLASSIFICATION_COMPILE_ONLY_TARGET_SMOKE_TEST",
+  "signing_attempted": false,
+  "system_extension_activation_attempted": false,
+  "system_extension_deactivation_attempted": false,
+  "ui_compositor_proof_claimed": false
+}
