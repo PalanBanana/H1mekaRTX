@@ -1,0 +1,307 @@
+{
+  "activation_submitted_by_this_phase": false,
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/apple-developer-entitlement-request-checklist.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/apple-developer-portal-manual-checklist.json",
+      "name": "manual_checklist_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/driverkit/apple-developer-entitlement-request-checklist.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/provisioning-entitlement-hardblock-gate.json",
+      "name": "phase60q_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "manual schema",
+      "name": "manual_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase60q schema",
+      "name": "phase60q_schema",
+      "passed": true
+    },
+    {
+      "detail": "apple_developer_entitlement_request_checklist_ready",
+      "name": "manifest_apple_developer_entitlement_request_checklist_ready_true",
+      "passed": true
+    },
+    {
+      "detail": "portal_preparation_only",
+      "name": "manifest_portal_preparation_only_true",
+      "passed": true
+    },
+    {
+      "detail": "paid_developer_team_required",
+      "name": "manifest_paid_developer_team_required_true",
+      "passed": true
+    },
+    {
+      "detail": "personal_team_blocked",
+      "name": "manifest_personal_team_blocked_true",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_capability_required",
+      "name": "manifest_system_extension_capability_required_true",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_entitlement_approval_required",
+      "name": "manifest_driverkit_entitlement_approval_required_true",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_pci_transport_entitlement_required",
+      "name": "manifest_driverkit_pci_transport_entitlement_required_true",
+      "passed": true
+    },
+    {
+      "detail": "host_profile_required",
+      "name": "manifest_host_profile_required_true",
+      "passed": true
+    },
+    {
+      "detail": "dext_profile_required",
+      "name": "manifest_dext_profile_required_true",
+      "passed": true
+    },
+    {
+      "detail": "xcodebuild_attempted_by_this_phase",
+      "name": "manifest_xcodebuild_attempted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "activation_submitted_by_this_phase",
+      "name": "manifest_activation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "deactivation_submitted_by_this_phase",
+      "name": "manifest_deactivation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "manifest_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manual_dext_load_attempted",
+      "name": "manifest_manual_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "manifest_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "host_bundle_id=dev.h1meka.H1mekaRTXHost",
+      "name": "manifest_host_bundle_id",
+      "passed": true
+    },
+    {
+      "detail": "dext_bundle_id=dev.h1meka.H1mekaRTXDriver",
+      "name": "manifest_dext_bundle_id",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_entitlement=com.apple.developer.system-extension.install",
+      "name": "manifest_system_extension_entitlement",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_entitlement=com.apple.developer.driverkit",
+      "name": "manifest_driverkit_entitlement",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_pci_transport_entitlement=com.apple.developer.driverkit.transport.pci",
+      "name": "manifest_driverkit_pci_transport_entitlement",
+      "passed": true
+    },
+    {
+      "detail": "vendor_id=0x10de",
+      "name": "manifest_vendor_id",
+      "passed": true
+    },
+    {
+      "detail": "device_id=0x2f04",
+      "name": "manifest_device_id",
+      "passed": true
+    },
+    {
+      "detail": "iopcimatch=0x2f0410de",
+      "name": "manifest_iopcimatch",
+      "passed": true
+    },
+    {
+      "detail": "paid_team",
+      "name": "manual_item_paid_team",
+      "passed": true
+    },
+    {
+      "detail": "host_app_id",
+      "name": "manual_item_host_app_id",
+      "passed": true
+    },
+    {
+      "detail": "host_system_extension_capability",
+      "name": "manual_item_host_system_extension_capability",
+      "passed": true
+    },
+    {
+      "detail": "dext_app_id",
+      "name": "manual_item_dext_app_id",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_entitlement",
+      "name": "manual_item_driverkit_entitlement",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_pci_transport",
+      "name": "manual_item_driverkit_pci_transport",
+      "passed": true
+    },
+    {
+      "detail": "host_profile",
+      "name": "manual_item_host_profile",
+      "passed": true
+    },
+    {
+      "detail": "dext_profile",
+      "name": "manual_item_dext_profile",
+      "passed": true
+    },
+    {
+      "detail": "Paid Apple Developer Program",
+      "name": "doc_contains_Paid_Apple_Developer_Program",
+      "passed": true
+    },
+    {
+      "detail": "dev.h1meka.H1mekaRTXHost",
+      "name": "doc_contains_dev.h1meka.H1mekaRTXHost",
+      "passed": true
+    },
+    {
+      "detail": "dev.h1meka.H1mekaRTXDriver",
+      "name": "doc_contains_dev.h1meka.H1mekaRTXDriver",
+      "passed": true
+    },
+    {
+      "detail": "com.apple.developer.system-extension.install",
+      "name": "doc_contains_com.apple.developer.system-extension.install",
+      "passed": true
+    },
+    {
+      "detail": "com.apple.developer.driverkit",
+      "name": "doc_contains_com.apple.developer.driverkit",
+      "passed": true
+    },
+    {
+      "detail": "com.apple.developer.driverkit.transport.pci",
+      "name": "doc_contains_com.apple.developer.driverkit.transport.pci",
+      "passed": true
+    },
+    {
+      "detail": "0x10de",
+      "name": "doc_contains_0x10de",
+      "passed": true
+    },
+    {
+      "detail": "0x2f04",
+      "name": "doc_contains_0x2f04",
+      "passed": true
+    },
+    {
+      "detail": "0x2f0410de",
+      "name": "doc_contains_0x2f0410de",
+      "passed": true
+    },
+    {
+      "detail": "provider open remains blocked",
+      "name": "doc_contains_provider_open_remains_blocked",
+      "passed": true
+    },
+    {
+      "detail": "GPU command submission remains blocked",
+      "name": "doc_contains_GPU_command_submission_remains_blocked",
+      "passed": true
+    },
+    {
+      "detail": "Dock/transparency/blur proof remains blocked",
+      "name": "doc_contains_Dock_transparency_blur_proof_remains_blocked",
+      "passed": true
+    }
+  ],
+  "decision": "PASS_APPLE_DEVELOPER_ENTITLEMENT_REQUEST_CHECKLIST_READY",
+  "driverkit_entitlement_approval_required": true,
+  "driverkit_pci_transport_entitlement_required": true,
+  "generated_at_utc": "2026-06-14T04:38:32.549922+00:00",
+  "gpu_command_submission_attempted": false,
+  "ioserviceopen_attempted": false,
+  "metal_proof_claimed": false,
+  "paid_developer_team_required": true,
+  "personal_team_blocked": true,
+  "phase61_allowed_now": false,
+  "portal_preparation_only": true,
+  "provider_open_attempted": false,
+  "schema": "h1mekartx.apple_developer_entitlement_request_checklist_check.v1",
+  "system_extension_capability_required": true,
+  "ui_compositor_proof_claimed": false,
+  "xcodebuild_attempted_by_this_phase": false
+}
