@@ -1,0 +1,28 @@
+{
+  "activation_submitted_by_sanitizer": false,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "classification": "CLASSIFICATION_LOCAL_ACTIVATION_REPORT_STATUS_SANITIZER",
+  "committed_outputs": [
+    "release-readiness/local-activation-report-status-summary.json",
+    "release-readiness/local-activation-report-status-summary.md",
+    "release-readiness/local-activation-report-status-sanitizer-check.json",
+    "release-readiness/local-activation-report-status-sanitizer-check.md"
+  ],
+  "configuration_writes_attempted": false,
+  "deactivation_submitted_by_sanitizer": false,
+  "extension_identifier": "dev.h1meka.H1mekaRTXDriver",
+  "gpu_command_submission_attempted": false,
+  "install_attempted": false,
+  "local_activation_report_status_sanitizer_ready": true,
+  "local_input": "host-report-bundle/local-activation/actual-local-activation-hard-optin-report.json",
+  "metal_proof_claimed": false,
+  "provider_open_attempted": false,
+  "raw_stderr_not_committed": true,
+  "raw_stdout_not_committed": true,
+  "sanitizer_only": true,
+  "schema": "h1mekartx.local_activation_report_status_sanitizer.v1",
+  "secondary_classification": "CLASSIFICATION_ACTUAL_LOCAL_ACTIVATION_HARD_OPTIN",
+  "tertiary_classification": "CLASSIFICATION_OFFICIAL_SYSTEMEXTENSIONS_PATH",
+  "ui_compositor_proof_claimed": false
+}
