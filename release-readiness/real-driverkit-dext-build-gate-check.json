@@ -1,0 +1,371 @@
+{
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/real-driverkit-dext-build-gate.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/driverkit/real-driverkit-dext-build-gate.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/scripts/real-driverkit-dext-build-gate.py",
+      "name": "script_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/real-driverkit-dext-build-gate-summary.json",
+      "name": "summary_json_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/real-driverkit-dext-build-gate-summary.md",
+      "name": "summary_md_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/validationfailed-root-cause-gate.json",
+      "name": "phase60k_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "summary schema",
+      "name": "summary_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase60k schema",
+      "name": "phase60k_schema",
+      "passed": true
+    },
+    {
+      "detail": "real_driverkit_dext_build_gate_ready",
+      "name": "manifest_real_driverkit_dext_build_gate_ready_true",
+      "passed": true
+    },
+    {
+      "detail": "default_refuses_build",
+      "name": "manifest_default_refuses_build_true",
+      "passed": true
+    },
+    {
+      "detail": "hard_optin_flags_required",
+      "name": "manifest_hard_optin_flags_required_true",
+      "passed": true
+    },
+    {
+      "detail": "ci_xcodebuild_attempted",
+      "name": "manifest_ci_xcodebuild_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "activation_submitted_by_this_phase",
+      "name": "manifest_activation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "deactivation_submitted_by_this_phase",
+      "name": "manifest_deactivation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "manifest_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manual_dext_load_attempted",
+      "name": "manifest_manual_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "manifest_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "--i-understand-local-driverkit-build",
+      "name": "script_contains___i_understand_local_driverkit_build",
+      "passed": true
+    },
+    {
+      "detail": "--output-under-host-report-bundle",
+      "name": "script_contains___output_under_host_report_bundle",
+      "passed": true
+    },
+    {
+      "detail": "--project",
+      "name": "script_contains___project",
+      "passed": true
+    },
+    {
+      "detail": "--workspace",
+      "name": "script_contains___workspace",
+      "passed": true
+    },
+    {
+      "detail": "--scheme",
+      "name": "script_contains___scheme",
+      "passed": true
+    },
+    {
+      "detail": "xcodebuild",
+      "name": "script_contains_xcodebuild",
+      "passed": true
+    },
+    {
+      "detail": "--sdk",
+      "name": "script_contains___sdk",
+      "passed": true
+    },
+    {
+      "detail": "driverkit",
+      "name": "script_contains_driverkit",
+      "passed": true
+    },
+    {
+      "detail": "*.dext",
+      "name": "script_contains_star_dext",
+      "passed": true
+    },
+    {
+      "detail": "codesign",
+      "name": "script_contains_codesign",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "script_contains_provider_open_attempted",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "script_contains_ioserviceopen_attempted",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "script_contains_bar_mapping_attempted",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "script_contains_gpu_command_submission_attempted",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_not_committed",
+      "name": "summary_raw_stdout_not_committed_true",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_not_committed",
+      "name": "summary_raw_stderr_not_committed_true",
+      "passed": true
+    },
+    {
+      "detail": "activation_submitted_by_this_phase",
+      "name": "summary_activation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "deactivation_submitted_by_this_phase",
+      "name": "summary_deactivation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "summary_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manual_dext_load_attempted",
+      "name": "summary_manual_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "summary_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "summary_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "summary_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "summary_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "summary_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "summary_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "summary_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "summary_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "real dext built recorded",
+      "name": "summary_real_driverkit_dext_built_recorded",
+      "passed": true
+    },
+    {
+      "detail": "phase61 false",
+      "name": "summary_phase61_allowed_false",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_key",
+      "name": "no_raw_stdout_key_in_real-driverkit-dext-build-gate-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_key",
+      "name": "no_raw_stderr_key_in_real-driverkit-dext-build-gate-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "command_key",
+      "name": "no_command_key_in_real-driverkit-dext-build-gate-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "home_path",
+      "name": "no_home_path_in_real-driverkit-dext-build-gate-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "tmp_path",
+      "name": "no_tmp_path_in_real-driverkit-dext-build-gate-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "email_like",
+      "name": "no_email_like_in_real-driverkit-dext-build-gate-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "developer_id_application",
+      "name": "no_developer_id_application_in_real-driverkit-dext-build-gate-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "apple_development",
+      "name": "no_apple_development_in_real-driverkit-dext-build-gate-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_key",
+      "name": "no_raw_stdout_key_in_real-driverkit-dext-build-gate-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_key",
+      "name": "no_raw_stderr_key_in_real-driverkit-dext-build-gate-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "command_key",
+      "name": "no_command_key_in_real-driverkit-dext-build-gate-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "home_path",
+      "name": "no_home_path_in_real-driverkit-dext-build-gate-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "tmp_path",
+      "name": "no_tmp_path_in_real-driverkit-dext-build-gate-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "email_like",
+      "name": "no_email_like_in_real-driverkit-dext-build-gate-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "developer_id_application",
+      "name": "no_developer_id_application_in_real-driverkit-dext-build-gate-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "apple_development",
+      "name": "no_apple_development_in_real-driverkit-dext-build-gate-summary.md",
+      "passed": true
+    }
+  ],
+  "ci_xcodebuild_attempted": false,
+  "decision": "PASS_REAL_DRIVERKIT_DEXT_BUILD_GATE_READY",
+  "generated_at_utc": "2026-06-14T04:16:55.998856+00:00",
+  "gpu_command_submission_attempted": false,
+  "ioserviceopen_attempted": false,
+  "local_build_gate_only": true,
+  "metal_proof_claimed": false,
+  "phase61_allowed_now": false,
+  "provider_open_attempted": false,
+  "schema": "h1mekartx.real_driverkit_dext_build_gate_check.v1",
+  "ui_compositor_proof_claimed": false
+}
