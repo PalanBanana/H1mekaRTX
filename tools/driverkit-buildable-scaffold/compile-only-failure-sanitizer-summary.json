@@ -1,0 +1,31 @@
+{
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "build_artifact_created": false,
+  "classification": "CLASSIFICATION_COMPILE_ONLY_FAILURE_SANITIZER_SUMMARY",
+  "committed_outputs": [
+    "release-readiness/compile-only-failure-sanitizer-summary.json",
+    "release-readiness/compile-only-failure-sanitizer-summary.md",
+    "release-readiness/compile-only-failure-sanitizer-summary-check.json",
+    "release-readiness/compile-only-failure-sanitizer-summary-check.md"
+  ],
+  "compile_only_failure_sanitizer_summary_only": true,
+  "compile_only_failure_sanitizer_summary_ready": true,
+  "configuration_writes_attempted": false,
+  "dext_load_attempted": false,
+  "gpu_command_submission_attempted": false,
+  "host_report_bundle_local_only": true,
+  "install_attempted": false,
+  "local_input": "host-report-bundle/compile-only-smoke/compile-only-target-smoke-test.json",
+  "metal_proof_claimed": false,
+  "provider_open_attempted": false,
+  "raw_stderr_not_committed": true,
+  "raw_stdout_not_committed": true,
+  "schema": "h1mekartx.compile_only_failure_sanitizer_summary.v1",
+  "secondary_classification": "CLASSIFICATION_COMPILE_ONLY_TARGET_SMOKE_TEST",
+  "signing_attempted": false,
+  "system_extension_activation_attempted": false,
+  "system_extension_deactivation_attempted": false,
+  "tertiary_classification": "CLASSIFICATION_NO_RUNTIME_ACTIVATION",
+  "ui_compositor_proof_claimed": false
+}

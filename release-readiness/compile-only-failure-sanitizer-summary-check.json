@@ -1,0 +1,319 @@
+{
+  "bar_mapping_attempted": false,
+  "build_artifact_created": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/compile-only-failure-sanitizer-summary.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/compile-only-failure-sanitizer-summary.json",
+      "name": "summary_json_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/compile-only-failure-sanitizer-summary.md",
+      "name": "summary_md_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/host-report-bundle/compile-only-smoke/compile-only-target-smoke-test.json",
+      "name": "local_input_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "summary schema",
+      "name": "summary_schema",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_not_committed",
+      "name": "manifest_raw_stdout_not_committed_true",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_not_committed",
+      "name": "manifest_raw_stderr_not_committed_true",
+      "passed": true
+    },
+    {
+      "detail": "host_report_bundle_local_only",
+      "name": "manifest_host_report_bundle_local_only_true",
+      "passed": true
+    },
+    {
+      "detail": "build_artifact_created",
+      "name": "manifest_build_artifact_created_false",
+      "passed": true
+    },
+    {
+      "detail": "signing_attempted",
+      "name": "manifest_signing_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "manifest_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_activation_attempted",
+      "name": "manifest_system_extension_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_deactivation_attempted",
+      "name": "manifest_system_extension_deactivation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "dext_load_attempted",
+      "name": "manifest_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_not_committed",
+      "name": "summary_raw_stdout_not_committed_true",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_not_committed",
+      "name": "summary_raw_stderr_not_committed_true",
+      "passed": true
+    },
+    {
+      "detail": "host_report_bundle_local_only",
+      "name": "summary_host_report_bundle_local_only_true",
+      "passed": true
+    },
+    {
+      "detail": "build_artifact_created",
+      "name": "summary_build_artifact_created_false",
+      "passed": true
+    },
+    {
+      "detail": "signing_attempted",
+      "name": "summary_signing_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "summary_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_activation_attempted",
+      "name": "summary_system_extension_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_deactivation_attempted",
+      "name": "summary_system_extension_deactivation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "dext_load_attempted",
+      "name": "summary_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "summary_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "summary_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "summary_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "summary_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "summary_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "summary_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "summary_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "sanitized commands",
+      "name": "sanitized_commands_present",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_cpp_fsyntax_only",
+      "name": "driverkit_cpp_fsyntax_only_raw_stdout_not_committed",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_cpp_fsyntax_only",
+      "name": "driverkit_cpp_fsyntax_only_raw_stderr_not_committed",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_cpp_fsyntax_only",
+      "name": "driverkit_cpp_fsyntax_only_returncode_recorded",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_cpp_fsyntax_only",
+      "name": "driverkit_cpp_fsyntax_only_failed_recorded",
+      "passed": true
+    },
+    {
+      "detail": "host_swift_typecheck",
+      "name": "host_swift_typecheck_raw_stdout_not_committed",
+      "passed": true
+    },
+    {
+      "detail": "host_swift_typecheck",
+      "name": "host_swift_typecheck_raw_stderr_not_committed",
+      "passed": true
+    },
+    {
+      "detail": "host_swift_typecheck",
+      "name": "host_swift_typecheck_returncode_recorded",
+      "passed": true
+    },
+    {
+      "detail": "host_swift_typecheck",
+      "name": "host_swift_typecheck_failed_recorded",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_key",
+      "name": "no_raw_stdout_key_in_compile-only-failure-sanitizer-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_key",
+      "name": "no_raw_stderr_key_in_compile-only-failure-sanitizer-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "home_path",
+      "name": "no_home_path_in_compile-only-failure-sanitizer-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "tmp_path",
+      "name": "no_tmp_path_in_compile-only-failure-sanitizer-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "email_like",
+      "name": "no_email_like_in_compile-only-failure-sanitizer-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "host_report_bundle_raw_path",
+      "name": "no_host_report_bundle_raw_path_in_compile-only-failure-sanitizer-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_key",
+      "name": "no_raw_stdout_key_in_compile-only-failure-sanitizer-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_key",
+      "name": "no_raw_stderr_key_in_compile-only-failure-sanitizer-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "home_path",
+      "name": "no_home_path_in_compile-only-failure-sanitizer-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "tmp_path",
+      "name": "no_tmp_path_in_compile-only-failure-sanitizer-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "email_like",
+      "name": "no_email_like_in_compile-only-failure-sanitizer-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "host_report_bundle_raw_path",
+      "name": "no_host_report_bundle_raw_path_in_compile-only-failure-sanitizer-summary.md",
+      "passed": true
+    }
+  ],
+  "classification": "CLASSIFICATION_COMPILE_ONLY_FAILURE_SANITIZER_SUMMARY",
+  "compile_only_failure_sanitizer_summary_only": true,
+  "decision": "PASS_COMPILE_ONLY_FAILURE_SANITIZER_SUMMARY_READY",
+  "dext_load_attempted": false,
+  "failed_count": 0,
+  "generated_at_utc": "2026-06-14T02:20:01.282513+00:00",
+  "gpu_command_submission_attempted": false,
+  "host_report_bundle_local_only": true,
+  "install_attempted": false,
+  "metal_proof_claimed": false,
+  "passed_count": 59,
+  "provider_open_attempted": false,
+  "raw_stderr_not_committed": true,
+  "raw_stdout_not_committed": true,
+  "schema": "h1mekartx.compile_only_failure_sanitizer_summary_check.v1",
+  "signing_attempted": false,
+  "system_extension_activation_attempted": false,
+  "ui_compositor_proof_claimed": false
+}
