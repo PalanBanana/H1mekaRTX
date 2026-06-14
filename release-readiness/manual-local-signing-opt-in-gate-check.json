@@ -1,0 +1,256 @@
+{
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/manual-local-signing-opt-in-gate.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/driverkit/manual-local-signing-opt-in-gate.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/codesign-dryrun-command-plan.json",
+      "name": "phase52_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/local-unsigned-bundle-manifest-lock.json",
+      "name": "phase51_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/codesign-identity-entitlement-dryrun-evidence.json",
+      "name": "phase50_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase52 schema",
+      "name": "phase52_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase51 schema",
+      "name": "phase51_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase50 schema",
+      "name": "phase50_schema",
+      "passed": true
+    },
+    {
+      "detail": "manual_local_signing_opt_in_gate_ready",
+      "name": "manifest_manual_local_signing_opt_in_gate_ready_true",
+      "passed": true
+    },
+    {
+      "detail": "user_may_opt_in_to_local_signing",
+      "name": "manifest_user_may_opt_in_to_local_signing_true",
+      "passed": true
+    },
+    {
+      "detail": "local_signing_requires_explicit_flag",
+      "name": "manifest_local_signing_requires_explicit_flag_true",
+      "passed": true
+    },
+    {
+      "detail": "command_gate_only",
+      "name": "manifest_command_gate_only_true",
+      "passed": true
+    },
+    {
+      "detail": "local_signing_allowed_now",
+      "name": "manifest_local_signing_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "codesign_executed",
+      "name": "manifest_codesign_executed_false",
+      "passed": true
+    },
+    {
+      "detail": "codesign_signing_attempted",
+      "name": "manifest_codesign_signing_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "signed_package_created",
+      "name": "manifest_signed_package_created_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "manifest_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "submit_activation_allowed_now",
+      "name": "manifest_submit_activation_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "submit_deactivation_allowed_now",
+      "name": "manifest_submit_deactivation_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_activation_attempted",
+      "name": "manifest_system_extension_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_deactivation_attempted",
+      "name": "manifest_system_extension_deactivation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "dext_load_attempted",
+      "name": "manifest_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "codesign dry-run command plan exists",
+      "name": "required_before_contains_codesign_dry_run_command_plan_exists",
+      "passed": true
+    },
+    {
+      "detail": "unsigned bundle manifest lock exists",
+      "name": "required_before_contains_unsigned_bundle_manifest_lock_exists",
+      "passed": true
+    },
+    {
+      "detail": "codesign identity evidence exists",
+      "name": "required_before_contains_codesign_identity_evidence_exists",
+      "passed": true
+    },
+    {
+      "detail": "host entitlement parse proof exists",
+      "name": "required_before_contains_host_entitlement_parse_proof_exists",
+      "passed": true
+    },
+    {
+      "detail": "dext entitlement parse proof exists",
+      "name": "required_before_contains_dext_entitlement_parse_proof_exists",
+      "passed": true
+    },
+    {
+      "detail": "host bundle ID matches",
+      "name": "required_before_contains_host_bundle_ID_matches",
+      "passed": true
+    },
+    {
+      "detail": "dext bundle ID matches",
+      "name": "required_before_contains_dext_bundle_ID_matches",
+      "passed": true
+    },
+    {
+      "detail": "user passes an explicit future signing flag",
+      "name": "required_before_contains_user_passes_an_explicit_future_signing_flag",
+      "passed": true
+    },
+    {
+      "detail": "signing identity is selected explicitly",
+      "name": "required_before_contains_signing_identity_is_selected_explicitly",
+      "passed": true
+    },
+    {
+      "detail": "signing output remains local-only",
+      "name": "required_before_contains_signing_output_remains_local_only",
+      "passed": true
+    },
+    {
+      "detail": "signed artifact manifest is generated",
+      "name": "required_before_contains_signed_artifact_manifest_is_generated",
+      "passed": true
+    },
+    {
+      "detail": "activation remains blocked after signing until verify gates pass",
+      "name": "required_before_contains_activation_remains_blocked_after_signing_until_verify_gates_pass",
+      "passed": true
+    },
+    {
+      "detail": "future signing order",
+      "name": "future_signing_order_exact",
+      "passed": true
+    },
+    {
+      "detail": "--i-understand-local-signing",
+      "name": "future_flag_contains___i_understand_local_signing",
+      "passed": true
+    },
+    {
+      "detail": "--signing-identity",
+      "name": "future_flag_contains___signing_identity",
+      "passed": true
+    },
+    {
+      "detail": "--output-under-host-report-bundle",
+      "name": "future_flag_contains___output_under_host_report_bundle",
+      "passed": true
+    }
+  ],
+  "classification": "CLASSIFICATION_MANUAL_LOCAL_SIGNING_OPT_IN_GATE",
+  "codesign_executed": false,
+  "codesign_signing_attempted": false,
+  "command_gate_only": true,
+  "decision": "PASS_MANUAL_LOCAL_SIGNING_OPT_IN_GATE_READY",
+  "dext_load_attempted": false,
+  "failed_count": 0,
+  "generated_at_utc": "2026-06-14T02:37:42.186897+00:00",
+  "gpu_command_submission_attempted": false,
+  "install_attempted": false,
+  "local_signing_allowed_now": false,
+  "local_signing_requires_explicit_flag": true,
+  "metal_proof_claimed": false,
+  "passed_count": 46,
+  "provider_open_attempted": false,
+  "schema": "h1mekartx.manual_local_signing_opt_in_gate_check.v1",
+  "signed_package_created": false,
+  "submit_activation_allowed_now": false,
+  "system_extension_activation_attempted": false,
+  "ui_compositor_proof_claimed": false,
+  "user_may_opt_in_to_local_signing": true
+}
