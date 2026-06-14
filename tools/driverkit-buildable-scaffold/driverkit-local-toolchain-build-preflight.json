@@ -1,0 +1,29 @@
+{
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "build_attempted": false,
+  "classification": "CLASSIFICATION_DRIVERKIT_LOCAL_TOOLCHAIN_BUILD_PREFLIGHT",
+  "configuration_writes_attempted": false,
+  "dext_load_attempted": false,
+  "driverkit_local_toolchain_build_preflight_ready": true,
+  "gpu_command_submission_attempted": false,
+  "install_attempted": false,
+  "local_preflight_only": true,
+  "metal_proof_claimed": false,
+  "provider_open_attempted": false,
+  "real_development_build_scope_continues": true,
+  "required_scaffold_inputs": [
+    "tools/driverkit-buildable-scaffold/H1mekaRTXHost/Info.plist",
+    "tools/driverkit-buildable-scaffold/H1mekaRTXHost/H1mekaRTXHost.swift",
+    "tools/driverkit-buildable-scaffold/H1mekaRTXDriver.dext/Info.plist",
+    "tools/driverkit-buildable-scaffold/H1mekaRTXDriver.dext/Sources/H1mekaRTXDriver.cpp",
+    "tools/driverkit-buildable-scaffold/build-plan.json"
+  ],
+  "schema": "h1mekartx.driverkit_local_toolchain_build_preflight.v1",
+  "secondary_classification": "CLASSIFICATION_REAL_DEVELOPMENT_BUILD_SCOPE",
+  "signing_attempted": false,
+  "system_extension_activation_attempted": false,
+  "system_extension_deactivation_attempted": false,
+  "tertiary_classification": "CLASSIFICATION_NO_RUNTIME_ACTIVATION",
+  "ui_compositor_proof_claimed": false
+}
