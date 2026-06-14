@@ -1,0 +1,195 @@
+{
+  "activation_allowed_now": false,
+  "activation_block_reason": [
+    "signed_artifact_verification_ok_false_or_missing",
+    "signed_package_created_locally_false_or_missing",
+    "hard_optin_ok_false_or_missing"
+  ],
+  "activation_preflight_ready": false,
+  "bar_mapping_attempted": false,
+  "boundary_ok": true,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/manual-activation-preflight-after-signed-verification.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/driverkit/manual-activation-preflight-after-signed-verification.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/signed-artifact-verification-report-summary.json",
+      "name": "signed_summary_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/signed-artifact-verification-report-sanitizer.json",
+      "name": "phase55_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/actual-local-signing-hard-optin.json",
+      "name": "phase54_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/manual-activation-approval-readiness-gate.json",
+      "name": "phase47_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/user-approved-system-extension-activation-path.json",
+      "name": "phase46_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase55 schema",
+      "name": "phase55_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase54 schema",
+      "name": "phase54_schema",
+      "passed": true
+    },
+    {
+      "detail": "manual approval allowed",
+      "name": "phase47_user_approval_allowed",
+      "passed": true
+    },
+    {
+      "detail": "activation capable code",
+      "name": "phase46_activation_path_exists",
+      "passed": true
+    },
+    {
+      "detail": "signed summary schema",
+      "name": "signed_summary_schema",
+      "passed": true
+    },
+    {
+      "detail": "activation still blocked",
+      "name": "boundary_activation_still_blocked",
+      "passed": true
+    },
+    {
+      "detail": "provider open still blocked",
+      "name": "boundary_provider_open_still_blocked",
+      "passed": true
+    },
+    {
+      "detail": "bar mapping still blocked",
+      "name": "boundary_bar_mapping_still_blocked",
+      "passed": true
+    },
+    {
+      "detail": "gpu command still blocked",
+      "name": "boundary_gpu_command_submission_still_blocked",
+      "passed": true
+    },
+    {
+      "detail": "manual_activation_preflight_gate_ready",
+      "name": "manifest_manual_activation_preflight_gate_ready_true",
+      "passed": true
+    },
+    {
+      "detail": "preflight_gate_only",
+      "name": "manifest_preflight_gate_only_true",
+      "passed": true
+    },
+    {
+      "detail": "activation_allowed_now",
+      "name": "manifest_activation_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "deactivation_allowed_now",
+      "name": "manifest_deactivation_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "manifest_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_activation_attempted",
+      "name": "manifest_system_extension_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_deactivation_attempted",
+      "name": "manifest_system_extension_deactivation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "dext_load_attempted",
+      "name": "manifest_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    }
+  ],
+  "classification": "CLASSIFICATION_MANUAL_ACTIVATION_PREFLIGHT_AFTER_SIGNED_VERIFICATION",
+  "deactivation_allowed_now": false,
+  "decision": "PASS_ACTIVATION_PREFLIGHT_BLOCKED_UNTIL_SIGNED_VERIFICATION",
+  "dext_load_attempted": false,
+  "generated_at_utc": "2026-06-14T02:43:42.761868+00:00",
+  "gpu_command_submission_attempted": false,
+  "hard_optin_ok": false,
+  "install_attempted": false,
+  "local_scope_ok": true,
+  "metal_proof_claimed": false,
+  "next_phase_if_blocked": "perform actual local signing with Phase 54 hard opt-in flags, then rerun Phase 55 sanitizer",
+  "next_phase_if_ready": "actual local activation script with hard opt-in flags",
+  "phase46_activation_path_exists": true,
+  "preflight_gate_only": true,
+  "provider_open_attempted": false,
+  "schema": "h1mekartx.manual_activation_preflight_after_signed_verification_check.v1",
+  "signed_artifact_verification_ok": false,
+  "signed_package_created_locally": false,
+  "system_extension_activation_attempted": false,
+  "system_extension_deactivation_attempted": false,
+  "ui_compositor_proof_claimed": false,
+  "user_approval_allowed_for_future_local_test": true
+}
