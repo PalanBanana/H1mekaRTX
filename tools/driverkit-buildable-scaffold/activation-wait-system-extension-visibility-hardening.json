@@ -1,0 +1,33 @@
+{
+  "activation_submitted_by_default": false,
+  "activation_wait_visibility_hardening_ready": true,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "ci_activation_attempted": false,
+  "classification": "CLASSIFICATION_ACTIVATION_WAIT_SYSTEM_EXTENSION_VISIBILITY_HARDENING",
+  "configuration_writes_attempted": false,
+  "deactivation_submitted_by_default": false,
+  "default_refuses_activation": true,
+  "extension_identifier": "dev.h1meka.H1mekaRTXDriver",
+  "gpu_command_submission_attempted": false,
+  "hard_optin_flags_required": true,
+  "ioserviceopen_attempted": false,
+  "metal_proof_claimed": false,
+  "next_gate_if_visibility_missing": "phase60e activation error delegate and systemextensionsctl diagnostics",
+  "next_gate_if_visibility_observed": "rerun phase59 then phase60b; if ready go phase61",
+  "optional_flags": [
+    "--wait-seconds",
+    "--poll-interval-seconds"
+  ],
+  "provider_open_attempted": false,
+  "required_flags": [
+    "--i-understand-local-activation-visibility",
+    "--submit-activation",
+    "--signing-identity",
+    "--output-under-host-report-bundle"
+  ],
+  "schema": "h1mekartx.activation_wait_system_extension_visibility_hardening.v1",
+  "secondary_classification": "CLASSIFICATION_PROVIDER_MATCH_PERSONALITY_ENTITLEMENT_FIX_PLAN",
+  "tertiary_classification": "CLASSIFICATION_OFFICIAL_SYSTEMEXTENSIONS_PATH",
+  "ui_compositor_proof_claimed": false
+}

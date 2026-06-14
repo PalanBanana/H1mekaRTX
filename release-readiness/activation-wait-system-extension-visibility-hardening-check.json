@@ -1,0 +1,198 @@
+{
+  "activation_submitted_by_default": false,
+  "activation_wait_visibility_hardening_ready": true,
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/activation-wait-system-extension-visibility-hardening.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/driverkit/activation-wait-system-extension-visibility-hardening.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/scripts/activation-wait-system-extension-visibility-hardening.py",
+      "name": "script_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/provider-match-personality-entitlement-fix-plan.json",
+      "name": "phase60c_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/actual-local-activation-hard-optin.json",
+      "name": "phase57b_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase60c schema",
+      "name": "phase60c_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase57b schema",
+      "name": "phase57b_schema",
+      "passed": true
+    },
+    {
+      "detail": "activation_wait_visibility_hardening_ready",
+      "name": "manifest_activation_wait_visibility_hardening_ready_true",
+      "passed": true
+    },
+    {
+      "detail": "default_refuses_activation",
+      "name": "manifest_default_refuses_activation_true",
+      "passed": true
+    },
+    {
+      "detail": "hard_optin_flags_required",
+      "name": "manifest_hard_optin_flags_required_true",
+      "passed": true
+    },
+    {
+      "detail": "ci_activation_attempted",
+      "name": "manifest_ci_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "activation_submitted_by_default",
+      "name": "manifest_activation_submitted_by_default_false",
+      "passed": true
+    },
+    {
+      "detail": "deactivation_submitted_by_default",
+      "name": "manifest_deactivation_submitted_by_default_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "manifest_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "--i-understand-local-activation-visibility",
+      "name": "script_contains___i_understand_local_activation_visibility",
+      "passed": true
+    },
+    {
+      "detail": "--submit-activation",
+      "name": "script_contains___submit_activation",
+      "passed": true
+    },
+    {
+      "detail": "--signing-identity",
+      "name": "script_contains___signing_identity",
+      "passed": true
+    },
+    {
+      "detail": "--output-under-host-report-bundle",
+      "name": "script_contains___output_under_host_report_bundle",
+      "passed": true
+    },
+    {
+      "detail": "--wait-seconds",
+      "name": "script_contains___wait_seconds",
+      "passed": true
+    },
+    {
+      "detail": "--poll-interval-seconds",
+      "name": "script_contains___poll_interval_seconds",
+      "passed": true
+    },
+    {
+      "detail": "systemextensionsctl",
+      "name": "script_contains_systemextensionsctl",
+      "passed": true
+    },
+    {
+      "detail": "dev.h1meka.H1mekaRTXDriver",
+      "name": "script_contains_dev_h1meka_H1mekaRTXDriver",
+      "passed": true
+    },
+    {
+      "detail": "visibility_poll_attempted",
+      "name": "script_contains_visibility_poll_attempted",
+      "passed": true
+    },
+    {
+      "detail": "extension_identifier_observed",
+      "name": "script_contains_extension_identifier_observed",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "script_contains_provider_open_attempted",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "script_contains_ioserviceopen_attempted",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "script_contains_bar_mapping_attempted",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "script_contains_gpu_command_submission_attempted",
+      "passed": true
+    }
+  ],
+  "ci_activation_attempted": false,
+  "decision": "PASS_ACTIVATION_WAIT_VISIBILITY_HARDENING_READY",
+  "default_refuses_activation": true,
+  "generated_at_utc": "2026-06-14T03:39:35.311924+00:00",
+  "gpu_command_submission_attempted": false,
+  "hard_optin_flags_required": true,
+  "ioserviceopen_attempted": false,
+  "metal_proof_claimed": false,
+  "provider_open_attempted": false,
+  "schema": "h1mekartx.activation_wait_visibility_hardening_check.v1",
+  "ui_compositor_proof_claimed": false
+}
