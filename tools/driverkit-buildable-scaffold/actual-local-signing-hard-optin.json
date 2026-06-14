@@ -1,0 +1,49 @@
+{
+  "activation_boundary": [
+    "activation remains blocked",
+    "deactivation remains blocked",
+    "dext load remains blocked",
+    "provider open remains blocked",
+    "BAR mapping remains blocked",
+    "GPU command submission remains blocked",
+    "Dock/transparency/blur proof remains blocked"
+  ],
+  "actual_local_signing_hard_optin_ready": true,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "ci_signing_attempted": false,
+  "classification": "CLASSIFICATION_ACTUAL_LOCAL_SIGNING_HARD_OPTIN",
+  "codesign_executed_by_default": false,
+  "codesign_signing_attempted_in_ci": false,
+  "configuration_writes_attempted": false,
+  "default_refuses_signing": true,
+  "dext_load_attempted": false,
+  "gpu_command_submission_attempted": false,
+  "hard_optin_flags_required": true,
+  "install_attempted": false,
+  "metal_proof_claimed": false,
+  "provider_open_attempted": false,
+  "required_flags": [
+    "--i-understand-local-signing",
+    "--signing-identity",
+    "--output-under-host-report-bundle"
+  ],
+  "schema": "h1mekartx.actual_local_signing_hard_optin.v1",
+  "secondary_classification": "CLASSIFICATION_MANUAL_LOCAL_SIGNING_OPT_IN_GATE",
+  "signed_package_created_in_ci": false,
+  "signing_order": [
+    "sign embedded dext first",
+    "verify embedded dext",
+    "sign host app second",
+    "verify host app",
+    "dump host entitlements locally",
+    "dump dext entitlements locally",
+    "write local signed artifact report under host-report-bundle"
+  ],
+  "submit_activation_allowed_now": false,
+  "submit_deactivation_allowed_now": false,
+  "system_extension_activation_attempted": false,
+  "system_extension_deactivation_attempted": false,
+  "tertiary_classification": "CLASSIFICATION_LOCAL_SIGNING_ONLY",
+  "ui_compositor_proof_claimed": false
+}
