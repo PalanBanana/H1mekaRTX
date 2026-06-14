@@ -1,0 +1,202 @@
+{
+  "activation_submitted_by_this_phase": false,
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/activation-error-remediation-plan.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/driverkit/activation-error-remediation-plan.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/H1mekaRTXActivationDiagnosticsHost.swift",
+      "name": "swift_diagnostics_host_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/activation-delegate-diagnostics-remediation-summary.json",
+      "name": "phase60f_summary_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/activation-delegate-diagnostics-remediation-gate.json",
+      "name": "phase60f_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/activation-delegate-error-diagnostics.json",
+      "name": "phase60e_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase60f summary schema",
+      "name": "phase60f_summary_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase60f manifest schema",
+      "name": "phase60f_manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase60e manifest schema",
+      "name": "phase60e_manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "activation_error_remediation_plan_ready",
+      "name": "manifest_activation_error_remediation_plan_ready_true",
+      "passed": true
+    },
+    {
+      "detail": "diagnostics_patch_only",
+      "name": "manifest_diagnostics_patch_only_true",
+      "passed": true
+    },
+    {
+      "detail": "activation_submitted_by_this_phase",
+      "name": "manifest_activation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "deactivation_submitted_by_this_phase",
+      "name": "manifest_deactivation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "manifest_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manual_dext_load_attempted",
+      "name": "manifest_manual_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "manifest_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "\\\\(nsError.domain)",
+      "name": "swift_no_literal_backslash_(nsError.domain)",
+      "passed": true
+    },
+    {
+      "detail": "\\\\(nsError.code)",
+      "name": "swift_no_literal_backslash_(nsError.code)",
+      "passed": true
+    },
+    {
+      "detail": "\\\\(nsError.localizedDescription)",
+      "name": "swift_no_literal_backslash_(nsError.localizedDescription)",
+      "passed": true
+    },
+    {
+      "detail": "\\(nsError.domain)",
+      "name": "swift_contains_interp_(nsError.domain)",
+      "passed": true
+    },
+    {
+      "detail": "\\(nsError.code)",
+      "name": "swift_contains_interp_(nsError.code)",
+      "passed": true
+    },
+    {
+      "detail": "\\(nsError.localizedDescription)",
+      "name": "swift_contains_interp_(nsError.localizedDescription)",
+      "passed": true
+    },
+    {
+      "detail": "H1MEKARTX_SYSEXT_ERROR_DOMAIN=",
+      "name": "swift_contains_H1MEKARTX_SYSEXT_ERROR_DOMAIN_equals",
+      "passed": true
+    },
+    {
+      "detail": "H1MEKARTX_SYSEXT_ERROR_CODE=",
+      "name": "swift_contains_H1MEKARTX_SYSEXT_ERROR_CODE_equals",
+      "passed": true
+    },
+    {
+      "detail": "H1MEKARTX_SYSEXT_ERROR_DESCRIPTION=",
+      "name": "swift_contains_H1MEKARTX_SYSEXT_ERROR_DESCRIPTION_equals",
+      "passed": true
+    },
+    {
+      "detail": "H1MEKARTX_SYSEXT_ERROR_TEXT=",
+      "name": "swift_contains_H1MEKARTX_SYSEXT_ERROR_TEXT_equals",
+      "passed": true
+    },
+    {
+      "detail": "{'bar_mapping_allowed_now': False, 'gpu_command_submission_allowed_now': False, 'next_gate': 'phase60g_activation_error_remediation_plan', 'phase61_allowed_now': False, 'provider_open_allowed_now': False, 'reason': 'delegate_did_fail'}",
+      "name": "phase60f_reason_delegate_did_fail",
+      "passed": true
+    },
+    {
+      "detail": "{'bar_mapping_allowed_now': False, 'gpu_command_submission_allowed_now': False, 'next_gate': 'phase60g_activation_error_remediation_plan', 'phase61_allowed_now': False, 'provider_open_allowed_now': False, 'reason': 'delegate_did_fail'}",
+      "name": "phase60f_next_gate_phase60g",
+      "passed": true
+    },
+    {
+      "detail": "delegate_did_fail",
+      "name": "phase60f_delegate_did_fail_true",
+      "passed": true
+    }
+  ],
+  "deactivation_submitted_by_this_phase": false,
+  "decision": "PASS_ACTIVATION_ERROR_REMEDIATION_PLAN_READY",
+  "diagnostics_patch_only": true,
+  "generated_at_utc": "2026-06-14T03:55:40.198273+00:00",
+  "gpu_command_submission_attempted": false,
+  "ioserviceopen_attempted": false,
+  "metal_proof_claimed": false,
+  "next_gate_after_merge": "rerun_phase60e_then_phase60f",
+  "provider_open_attempted": false,
+  "schema": "h1mekartx.activation_error_remediation_plan_check.v1",
+  "ui_compositor_proof_claimed": false
+}
