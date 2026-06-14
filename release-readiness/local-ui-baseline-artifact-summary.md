@@ -1,11 +1,12 @@
 # Local UI Baseline Artifact Summary
 
-- Generated At UTC: `2026-06-14T01:46:52.365754+00:00`
+- Generated At UTC: `2026-06-14T01:54:02.288879+00:00`
 - Classification: `CLASSIFICATION_LOCAL_UI_BASELINE_ARTIFACT_SUMMARIZER`
 - Local Baseline Summary Only: `True`
 - Host Report Bundle Local Only: `True`
 - Raw Local Logs Not Committed: `True`
 - Raw Command Stdout Not Committed: `True`
+- Raw Command Stderr Not Committed: `True`
 - Measurement Not Acceleration Proof: `True`
 - UI Compositor Proof Not Claimed: `True`
 - Metal Proof Not Claimed: `True`
@@ -15,7 +16,7 @@
 - WindowServer Visibility Recorded: `True`
 - Dock Visibility Recorded: `True`
 - WindowServer Visible: `False`
-- Dock Visible: `True`
+- Dock Visible: `False`
 - Displays JSON Parse OK: `True`
 - Hardware JSON Parse OK: `True`
 - UI Frame Pacing / Latency Measurement State: `NOT_ATTEMPTED`

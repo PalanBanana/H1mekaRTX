@@ -1,6 +1,6 @@
 # Local UI Baseline Artifact Summary Check
 
-- Generated At UTC: `2026-06-14T01:46:52.405089+00:00`
+- Generated At UTC: `2026-06-14T01:54:02.328916+00:00`
 - Decision: `PASS_LOCAL_UI_BASELINE_ARTIFACT_SUMMARY_READY`
 - Classification: `CLASSIFICATION_LOCAL_UI_BASELINE_ARTIFACT_SUMMARIZER`
 - Scope: `Phase 37 local UI baseline artifact summarizer`
@@ -28,12 +28,12 @@ It does not commit raw local logs or raw command stdout.
 
 | Check Name | Status | Detail |
 | --- | --- | --- |
-| `contract_file_exists` | PASS | /Users/h1meka/Dev/H1mekaRTX/docs/hackintosh/local-ui-baseline-artifact-summarizer.md |
-| `summarizer_manifest_json_exists` | PASS | /Users/h1meka/Dev/H1mekaRTX/tools/driverkit-activation/local-ui-baseline-artifact-summarizer.json |
-| `summary_json_exists` | PASS | /Users/h1meka/Dev/H1mekaRTX/release-readiness/local-ui-baseline-artifact-summary.json |
-| `summary_md_exists` | PASS | /Users/h1meka/Dev/H1mekaRTX/release-readiness/local-ui-baseline-artifact-summary.md |
-| `local_baseline_input_exists` | PASS | /Users/h1meka/Dev/H1mekaRTX/host-report-bundle/ui-baseline/local-readonly-ui-baseline.json |
-| `collector_manifest_exists` | PASS | /Users/h1meka/Dev/H1mekaRTX/tools/driverkit-activation/local-readonly-ui-baseline-collector.json |
+| `contract_file_exists` | PASS | <REPO_ROOT>/docs/hackintosh/local-ui-baseline-artifact-summarizer.md |
+| `summarizer_manifest_json_exists` | PASS | <REPO_ROOT>/tools/driverkit-activation/local-ui-baseline-artifact-summarizer.json |
+| `summary_json_exists` | PASS | <REPO_ROOT>/release-readiness/local-ui-baseline-artifact-summary.json |
+| `summary_md_exists` | PASS | <REPO_ROOT>/release-readiness/local-ui-baseline-artifact-summary.md |
+| `local_baseline_input_exists` | PASS | <LOCAL_READONLY_UI_BASELINE_JSON> |
+| `collector_manifest_exists` | PASS | <REPO_ROOT>/tools/driverkit-activation/local-readonly-ui-baseline-collector.json |
 | `requires_contract_token_classification_local_ui_baseline_artifact_summarizer` | PASS | CLASSIFICATION_LOCAL_UI_BASELINE_ARTIFACT_SUMMARIZER |
 | `requires_contract_token_classification_local_readonly_ui_baseline_collector` | PASS | CLASSIFICATION_LOCAL_READONLY_UI_BASELINE_COLLECTOR |
 | `requires_contract_token_classification_ui_frame_pacing_latency_metric_schema` | PASS | CLASSIFICATION_UI_FRAME_PACING_LATENCY_METRIC_SCHEMA |

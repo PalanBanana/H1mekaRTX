@@ -32,13 +32,13 @@ The local host-report-bundle output is intentionally not committed.
 
 | Check Name | Status | Detail |
 | --- | --- | --- |
-| `contract_file_exists` | PASS | /Users/h1meka/Dev/H1mekaRTX/docs/hackintosh/local-readonly-ui-baseline-collector.md |
-| `collector_manifest_json_exists` | PASS | /Users/h1meka/Dev/H1mekaRTX/tools/driverkit-activation/local-readonly-ui-baseline-collector.json |
-| `local_baseline_json_exists` | PASS | /Users/h1meka/Dev/H1mekaRTX/host-report-bundle/ui-baseline/local-readonly-ui-baseline.json |
-| `local_baseline_md_exists` | PASS | /Users/h1meka/Dev/H1mekaRTX/host-report-bundle/ui-baseline/local-readonly-ui-baseline.md |
-| `metrics_schema_json_exists` | PASS | /Users/h1meka/Dev/H1mekaRTX/tools/driverkit-activation/ui-frame-pacing-latency-metrics.json |
-| `attribution_schema_json_exists` | PASS | /Users/h1meka/Dev/H1mekaRTX/tools/driverkit-activation/windowserver-ca-quartzcore-attribution.json |
-| `scenario_matrix_json_exists` | PASS | /Users/h1meka/Dev/H1mekaRTX/tools/driverkit-activation/ui-compositor-scenario-matrix.json |
+| `contract_file_exists` | PASS | <REPO_ROOT>/docs/hackintosh/local-readonly-ui-baseline-collector.md |
+| `collector_manifest_json_exists` | PASS | <REPO_ROOT>/tools/driverkit-activation/local-readonly-ui-baseline-collector.json |
+| `local_baseline_json_exists` | PASS | <REPO_ROOT>/<LOCAL_READONLY_UI_BASELINE_JSON> |
+| `local_baseline_md_exists` | PASS | <REPO_ROOT>/<LOCAL_READONLY_UI_BASELINE_MD> |
+| `metrics_schema_json_exists` | PASS | <REPO_ROOT>/tools/driverkit-activation/ui-frame-pacing-latency-metrics.json |
+| `attribution_schema_json_exists` | PASS | <REPO_ROOT>/tools/driverkit-activation/windowserver-ca-quartzcore-attribution.json |
+| `scenario_matrix_json_exists` | PASS | <REPO_ROOT>/tools/driverkit-activation/ui-compositor-scenario-matrix.json |
 | `requires_contract_token_classification_local_readonly_ui_baseline_collector` | PASS | CLASSIFICATION_LOCAL_READONLY_UI_BASELINE_COLLECTOR |
 | `requires_contract_token_classification_ui_frame_pacing_latency_metric_schema` | PASS | CLASSIFICATION_UI_FRAME_PACING_LATENCY_METRIC_SCHEMA |
 | `requires_contract_token_classification_windowserver_ca_quartzcore_attribution_schema` | PASS | CLASSIFICATION_WINDOWSERVER_CA_QUARTZCORE_ATTRIBUTION_SCHEMA |

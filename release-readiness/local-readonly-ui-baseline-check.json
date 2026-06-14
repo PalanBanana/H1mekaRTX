@@ -2,37 +2,37 @@
   "blur_acceleration_not_claimed": true,
   "checks": [
     {
-      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/hackintosh/local-readonly-ui-baseline-collector.md",
+      "detail": "<REPO_ROOT>/docs/hackintosh/local-readonly-ui-baseline-collector.md",
       "name": "contract_file_exists",
       "passed": true
     },
     {
-      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-activation/local-readonly-ui-baseline-collector.json",
+      "detail": "<REPO_ROOT>/tools/driverkit-activation/local-readonly-ui-baseline-collector.json",
       "name": "collector_manifest_json_exists",
       "passed": true
     },
     {
-      "detail": "/Users/h1meka/Dev/H1mekaRTX/host-report-bundle/ui-baseline/local-readonly-ui-baseline.json",
+      "detail": "<REPO_ROOT>/<LOCAL_READONLY_UI_BASELINE_JSON>",
       "name": "local_baseline_json_exists",
       "passed": true
     },
     {
-      "detail": "/Users/h1meka/Dev/H1mekaRTX/host-report-bundle/ui-baseline/local-readonly-ui-baseline.md",
+      "detail": "<REPO_ROOT>/<LOCAL_READONLY_UI_BASELINE_MD>",
       "name": "local_baseline_md_exists",
       "passed": true
     },
     {
-      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-activation/ui-frame-pacing-latency-metrics.json",
+      "detail": "<REPO_ROOT>/tools/driverkit-activation/ui-frame-pacing-latency-metrics.json",
       "name": "metrics_schema_json_exists",
       "passed": true
     },
     {
-      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-activation/windowserver-ca-quartzcore-attribution.json",
+      "detail": "<REPO_ROOT>/tools/driverkit-activation/windowserver-ca-quartzcore-attribution.json",
       "name": "attribution_schema_json_exists",
       "passed": true
     },
     {
-      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-activation/ui-compositor-scenario-matrix.json",
+      "detail": "<REPO_ROOT>/tools/driverkit-activation/ui-compositor-scenario-matrix.json",
       "name": "scenario_matrix_json_exists",
       "passed": true
     },
