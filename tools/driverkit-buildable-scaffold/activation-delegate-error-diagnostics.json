@@ -1,0 +1,33 @@
+{
+  "activation_delegate_error_diagnostics_ready": true,
+  "activation_submitted_by_default": false,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "ci_activation_attempted": false,
+  "classification": "CLASSIFICATION_ACTIVATION_DELEGATE_ERROR_DIAGNOSTICS",
+  "configuration_writes_attempted": false,
+  "deactivation_submitted_by_default": false,
+  "default_refuses_activation": true,
+  "extension_identifier": "dev.h1meka.H1mekaRTXDriver",
+  "gpu_command_submission_attempted": false,
+  "hard_optin_flags_required": true,
+  "ioserviceopen_attempted": false,
+  "metal_proof_claimed": false,
+  "next_gate_if_delegate_error": "phase60f activation error remediation plan",
+  "next_gate_if_delegate_success_and_visible": "rerun phase58 phase59 phase60a phase60b then phase61",
+  "optional_flags": [
+    "--wait-seconds",
+    "--log-last"
+  ],
+  "provider_open_attempted": false,
+  "required_flags": [
+    "--i-understand-activation-delegate-diagnostics",
+    "--submit-activation",
+    "--signing-identity",
+    "--output-under-host-report-bundle"
+  ],
+  "schema": "h1mekartx.activation_delegate_error_diagnostics.v1",
+  "secondary_classification": "CLASSIFICATION_ACTIVATION_WAIT_SYSTEM_EXTENSION_VISIBILITY_HARDENING",
+  "tertiary_classification": "CLASSIFICATION_OFFICIAL_SYSTEMEXTENSIONS_PATH",
+  "ui_compositor_proof_claimed": false
+}
