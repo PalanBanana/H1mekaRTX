@@ -1,6 +1,6 @@
 # Sanitized Local Metal HUD Capture Parser Summary
 
-- Generated At UTC: `2026-06-14T08:20:09.407809+00:00`
+- Generated At UTC: `2026-06-14T08:21:03.093828+00:00`
 - Summary Only: `True`
 - Host Report Bundle Local Only: `True`
 - RTX 5070 Target Retained: `True`
