@@ -1,0 +1,31 @@
+{
+  "activation_submitted_by_default": false,
+  "actual_local_activation_hard_optin_ready": true,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "ci_activation_attempted": false,
+  "classification": "CLASSIFICATION_ACTUAL_LOCAL_ACTIVATION_HARD_OPTIN",
+  "configuration_writes_attempted": false,
+  "deactivation_submitted_by_default": false,
+  "default_refuses_activation": true,
+  "gpu_command_submission_attempted": false,
+  "hard_optin_flags_required": true,
+  "metal_proof_claimed": false,
+  "provider_open_attempted": false,
+  "required_flags": [
+    "--i-understand-local-activation",
+    "--submit-activation",
+    "--signing-identity",
+    "--output-under-host-report-bundle"
+  ],
+  "runtime_boundaries": [
+    "provider open remains blocked",
+    "BAR mapping remains blocked",
+    "GPU command submission remains blocked",
+    "Dock/transparency/blur proof remains blocked"
+  ],
+  "schema": "h1mekartx.actual_local_activation_hard_optin.v1",
+  "secondary_classification": "CLASSIFICATION_MANUAL_ACTIVATION_PREFLIGHT_AFTER_SIGNED_VERIFICATION",
+  "tertiary_classification": "CLASSIFICATION_OFFICIAL_SYSTEMEXTENSIONS_PATH",
+  "ui_compositor_proof_claimed": false
+}
