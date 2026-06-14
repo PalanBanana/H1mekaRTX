@@ -1,0 +1,41 @@
+{
+  "activation_capable_code_added": true,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "ci_activation_attempted": false,
+  "ci_deactivation_attempted": false,
+  "classification": "CLASSIFICATION_USER_APPROVED_SYSTEM_EXTENSION_ACTIVATION_PATH",
+  "configuration_writes_attempted": false,
+  "deactivation_capable_code_added": true,
+  "default_mode_status_only": true,
+  "dext_load_attempted": false,
+  "dry_run_mode_non_submitting": true,
+  "extension_identifier": "dev.h1meka.H1mekaRTXDriver",
+  "gpu_command_submission_attempted": false,
+  "manual_approval_allowed_for_future_local_test": true,
+  "manual_preconditions": [
+    "signed host app exists",
+    "signed dext exists",
+    "bundle IDs match",
+    "entitlements are valid",
+    "disposable test environment is used",
+    "rollback/deactivation command is available",
+    "user is physically present to approve",
+    "no provider open path is enabled",
+    "no BAR mapping path is enabled",
+    "no GPU command submission path is enabled"
+  ],
+  "manual_submit_flags": [
+    "--submit-activation",
+    "--submit-deactivation"
+  ],
+  "metal_proof_claimed": false,
+  "provider_open_attempted": false,
+  "schema": "h1mekartx.user_approved_system_extension_activation_path.v1",
+  "secondary_classification": "CLASSIFICATION_REAL_DEVELOPMENT_BUILD_SCOPE",
+  "system_extension_activation_attempted": false,
+  "system_extension_deactivation_attempted": false,
+  "tertiary_classification": "CLASSIFICATION_OFFICIAL_SYSTEMEXTENSIONS_PATH",
+  "ui_compositor_proof_claimed": false,
+  "user_approved_system_extension_activation_path_ready": true
+}

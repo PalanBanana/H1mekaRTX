@@ -1,0 +1,180 @@
+{
+  "activation_capable_code_added": true,
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/user-approved-system-extension-activation-path.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/driverkit/user-approved-system-extension-activation-path.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/H1mekaRTXHost/H1mekaRTXHost.swift",
+      "name": "host_swift_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "activation request",
+      "name": "activation_request_code_present",
+      "passed": true
+    },
+    {
+      "detail": "deactivation request",
+      "name": "deactivation_request_code_present",
+      "passed": true
+    },
+    {
+      "detail": "submitRequest",
+      "name": "submit_request_code_present",
+      "passed": true
+    },
+    {
+      "detail": "--submit-activation",
+      "name": "manual_submit_activation_flag_present",
+      "passed": true
+    },
+    {
+      "detail": "--submit-deactivation",
+      "name": "manual_submit_deactivation_flag_present",
+      "passed": true
+    },
+    {
+      "detail": "status only",
+      "name": "default_status_only_present",
+      "passed": true
+    },
+    {
+      "detail": "dry-run",
+      "name": "dry_run_non_submitting_present",
+      "passed": true
+    },
+    {
+      "detail": "provider open false",
+      "name": "provider_open_false_marker",
+      "passed": true
+    },
+    {
+      "detail": "bar mapping false",
+      "name": "bar_mapping_false_marker",
+      "passed": true
+    },
+    {
+      "detail": "gpu command false",
+      "name": "gpu_command_false_marker",
+      "passed": true
+    },
+    {
+      "detail": "ci_activation_attempted",
+      "name": "manifest_ci_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ci_deactivation_attempted",
+      "name": "manifest_ci_deactivation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_activation_attempted",
+      "name": "manifest_system_extension_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_deactivation_attempted",
+      "name": "manifest_system_extension_deactivation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "dext_load_attempted",
+      "name": "manifest_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "activation_capable_code_added",
+      "name": "manifest_activation_capable_code_added_true",
+      "passed": true
+    },
+    {
+      "detail": "deactivation_capable_code_added",
+      "name": "manifest_deactivation_capable_code_added_true",
+      "passed": true
+    },
+    {
+      "detail": "default_mode_status_only",
+      "name": "manifest_default_mode_status_only_true",
+      "passed": true
+    },
+    {
+      "detail": "dry_run_mode_non_submitting",
+      "name": "manifest_dry_run_mode_non_submitting_true",
+      "passed": true
+    },
+    {
+      "detail": "manual_approval_allowed_for_future_local_test",
+      "name": "manifest_manual_approval_allowed_for_future_local_test_true",
+      "passed": true
+    }
+  ],
+  "ci_activation_attempted": false,
+  "ci_deactivation_attempted": false,
+  "classification": "CLASSIFICATION_USER_APPROVED_SYSTEM_EXTENSION_ACTIVATION_PATH",
+  "deactivation_capable_code_added": true,
+  "decision": "PASS_USER_APPROVED_SYSTEM_EXTENSION_ACTIVATION_PATH_READY",
+  "default_mode_status_only": true,
+  "dext_load_attempted": false,
+  "dry_run_mode_non_submitting": true,
+  "failed_count": 0,
+  "generated_at_utc": "2026-06-14T02:23:13.298948+00:00",
+  "gpu_command_submission_attempted": false,
+  "manual_approval_allowed_for_future_local_test": true,
+  "metal_proof_claimed": false,
+  "passed_count": 31,
+  "provider_open_attempted": false,
+  "schema": "h1mekartx.user_approved_system_extension_activation_path_check.v1",
+  "system_extension_activation_attempted": false,
+  "system_extension_deactivation_attempted": false,
+  "ui_compositor_proof_claimed": false
+}
