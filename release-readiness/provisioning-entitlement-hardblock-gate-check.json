@@ -1,0 +1,208 @@
+{
+  "activation_submitted_by_this_phase": false,
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/provisioning-entitlement-hardblock-gate.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/driverkit/provisioning-entitlement-hardblock-gate.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/real-driverkit-dext-build-gate.json",
+      "name": "phase60l_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/validationfailed-root-cause-gate.json",
+      "name": "phase60k_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase60l schema",
+      "name": "phase60l_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase60k schema",
+      "name": "phase60k_schema",
+      "passed": true
+    },
+    {
+      "detail": "provisioning_entitlement_hardblock_gate_ready",
+      "name": "manifest_provisioning_entitlement_hardblock_gate_ready_true",
+      "passed": true
+    },
+    {
+      "detail": "paid_developer_team_required",
+      "name": "manifest_paid_developer_team_required_true",
+      "passed": true
+    },
+    {
+      "detail": "personal_team_blocked",
+      "name": "manifest_personal_team_blocked_true",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_entitlement_approval_required",
+      "name": "manifest_driverkit_entitlement_approval_required_true",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_capability_required",
+      "name": "manifest_system_extension_capability_required_true",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_pci_transport_entitlement_required",
+      "name": "manifest_driverkit_pci_transport_entitlement_required_true",
+      "passed": true
+    },
+    {
+      "detail": "host_profile_required",
+      "name": "manifest_host_profile_required_true",
+      "passed": true
+    },
+    {
+      "detail": "dext_profile_required",
+      "name": "manifest_dext_profile_required_true",
+      "passed": true
+    },
+    {
+      "detail": "xcodebuild_attempted_by_this_phase",
+      "name": "manifest_xcodebuild_attempted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "activation_submitted_by_this_phase",
+      "name": "manifest_activation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "deactivation_submitted_by_this_phase",
+      "name": "manifest_deactivation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "manifest_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manual_dext_load_attempted",
+      "name": "manifest_manual_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "manifest_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "Please enable Driverkit",
+      "name": "doc_contains_Please_enable_Driverkit",
+      "passed": true
+    },
+    {
+      "detail": "Personal development teams do not support the System Extension capability",
+      "name": "doc_contains_Personal_development_teams_do_not_support_the_System_Extension_capability",
+      "passed": true
+    },
+    {
+      "detail": "paid Apple Developer Program",
+      "name": "doc_contains_paid_Apple_Developer_Program",
+      "passed": true
+    },
+    {
+      "detail": "DriverKit entitlement approval",
+      "name": "doc_contains_DriverKit_entitlement_approval",
+      "passed": true
+    },
+    {
+      "detail": "System Extension capability",
+      "name": "doc_contains_System_Extension_capability",
+      "passed": true
+    },
+    {
+      "detail": "PCI transport entitlement",
+      "name": "doc_contains_PCI_transport_entitlement",
+      "passed": true
+    },
+    {
+      "detail": "provider open remains blocked",
+      "name": "doc_contains_provider_open_remains_blocked",
+      "passed": true
+    },
+    {
+      "detail": "GPU command submission",
+      "name": "doc_contains_GPU_command_submission",
+      "passed": true
+    },
+    {
+      "detail": "Dock/transparency/blur",
+      "name": "doc_contains_Dock_transparency_blur",
+      "passed": true
+    }
+  ],
+  "decision": "PASS_PROVISIONING_ENTITLEMENT_HARDBLOCK_GATE_READY",
+  "dext_profile_required": true,
+  "driverkit_entitlement_approval_required": true,
+  "driverkit_pci_transport_entitlement_required": true,
+  "generated_at_utc": "2026-06-14T04:33:57.679915+00:00",
+  "gpu_command_submission_attempted": false,
+  "host_profile_required": true,
+  "ioserviceopen_attempted": false,
+  "metal_proof_claimed": false,
+  "paid_developer_team_required": true,
+  "personal_team_blocked": true,
+  "phase61_allowed_now": false,
+  "provider_open_attempted": false,
+  "schema": "h1mekartx.provisioning_entitlement_hardblock_gate_check.v1",
+  "system_extension_capability_required": true,
+  "ui_compositor_proof_claimed": false,
+  "xcodebuild_attempted_by_this_phase": false
+}
