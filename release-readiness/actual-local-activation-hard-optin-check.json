@@ -1,0 +1,122 @@
+{
+  "activation_submitted_by_default": false,
+  "actual_local_activation_hard_optin_ready": true,
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/actual-local-activation-hard-optin.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/driverkit/actual-local-activation-hard-optin.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/scripts/actual-local-activation-hard-optin.py",
+      "name": "script_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/manual-activation-preflight-after-signed-verification.json",
+      "name": "phase56_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/user-approved-system-extension-activation-path.json",
+      "name": "phase46_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "default_refuses_activation_true",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "hard_optin_flags_required_true",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "ci_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "activation_submitted_by_default_false",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "script_requires_understand_flag",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "script_requires_submit_activation_flag",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "script_requires_signing_identity",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "script_requires_output_under_host_report_bundle",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "script_checks_activation_preflight_ready",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "script_builds_swift_host",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "script_uses_activation_capable_host",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "script_captures_systemextensionsctl",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "script_keeps_provider_open_blocked",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "script_keeps_bar_mapping_blocked",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "script_keeps_gpu_command_blocked",
+      "passed": true
+    }
+  ],
+  "ci_activation_attempted": false,
+  "decision": "PASS_ACTUAL_LOCAL_ACTIVATION_HARD_OPTIN_READY",
+  "default_refuses_activation": true,
+  "generated_at_utc": "2026-06-14T03:04:48.187822+00:00",
+  "gpu_command_submission_attempted": false,
+  "hard_optin_flags_required": true,
+  "metal_proof_claimed": false,
+  "provider_open_attempted": false,
+  "schema": "h1mekartx.actual_local_activation_hard_optin_check.v1",
+  "ui_compositor_proof_claimed": false
+}
