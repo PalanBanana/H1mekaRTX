@@ -1,0 +1,390 @@
+{
+  "blockers": [
+    "activation prerequisites ledger is not READY for execute mode",
+    "System Extension activation proof is not PROVEN",
+    "System Extension deactivation proof is not PROVEN",
+    "dext load proof is not PROVEN",
+    "provider match proof is not PROVEN",
+    "provider open remains forbidden",
+    "BAR mapping remains forbidden",
+    "PCI configuration writes remain forbidden",
+    "firmware load remains forbidden",
+    "GPU reset remains forbidden",
+    "framebuffer initialization remains forbidden",
+    "display-engine initialization remains forbidden",
+    "real GPU command execution proof is not PROVEN",
+    "RTX 5070 workload attribution proof is not PROVEN",
+    "WindowServer attribution proof is not PROVEN",
+    "Core Animation / QuartzCore attribution proof is not PROVEN",
+    "Metal compositor attribution proof is not PROVEN",
+    "UI frame pacing / latency measurement is not collected",
+    "before/after UI metric delta is not PROVEN",
+    "rollback/deactivation evidence for a real activation is not PROVEN",
+    "no-spoofing/no-patching proof is not PROVEN"
+  ],
+  "blur_acceleration_not_claimed": true,
+  "blur_acceleration_promotion_allowed": false,
+  "checks": [
+    {
+      "detail": "tools/driverkit-activation/ui-proof-promotion-blocker-dashboard.json",
+      "name": "input_dashboard_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-activation/ui-proof-promotion-blocker-dashboard.json",
+      "name": "input_dashboard_manifest_json_parse_ok",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-activation/ui-evidence-chain-rollup.json",
+      "name": "input_ui_evidence_chain_rollup_exists",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-activation/ui-evidence-chain-rollup.json",
+      "name": "input_ui_evidence_chain_rollup_json_parse_ok",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/ui-evidence-chain-rollup-check.json",
+      "name": "input_ui_evidence_chain_rollup_check_exists",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/ui-evidence-chain-rollup-check.json",
+      "name": "input_ui_evidence_chain_rollup_check_json_parse_ok",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-activation/baseline-privacy-redaction-audit.json",
+      "name": "input_baseline_privacy_audit_exists",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-activation/baseline-privacy-redaction-audit.json",
+      "name": "input_baseline_privacy_audit_json_parse_ok",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/baseline-privacy-redaction-audit-check.json",
+      "name": "input_baseline_privacy_audit_check_exists",
+      "passed": true
+    },
+    {
+      "detail": "release-readiness/baseline-privacy-redaction-audit-check.json",
+      "name": "input_baseline_privacy_audit_check_json_parse_ok",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-activation/activation-prerequisites-ledger.json",
+      "name": "input_activation_ledger_exists",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-activation/activation-prerequisites-ledger.json",
+      "name": "input_activation_ledger_json_parse_ok",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-activation/activation-execution-gate.json",
+      "name": "input_activation_execution_gate_exists",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-activation/activation-execution-gate.json",
+      "name": "input_activation_execution_gate_json_parse_ok",
+      "passed": true
+    },
+    {
+      "detail": "dashboard schema",
+      "name": "manifest_schema_matches",
+      "passed": true
+    },
+    {
+      "detail": "promotion_blocked=true",
+      "name": "promotion_blocked_true",
+      "passed": true
+    },
+    {
+      "detail": "ui promotion false",
+      "name": "ui_promotion_allowed_false",
+      "passed": true
+    },
+    {
+      "detail": "dock false",
+      "name": "dock_promotion_allowed_false",
+      "passed": true
+    },
+    {
+      "detail": "transparency false",
+      "name": "transparency_promotion_allowed_false",
+      "passed": true
+    },
+    {
+      "detail": "blur false",
+      "name": "blur_promotion_allowed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal false",
+      "name": "metal_promotion_allowed_false",
+      "passed": true
+    },
+    {
+      "detail": "UI proof not claimed",
+      "name": "ui_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "Metal not claimed",
+      "name": "metal_not_claimed_true",
+      "passed": true
+    },
+    {
+      "detail": "GPU command false",
+      "name": "real_gpu_command_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "RTX attribution false",
+      "name": "rtx5070_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "rollup PASS",
+      "name": "rollup_decision_pass",
+      "passed": true
+    },
+    {
+      "detail": "privacy PASS",
+      "name": "privacy_decision_pass",
+      "passed": true
+    },
+    {
+      "detail": "BLOCK_EXECUTE",
+      "name": "activation_execution_gate_blocks_execute",
+      "passed": true
+    },
+    {
+      "detail": "21",
+      "name": "blocker_count_at_least_required",
+      "passed": true
+    },
+    {
+      "detail": "activation prerequisites ledger",
+      "name": "blocker_contains_activation_prerequisites_ledger",
+      "passed": true
+    },
+    {
+      "detail": "System Extension activation proof",
+      "name": "blocker_contains_system_extension_activation_proof",
+      "passed": true
+    },
+    {
+      "detail": "System Extension deactivation proof",
+      "name": "blocker_contains_system_extension_deactivation_proof",
+      "passed": true
+    },
+    {
+      "detail": "dext load proof",
+      "name": "blocker_contains_dext_load_proof",
+      "passed": true
+    },
+    {
+      "detail": "provider match proof",
+      "name": "blocker_contains_provider_match_proof",
+      "passed": true
+    },
+    {
+      "detail": "provider open",
+      "name": "blocker_contains_provider_open",
+      "passed": true
+    },
+    {
+      "detail": "BAR mapping",
+      "name": "blocker_contains_bar_mapping",
+      "passed": true
+    },
+    {
+      "detail": "PCI configuration writes",
+      "name": "blocker_contains_pci_configuration_writes",
+      "passed": true
+    },
+    {
+      "detail": "firmware load",
+      "name": "blocker_contains_firmware_load",
+      "passed": true
+    },
+    {
+      "detail": "GPU reset",
+      "name": "blocker_contains_gpu_reset",
+      "passed": true
+    },
+    {
+      "detail": "framebuffer initialization",
+      "name": "blocker_contains_framebuffer_initialization",
+      "passed": true
+    },
+    {
+      "detail": "display-engine initialization",
+      "name": "blocker_contains_display-engine_initialization",
+      "passed": true
+    },
+    {
+      "detail": "real GPU command execution",
+      "name": "blocker_contains_real_gpu_command_execution",
+      "passed": true
+    },
+    {
+      "detail": "RTX 5070 workload attribution",
+      "name": "blocker_contains_rtx_5070_workload_attribution",
+      "passed": true
+    },
+    {
+      "detail": "WindowServer attribution",
+      "name": "blocker_contains_windowserver_attribution",
+      "passed": true
+    },
+    {
+      "detail": "Core Animation / QuartzCore attribution",
+      "name": "blocker_contains_core_animation___quartzcore_attribution",
+      "passed": true
+    },
+    {
+      "detail": "Metal compositor attribution",
+      "name": "blocker_contains_metal_compositor_attribution",
+      "passed": true
+    },
+    {
+      "detail": "UI frame pacing / latency measurement",
+      "name": "blocker_contains_ui_frame_pacing___latency_measurement",
+      "passed": true
+    },
+    {
+      "detail": "before/after UI metric delta",
+      "name": "blocker_contains_before_after_ui_metric_delta",
+      "passed": true
+    },
+    {
+      "detail": "rollback/deactivation evidence",
+      "name": "blocker_contains_rollback_deactivation_evidence",
+      "passed": true
+    },
+    {
+      "detail": "no-spoofing/no-patching proof",
+      "name": "blocker_contains_no-spoofing_no-patching_proof",
+      "passed": true
+    },
+    {
+      "detail": "ui_proof_promotion_blocker_dashboard_state=BLOCKERS_ENUMERATED",
+      "name": "state_ui_proof_promotion_blocker_dashboard_state_blockers_enumerated",
+      "passed": true
+    },
+    {
+      "detail": "ui_evidence_chain_rollup_state=ROLLUP_ONLY",
+      "name": "state_ui_evidence_chain_rollup_state_rollup_only",
+      "passed": true
+    },
+    {
+      "detail": "baseline_privacy_redaction_audit_state=ENFORCED",
+      "name": "state_baseline_privacy_redaction_audit_state_enforced",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_precondition_state=PRECONDITIONS_INCOMPLETE",
+      "name": "state_ui_compositor_proof_precondition_state_preconditions_incomplete",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_scenario_matrix_state=MATRIX_ONLY",
+      "name": "state_ui_compositor_scenario_matrix_state_matrix_only",
+      "passed": true
+    },
+    {
+      "detail": "windowserver_attribution_schema_state=SCHEMA_ONLY",
+      "name": "state_windowserver_attribution_schema_state_schema_only",
+      "passed": true
+    },
+    {
+      "detail": "ui_frame_pacing_latency_metric_schema_state=SCHEMA_ONLY",
+      "name": "state_ui_frame_pacing_latency_metric_schema_state_schema_only",
+      "passed": true
+    },
+    {
+      "detail": "local_ui_baseline_artifact_summary_state=SUMMARY_ONLY",
+      "name": "state_local_ui_baseline_artifact_summary_state_summary_only",
+      "passed": true
+    },
+    {
+      "detail": "ui_frame_pacing_latency_measurement_state=NOT_ATTEMPTED",
+      "name": "state_ui_frame_pacing_latency_measurement_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "windowserver_attribution_proof_state=NOT_ATTEMPTED",
+      "name": "state_windowserver_attribution_proof_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "core_animation_attribution_proof_state=NOT_ATTEMPTED",
+      "name": "state_core_animation_attribution_proof_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "quartzcore_attribution_proof_state=NOT_ATTEMPTED",
+      "name": "state_quartzcore_attribution_proof_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "metal_compositor_attribution_proof_state=NOT_ATTEMPTED",
+      "name": "state_metal_compositor_attribution_proof_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_state=NOT_ATTEMPTED",
+      "name": "state_ui_compositor_proof_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_state=NOT_ATTEMPTED",
+      "name": "state_metal_proof_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "real_gpu_command_execution_proof_state=NOT_ATTEMPTED",
+      "name": "state_real_gpu_command_execution_proof_state_not_attempted",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_workload_attribution_proof_state=NOT_ATTEMPTED",
+      "name": "state_rtx5070_workload_attribution_proof_state_not_attempted",
+      "passed": true
+    }
+  ],
+  "classification": "CLASSIFICATION_UI_PROOF_PROMOTION_BLOCKER_DASHBOARD",
+  "decision": "PASS_UI_PROOF_PROMOTION_BLOCKER_DASHBOARD_READY",
+  "dock_acceleration_not_claimed": true,
+  "dock_acceleration_promotion_allowed": false,
+  "failed_count": 0,
+  "generated_at_utc": "2026-06-14T02:01:29.881046+00:00",
+  "measurement_not_acceleration_proof": true,
+  "metal_proof_claimed": false,
+  "metal_proof_not_claimed": true,
+  "metal_proof_promotion_allowed": false,
+  "passed_count": 67,
+  "promotion_blocked": true,
+  "real_gpu_acceleration_claimed": false,
+  "real_gpu_command_execution_attempted": false,
+  "rtx5070_workload_attribution_claimed": false,
+  "schema": "h1mekartx.ui_proof_promotion_blocker_dashboard_check.v1",
+  "scope": "Phase 40 UI proof promotion blocker dashboard",
+  "secondary_classification": "CLASSIFICATION_UI_EVIDENCE_CHAIN_ROLLUP",
+  "tertiary_classification": "CLASSIFICATION_STATIC_CONTRACT",
+  "transparency_acceleration_not_claimed": true,
+  "transparency_acceleration_promotion_allowed": false,
+  "ui_compositor_proof_claimed": false,
+  "ui_compositor_proof_not_claimed": true,
+  "ui_proof_promotion_allowed": false,
+  "ui_proof_promotion_blocker_dashboard_only": true,
+  "ui_proof_promotion_decision": "BLOCK_PROMOTION"
+}
