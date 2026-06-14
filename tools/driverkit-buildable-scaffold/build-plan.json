@@ -1,0 +1,15 @@
+{
+  "bar_mapping": "forbidden",
+  "bundle_ids": {
+    "dext": "dev.h1meka.H1mekaRTXDriver",
+    "host": "dev.h1meka.H1mekaRTXHost"
+  },
+  "dext_target": "H1mekaRTXDriver",
+  "gpu_command_submission": "forbidden",
+  "host_target": "H1mekaRTXHost",
+  "mmio_mutation": "forbidden",
+  "provider_open": "forbidden",
+  "runtime_activation": "forbidden",
+  "schema": "h1mekartx.driverkit_build_plan.v1",
+  "xcode_project_name": "H1mekaRTXDriverKit"
+}

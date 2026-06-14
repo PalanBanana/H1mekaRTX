@@ -1,0 +1,168 @@
+{
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "tools/driverkit-buildable-scaffold/buildable-driverkit-host-dext-scaffold.json",
+      "name": "exists_tools_driverkit-buildable-scaffold_buildable-driverkit-host-dext-scaffold.json",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-buildable-scaffold/build-plan.json",
+      "name": "exists_tools_driverkit-buildable-scaffold_build-plan.json",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-buildable-scaffold/H1mekaRTXHost/Info.plist",
+      "name": "exists_tools_driverkit-buildable-scaffold_H1mekaRTXHost_Info.plist",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-buildable-scaffold/H1mekaRTXHost/H1mekaRTXHost.swift",
+      "name": "exists_tools_driverkit-buildable-scaffold_H1mekaRTXHost_H1mekaRTXHost.swift",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-buildable-scaffold/H1mekaRTXHost/H1mekaRTXHost.entitlements",
+      "name": "exists_tools_driverkit-buildable-scaffold_H1mekaRTXHost_H1mekaRTXHost.entitlements",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-buildable-scaffold/H1mekaRTXDriver.dext/Info.plist",
+      "name": "exists_tools_driverkit-buildable-scaffold_H1mekaRTXDriver.dext_Info.plist",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-buildable-scaffold/H1mekaRTXDriver.dext/H1mekaRTXDriver.entitlements",
+      "name": "exists_tools_driverkit-buildable-scaffold_H1mekaRTXDriver.dext_H1mekaRTXDriver.entitlements",
+      "passed": true
+    },
+    {
+      "detail": "tools/driverkit-buildable-scaffold/H1mekaRTXDriver.dext/Sources/H1mekaRTXDriver.cpp",
+      "name": "exists_tools_driverkit-buildable-scaffold_H1mekaRTXDriver.dext_Sources_H1mekaRTXDriver.cpp",
+      "passed": true
+    },
+    {
+      "detail": "docs/driverkit/buildable-driverkit-host-dext-scaffold.md",
+      "name": "exists_docs_driverkit_buildable-driverkit-host-dext-scaffold.md",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "build plan schema",
+      "name": "build_plan_schema",
+      "passed": true
+    },
+    {
+      "detail": "host bundle id",
+      "name": "host_bundle_id",
+      "passed": true
+    },
+    {
+      "detail": "dext bundle id",
+      "name": "dext_bundle_id",
+      "passed": true
+    },
+    {
+      "detail": "0x2f0410de",
+      "name": "iopcimatch_5070",
+      "passed": true
+    },
+    {
+      "detail": "IOPCIDevice",
+      "name": "provider_class_iopci",
+      "passed": true
+    },
+    {
+      "detail": "host entitlement",
+      "name": "host_system_extension_entitlement",
+      "passed": true
+    },
+    {
+      "detail": "driverkit entitlement",
+      "name": "dext_driverkit_entitlement",
+      "passed": true
+    },
+    {
+      "detail": "pci entitlement",
+      "name": "dext_pci_entitlement_present",
+      "passed": true
+    },
+    {
+      "detail": "dry run only",
+      "name": "host_dry_run_no_submit",
+      "passed": true
+    },
+    {
+      "detail": "runtime forbidden comment",
+      "name": "dext_no_runtime_access_comment",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_activation_attempted",
+      "name": "manifest_system_extension_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_deactivation_attempted",
+      "name": "manifest_system_extension_deactivation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "dext_load_attempted",
+      "name": "manifest_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    }
+  ],
+  "classification": "CLASSIFICATION_BUILDABLE_DRIVERKIT_HOST_DEXT_SCAFFOLD",
+  "decision": "PASS_BUILDABLE_DRIVERKIT_HOST_DEXT_SCAFFOLD_READY",
+  "dext_load_attempted": false,
+  "failed_count": 0,
+  "generated_at_utc": "2026-06-14T02:12:01.955398+00:00",
+  "gpu_command_submission_attempted": false,
+  "metal_proof_claimed": false,
+  "passed_count": 30,
+  "provider_open_attempted": false,
+  "real_development_build_scope_started": true,
+  "schema": "h1mekartx.buildable_driverkit_host_dext_scaffold_check.v1",
+  "system_extension_activation_attempted": false,
+  "ui_compositor_proof_claimed": false
+}

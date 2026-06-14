@@ -1,0 +1,38 @@
+{
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "buildable_driverkit_host_dext_scaffold_ready": true,
+  "bundle_ids": {
+    "dext": "dev.h1meka.H1mekaRTXDriver",
+    "host": "dev.h1meka.H1mekaRTXHost"
+  },
+  "classification": "CLASSIFICATION_BUILDABLE_DRIVERKIT_HOST_DEXT_SCAFFOLD",
+  "configuration_writes_attempted": false,
+  "dext_load_attempted": false,
+  "gpu_command_submission_attempted": false,
+  "metal_proof_claimed": false,
+  "provider_open_attempted": false,
+  "real_development_build_scope_started": true,
+  "scaffold_paths": [
+    "tools/driverkit-buildable-scaffold/H1mekaRTXHost/Info.plist",
+    "tools/driverkit-buildable-scaffold/H1mekaRTXHost/H1mekaRTXHost.swift",
+    "tools/driverkit-buildable-scaffold/H1mekaRTXHost/H1mekaRTXHost.entitlements",
+    "tools/driverkit-buildable-scaffold/H1mekaRTXDriver.dext/Info.plist",
+    "tools/driverkit-buildable-scaffold/H1mekaRTXDriver.dext/Sources/H1mekaRTXDriver.cpp",
+    "tools/driverkit-buildable-scaffold/H1mekaRTXDriver.dext/H1mekaRTXDriver.entitlements",
+    "tools/driverkit-buildable-scaffold/build-plan.json"
+  ],
+  "schema": "h1mekartx.buildable_driverkit_host_dext_scaffold.v1",
+  "secondary_classification": "CLASSIFICATION_REAL_DEVELOPMENT_BUILD_SCOPE",
+  "system_extension_activation_attempted": false,
+  "system_extension_deactivation_attempted": false,
+  "target": {
+    "device_id": "0x2f04",
+    "driver_family": "PCIDriverKit",
+    "iopcimatch": "0x2f0410de",
+    "provider_class": "IOPCIDevice",
+    "vendor_id": "0x10de"
+  },
+  "tertiary_classification": "CLASSIFICATION_NO_RUNTIME_ACTIVATION",
+  "ui_compositor_proof_claimed": false
+}
