@@ -1,0 +1,241 @@
+{
+  "activation_submitted_by_this_phase": false,
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-xcode-materialization/xcode-driverkit-project-materialization-plan.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/driverkit/xcode-driverkit-project-materialization-plan.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/apps/H1mekaRTXDriverKit/README.md",
+      "name": "manual_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/apps/H1mekaRTXDriverKit/Sources/H1mekaRTXHost/H1mekaRTXHost.swift",
+      "name": "host_source_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/apps/H1mekaRTXDriverKit/Sources/H1mekaRTXDriver/H1mekaRTXDriver.cpp",
+      "name": "dext_source_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/apps/H1mekaRTXDriverKit/Config/H1mekaRTXHost-Info.plist",
+      "name": "host_plist_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/apps/H1mekaRTXDriverKit/Config/H1mekaRTXDriver-Info.plist",
+      "name": "dext_plist_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/apps/H1mekaRTXDriverKit/Config/H1mekaRTXHost.entitlements",
+      "name": "host_entitlements_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/apps/H1mekaRTXDriverKit/Config/H1mekaRTXDriver.entitlements",
+      "name": "dext_entitlements_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/real-driverkit-dext-build-gate.json",
+      "name": "phase60l_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase60l schema",
+      "name": "phase60l_manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/apps/H1mekaRTXDriverKit/H1mekaRTXDriverKit.xcodeproj",
+      "name": "expected_project_not_required_yet",
+      "passed": true
+    },
+    {
+      "detail": "False",
+      "name": "expected_project_currently_exists_recorded",
+      "passed": true
+    },
+    {
+      "detail": "dev.h1meka.H1mekaRTXHost",
+      "name": "host_bundle_id",
+      "passed": true
+    },
+    {
+      "detail": "H1mekaRTXHost",
+      "name": "host_executable",
+      "passed": true
+    },
+    {
+      "detail": "dev.h1meka.H1mekaRTXDriver",
+      "name": "dext_bundle_id",
+      "passed": true
+    },
+    {
+      "detail": "H1mekaRTXDriver",
+      "name": "dext_executable",
+      "passed": true
+    },
+    {
+      "detail": "IOPCIDevice",
+      "name": "dext_provider_class_iopcidevice",
+      "passed": true
+    },
+    {
+      "detail": "0x2f0410de",
+      "name": "dext_iopcimatch",
+      "passed": true
+    },
+    {
+      "detail": "SystemExtensions",
+      "name": "host_src_contains_SystemExtensions",
+      "passed": true
+    },
+    {
+      "detail": "OSSystemExtensionRequest",
+      "name": "host_src_contains_OSSystemExtensionRequest",
+      "passed": true
+    },
+    {
+      "detail": "default_no_activation",
+      "name": "host_src_contains_default_no_activation",
+      "passed": true
+    },
+    {
+      "detail": "submit_activation_request",
+      "name": "host_src_contains_submit_activation_request",
+      "passed": true
+    },
+    {
+      "detail": "DriverKit/IOService.h",
+      "name": "dext_src_contains_DriverKit_IOService.h",
+      "passed": true
+    },
+    {
+      "detail": "Start(IOService* provider)",
+      "name": "dext_src_contains_Start(IOService*_provider)",
+      "passed": true
+    },
+    {
+      "detail": "no provider open",
+      "name": "dext_src_contains_no_provider_open",
+      "passed": true
+    },
+    {
+      "detail": "no BAR mapping",
+      "name": "dext_src_contains_no_BAR_mapping",
+      "passed": true
+    },
+    {
+      "detail": "no GPU command submission",
+      "name": "dext_src_contains_no_GPU_command_submission",
+      "passed": true
+    },
+    {
+      "detail": "project_materialization_plan_ready",
+      "name": "manifest_project_materialization_plan_ready_true",
+      "passed": true
+    },
+    {
+      "detail": "project_inputs_only",
+      "name": "manifest_project_inputs_only_true",
+      "passed": true
+    },
+    {
+      "detail": "xcodebuild_attempted_by_this_phase",
+      "name": "manifest_xcodebuild_attempted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "activation_submitted_by_this_phase",
+      "name": "manifest_activation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "deactivation_submitted_by_this_phase",
+      "name": "manifest_deactivation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "manifest_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manual_dext_load_attempted",
+      "name": "manifest_manual_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "manifest_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    }
+  ],
+  "decision": "PASS_XCODE_DRIVERKIT_PROJECT_MATERIALIZATION_PLAN_READY",
+  "expected_project": "apps/H1mekaRTXDriverKit/H1mekaRTXDriverKit.xcodeproj",
+  "expected_project_exists": false,
+  "generated_at_utc": "2026-06-14T04:20:31.839818+00:00",
+  "gpu_command_submission_attempted": false,
+  "ioserviceopen_attempted": false,
+  "metal_proof_claimed": false,
+  "next_gate_if_project_exists": "phase60l-real-driverkit-dext-build-gate-local-run",
+  "next_gate_if_project_missing": "phase60n-xcodeproj-materialization-helper",
+  "project_inputs_only": true,
+  "project_materialization_plan_ready": true,
+  "provider_open_attempted": false,
+  "schema": "h1mekartx.xcode_driverkit_project_materialization_plan_check.v1",
+  "ui_compositor_proof_claimed": false,
+  "xcodebuild_attempted_by_this_phase": false
+}
