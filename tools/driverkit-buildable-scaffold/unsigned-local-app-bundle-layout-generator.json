@@ -1,0 +1,31 @@
+{
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "classification": "CLASSIFICATION_UNSIGNED_LOCAL_APP_BUNDLE_LAYOUT_GENERATOR",
+  "codesign_attempted": false,
+  "configuration_writes_attempted": false,
+  "dext_load_attempted": false,
+  "expected_layout": [
+    "H1mekaRTXHost.app/Contents/Info.plist",
+    "H1mekaRTXHost.app/Contents/MacOS/H1mekaRTXHost.placeholder",
+    "H1mekaRTXHost.app/Contents/Library/SystemExtensions/dev.h1meka.H1mekaRTXDriver.dext/Contents/Info.plist",
+    "H1mekaRTXHost.app/Contents/Library/SystemExtensions/dev.h1meka.H1mekaRTXDriver.dext/Contents/MacOS/H1mekaRTXDriver.placeholder"
+  ],
+  "gpu_command_submission_attempted": false,
+  "install_attempted": false,
+  "local_output_only": true,
+  "local_output_root": "host-report-bundle/unsigned-app-bundle",
+  "local_unsigned_layout_generator_only": true,
+  "metal_proof_claimed": false,
+  "provider_open_attempted": false,
+  "schema": "h1mekartx.unsigned_local_app_bundle_layout_generator.v1",
+  "secondary_classification": "CLASSIFICATION_SIGNED_HOST_DEXT_PACKAGING_PREFLIGHT",
+  "signed_package_created": false,
+  "submit_activation_allowed_now": false,
+  "submit_deactivation_allowed_now": false,
+  "system_extension_activation_attempted": false,
+  "system_extension_deactivation_attempted": false,
+  "tertiary_classification": "CLASSIFICATION_NO_SIGNING_NO_INSTALL_NO_ACTIVATION",
+  "ui_compositor_proof_claimed": false,
+  "unsigned_local_app_bundle_layout_generator_ready": true
+}

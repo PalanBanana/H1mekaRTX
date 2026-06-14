@@ -1,0 +1,266 @@
+{
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/unsigned-local-app-bundle-layout-generator.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/host-report-bundle/unsigned-app-bundle/unsigned-local-app-bundle-layout.json",
+      "name": "local_report_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/driverkit/unsigned-local-app-bundle-layout-generator.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/signed-host-dext-packaging-preflight.json",
+      "name": "phase48_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "local report schema",
+      "name": "local_report_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase48 schema",
+      "name": "phase48_schema",
+      "passed": true
+    },
+    {
+      "detail": "signed_package_created",
+      "name": "manifest_signed_package_created_false",
+      "passed": true
+    },
+    {
+      "detail": "codesign_attempted",
+      "name": "manifest_codesign_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "manifest_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "submit_activation_allowed_now",
+      "name": "manifest_submit_activation_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_activation_attempted",
+      "name": "manifest_system_extension_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_deactivation_attempted",
+      "name": "manifest_system_extension_deactivation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "dext_load_attempted",
+      "name": "manifest_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "signed_package_created",
+      "name": "local_report_signed_package_created_false",
+      "passed": true
+    },
+    {
+      "detail": "codesign_attempted",
+      "name": "local_report_codesign_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "local_report_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "submit_activation_allowed_now",
+      "name": "local_report_submit_activation_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_activation_attempted",
+      "name": "local_report_system_extension_activation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_deactivation_attempted",
+      "name": "local_report_system_extension_deactivation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "dext_load_attempted",
+      "name": "local_report_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "local_report_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "local_report_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "local_report_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "local_report_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "local_report_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "local_report_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "local_report_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "layout created",
+      "name": "layout_created",
+      "passed": true
+    },
+    {
+      "detail": "plists parse",
+      "name": "all_plists_parse_ok",
+      "passed": true
+    },
+    {
+      "detail": "SystemExtensions dir",
+      "name": "contains_systemextensions_dir",
+      "passed": true
+    },
+    {
+      "detail": "dext under SystemExtensions",
+      "name": "contains_dext_under_systemextensions",
+      "passed": true
+    },
+    {
+      "detail": "unsigned placeholders only",
+      "name": "unsigned_placeholders_only",
+      "passed": true
+    },
+    {
+      "detail": "app_root",
+      "name": "path_app_root_present",
+      "passed": true
+    },
+    {
+      "detail": "host_info",
+      "name": "path_host_info_present",
+      "passed": true
+    },
+    {
+      "detail": "host_placeholder",
+      "name": "path_host_placeholder_present",
+      "passed": true
+    },
+    {
+      "detail": "systemextensions_dir",
+      "name": "path_systemextensions_dir_present",
+      "passed": true
+    },
+    {
+      "detail": "dext_root",
+      "name": "path_dext_root_present",
+      "passed": true
+    },
+    {
+      "detail": "dext_info",
+      "name": "path_dext_info_present",
+      "passed": true
+    },
+    {
+      "detail": "dext_placeholder",
+      "name": "path_dext_placeholder_present",
+      "passed": true
+    }
+  ],
+  "classification": "CLASSIFICATION_UNSIGNED_LOCAL_APP_BUNDLE_LAYOUT_GENERATOR",
+  "codesign_attempted": false,
+  "decision": "PASS_UNSIGNED_LOCAL_APP_BUNDLE_LAYOUT_READY",
+  "derived": {
+    "all_plists_parse_ok": true,
+    "contains_dext_under_systemextensions": true,
+    "contains_systemextensions_dir": true,
+    "layout_created": true,
+    "unsigned_placeholders_only": true
+  },
+  "dext_load_attempted": false,
+  "failed_count": 0,
+  "generated_at_utc": "2026-06-14T02:29:16.648502+00:00",
+  "gpu_command_submission_attempted": false,
+  "host_report_bundle_local_only": true,
+  "install_attempted": false,
+  "local_output_only": true,
+  "metal_proof_claimed": false,
+  "passed_count": 47,
+  "provider_open_attempted": false,
+  "schema": "h1mekartx.unsigned_local_app_bundle_layout_check.v1",
+  "signed_package_created": false,
+  "submit_activation_allowed_now": false,
+  "system_extension_activation_attempted": false,
+  "system_extension_deactivation_attempted": false,
+  "ui_compositor_proof_claimed": false
+}
