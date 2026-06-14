@@ -1,0 +1,99 @@
+{
+  "activation_submitted_by_this_phase": false,
+  "apple_development_identity_present": true,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "classification": "CLASSIFICATION_LOCAL_APPLE_TEAM_CAPABILITY_EVIDENCE",
+  "configuration_writes_attempted": false,
+  "deactivation_submitted_by_this_phase": false,
+  "dext_profile_missing_observed": true,
+  "driverkit_enable_blocker_observed": true,
+  "driverkit_entitlement_approval_proven": false,
+  "driverkit_sdk_present": true,
+  "generated_at_utc": "2026-06-14T04:42:13.082773+00:00",
+  "gpu_command_submission_attempted": false,
+  "host_profile_missing_observed": true,
+  "host_report_bundle_local_only": true,
+  "install_attempted": false,
+  "ioserviceopen_attempted": false,
+  "local_evidence_decision": "PASS_LOCAL_APPLE_TEAM_CAPABILITY_EVIDENCE_CAPTURED",
+  "local_evidence_report_present": true,
+  "macosx_sdk_present": true,
+  "manual_dext_load_attempted": false,
+  "metal_proof_claimed": false,
+  "paid_team_proven": false,
+  "pci_transport_entitlement_approval_proven": false,
+  "personal_team_blocker_observed": true,
+  "phase60q_hardblock_check_present": true,
+  "phase60r_checklist_check_present": true,
+  "phase61_allowed_now": false,
+  "previous_build_log_present": true,
+  "private_raw_detected_locally": true,
+  "private_text_committed": false,
+  "provider_open_allowed_now": false,
+  "provider_open_attempted": false,
+  "raw_stderr_not_committed": true,
+  "raw_stdout_not_committed": true,
+  "remediation": {
+    "next_gate_if_not_proven": "wait_for_paid_team_and_apple_entitlement_approval",
+    "next_gate_if_paid_team_and_entitlements_proven": "rerun_phase60l_real_driverkit_dext_build_gate"
+  },
+  "sanitized_commands": {
+    "codesigning_identities": {
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    },
+    "driverkit_sdk_path": {
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    },
+    "macosx_sdk_path": {
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    },
+    "xcodebuild_list_project": {
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    },
+    "xcodebuild_show_build_settings": {
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": true,
+      "stdout_present": true
+    },
+    "xcodebuild_version": {
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    }
+  },
+  "schema": "h1mekartx.local_apple_team_capability_evidence_summary.v1",
+  "summary_only": true,
+  "system_extension_capability_blocker_observed": true,
+  "system_extension_capability_proven": false,
+  "ui_compositor_proof_claimed": false,
+  "xcode_present": true,
+  "xcode_project_present": true,
+  "xcodebuild_build_attempted_by_this_phase": false
+}
