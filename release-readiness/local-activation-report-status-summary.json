@@ -1,0 +1,118 @@
+{
+  "activation_command_completed": true,
+  "activation_command_returncode": 0,
+  "activation_preflight_ready": true,
+  "activation_submitted_by_sanitizer": false,
+  "activation_submitted_locally": true,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "classification": "CLASSIFICATION_LOCAL_ACTIVATION_REPORT_STATUS_SANITIZER",
+  "command_body_not_committed": true,
+  "configuration_writes_attempted": false,
+  "deactivation_submitted_by_sanitizer": false,
+  "derived": {
+    "activation_request_was_submitted_by_host": true,
+    "bar_mapping_still_blocked": true,
+    "build_activation_capable_host_ok": true,
+    "dock_transparency_blur_proof_still_blocked": true,
+    "gpu_command_submission_still_blocked": true,
+    "provider_open_still_blocked": true,
+    "resign_embedded_dext_ok": true,
+    "resign_host_app_ok": true,
+    "verify_embedded_dext_ok": true,
+    "verify_host_app_ok": true
+  },
+  "dext_load_attempted_by_sanitizer": false,
+  "dock_transparency_blur_proof_claimed": false,
+  "entitlement_dump_body_not_committed": true,
+  "extension_identifier": "dev.h1meka.H1mekaRTXDriver",
+  "extension_identifier_observed_in_status": false,
+  "generated_at_utc": "2026-06-14T03:07:53.713523+00:00",
+  "gpu_command_submission_attempted": false,
+  "hard_optin_ok": true,
+  "host_report_bundle_local_only": true,
+  "install_attempted": false,
+  "local_activation_decision": "PASS_LOCAL_ACTIVATION_COMMAND_COMPLETED",
+  "local_activation_report_present": true,
+  "local_scope_ok": true,
+  "metal_proof_claimed": false,
+  "next_gate": "dext_load_and_provider_match_status_sanitizer",
+  "private_raw_detected_locally": true,
+  "private_text_committed": false,
+  "provider_open_attempted": false,
+  "raw_stderr_not_committed": true,
+  "raw_stdout_not_committed": true,
+  "sanitized_command_summary": {
+    "build_activation_capable_host": {
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": false
+    },
+    "resign_embedded_dext": {
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": true,
+      "stdout_present": false
+    },
+    "resign_host_app": {
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": false
+    },
+    "submit_activation": {
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    },
+    "systemextensionsctl_after": {
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    },
+    "systemextensionsctl_before": {
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": false,
+      "stdout_present": true
+    },
+    "verify_embedded_dext": {
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": true,
+      "stdout_present": false
+    },
+    "verify_host_app": {
+      "command_body_committed": false,
+      "raw_stderr_committed": false,
+      "raw_stdout_committed": false,
+      "returncode": 0,
+      "stderr_present": true,
+      "stdout_present": false
+    }
+  },
+  "sanitizer_only": true,
+  "schema": "h1mekartx.local_activation_report_status_summary.v1",
+  "signing_identity_not_committed": true,
+  "system_extension_status_tokens": [],
+  "systemextensionsctl_available": true,
+  "systemextensionsctl_returncode": 0,
+  "ui_compositor_proof_claimed": false
+}
