@@ -1,0 +1,275 @@
+{
+  "bar_mapping_attempted": false,
+  "bar_mapping_forbidden": true,
+  "bar_mmio_mutation_attempted": false,
+  "bar_mmio_mutation_forbidden": true,
+  "blur_acceleration_not_claimed": true,
+  "blur_acceleration_promotion_allowed": false,
+  "classification": "CLASSIFICATION_UI_PROOF_PROMOTION_UNBLOCK_CRITERIA_CONTRACT",
+  "configuration_writes_attempted": false,
+  "configuration_writes_forbidden": true,
+  "core_animation_attribution_proof_not_claimed": true,
+  "criteria": [
+    {
+      "blocker": "activation prerequisites ledger is not READY for execute mode",
+      "current_state": "BLOCKED",
+      "unblock_requires": [
+        "apple_developer_team_id present",
+        "approved DriverKit entitlement present",
+        "approved PCI transport entitlement present",
+        "valid signing identity present",
+        "buildable host+dext project present",
+        "signed artifacts present",
+        "rollback-capable disposable test install plan present"
+      ]
+    },
+    {
+      "blocker": "System Extension activation proof is not PROVEN",
+      "current_state": "NOT_ATTEMPTED",
+      "unblock_requires": [
+        "official SystemExtensions activation request implemented",
+        "activation request produces deterministic status artifact",
+        "user approval path documented",
+        "activation success captured without patching or bypass"
+      ]
+    },
+    {
+      "blocker": "System Extension deactivation proof is not PROVEN",
+      "current_state": "NOT_ATTEMPTED",
+      "unblock_requires": [
+        "official SystemExtensions deactivation request implemented",
+        "deactivation success captured",
+        "rollback artifact captured",
+        "re-run activation/deactivation cycle proven"
+      ]
+    },
+    {
+      "blocker": "dext load proof is not PROVEN",
+      "current_state": "NOT_ATTEMPTED",
+      "unblock_requires": [
+        "signed dext bundled in host app",
+        "dext appears in systemextensionsctl list",
+        "dext lifecycle status captured",
+        "no kernel/process injection used"
+      ]
+    },
+    {
+      "blocker": "provider match proof is not PROVEN",
+      "current_state": "NOT_ATTEMPTED",
+      "unblock_requires": [
+        "IORegistry provider candidate shows IOPCIDevice",
+        "IOPCIMatch 0x2f0410de is used",
+        "vendor/device 0x10de:0x2f04 observed",
+        "match proof is captured without provider open"
+      ]
+    },
+    {
+      "blocker": "provider open remains forbidden",
+      "current_state": "FORBIDDEN",
+      "unblock_requires": [
+        "provider match proof is PROVEN",
+        "read-only provider-open policy reviewed",
+        "rollback and crash safety plan present",
+        "provider open attempt separated from BAR mapping and MMIO access"
+      ]
+    },
+    {
+      "blocker": "BAR mapping remains forbidden",
+      "current_state": "FORBIDDEN",
+      "unblock_requires": [
+        "provider open proof is PROVEN",
+        "BAR inventory is known",
+        "read-only BAR mapping policy reviewed",
+        "no MMIO mutation path exists",
+        "rollback safety gate passes"
+      ]
+    },
+    {
+      "blocker": "PCI configuration writes remain forbidden",
+      "current_state": "FORBIDDEN",
+      "unblock_requires": [
+        "read-only config path proven",
+        "write allowlist reviewed",
+        "write rollback plan present",
+        "no display/firmware/GPU reset path bundled"
+      ]
+    },
+    {
+      "blocker": "firmware/reset/display-init remains forbidden",
+      "current_state": "FORBIDDEN",
+      "unblock_requires": [
+        "BAR read-only mapping proof exists",
+        "firmware policy reviewed separately",
+        "GPU reset policy reviewed separately",
+        "display-init policy reviewed separately",
+        "no UI acceleration claim attached",
+        "firmware load remains forbidden until explicit future proof gate",
+        "display-engine initialization remains forbidden until explicit future proof gate",
+        "framebuffer initialization remains forbidden until explicit future proof gate"
+      ]
+    },
+    {
+      "blocker": "real GPU command execution proof is not PROVEN",
+      "current_state": "NOT_ATTEMPTED",
+      "unblock_requires": [
+        "safe command submission policy reviewed",
+        "tiny non-display command path defined",
+        "fence/timeout/error handling defined",
+        "GPU execution artifact captured",
+        "no UI compositor claim attached"
+      ]
+    },
+    {
+      "blocker": "RTX 5070 workload attribution proof is not PROVEN",
+      "current_state": "NOT_ATTEMPTED",
+      "unblock_requires": [
+        "real GPU command execution proof exists",
+        "workload is tied to RTX 5070 device identity",
+        "non-RTX fallback path excluded",
+        "repeatable attribution artifact captured"
+      ]
+    },
+    {
+      "blocker": "WindowServer/Core Animation/QuartzCore/Metal compositor attribution proof is not PROVEN",
+      "current_state": "NOT_ATTEMPTED",
+      "unblock_requires": [
+        "real GPU command execution proof exists",
+        "RTX 5070 workload attribution proof exists",
+        "WindowServer activity captured",
+        "Core Animation/QuartzCore path captured",
+        "Metal compositor path captured",
+        "no WindowServer patching or fake Metal spoofing",
+        "Core Animation / QuartzCore attribution proof exists",
+        "Metal compositor attribution proof exists",
+        "WindowServer attribution proof exists"
+      ]
+    },
+    {
+      "blocker": "UI frame pacing / latency measurement is not collected",
+      "current_state": "NOT_ATTEMPTED",
+      "unblock_requires": [
+        "repeatable Dock/transparency/blur scenario runner exists",
+        "before baseline exists",
+        "candidate run exists",
+        "frame pacing and latency metrics captured",
+        "raw local logs remain local-only"
+      ]
+    },
+    {
+      "blocker": "before/after UI metric delta is not PROVEN",
+      "current_state": "NOT_ATTEMPTED",
+      "unblock_requires": [
+        "baseline and candidate measurements exist",
+        "delta calculation exists",
+        "regression threshold exists",
+        "repeatability threshold exists",
+        "compositor attribution proof exists"
+      ]
+    },
+    {
+      "blocker": "rollback/deactivation evidence for a real activation is not PROVEN",
+      "current_state": "NOT_ATTEMPTED",
+      "unblock_requires": [
+        "activation proof exists",
+        "deactivation proof exists",
+        "device returns to previous state",
+        "systemextensionsctl status captured before/after",
+        "no residual unsafe state"
+      ]
+    },
+    {
+      "blocker": "firmware load remains forbidden",
+      "current_state": "FORBIDDEN",
+      "unblock_requires": [
+        "firmware load policy reviewed separately",
+        "firmware load allowlist is absent until explicit future review",
+        "no firmware load attempt is bundled with UI proof promotion",
+        "no Dock/transparency/blur acceleration claim is attached"
+      ]
+    },
+    {
+      "blocker": "display-engine initialization remains forbidden",
+      "current_state": "FORBIDDEN",
+      "unblock_requires": [
+        "display-engine initialization policy reviewed separately",
+        "framebuffer initialization policy reviewed separately",
+        "no display-engine initialization attempt is bundled with UI proof promotion",
+        "rollback and non-display safety criteria are defined first"
+      ]
+    },
+    {
+      "blocker": "Core Animation / QuartzCore attribution proof is not PROVEN",
+      "current_state": "NOT_ATTEMPTED",
+      "unblock_requires": [
+        "Core Animation / QuartzCore attribution artifact exists",
+        "WindowServer attribution proof exists",
+        "Metal compositor attribution proof exists",
+        "no WindowServer patching or private framework patching is used"
+      ]
+    }
+  ],
+  "criteria_exact_token_coverage_patched": true,
+  "dext_load_attempted": false,
+  "display_engine_init_forbidden": true,
+  "dock_acceleration_not_claimed": true,
+  "dock_acceleration_promotion_allowed": false,
+  "driverkit_activation_attempted": false,
+  "execute_mode_still_blocked": true,
+  "firmware_load_forbidden": true,
+  "framebuffer_init_forbidden": true,
+  "gpu_command_submission_attempted": false,
+  "gpu_command_submission_forbidden": true,
+  "gpu_reset_forbidden": true,
+  "host_report_bundle_local_only": true,
+  "ledger_ready_required_for_execute": true,
+  "measurement_not_acceleration_proof": true,
+  "metal_compositor_attribution_proof_not_claimed": true,
+  "metal_proof_claimed": false,
+  "metal_proof_not_claimed": true,
+  "metal_proof_promotion_allowed": false,
+  "metal_proof_state": "NOT_ATTEMPTED",
+  "promotion_blocked": true,
+  "provider_open_attempted": false,
+  "provider_open_forbidden": true,
+  "quartzcore_attribution_proof_not_claimed": true,
+  "raw_command_stderr_not_committed": true,
+  "raw_command_stdout_not_committed": true,
+  "raw_local_logs_not_committed": true,
+  "real_activation_not_attempted": true,
+  "real_deactivation_not_attempted": true,
+  "real_development_allowed_scope": [
+    "buildable DriverKit host app scaffold",
+    "buildable dext scaffold",
+    "deterministic Info.plist generation",
+    "deterministic entitlement template validation",
+    "official SystemExtensions activation/deactivation wrapper in dry-run mode first",
+    "signing identity discovery",
+    "entitlement approval evidence collection",
+    "provider matching proof collection",
+    "local-only host evidence collection"
+  ],
+  "real_development_allowed_scope_defined": true,
+  "real_development_runtime_access_not_allowed_yet": true,
+  "real_gpu_acceleration_claimed": false,
+  "real_gpu_command_execution_attempted": false,
+  "real_gpu_command_execution_not_claimed": true,
+  "real_gpu_command_execution_proof_state": "NOT_ATTEMPTED",
+  "rtx5070_workload_attribution_claimed": false,
+  "rtx5070_workload_attribution_not_claimed": true,
+  "rtx5070_workload_attribution_proof_state": "NOT_ATTEMPTED",
+  "schema": "h1mekartx.ui_proof_promotion_unblock_criteria.v1",
+  "secondary_classification": "CLASSIFICATION_UI_PROOF_PROMOTION_BLOCKER_DASHBOARD",
+  "system_extension_activation_attempted": false,
+  "system_extension_deactivation_attempted": false,
+  "tertiary_classification": "CLASSIFICATION_STATIC_CONTRACT",
+  "transparency_acceleration_not_claimed": true,
+  "transparency_acceleration_promotion_allowed": false,
+  "ui_compositor_proof_claimed": false,
+  "ui_compositor_proof_not_claimed": true,
+  "ui_compositor_proof_state": "NOT_ATTEMPTED",
+  "ui_proof_promotion_allowed": false,
+  "ui_proof_promotion_decision": "BLOCK_PROMOTION",
+  "ui_proof_promotion_unblock_criteria_contract_only": true,
+  "unblock_criteria_only": true,
+  "windowserver_attribution_proof_not_claimed": true
+}
