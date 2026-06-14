@@ -1,0 +1,184 @@
+{
+  "activation_submitted_by_this_phase": false,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "classification": "CLASSIFICATION_RTX5070_UI_SMOOTHNESS_EVIDENCE_MATRIX",
+  "configuration_writes_attempted": false,
+  "current_core_animation_attribution_to_rtx5070_proven": false,
+  "current_metal_compositor_attribution_to_rtx5070_proven": false,
+  "current_quartzcore_attribution_to_rtx5070_proven": false,
+  "current_rtx5070_metal_acceleration_claimed": false,
+  "current_rtx5070_ui_smoothness_claimed": false,
+  "current_windowserver_attribution_to_rtx5070_proven": false,
+  "deactivation_submitted_by_this_phase": false,
+  "dock_transparency_blur_scope_retained": true,
+  "evidence_levels": [
+    {
+      "current_state": "PARTIAL_STATIC_IDENTITY_ONLY",
+      "level": 0,
+      "name": "target_identity",
+      "passed_now": false,
+      "required": true,
+      "required_evidence": [
+        "rtx5070_visible_in_inventory",
+        "vendor_id_0x10de",
+        "device_id_0x2f04",
+        "iopcimatch_0x2f0410de"
+      ]
+    },
+    {
+      "current_state": "BLOCKED_BY_PERSONAL_TEAM_AND_ENTITLEMENT_APPROVAL",
+      "level": 1,
+      "name": "apple_entitlement_readiness",
+      "passed_now": false,
+      "required": true,
+      "required_evidence": [
+        "paid_developer_team_proven",
+        "system_extension_capability_proven",
+        "driverkit_entitlement_approval_proven",
+        "driverkit_pci_transport_entitlement_approval_proven",
+        "host_profile_proven",
+        "dext_profile_proven"
+      ]
+    },
+    {
+      "current_state": "NOT_PROVEN",
+      "level": 2,
+      "name": "real_driverkit_build",
+      "passed_now": false,
+      "required": true,
+      "required_evidence": [
+        "real_driverkit_dext_built_true",
+        "xcode_built_driverkit_dext_binary",
+        "dext_identifier_matches",
+        "driverkit_entitlement_present",
+        "pci_transport_entitlement_present",
+        "codesign_verify_ok"
+      ]
+    },
+    {
+      "current_state": "NOT_PROVEN",
+      "level": 3,
+      "name": "system_extension_visibility",
+      "passed_now": false,
+      "required": true,
+      "required_evidence": [
+        "activation_submitted_from_applications",
+        "extension_identifier_observed",
+        "delegate_did_not_fail",
+        "systemextensionsctl_visibility"
+      ]
+    },
+    {
+      "current_state": "BLOCKED",
+      "level": 4,
+      "name": "rtx5070_provider_readiness",
+      "passed_now": false,
+      "required": true,
+      "required_evidence": [
+        "rtx5070_provider_match_visible",
+        "provider_identity_matches_rtx5070",
+        "provider_open_gate_not_yet_attempted"
+      ]
+    },
+    {
+      "current_state": "BLOCKED",
+      "level": 5,
+      "name": "gpu_work_authorization",
+      "passed_now": false,
+      "required": true,
+      "required_evidence": [
+        "provider_open_gate_approved",
+        "bar_mapping_gate_approved",
+        "gpu_command_submission_gate_approved"
+      ]
+    },
+    {
+      "current_state": "NOT_PROVEN",
+      "level": 6,
+      "name": "compositor_attribution",
+      "passed_now": false,
+      "required": true,
+      "required_evidence": [
+        "windowserver_attribution_to_rtx5070",
+        "core_animation_attribution_to_rtx5070",
+        "quartzcore_attribution_to_rtx5070",
+        "metal_compositor_attribution_to_rtx5070"
+      ]
+    },
+    {
+      "current_state": "NOT_COLLECTED",
+      "level": 7,
+      "name": "smoothness_measurement",
+      "passed_now": false,
+      "required": true,
+      "required_evidence": [
+        "dock_frame_pacing",
+        "transparency_blur_frame_pacing",
+        "window_animation_frame_pacing",
+        "mission_control_launchpad_stage_manager_frame_pacing",
+        "before_after_delta"
+      ]
+    },
+    {
+      "current_state": "NOT_PROVEN",
+      "level": 8,
+      "name": "rtx5070_ui_smoothness_proof",
+      "passed_now": false,
+      "required": true,
+      "required_evidence": [
+        "all_previous_levels_pass",
+        "positive_smoothness_delta",
+        "rtx5070_attribution_proven",
+        "fallback_gpu_substitution_false",
+        "spoofed_metal_support_false"
+      ]
+    }
+  ],
+  "fallback_gpu_substitution_allowed": false,
+  "gpu_command_submission_attempted": false,
+  "install_attempted": false,
+  "ioserviceopen_attempted": false,
+  "manual_dext_load_attempted": false,
+  "metal_proof_claimed": false,
+  "metrics": [
+    "display_refresh_rate",
+    "average_frame_interval",
+    "p50_frame_interval",
+    "p95_frame_interval",
+    "p99_frame_interval",
+    "dropped_frame_count",
+    "hitch_count",
+    "latency_average",
+    "latency_p95",
+    "jitter_score",
+    "before_after_delta"
+  ],
+  "next_gate": "phase60v-local-readonly-rtx5070-ui-baseline-collector",
+  "phase61_allowed_now": false,
+  "provider_open_attempted": false,
+  "rtx5070_device_id": "0x2f04",
+  "rtx5070_iopcimatch": "0x2f0410de",
+  "rtx5070_target_retained": true,
+  "rtx5070_vendor_id": "0x10de",
+  "scenarios": [
+    "dock_magnification",
+    "dock_hide_show",
+    "dock_launch_animation",
+    "menu_bar_transparency",
+    "window_transparency",
+    "sheet_blur",
+    "sidebar_blur",
+    "window_movement",
+    "window_resize",
+    "mission_control",
+    "launchpad",
+    "stage_manager",
+    "desktop_space_switching"
+  ],
+  "schema": "h1mekartx.rtx5070_ui_smoothness_evidence_matrix.v1",
+  "secondary_classification": "CLASSIFICATION_RTX5070_ONLY_TARGET",
+  "tertiary_classification": "CLASSIFICATION_UI_SMOOTHNESS_PROOF_LADDER",
+  "ui_compositor_proof_claimed": false,
+  "xcodebuild_build_attempted_by_this_phase": false
+}
