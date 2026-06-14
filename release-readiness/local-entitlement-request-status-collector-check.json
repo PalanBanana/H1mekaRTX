@@ -1,0 +1,484 @@
+{
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/hackintosh/local-entitlement-request-status-collector.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/hackintosh/local-entitlement-request-status-collector.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/scripts/collect-local-entitlement-request-status.py",
+      "name": "collector_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/local-entitlement-request-status-summary.json",
+      "name": "summary_json_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/local-entitlement-request-status-summary.md",
+      "name": "summary_md_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/hackintosh/apple-driverkit-pcidriverkit-entitlement-request-package.json",
+      "name": "package_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "schema",
+      "name": "summary_schema",
+      "passed": true
+    },
+    {
+      "detail": "package schema",
+      "name": "package_schema_if_present",
+      "passed": true
+    },
+    {
+      "detail": "local_entitlement_request_status_collector_ready",
+      "name": "manifest_local_entitlement_request_status_collector_ready_true",
+      "passed": true
+    },
+    {
+      "detail": "entitlement_status_only",
+      "name": "manifest_entitlement_status_only_true",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_target_retained",
+      "name": "manifest_rtx5070_target_retained_true",
+      "passed": true
+    },
+    {
+      "detail": "raw_outputs_local_only",
+      "name": "manifest_raw_outputs_local_only_true",
+      "passed": true
+    },
+    {
+      "detail": "fallback_gpu_substitution_allowed",
+      "name": "manifest_fallback_gpu_substitution_allowed_false",
+      "passed": true
+    },
+    {
+      "detail": "fallback_gpu_substitution_allowed",
+      "name": "summary_fallback_gpu_substitution_allowed_false",
+      "passed": true
+    },
+    {
+      "detail": "apple_private_data_committed",
+      "name": "manifest_apple_private_data_committed_false",
+      "passed": true
+    },
+    {
+      "detail": "apple_private_data_committed",
+      "name": "summary_apple_private_data_committed_false",
+      "passed": true
+    },
+    {
+      "detail": "apple_team_id_value_committed",
+      "name": "manifest_apple_team_id_value_committed_false",
+      "passed": true
+    },
+    {
+      "detail": "apple_team_id_value_committed",
+      "name": "summary_apple_team_id_value_committed_false",
+      "passed": true
+    },
+    {
+      "detail": "apple_email_committed",
+      "name": "manifest_apple_email_committed_false",
+      "passed": true
+    },
+    {
+      "detail": "apple_email_committed",
+      "name": "summary_apple_email_committed_false",
+      "passed": true
+    },
+    {
+      "detail": "submission_to_apple_performed_by_this_phase",
+      "name": "manifest_submission_to_apple_performed_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "submission_to_apple_performed_by_this_phase",
+      "name": "summary_submission_to_apple_performed_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_match_attempted_by_this_phase",
+      "name": "manifest_provider_match_attempted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_match_attempted_by_this_phase",
+      "name": "summary_provider_match_attempted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "summary_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "manifest_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "summary_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "summary_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "summary_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "summary_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "summary_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "framebuffer_init_attempted",
+      "name": "manifest_framebuffer_init_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "framebuffer_init_attempted",
+      "name": "summary_framebuffer_init_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "display_engine_init_attempted",
+      "name": "manifest_display_engine_init_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "display_engine_init_attempted",
+      "name": "summary_display_engine_init_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "summary_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "summary_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "current_rtx5070_metal_acceleration_claimed",
+      "name": "manifest_current_rtx5070_metal_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "current_rtx5070_metal_acceleration_claimed",
+      "name": "summary_current_rtx5070_metal_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "current_rtx5070_ui_smoothness_claimed",
+      "name": "manifest_current_rtx5070_ui_smoothness_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "current_rtx5070_ui_smoothness_claimed",
+      "name": "summary_current_rtx5070_ui_smoothness_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "apple_developer_program_active",
+      "name": "required_ready_field_apple_developer_program_active",
+      "passed": true
+    },
+    {
+      "detail": "apple_developer_program_active",
+      "name": "summary_records_apple_developer_program_active",
+      "passed": true
+    },
+    {
+      "detail": "apple_developer_program_active",
+      "name": "collector_template_has_apple_developer_program_active",
+      "passed": true
+    },
+    {
+      "detail": "apple_team_id_available",
+      "name": "required_ready_field_apple_team_id_available",
+      "passed": true
+    },
+    {
+      "detail": "apple_team_id_available",
+      "name": "summary_records_apple_team_id_available",
+      "passed": true
+    },
+    {
+      "detail": "apple_team_id_available",
+      "name": "collector_template_has_apple_team_id_available",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_entitlement_request_submitted",
+      "name": "required_ready_field_driverkit_entitlement_request_submitted",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_entitlement_request_submitted",
+      "name": "summary_records_driverkit_entitlement_request_submitted",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_entitlement_request_submitted",
+      "name": "collector_template_has_driverkit_entitlement_request_submitted",
+      "passed": true
+    },
+    {
+      "detail": "pcidriverkit_transport_entitlement_request_submitted",
+      "name": "required_ready_field_pcidriverkit_transport_entitlement_request_submitted",
+      "passed": true
+    },
+    {
+      "detail": "pcidriverkit_transport_entitlement_request_submitted",
+      "name": "summary_records_pcidriverkit_transport_entitlement_request_submitted",
+      "passed": true
+    },
+    {
+      "detail": "pcidriverkit_transport_entitlement_request_submitted",
+      "name": "collector_template_has_pcidriverkit_transport_entitlement_request_submitted",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_capability_requested",
+      "name": "required_ready_field_system_extension_capability_requested",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_capability_requested",
+      "name": "summary_records_system_extension_capability_requested",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_capability_requested",
+      "name": "collector_template_has_system_extension_capability_requested",
+      "passed": true
+    },
+    {
+      "detail": "host_app_id_configured",
+      "name": "required_ready_field_host_app_id_configured",
+      "passed": true
+    },
+    {
+      "detail": "host_app_id_configured",
+      "name": "summary_records_host_app_id_configured",
+      "passed": true
+    },
+    {
+      "detail": "host_app_id_configured",
+      "name": "collector_template_has_host_app_id_configured",
+      "passed": true
+    },
+    {
+      "detail": "driver_app_id_configured",
+      "name": "required_ready_field_driver_app_id_configured",
+      "passed": true
+    },
+    {
+      "detail": "driver_app_id_configured",
+      "name": "summary_records_driver_app_id_configured",
+      "passed": true
+    },
+    {
+      "detail": "driver_app_id_configured",
+      "name": "collector_template_has_driver_app_id_configured",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_entitlement_approved",
+      "name": "required_ready_field_driverkit_entitlement_approved",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_entitlement_approved",
+      "name": "summary_records_driverkit_entitlement_approved",
+      "passed": true
+    },
+    {
+      "detail": "driverkit_entitlement_approved",
+      "name": "collector_template_has_driverkit_entitlement_approved",
+      "passed": true
+    },
+    {
+      "detail": "pcidriverkit_transport_entitlement_approved",
+      "name": "required_ready_field_pcidriverkit_transport_entitlement_approved",
+      "passed": true
+    },
+    {
+      "detail": "pcidriverkit_transport_entitlement_approved",
+      "name": "summary_records_pcidriverkit_transport_entitlement_approved",
+      "passed": true
+    },
+    {
+      "detail": "pcidriverkit_transport_entitlement_approved",
+      "name": "collector_template_has_pcidriverkit_transport_entitlement_approved",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_capability_approved",
+      "name": "required_ready_field_system_extension_capability_approved",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_capability_approved",
+      "name": "summary_records_system_extension_capability_approved",
+      "passed": true
+    },
+    {
+      "detail": "system_extension_capability_approved",
+      "name": "collector_template_has_system_extension_capability_approved",
+      "passed": true
+    },
+    {
+      "detail": "provisioning_profiles_regenerated_after_approval",
+      "name": "required_ready_field_provisioning_profiles_regenerated_after_approval",
+      "passed": true
+    },
+    {
+      "detail": "provisioning_profiles_regenerated_after_approval",
+      "name": "summary_records_provisioning_profiles_regenerated_after_approval",
+      "passed": true
+    },
+    {
+      "detail": "provisioning_profiles_regenerated_after_approval",
+      "name": "collector_template_has_provisioning_profiles_regenerated_after_approval",
+      "passed": true
+    },
+    {
+      "detail": "ready flag",
+      "name": "summary_ready_for_provider_match_recorded",
+      "passed": true
+    },
+    {
+      "detail": "next gate",
+      "name": "summary_next_gate",
+      "passed": true
+    },
+    {
+      "detail": "next gate",
+      "name": "manifest_next_gate",
+      "passed": true
+    },
+    {
+      "detail": "home_path",
+      "name": "no_home_path_in_local-entitlement-request-status-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "tmp_path",
+      "name": "no_tmp_path_in_local-entitlement-request-status-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "email_like",
+      "name": "no_email_like_in_local-entitlement-request-status-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "team_id_label",
+      "name": "no_team_id_label_in_local-entitlement-request-status-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "home_path",
+      "name": "no_home_path_in_local-entitlement-request-status-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "tmp_path",
+      "name": "no_tmp_path_in_local-entitlement-request-status-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "email_like",
+      "name": "no_email_like_in_local-entitlement-request-status-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "team_id_label",
+      "name": "no_team_id_label_in_local-entitlement-request-status-summary.md",
+      "passed": true
+    }
+  ],
+  "current_rtx5070_metal_acceleration_claimed": false,
+  "current_rtx5070_ui_smoothness_claimed": false,
+  "decision": "PASS_LOCAL_ENTITLEMENT_REQUEST_STATUS_COLLECTOR_READY",
+  "entitlement_status_only": true,
+  "fallback_gpu_substitution_allowed": false,
+  "generated_at_utc": "2026-06-14T08:31:27.632240+00:00",
+  "gpu_command_submission_attempted": false,
+  "ioserviceopen_attempted": false,
+  "next_gate": "phase62d-provider-match-readiness-gate",
+  "provider_match_attempted_by_this_phase": false,
+  "provider_open_attempted": false,
+  "rtx5070_target_retained": true,
+  "schema": "h1mekartx.local_entitlement_request_status_collector_check.v1",
+  "submission_to_apple_performed_by_this_phase": false
+}
