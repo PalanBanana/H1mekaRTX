@@ -194,7 +194,8 @@
         "display-engine initialization policy reviewed separately",
         "framebuffer initialization policy reviewed separately",
         "no display-engine initialization attempt is bundled with UI proof promotion",
-        "rollback and non-display safety criteria are defined first"
+        "rollback and non-display safety criteria are defined first",
+        "display-engine initialization allowlist is absent until explicit future review"
       ]
     },
     {
@@ -205,6 +206,16 @@
         "WindowServer attribution proof exists",
         "Metal compositor attribution proof exists",
         "no WindowServer patching or private framework patching is used"
+      ]
+    },
+    {
+      "blocker": "Metal compositor attribution proof is not PROVEN",
+      "current_state": "NOT_ATTEMPTED",
+      "unblock_requires": [
+        "Metal compositor attribution artifact exists",
+        "real GPU command execution proof exists",
+        "RTX 5070 workload attribution proof exists",
+        "no fake Metal device spoofing is used"
       ]
     }
   ],

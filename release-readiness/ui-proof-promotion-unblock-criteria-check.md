@@ -1,6 +1,6 @@
 # UI Proof Promotion Unblock Criteria Check
 
-- Generated At UTC: `2026-06-14T02:07:17.906405+00:00`
+- Generated At UTC: `2026-06-14T02:09:17.641367+00:00`
 - Decision: `PASS_UI_PROOF_PROMOTION_UNBLOCK_CRITERIA_READY`
 - Classification: `CLASSIFICATION_UI_PROOF_PROMOTION_UNBLOCK_CRITERIA_CONTRACT`
 - Scope: `Phase 41 UI proof promotion unblock criteria contract`
@@ -15,7 +15,7 @@
 - Metal Proof Not Claimed: `True`
 - Real GPU Command Execution Attempted: `False`
 - RTX5070 Workload Attribution Claimed: `False`
-- Criteria Count: `18`
+- Criteria Count: `19`
 
 ## Criteria Summary
 
@@ -37,8 +37,9 @@
 | 14 | before/after UI metric delta is not PROVEN | NOT_ATTEMPTED | 5 |
 | 15 | rollback/deactivation evidence for a real activation is not PROVEN | NOT_ATTEMPTED | 5 |
 | 16 | firmware load remains forbidden | FORBIDDEN | 4 |
-| 17 | display-engine initialization remains forbidden | FORBIDDEN | 4 |
+| 17 | display-engine initialization remains forbidden | FORBIDDEN | 5 |
 | 18 | Core Animation / QuartzCore attribution proof is not PROVEN | NOT_ATTEMPTED | 4 |
+| 19 | Metal compositor attribution proof is not PROVEN | NOT_ATTEMPTED | 4 |
 
 ## Contract Checks
 
@@ -66,7 +67,7 @@
 | `phase40_dashboard_loaded` | PASS | phase40 |
 | `phase40_check_pass` | PASS | phase40 check |
 | `activation_gate_blocks_execute` | PASS | BLOCK_EXECUTE |
-| `criteria_count_at_least_12` | PASS | 18 |
+| `criteria_count_at_least_12` | PASS | 19 |
 | `criteria_contains_activation_prerequisites_ledger` | PASS | activation prerequisites ledger |
 | `criteria_contains_system_extension_activation_proof` | PASS | System Extension activation proof |
 | `criteria_contains_system_extension_deactivation_proof` | PASS | System Extension deactivation proof |
@@ -131,6 +132,8 @@
 | `entry_display-engine initialization remains forbidden_not_proven` | PASS | display-engine initialization remains forbidden |
 | `entry_Core Animation / QuartzCore attribution proof is n_has_unblock_requires` | PASS | Core Animation / QuartzCore attribution proof is not PROVEN |
 | `entry_Core Animation / QuartzCore attribution proof is n_not_proven` | PASS | Core Animation / QuartzCore attribution proof is not PROVEN |
+| `entry_Metal compositor attribution proof is not PROVEN_has_unblock_requires` | PASS | Metal compositor attribution proof is not PROVEN |
+| `entry_Metal compositor attribution proof is not PROVEN_not_proven` | PASS | Metal compositor attribution proof is not PROVEN |
 | `criteria_driverkit_activation_attempted_false` | PASS | driverkit_activation_attempted |
 | `criteria_system_extension_activation_attempted_false` | PASS | system_extension_activation_attempted |
 | `criteria_system_extension_deactivation_attempted_false` | PASS | system_extension_deactivation_attempted |

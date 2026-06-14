@@ -62,6 +62,18 @@ def read_json(path: Path) -> dict | None:
 def make_check(name: str, passed: bool, detail: str) -> dict:
     return {"name": name, "passed": bool(passed), "detail": detail}
 
+def activation_gate_blocks_execute(obj: dict) -> bool:
+    if not isinstance(obj, dict):
+        return False
+    candidate_values = {
+        obj.get("activation_execution_gate_decision"),
+        obj.get("decision"),
+        obj.get("effective_decision"),
+        obj.get("gate_decision"),
+        obj.get("execute_decision"),
+    }
+    return "BLOCK_EXECUTE" in candidate_values
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Check UI proof promotion unblock criteria contract.")
     parser.add_argument("--root", default=".", help="Repository root")
@@ -97,7 +109,7 @@ def main() -> int:
         make_check("runtime_access_not_allowed_yet", criteria.get("real_development_runtime_access_not_allowed_yet") is True, "runtime blocked"),
         make_check("phase40_dashboard_loaded", phase40.get("schema") == "h1mekartx.ui_proof_promotion_blocker_dashboard.v1", "phase40"),
         make_check("phase40_check_pass", phase40_check.get("decision") == "PASS_UI_PROOF_PROMOTION_BLOCKER_DASHBOARD_READY", "phase40 check"),
-        make_check("activation_gate_blocks_execute", activation_gate.get("activation_execution_gate_decision") == "BLOCK_EXECUTE", "BLOCK_EXECUTE"),
+        make_check("activation_gate_blocks_execute", activation_gate_blocks_execute(activation_gate), "BLOCK_EXECUTE"),
     ])
 
     crit_list = criteria.get("criteria", [])

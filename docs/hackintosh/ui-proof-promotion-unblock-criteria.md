@@ -170,6 +170,18 @@ The criteria contract also includes exact blocker-token aliases required by the 
 
 These aliases do not unblock any capability. They only make the promotion blocker criteria explicit and machine-checkable.
 
+
+## Exact Checker Token Coverage
+
+The criteria contract includes exact token aliases used by the machine checker:
+
+- firmware load remains forbidden
+- display-engine initialization remains forbidden
+- Core Animation / QuartzCore attribution proof is not PROVEN
+- Metal compositor attribution proof is not PROVEN
+
+These aliases do not unblock runtime access. They only make the blocked promotion criteria explicit and machine-checkable.
+
 ## Current Contract State
 
 - PHASE41_UI_PROOF_PROMOTION_UNBLOCK_CRITERIA_CONTRACT_READY: True

@@ -111,7 +111,7 @@
       "passed": true
     },
     {
-      "detail": "18",
+      "detail": "19",
       "name": "criteria_count_at_least_12",
       "passed": true
     },
@@ -436,6 +436,16 @@
       "passed": true
     },
     {
+      "detail": "Metal compositor attribution proof is not PROVEN",
+      "name": "entry_Metal compositor attribution proof is not PROVEN_has_unblock_requires",
+      "passed": true
+    },
+    {
+      "detail": "Metal compositor attribution proof is not PROVEN",
+      "name": "entry_Metal compositor attribution proof is not PROVEN_not_proven",
+      "passed": true
+    },
+    {
       "detail": "driverkit_activation_attempted",
       "name": "criteria_driverkit_activation_attempted_false",
       "passed": true
@@ -507,13 +517,13 @@
     }
   ],
   "classification": "CLASSIFICATION_UI_PROOF_PROMOTION_UNBLOCK_CRITERIA_CONTRACT",
-  "criteria_count": 18,
+  "criteria_count": 19,
   "decision": "PASS_UI_PROOF_PROMOTION_UNBLOCK_CRITERIA_READY",
   "failed_count": 0,
-  "generated_at_utc": "2026-06-14T02:07:17.906405+00:00",
+  "generated_at_utc": "2026-06-14T02:09:17.641367+00:00",
   "metal_proof_not_claimed": true,
   "metal_proof_promotion_allowed": false,
-  "passed_count": 101,
+  "passed_count": 103,
   "promotion_blocked": true,
   "real_development_allowed_scope_defined": true,
   "real_development_runtime_access_not_allowed_yet": true,
