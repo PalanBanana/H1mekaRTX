@@ -1,0 +1,42 @@
+{
+  "activation_submitted_by_this_phase": false,
+  "bar_mapping_allowed_now": false,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "classification": "CLASSIFICATION_PROVIDER_MATCH_PERSONALITY_ENTITLEMENT_FIX_PLAN",
+  "configuration_writes_attempted": false,
+  "deactivation_submitted_by_this_phase": false,
+  "expected_identity": {
+    "device_id": "0x2f04",
+    "dext_bundle_id": "dev.h1meka.H1mekaRTXDriver",
+    "extension_identifier": "dev.h1meka.H1mekaRTXDriver",
+    "host_bundle_id": "dev.h1meka.H1mekaRTXHost",
+    "iopcimatch": "0x2f0410de",
+    "provider_class": "IOPCIDevice",
+    "vendor_id": "0x10de"
+  },
+  "fix_areas": [
+    "activation host wait/visibility hardening",
+    "exact extension identifier confirmation",
+    "bundle layout confirmation",
+    "IOKit personality confirmation",
+    "entitlement confirmation",
+    "developer-mode and user approval status confirmation"
+  ],
+  "fix_plan_only": true,
+  "gpu_command_submission_allowed_now": false,
+  "gpu_command_submission_attempted": false,
+  "install_attempted": false,
+  "ioserviceopen_allowed_now": false,
+  "ioserviceopen_attempted": false,
+  "manual_dext_load_attempted": false,
+  "metal_proof_claimed": false,
+  "provider_match_personality_entitlement_fix_plan_ready": true,
+  "provider_open_allowed_now": false,
+  "provider_open_attempted": false,
+  "recommended_next_phase": "phase60d-activation-wait-system-extension-visibility-hardening",
+  "schema": "h1mekartx.provider_match_personality_entitlement_fix_plan.v1",
+  "secondary_classification": "CLASSIFICATION_PROVIDER_MATCH_REPAIR_READINESS_BRIDGE",
+  "tertiary_classification": "CLASSIFICATION_FIX_PLAN_ONLY",
+  "ui_compositor_proof_claimed": false
+}

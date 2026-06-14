@@ -1,0 +1,196 @@
+{
+  "activation_submitted_by_this_phase": false,
+  "bar_mapping_allowed_now": false,
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/driverkit-buildable-scaffold/provider-match-personality-entitlement-fix-plan.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/driverkit/provider-match-personality-entitlement-fix-plan.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/provider-match-repair-readiness-bridge-check.json",
+      "name": "phase60b_check_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/provider-match-evidence-repair-diagnostics-summary.json",
+      "name": "phase60a_summary_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase60b schema",
+      "name": "phase60b_schema",
+      "passed": true
+    },
+    {
+      "detail": "phase60a schema",
+      "name": "phase60a_schema",
+      "passed": true
+    },
+    {
+      "detail": "provider_match_personality_entitlement_fix_plan_ready",
+      "name": "manifest_provider_match_personality_entitlement_fix_plan_ready_true",
+      "passed": true
+    },
+    {
+      "detail": "fix_plan_only",
+      "name": "manifest_fix_plan_only_true",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_allowed_now",
+      "name": "manifest_provider_open_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_allowed_now",
+      "name": "manifest_ioserviceopen_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_allowed_now",
+      "name": "manifest_bar_mapping_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_allowed_now",
+      "name": "manifest_gpu_command_submission_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "activation_submitted_by_this_phase",
+      "name": "manifest_activation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "deactivation_submitted_by_this_phase",
+      "name": "manifest_deactivation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "manifest_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manual_dext_load_attempted",
+      "name": "manifest_manual_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "manifest_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "activation host wait/visibility hardening",
+      "name": "fix_area_activation_host_wait_visibility_hardening",
+      "passed": true
+    },
+    {
+      "detail": "exact extension identifier confirmation",
+      "name": "fix_area_exact_extension_identifier_confirmation",
+      "passed": true
+    },
+    {
+      "detail": "bundle layout confirmation",
+      "name": "fix_area_bundle_layout_confirmation",
+      "passed": true
+    },
+    {
+      "detail": "IOKit personality confirmation",
+      "name": "fix_area_IOKit_personality_confirmation",
+      "passed": true
+    },
+    {
+      "detail": "entitlement confirmation",
+      "name": "fix_area_entitlement_confirmation",
+      "passed": true
+    },
+    {
+      "detail": "developer-mode and user approval status confirmation",
+      "name": "fix_area_developer-mode_and_user_approval_status_confirmation",
+      "passed": true
+    },
+    {
+      "detail": "Phase 60B is blocked",
+      "name": "phase60b_currently_blocked",
+      "passed": true
+    },
+    {
+      "detail": "['extension_status_observed_false', 'repaired_provider_match_ready_false']",
+      "name": "phase60b_has_extension_status_block_or_other_reason",
+      "passed": true
+    },
+    {
+      "detail": "Phase 60D",
+      "name": "recommended_next_phase_phase60d",
+      "passed": true
+    }
+  ],
+  "deactivation_submitted_by_this_phase": false,
+  "decision": "PASS_PROVIDER_MATCH_PERSONALITY_ENTITLEMENT_FIX_PLAN_READY",
+  "fix_plan_only": true,
+  "generated_at_utc": "2026-06-14T03:37:10.786247+00:00",
+  "gpu_command_submission_allowed_now": false,
+  "gpu_command_submission_attempted": false,
+  "ioserviceopen_allowed_now": false,
+  "ioserviceopen_attempted": false,
+  "metal_proof_claimed": false,
+  "phase60b_block_reasons": [
+    "extension_status_observed_false",
+    "repaired_provider_match_ready_false"
+  ],
+  "phase60b_provider_match_repair_bridge_ready": false,
+  "provider_open_allowed_now": false,
+  "provider_open_attempted": false,
+  "recommended_next_phase": "phase60d-activation-wait-system-extension-visibility-hardening",
+  "schema": "h1mekartx.provider_match_personality_entitlement_fix_plan_check.v1",
+  "ui_compositor_proof_claimed": false
+}
