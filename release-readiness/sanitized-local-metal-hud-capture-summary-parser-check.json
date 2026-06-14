@@ -1,0 +1,700 @@
+{
+  "bar_mapping_attempted": false,
+  "capture_wrapper_executed_by_this_phase": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/hackintosh/sanitized-local-metal-hud-capture-summary-parser.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/hackintosh/sanitized-local-metal-hud-capture-summary-parser.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/scripts/parse-sanitized-local-metal-hud-capture-summary.py",
+      "name": "parser_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/sanitized-local-metal-hud-capture-parser-summary.json",
+      "name": "summary_json_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/sanitized-local-metal-hud-capture-parser-summary.md",
+      "name": "summary_md_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/hackintosh/local-metal-hud-hardoptin-capture-wrapper.json",
+      "name": "wrapper_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "summary schema",
+      "name": "summary_schema",
+      "passed": true
+    },
+    {
+      "detail": "wrapper manifest schema",
+      "name": "wrapper_manifest_schema_if_present",
+      "passed": true
+    },
+    {
+      "detail": "sanitized_local_metal_hud_capture_summary_parser_ready",
+      "name": "manifest_sanitized_local_metal_hud_capture_summary_parser_ready_true",
+      "passed": true
+    },
+    {
+      "detail": "sanitized_parser_only",
+      "name": "manifest_sanitized_parser_only_true",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_target_retained",
+      "name": "manifest_rtx5070_target_retained_true",
+      "passed": true
+    },
+    {
+      "detail": "dock_transparency_blur_scope_retained",
+      "name": "manifest_dock_transparency_blur_scope_retained_true",
+      "passed": true
+    },
+    {
+      "detail": "raw_outputs_local_only",
+      "name": "manifest_raw_outputs_local_only_true",
+      "passed": true
+    },
+    {
+      "detail": "capture_wrapper_executed_by_this_phase",
+      "name": "manifest_capture_wrapper_executed_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "capture_wrapper_executed_by_this_phase",
+      "name": "summary_capture_wrapper_executed_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "fallback_gpu_substitution_allowed",
+      "name": "manifest_fallback_gpu_substitution_allowed_false",
+      "passed": true
+    },
+    {
+      "detail": "fallback_gpu_substitution_allowed",
+      "name": "summary_fallback_gpu_substitution_allowed_false",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_committed",
+      "name": "manifest_raw_stdout_committed_false",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_committed",
+      "name": "summary_raw_stdout_committed_false",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_committed",
+      "name": "manifest_raw_stderr_committed_false",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_committed",
+      "name": "summary_raw_stderr_committed_false",
+      "passed": true
+    },
+    {
+      "detail": "raw_metal_hud_log_committed",
+      "name": "manifest_raw_metal_hud_log_committed_false",
+      "passed": true
+    },
+    {
+      "detail": "raw_metal_hud_log_committed",
+      "name": "summary_raw_metal_hud_log_committed_false",
+      "passed": true
+    },
+    {
+      "detail": "env_values_committed",
+      "name": "manifest_env_values_committed_false",
+      "passed": true
+    },
+    {
+      "detail": "env_values_committed",
+      "name": "summary_env_values_committed_false",
+      "passed": true
+    },
+    {
+      "detail": "private_paths_committed",
+      "name": "manifest_private_paths_committed_false",
+      "passed": true
+    },
+    {
+      "detail": "private_paths_committed",
+      "name": "summary_private_paths_committed_false",
+      "passed": true
+    },
+    {
+      "detail": "target_app_path_committed",
+      "name": "manifest_target_app_path_committed_false",
+      "passed": true
+    },
+    {
+      "detail": "target_app_path_committed",
+      "name": "summary_target_app_path_committed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_hud_enabled_by_this_phase",
+      "name": "manifest_metal_hud_enabled_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_hud_enabled_by_this_phase",
+      "name": "summary_metal_hud_enabled_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_workload_run_by_this_phase",
+      "name": "manifest_metal_workload_run_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_workload_run_by_this_phase",
+      "name": "summary_metal_workload_run_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_workload_captured_by_this_phase",
+      "name": "manifest_metal_workload_captured_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_workload_captured_by_this_phase",
+      "name": "summary_metal_workload_captured_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_performance_report_generated_by_this_phase",
+      "name": "manifest_metal_performance_report_generated_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_performance_report_generated_by_this_phase",
+      "name": "summary_metal_performance_report_generated_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "current_rtx5070_metal_acceleration_claimed",
+      "name": "manifest_current_rtx5070_metal_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "current_rtx5070_metal_acceleration_claimed",
+      "name": "summary_current_rtx5070_metal_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "current_rtx5070_ui_smoothness_claimed",
+      "name": "manifest_current_rtx5070_ui_smoothness_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "current_rtx5070_ui_smoothness_claimed",
+      "name": "summary_current_rtx5070_ui_smoothness_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "current_windowserver_attribution_to_rtx5070_proven",
+      "name": "manifest_current_windowserver_attribution_to_rtx5070_proven_false",
+      "passed": true
+    },
+    {
+      "detail": "current_windowserver_attribution_to_rtx5070_proven",
+      "name": "summary_current_windowserver_attribution_to_rtx5070_proven_false",
+      "passed": true
+    },
+    {
+      "detail": "current_core_animation_attribution_to_rtx5070_proven",
+      "name": "manifest_current_core_animation_attribution_to_rtx5070_proven_false",
+      "passed": true
+    },
+    {
+      "detail": "current_core_animation_attribution_to_rtx5070_proven",
+      "name": "summary_current_core_animation_attribution_to_rtx5070_proven_false",
+      "passed": true
+    },
+    {
+      "detail": "current_quartzcore_attribution_to_rtx5070_proven",
+      "name": "manifest_current_quartzcore_attribution_to_rtx5070_proven_false",
+      "passed": true
+    },
+    {
+      "detail": "current_quartzcore_attribution_to_rtx5070_proven",
+      "name": "summary_current_quartzcore_attribution_to_rtx5070_proven_false",
+      "passed": true
+    },
+    {
+      "detail": "current_metal_compositor_attribution_to_rtx5070_proven",
+      "name": "manifest_current_metal_compositor_attribution_to_rtx5070_proven_false",
+      "passed": true
+    },
+    {
+      "detail": "current_metal_compositor_attribution_to_rtx5070_proven",
+      "name": "summary_current_metal_compositor_attribution_to_rtx5070_proven_false",
+      "passed": true
+    },
+    {
+      "detail": "phase61e_allowed_now",
+      "name": "manifest_phase61e_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "phase61e_allowed_now",
+      "name": "summary_phase61e_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "xcodebuild_build_attempted_by_this_phase",
+      "name": "manifest_xcodebuild_build_attempted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "xcodebuild_build_attempted_by_this_phase",
+      "name": "summary_xcodebuild_build_attempted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "activation_submitted_by_this_phase",
+      "name": "manifest_activation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "activation_submitted_by_this_phase",
+      "name": "summary_activation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "deactivation_submitted_by_this_phase",
+      "name": "manifest_deactivation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "deactivation_submitted_by_this_phase",
+      "name": "summary_deactivation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "manifest_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "summary_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manual_dext_load_attempted",
+      "name": "manifest_manual_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manual_dext_load_attempted",
+      "name": "summary_manual_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "summary_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "manifest_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "summary_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "summary_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "summary_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "summary_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "summary_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "summary_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "summary_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_vendor_id=0x10de",
+      "name": "manifest_rtx5070_vendor_id",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_device_id=0x2f04",
+      "name": "manifest_rtx5070_device_id",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_iopcimatch=0x2f0410de",
+      "name": "manifest_rtx5070_iopcimatch",
+      "passed": true
+    },
+    {
+      "detail": "next_gate=phase61e-local-metal-hud-report-metric-schema",
+      "name": "manifest_next_gate",
+      "passed": true
+    },
+    {
+      "detail": "metric_token_counts",
+      "name": "parser_contains_metric_token_counts",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_file_count",
+      "name": "parser_contains_raw_stdout_file_count",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_file_count",
+      "name": "parser_contains_raw_stderr_file_count",
+      "passed": true
+    },
+    {
+      "detail": "raw_metal_hud_log_file_count",
+      "name": "parser_contains_raw_metal_hud_log_file_count",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_not_committed",
+      "name": "parser_contains_raw_stdout_not_committed",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_not_committed",
+      "name": "parser_contains_raw_stderr_not_committed",
+      "passed": true
+    },
+    {
+      "detail": "raw_metal_hud_log_not_committed",
+      "name": "parser_contains_raw_metal_hud_log_not_committed",
+      "passed": true
+    },
+    {
+      "detail": "target_app_sanitized",
+      "name": "parser_contains_target_app_sanitized",
+      "passed": true
+    },
+    {
+      "detail": "<TARGET_APP>",
+      "name": "parser_contains_<TARGET_APP>",
+      "passed": true
+    },
+    {
+      "detail": "private_paths_committed",
+      "name": "parser_contains_private_paths_committed",
+      "passed": true
+    },
+    {
+      "detail": "target_app_path_committed",
+      "name": "parser_contains_target_app_path_committed",
+      "passed": true
+    },
+    {
+      "detail": "metal_hud_enabled_by_this_phase",
+      "name": "parser_contains_metal_hud_enabled_by_this_phase",
+      "passed": true
+    },
+    {
+      "detail": "metal_workload_run_by_this_phase",
+      "name": "parser_contains_metal_workload_run_by_this_phase",
+      "passed": true
+    },
+    {
+      "detail": "metal_performance_report_generated_by_this_phase",
+      "name": "parser_contains_metal_performance_report_generated_by_this_phase",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "parser_contains_provider_open_attempted",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "parser_contains_ioserviceopen_attempted",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "parser_contains_bar_mapping_attempted",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "parser_contains_gpu_command_submission_attempted",
+      "passed": true
+    },
+    {
+      "detail": "local_capture_report_present",
+      "name": "summary_local_capture_report_present_recorded",
+      "passed": true
+    },
+    {
+      "detail": "local_capture_decision",
+      "name": "summary_local_capture_decision_recorded",
+      "passed": true
+    },
+    {
+      "detail": "hard_optin_ok",
+      "name": "summary_hard_optin_ok_recorded",
+      "passed": true
+    },
+    {
+      "detail": "execute_capture_requested",
+      "name": "summary_execute_capture_requested_recorded",
+      "passed": true
+    },
+    {
+      "detail": "target_app_sanitized",
+      "name": "summary_target_app_sanitized_recorded",
+      "passed": true
+    },
+    {
+      "detail": "target_app_path_committed",
+      "name": "summary_target_app_path_committed_recorded",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_file_count",
+      "name": "summary_raw_stdout_file_count_recorded",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_file_count",
+      "name": "summary_raw_stderr_file_count_recorded",
+      "passed": true
+    },
+    {
+      "detail": "raw_metal_hud_log_file_count",
+      "name": "summary_raw_metal_hud_log_file_count_recorded",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_total_bytes",
+      "name": "summary_raw_stdout_total_bytes_recorded",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_total_bytes",
+      "name": "summary_raw_stderr_total_bytes_recorded",
+      "passed": true
+    },
+    {
+      "detail": "raw_metal_hud_log_total_bytes",
+      "name": "summary_raw_metal_hud_log_total_bytes_recorded",
+      "passed": true
+    },
+    {
+      "detail": "metric_token_counts",
+      "name": "summary_metric_token_counts_recorded",
+      "passed": true
+    },
+    {
+      "detail": "next_gate",
+      "name": "summary_next_gate_recorded",
+      "passed": true
+    },
+    {
+      "detail": "next gate",
+      "name": "summary_next_gate",
+      "passed": true
+    },
+    {
+      "detail": "target app sanitized",
+      "name": "summary_target_app_sanitized",
+      "passed": true
+    },
+    {
+      "detail": "metric counts",
+      "name": "summary_metric_counts_dict",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_key",
+      "name": "no_raw_stdout_key_in_sanitized-local-metal-hud-capture-parser-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_key",
+      "name": "no_raw_stderr_key_in_sanitized-local-metal-hud-capture-parser-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "command_key",
+      "name": "no_command_key_in_sanitized-local-metal-hud-capture-parser-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "home_path",
+      "name": "no_home_path_in_sanitized-local-metal-hud-capture-parser-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "tmp_path",
+      "name": "no_tmp_path_in_sanitized-local-metal-hud-capture-parser-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "email_like",
+      "name": "no_email_like_in_sanitized-local-metal-hud-capture-parser-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "apple_development",
+      "name": "no_apple_development_in_sanitized-local-metal-hud-capture-parser-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "developer_id_application",
+      "name": "no_developer_id_application_in_sanitized-local-metal-hud-capture-parser-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "hash_like",
+      "name": "no_hash_like_in_sanitized-local-metal-hud-capture-parser-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_key",
+      "name": "no_raw_stdout_key_in_sanitized-local-metal-hud-capture-parser-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_key",
+      "name": "no_raw_stderr_key_in_sanitized-local-metal-hud-capture-parser-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "command_key",
+      "name": "no_command_key_in_sanitized-local-metal-hud-capture-parser-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "home_path",
+      "name": "no_home_path_in_sanitized-local-metal-hud-capture-parser-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "tmp_path",
+      "name": "no_tmp_path_in_sanitized-local-metal-hud-capture-parser-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "email_like",
+      "name": "no_email_like_in_sanitized-local-metal-hud-capture-parser-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "apple_development",
+      "name": "no_apple_development_in_sanitized-local-metal-hud-capture-parser-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "developer_id_application",
+      "name": "no_developer_id_application_in_sanitized-local-metal-hud-capture-parser-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "hash_like",
+      "name": "no_hash_like_in_sanitized-local-metal-hud-capture-parser-summary.md",
+      "passed": true
+    }
+  ],
+  "current_rtx5070_metal_acceleration_claimed": false,
+  "current_rtx5070_ui_smoothness_claimed": false,
+  "decision": "PASS_SANITIZED_LOCAL_METAL_HUD_CAPTURE_SUMMARY_PARSER_READY",
+  "fallback_gpu_substitution_allowed": false,
+  "generated_at_utc": "2026-06-14T08:20:09.437584+00:00",
+  "gpu_command_submission_attempted": false,
+  "ioserviceopen_attempted": false,
+  "metal_hud_enabled_by_this_phase": false,
+  "metal_performance_report_generated_by_this_phase": false,
+  "metal_proof_claimed": false,
+  "metal_workload_captured_by_this_phase": false,
+  "metal_workload_run_by_this_phase": false,
+  "next_gate": "phase61e-local-metal-hud-report-metric-schema",
+  "phase61e_allowed_now": false,
+  "provider_open_attempted": false,
+  "rtx5070_target_retained": true,
+  "sanitized_parser_only": true,
+  "schema": "h1mekartx.sanitized_local_metal_hud_capture_summary_parser_check.v1",
+  "ui_compositor_proof_claimed": false
+}
