@@ -1,0 +1,605 @@
+{
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/hackintosh/local-metal-hud-dryrun-launch-command-generator.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/hackintosh/local-metal-hud-dryrun-launch-command-generator.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/scripts/generate-local-metal-hud-dryrun-launch-command.py",
+      "name": "generator_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/local-metal-hud-dryrun-launch-command-summary.json",
+      "name": "summary_json_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/local-metal-hud-dryrun-launch-command-summary.md",
+      "name": "summary_md_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/hackintosh/local-metal-hud-environment-capture-prep.json",
+      "name": "prep_manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "summary schema",
+      "name": "summary_schema",
+      "passed": true
+    },
+    {
+      "detail": "prep manifest schema",
+      "name": "prep_manifest_schema_if_present",
+      "passed": true
+    },
+    {
+      "detail": "local_metal_hud_dryrun_launch_command_generator_ready",
+      "name": "manifest_local_metal_hud_dryrun_launch_command_generator_ready_true",
+      "passed": true
+    },
+    {
+      "detail": "dryrun_command_template_only",
+      "name": "manifest_dryrun_command_template_only_true",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_target_retained",
+      "name": "manifest_rtx5070_target_retained_true",
+      "passed": true
+    },
+    {
+      "detail": "dock_transparency_blur_scope_retained",
+      "name": "manifest_dock_transparency_blur_scope_retained_true",
+      "passed": true
+    },
+    {
+      "detail": "raw_outputs_local_only",
+      "name": "manifest_raw_outputs_local_only_true",
+      "passed": true
+    },
+    {
+      "detail": "generated_commands_executed_by_this_phase",
+      "name": "manifest_generated_commands_executed_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "generated_commands_executed_by_this_phase",
+      "name": "summary_generated_commands_executed_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "fallback_gpu_substitution_allowed",
+      "name": "manifest_fallback_gpu_substitution_allowed_false",
+      "passed": true
+    },
+    {
+      "detail": "fallback_gpu_substitution_allowed",
+      "name": "summary_fallback_gpu_substitution_allowed_false",
+      "passed": true
+    },
+    {
+      "detail": "env_values_committed",
+      "name": "manifest_env_values_committed_false",
+      "passed": true
+    },
+    {
+      "detail": "env_values_committed",
+      "name": "summary_env_values_committed_false",
+      "passed": true
+    },
+    {
+      "detail": "private_paths_committed",
+      "name": "manifest_private_paths_committed_false",
+      "passed": true
+    },
+    {
+      "detail": "private_paths_committed",
+      "name": "summary_private_paths_committed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_hud_enabled_by_this_phase",
+      "name": "manifest_metal_hud_enabled_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_hud_enabled_by_this_phase",
+      "name": "summary_metal_hud_enabled_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_workload_run_by_this_phase",
+      "name": "manifest_metal_workload_run_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_workload_run_by_this_phase",
+      "name": "summary_metal_workload_run_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_workload_captured_by_this_phase",
+      "name": "manifest_metal_workload_captured_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_workload_captured_by_this_phase",
+      "name": "summary_metal_workload_captured_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_performance_report_generated_by_this_phase",
+      "name": "manifest_metal_performance_report_generated_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_performance_report_generated_by_this_phase",
+      "name": "summary_metal_performance_report_generated_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "current_rtx5070_metal_acceleration_claimed",
+      "name": "manifest_current_rtx5070_metal_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "current_rtx5070_metal_acceleration_claimed",
+      "name": "summary_current_rtx5070_metal_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "current_rtx5070_ui_smoothness_claimed",
+      "name": "manifest_current_rtx5070_ui_smoothness_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "current_rtx5070_ui_smoothness_claimed",
+      "name": "summary_current_rtx5070_ui_smoothness_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "current_windowserver_attribution_to_rtx5070_proven",
+      "name": "manifest_current_windowserver_attribution_to_rtx5070_proven_false",
+      "passed": true
+    },
+    {
+      "detail": "current_windowserver_attribution_to_rtx5070_proven",
+      "name": "summary_current_windowserver_attribution_to_rtx5070_proven_false",
+      "passed": true
+    },
+    {
+      "detail": "current_core_animation_attribution_to_rtx5070_proven",
+      "name": "manifest_current_core_animation_attribution_to_rtx5070_proven_false",
+      "passed": true
+    },
+    {
+      "detail": "current_core_animation_attribution_to_rtx5070_proven",
+      "name": "summary_current_core_animation_attribution_to_rtx5070_proven_false",
+      "passed": true
+    },
+    {
+      "detail": "current_quartzcore_attribution_to_rtx5070_proven",
+      "name": "manifest_current_quartzcore_attribution_to_rtx5070_proven_false",
+      "passed": true
+    },
+    {
+      "detail": "current_quartzcore_attribution_to_rtx5070_proven",
+      "name": "summary_current_quartzcore_attribution_to_rtx5070_proven_false",
+      "passed": true
+    },
+    {
+      "detail": "current_metal_compositor_attribution_to_rtx5070_proven",
+      "name": "manifest_current_metal_compositor_attribution_to_rtx5070_proven_false",
+      "passed": true
+    },
+    {
+      "detail": "current_metal_compositor_attribution_to_rtx5070_proven",
+      "name": "summary_current_metal_compositor_attribution_to_rtx5070_proven_false",
+      "passed": true
+    },
+    {
+      "detail": "phase61c_allowed_now",
+      "name": "manifest_phase61c_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "phase61c_allowed_now",
+      "name": "summary_phase61c_allowed_now_false",
+      "passed": true
+    },
+    {
+      "detail": "xcodebuild_build_attempted_by_this_phase",
+      "name": "manifest_xcodebuild_build_attempted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "xcodebuild_build_attempted_by_this_phase",
+      "name": "summary_xcodebuild_build_attempted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "activation_submitted_by_this_phase",
+      "name": "manifest_activation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "activation_submitted_by_this_phase",
+      "name": "summary_activation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "deactivation_submitted_by_this_phase",
+      "name": "manifest_deactivation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "deactivation_submitted_by_this_phase",
+      "name": "summary_deactivation_submitted_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "manifest_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "install_attempted",
+      "name": "summary_install_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manual_dext_load_attempted",
+      "name": "manifest_manual_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "manual_dext_load_attempted",
+      "name": "summary_manual_dext_load_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "summary_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "manifest_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "summary_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "summary_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "manifest_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mmio_mutation_attempted",
+      "name": "summary_bar_mmio_mutation_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "manifest_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "configuration_writes_attempted",
+      "name": "summary_configuration_writes_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "summary_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "manifest_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "ui_compositor_proof_claimed",
+      "name": "summary_ui_compositor_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "manifest_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "metal_proof_claimed",
+      "name": "summary_metal_proof_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_vendor_id=0x10de",
+      "name": "manifest_rtx5070_vendor_id",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_device_id=0x2f04",
+      "name": "manifest_rtx5070_device_id",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_iopcimatch=0x2f0410de",
+      "name": "manifest_rtx5070_iopcimatch",
+      "passed": true
+    },
+    {
+      "detail": "next_gate=phase61c-local-metal-hud-hardoptin-capture-wrapper",
+      "name": "manifest_next_gate",
+      "passed": true
+    },
+    {
+      "detail": "MTL_HUD_ENABLED=1 <TARGET_APP>",
+      "name": "generator_contains_MTL_HUD_ENABLED=1_<TARGET_APP>",
+      "passed": true
+    },
+    {
+      "detail": "MTL_HUD_LOG_ENABLED=1",
+      "name": "generator_contains_MTL_HUD_LOG_ENABLED=1",
+      "passed": true
+    },
+    {
+      "detail": "xcrun xctrace record",
+      "name": "generator_contains_xcrun_xctrace_record",
+      "passed": true
+    },
+    {
+      "detail": "Game Performance",
+      "name": "generator_contains_Game_Performance",
+      "passed": true
+    },
+    {
+      "detail": "Metal System Trace",
+      "name": "generator_contains_Metal_System_Trace",
+      "passed": true
+    },
+    {
+      "detail": "<TARGET_APP>",
+      "name": "generator_contains_<TARGET_APP>",
+      "passed": true
+    },
+    {
+      "detail": "<SCENARIO>",
+      "name": "generator_contains_<SCENARIO>",
+      "passed": true
+    },
+    {
+      "detail": "<DURATION_SECONDS>",
+      "name": "generator_contains_<DURATION_SECONDS>",
+      "passed": true
+    },
+    {
+      "detail": "<OUTPUT_DIR>",
+      "name": "generator_contains_<OUTPUT_DIR>",
+      "passed": true
+    },
+    {
+      "detail": "executed",
+      "name": "generator_contains_executed",
+      "passed": true
+    },
+    {
+      "detail": "False",
+      "name": "generator_contains_False",
+      "passed": true
+    },
+    {
+      "detail": "generated_commands_executed_by_this_phase",
+      "name": "generator_contains_generated_commands_executed_by_this_phase",
+      "passed": true
+    },
+    {
+      "detail": "metal_hud_enabled_by_this_phase",
+      "name": "generator_contains_metal_hud_enabled_by_this_phase",
+      "passed": true
+    },
+    {
+      "detail": "metal_workload_run_by_this_phase",
+      "name": "generator_contains_metal_workload_run_by_this_phase",
+      "passed": true
+    },
+    {
+      "detail": "metal_performance_report_generated_by_this_phase",
+      "name": "generator_contains_metal_performance_report_generated_by_this_phase",
+      "passed": true
+    },
+    {
+      "detail": "local_dryrun_report_present",
+      "name": "summary_local_dryrun_report_present_recorded",
+      "passed": true
+    },
+    {
+      "detail": "environment_summary_present",
+      "name": "summary_environment_summary_present_recorded",
+      "passed": true
+    },
+    {
+      "detail": "capture_summary_present",
+      "name": "summary_capture_summary_present_recorded",
+      "passed": true
+    },
+    {
+      "detail": "scenario_summary_present",
+      "name": "summary_scenario_summary_present_recorded",
+      "passed": true
+    },
+    {
+      "detail": "xcrun_available",
+      "name": "summary_xcrun_available_recorded",
+      "passed": true
+    },
+    {
+      "detail": "xctrace_available",
+      "name": "summary_xctrace_available_recorded",
+      "passed": true
+    },
+    {
+      "detail": "metal_tool_available",
+      "name": "summary_metal_tool_available_recorded",
+      "passed": true
+    },
+    {
+      "detail": "metallib_tool_available",
+      "name": "summary_metallib_tool_available_recorded",
+      "passed": true
+    },
+    {
+      "detail": "command_template_count",
+      "name": "summary_command_template_count_recorded",
+      "passed": true
+    },
+    {
+      "detail": "scenario_plan_count",
+      "name": "summary_scenario_plan_count_recorded",
+      "passed": true
+    },
+    {
+      "detail": "command_template_names",
+      "name": "summary_command_template_names_recorded",
+      "passed": true
+    },
+    {
+      "detail": "next_gate",
+      "name": "summary_next_gate_recorded",
+      "passed": true
+    },
+    {
+      "detail": "next gate",
+      "name": "summary_next_gate",
+      "passed": true
+    },
+    {
+      "detail": "template count",
+      "name": "summary_command_template_count_positive",
+      "passed": true
+    },
+    {
+      "detail": "scenario count",
+      "name": "summary_scenario_plan_count_positive",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_key",
+      "name": "no_raw_stdout_key_in_local-metal-hud-dryrun-launch-command-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_key",
+      "name": "no_raw_stderr_key_in_local-metal-hud-dryrun-launch-command-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "command_key",
+      "name": "no_command_key_in_local-metal-hud-dryrun-launch-command-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "home_path",
+      "name": "no_home_path_in_local-metal-hud-dryrun-launch-command-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "tmp_path",
+      "name": "no_tmp_path_in_local-metal-hud-dryrun-launch-command-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "email_like",
+      "name": "no_email_like_in_local-metal-hud-dryrun-launch-command-summary.json",
+      "passed": true
+    },
+    {
+      "detail": "raw_stdout_key",
+      "name": "no_raw_stdout_key_in_local-metal-hud-dryrun-launch-command-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "raw_stderr_key",
+      "name": "no_raw_stderr_key_in_local-metal-hud-dryrun-launch-command-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "command_key",
+      "name": "no_command_key_in_local-metal-hud-dryrun-launch-command-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "home_path",
+      "name": "no_home_path_in_local-metal-hud-dryrun-launch-command-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "tmp_path",
+      "name": "no_tmp_path_in_local-metal-hud-dryrun-launch-command-summary.md",
+      "passed": true
+    },
+    {
+      "detail": "email_like",
+      "name": "no_email_like_in_local-metal-hud-dryrun-launch-command-summary.md",
+      "passed": true
+    }
+  ],
+  "current_rtx5070_metal_acceleration_claimed": false,
+  "current_rtx5070_ui_smoothness_claimed": false,
+  "decision": "PASS_LOCAL_METAL_HUD_DRYRUN_LAUNCH_COMMAND_READY",
+  "dryrun_command_template_only": true,
+  "fallback_gpu_substitution_allowed": false,
+  "generated_at_utc": "2026-06-14T08:03:12.269058+00:00",
+  "generated_commands_executed_by_this_phase": false,
+  "gpu_command_submission_attempted": false,
+  "ioserviceopen_attempted": false,
+  "metal_hud_enabled_by_this_phase": false,
+  "metal_performance_report_generated_by_this_phase": false,
+  "metal_proof_claimed": false,
+  "metal_workload_captured_by_this_phase": false,
+  "metal_workload_run_by_this_phase": false,
+  "next_gate": "phase61c-local-metal-hud-hardoptin-capture-wrapper",
+  "phase61c_allowed_now": false,
+  "provider_open_attempted": false,
+  "rtx5070_target_retained": true,
+  "schema": "h1mekartx.local_metal_hud_dryrun_launch_command_check.v1",
+  "ui_compositor_proof_claimed": false
+}
