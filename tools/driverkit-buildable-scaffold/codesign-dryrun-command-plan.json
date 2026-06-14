@@ -1,0 +1,124 @@
+{
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "classification": "CLASSIFICATION_CODESIGN_DRYRUN_COMMAND_PLAN",
+  "codesign_dryrun_command_plan_ready": true,
+  "codesign_executed": false,
+  "codesign_signing_attempted": false,
+  "command_plan_only": true,
+  "configuration_writes_attempted": false,
+  "dext_load_attempted": false,
+  "gpu_command_submission_attempted": false,
+  "install_attempted": false,
+  "metal_proof_claimed": false,
+  "placeholders": {
+    "bundle_root": "host-report-bundle/unsigned-app-bundle/H1mekaRTXHost.app",
+    "signing_identity": "SIGNING_IDENTITY_PLACEHOLDER",
+    "team_id": "TEAM_ID_PLACEHOLDER"
+  },
+  "planned_commands": [
+    {
+      "command": [
+        "codesign",
+        "--force",
+        "--timestamp=none",
+        "--options",
+        "runtime",
+        "--entitlements",
+        "tools/driverkit-buildable-scaffold/H1mekaRTXDriver.dext/H1mekaRTXDriver.entitlements",
+        "--sign",
+        "SIGNING_IDENTITY_PLACEHOLDER",
+        "host-report-bundle/unsigned-app-bundle/H1mekaRTXHost.app/Contents/Library/SystemExtensions/dev.h1meka.H1mekaRTXDriver.dext"
+      ],
+      "execute_now": false,
+      "name": "sign_embedded_dext"
+    },
+    {
+      "command": [
+        "codesign",
+        "--verify",
+        "--strict",
+        "--verbose=4",
+        "host-report-bundle/unsigned-app-bundle/H1mekaRTXHost.app/Contents/Library/SystemExtensions/dev.h1meka.H1mekaRTXDriver.dext"
+      ],
+      "execute_now": false,
+      "name": "verify_embedded_dext"
+    },
+    {
+      "command": [
+        "codesign",
+        "--force",
+        "--timestamp=none",
+        "--options",
+        "runtime",
+        "--entitlements",
+        "tools/driverkit-buildable-scaffold/H1mekaRTXHost/H1mekaRTXHost.entitlements",
+        "--sign",
+        "SIGNING_IDENTITY_PLACEHOLDER",
+        "host-report-bundle/unsigned-app-bundle/H1mekaRTXHost.app"
+      ],
+      "execute_now": false,
+      "name": "sign_host_app"
+    },
+    {
+      "command": [
+        "codesign",
+        "--verify",
+        "--strict",
+        "--verbose=4",
+        "host-report-bundle/unsigned-app-bundle/H1mekaRTXHost.app"
+      ],
+      "execute_now": false,
+      "name": "verify_host_app"
+    },
+    {
+      "command": [
+        "codesign",
+        "-d",
+        "--entitlements",
+        ":-",
+        "host-report-bundle/unsigned-app-bundle/H1mekaRTXHost.app"
+      ],
+      "execute_now": false,
+      "name": "dump_host_entitlements"
+    },
+    {
+      "command": [
+        "codesign",
+        "-d",
+        "--entitlements",
+        ":-",
+        "host-report-bundle/unsigned-app-bundle/H1mekaRTXHost.app/Contents/Library/SystemExtensions/dev.h1meka.H1mekaRTXDriver.dext"
+      ],
+      "execute_now": false,
+      "name": "dump_dext_entitlements"
+    },
+    {
+      "command": [
+        "systemextensionsctl",
+        "list"
+      ],
+      "execute_now": false,
+      "name": "capture_systemextensionsctl_status_before_activation"
+    }
+  ],
+  "planned_order": [
+    "sign_embedded_dext",
+    "verify_embedded_dext",
+    "sign_host_app",
+    "verify_host_app",
+    "dump_host_entitlements",
+    "dump_dext_entitlements",
+    "capture_systemextensionsctl_status_before_activation"
+  ],
+  "provider_open_attempted": false,
+  "schema": "h1mekartx.codesign_dryrun_command_plan.v1",
+  "secondary_classification": "CLASSIFICATION_SIGNED_HOST_DEXT_PACKAGING_PREFLIGHT",
+  "signed_package_created": false,
+  "submit_activation_allowed_now": false,
+  "submit_deactivation_allowed_now": false,
+  "system_extension_activation_attempted": false,
+  "system_extension_deactivation_attempted": false,
+  "tertiary_classification": "CLASSIFICATION_NO_SIGNING_NO_INSTALL_NO_ACTIVATION",
+  "ui_compositor_proof_claimed": false
+}
