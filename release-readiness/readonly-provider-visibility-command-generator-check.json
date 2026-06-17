@@ -1,0 +1,417 @@
+{
+  "bar0_read_attempted": false,
+  "bar0_write_attempted": false,
+  "bar_mapping_attempted": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/hackintosh/readonly-provider-visibility-command-generator.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/hackintosh/readonly-provider-visibility-command-generator.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/readonly-provider-visibility-command-template.json",
+      "name": "template_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/readonly-provider-visibility-command-template.md",
+      "name": "template_md_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "template schema",
+      "name": "template_schema",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_target_retained",
+      "name": "manifest_rtx5070_target_retained_true",
+      "passed": true
+    },
+    {
+      "detail": "fallback_gpu_substitution_allowed",
+      "name": "manifest_fallback_gpu_substitution_allowed_false",
+      "passed": true
+    },
+    {
+      "detail": "commands_executed_by_this_phase",
+      "name": "manifest_commands_executed_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_visibility_capture_attempted",
+      "name": "manifest_provider_visibility_capture_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "manifest_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar0_read_attempted",
+      "name": "manifest_bar0_read_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar0_write_attempted",
+      "name": "manifest_bar0_write_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "current_rtx5070_metal_acceleration_claimed",
+      "name": "manifest_current_rtx5070_metal_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "current_rtx5070_ui_smoothness_claimed",
+      "name": "manifest_current_rtx5070_ui_smoothness_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "dock_transparency_blur_acceleration_claimed",
+      "name": "manifest_dock_transparency_blur_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_target_retained",
+      "name": "template_rtx5070_target_retained_true",
+      "passed": true
+    },
+    {
+      "detail": "fallback_gpu_substitution_allowed",
+      "name": "template_fallback_gpu_substitution_allowed_false",
+      "passed": true
+    },
+    {
+      "detail": "commands_executed_by_this_phase",
+      "name": "template_commands_executed_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_visibility_capture_attempted",
+      "name": "template_provider_visibility_capture_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "template_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "template_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "template_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar0_read_attempted",
+      "name": "template_bar0_read_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar0_write_attempted",
+      "name": "template_bar0_write_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "template_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "current_rtx5070_metal_acceleration_claimed",
+      "name": "template_current_rtx5070_metal_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "current_rtx5070_ui_smoothness_claimed",
+      "name": "template_current_rtx5070_ui_smoothness_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "dock_transparency_blur_acceleration_claimed",
+      "name": "template_dock_transparency_blur_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_vendor_id=0x10de",
+      "name": "manifest_rtx5070_vendor_id",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_device_id=0x2f04",
+      "name": "manifest_rtx5070_device_id",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_iopcimatch=0x2f0410de",
+      "name": "manifest_rtx5070_iopcimatch",
+      "passed": true
+    },
+    {
+      "detail": "expected_driverkit_bundle_identifier=dev.h1meka.H1mekaRTXDriver",
+      "name": "manifest_expected_driverkit_bundle_identifier",
+      "passed": true
+    },
+    {
+      "detail": "next_gate=phase62h-local-readonly-provider-visibility-capture-wrapper",
+      "name": "manifest_next_gate",
+      "passed": true
+    },
+    {
+      "detail": "count=5",
+      "name": "template_has_commands",
+      "passed": true
+    },
+    {
+      "detail": "executes_provider_open",
+      "name": "command_ioreg_search_rtx5070_pci_identity_executes_provider_open_false",
+      "passed": true
+    },
+    {
+      "detail": "maps_bar",
+      "name": "command_ioreg_search_rtx5070_pci_identity_maps_bar_false",
+      "passed": true
+    },
+    {
+      "detail": "reads_bar0",
+      "name": "command_ioreg_search_rtx5070_pci_identity_reads_bar0_false",
+      "passed": true
+    },
+    {
+      "detail": "writes_bar0",
+      "name": "command_ioreg_search_rtx5070_pci_identity_writes_bar0_false",
+      "passed": true
+    },
+    {
+      "detail": "submits_gpu_commands",
+      "name": "command_ioreg_search_rtx5070_pci_identity_submits_gpu_commands_false",
+      "passed": true
+    },
+    {
+      "detail": "executes_provider_open",
+      "name": "command_ioreg_full_provider_visibility_readonly_executes_provider_open_false",
+      "passed": true
+    },
+    {
+      "detail": "maps_bar",
+      "name": "command_ioreg_full_provider_visibility_readonly_maps_bar_false",
+      "passed": true
+    },
+    {
+      "detail": "reads_bar0",
+      "name": "command_ioreg_full_provider_visibility_readonly_reads_bar0_false",
+      "passed": true
+    },
+    {
+      "detail": "writes_bar0",
+      "name": "command_ioreg_full_provider_visibility_readonly_writes_bar0_false",
+      "passed": true
+    },
+    {
+      "detail": "submits_gpu_commands",
+      "name": "command_ioreg_full_provider_visibility_readonly_submits_gpu_commands_false",
+      "passed": true
+    },
+    {
+      "detail": "executes_provider_open",
+      "name": "command_systemextensions_list_readonly_executes_provider_open_false",
+      "passed": true
+    },
+    {
+      "detail": "maps_bar",
+      "name": "command_systemextensions_list_readonly_maps_bar_false",
+      "passed": true
+    },
+    {
+      "detail": "reads_bar0",
+      "name": "command_systemextensions_list_readonly_reads_bar0_false",
+      "passed": true
+    },
+    {
+      "detail": "writes_bar0",
+      "name": "command_systemextensions_list_readonly_writes_bar0_false",
+      "passed": true
+    },
+    {
+      "detail": "submits_gpu_commands",
+      "name": "command_systemextensions_list_readonly_submits_gpu_commands_false",
+      "passed": true
+    },
+    {
+      "detail": "executes_provider_open",
+      "name": "command_kmutil_loaded_readonly_executes_provider_open_false",
+      "passed": true
+    },
+    {
+      "detail": "maps_bar",
+      "name": "command_kmutil_loaded_readonly_maps_bar_false",
+      "passed": true
+    },
+    {
+      "detail": "reads_bar0",
+      "name": "command_kmutil_loaded_readonly_reads_bar0_false",
+      "passed": true
+    },
+    {
+      "detail": "writes_bar0",
+      "name": "command_kmutil_loaded_readonly_writes_bar0_false",
+      "passed": true
+    },
+    {
+      "detail": "submits_gpu_commands",
+      "name": "command_kmutil_loaded_readonly_submits_gpu_commands_false",
+      "passed": true
+    },
+    {
+      "detail": "executes_provider_open",
+      "name": "command_driverkit_log_readonly_recent_executes_provider_open_false",
+      "passed": true
+    },
+    {
+      "detail": "maps_bar",
+      "name": "command_driverkit_log_readonly_recent_maps_bar_false",
+      "passed": true
+    },
+    {
+      "detail": "reads_bar0",
+      "name": "command_driverkit_log_readonly_recent_reads_bar0_false",
+      "passed": true
+    },
+    {
+      "detail": "writes_bar0",
+      "name": "command_driverkit_log_readonly_recent_writes_bar0_false",
+      "passed": true
+    },
+    {
+      "detail": "submits_gpu_commands",
+      "name": "command_driverkit_log_readonly_recent_submits_gpu_commands_false",
+      "passed": true
+    },
+    {
+      "detail": "IOServiceOpen(",
+      "name": "forbidden_absent_from_commands_IOServiceOpen(",
+      "passed": true
+    },
+    {
+      "detail": "ioreg -w",
+      "name": "forbidden_absent_from_commands_ioreg_-w",
+      "passed": true
+    },
+    {
+      "detail": "nvram ",
+      "name": "forbidden_absent_from_commands_nvram_",
+      "passed": true
+    },
+    {
+      "detail": "kextload",
+      "name": "forbidden_absent_from_commands_kextload",
+      "passed": true
+    },
+    {
+      "detail": "kmutil load",
+      "name": "forbidden_absent_from_commands_kmutil_load",
+      "passed": true
+    },
+    {
+      "detail": "setpci",
+      "name": "forbidden_absent_from_commands_setpci",
+      "passed": true
+    },
+    {
+      "detail": "pciconf",
+      "name": "forbidden_absent_from_commands_pciconf",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not execute provider visibility commands",
+      "name": "doc_contains_This_phase_does_not_execute_provider_visibility_commands",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not open a provider",
+      "name": "doc_contains_This_phase_does_not_open_a_provider",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not call IOServiceOpen",
+      "name": "doc_contains_This_phase_does_not_call_IOServiceOpen",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not map BAR memory",
+      "name": "doc_contains_This_phase_does_not_map_BAR_memory",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not read BAR0",
+      "name": "doc_contains_This_phase_does_not_read_BAR0",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not write BAR0",
+      "name": "doc_contains_This_phase_does_not_write_BAR0",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not submit GPU commands",
+      "name": "doc_contains_This_phase_does_not_submit_GPU_commands",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not claim RTX 5070 Metal acceleration",
+      "name": "doc_contains_This_phase_does_not_claim_RTX_5070_Metal_acceleration",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not claim Dock/transparency/blur acceleration",
+      "name": "doc_contains_This_phase_does_not_claim_Dock/transparency/blur_acceleration",
+      "passed": true
+    }
+  ],
+  "command_template_only": true,
+  "commands_executed_by_this_phase": false,
+  "current_rtx5070_metal_acceleration_claimed": false,
+  "current_rtx5070_ui_smoothness_claimed": false,
+  "decision": "PASS_READONLY_PROVIDER_VISIBILITY_COMMAND_GENERATOR_READY",
+  "dock_transparency_blur_acceleration_claimed": false,
+  "fallback_gpu_substitution_allowed": false,
+  "generated_at_utc": "2026-06-17T22:29:09.965798+00:00",
+  "gpu_command_submission_attempted": false,
+  "ioserviceopen_attempted": false,
+  "next_gate": "phase62h-local-readonly-provider-visibility-capture-wrapper",
+  "provider_open_attempted": false,
+  "provider_visibility_capture_attempted": false,
+  "rtx5070_target_retained": true,
+  "schema": "h1mekartx.readonly_provider_visibility_command_generator_check.v1"
+}

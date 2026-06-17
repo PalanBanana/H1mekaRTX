@@ -1,0 +1,92 @@
+{
+  "bar0_read_attempted": false,
+  "bar0_write_attempted": false,
+  "bar_mapping_attempted": false,
+  "classification": "CLASSIFICATION_READONLY_PROVIDER_VISIBILITY_COMMAND_TEMPLATE",
+  "commands": [
+    {
+      "command": "ioreg -l -p IOService | grep -Ei '10de|2f04|0x2f0410de|H1mekaRTX|IOPCIDevice' | head -200",
+      "executes_provider_open": false,
+      "maps_bar": false,
+      "name": "ioreg_search_rtx5070_pci_identity",
+      "reads_bar0": false,
+      "submits_gpu_commands": false,
+      "writes_bar0": false
+    },
+    {
+      "command": "ioreg -l -p IOService -r -n H1mekaRTXDriver 2>/dev/null || true",
+      "executes_provider_open": false,
+      "maps_bar": false,
+      "name": "ioreg_full_provider_visibility_readonly",
+      "reads_bar0": false,
+      "submits_gpu_commands": false,
+      "writes_bar0": false
+    },
+    {
+      "command": "systemextensionsctl list | grep -Ei 'H1mekaRTX|DriverKit|dev.h1meka' || true",
+      "executes_provider_open": false,
+      "maps_bar": false,
+      "name": "systemextensions_list_readonly",
+      "reads_bar0": false,
+      "submits_gpu_commands": false,
+      "writes_bar0": false
+    },
+    {
+      "command": "kmutil showloaded | grep -Ei 'H1mekaRTX|DriverKit|dev.h1meka' || true",
+      "executes_provider_open": false,
+      "maps_bar": false,
+      "name": "kmutil_loaded_readonly",
+      "reads_bar0": false,
+      "submits_gpu_commands": false,
+      "writes_bar0": false
+    },
+    {
+      "command": "log show --last 30m --style compact --predicate 'eventMessage CONTAINS[c] \"H1mekaRTX\" OR eventMessage CONTAINS[c] \"DriverKit\" OR eventMessage CONTAINS[c] \"PCIDriverKit\"' | tail -300",
+      "executes_provider_open": false,
+      "maps_bar": false,
+      "name": "driverkit_log_readonly_recent",
+      "reads_bar0": false,
+      "submits_gpu_commands": false,
+      "writes_bar0": false
+    }
+  ],
+  "commands_executed_by_this_phase": false,
+  "current_rtx5070_metal_acceleration_claimed": false,
+  "current_rtx5070_ui_smoothness_claimed": false,
+  "dock_transparency_blur_acceleration_claimed": false,
+  "fallback_gpu_substitution_allowed": false,
+  "forbidden_tokens": [
+    "IOServiceOpen",
+    "ioreg -w",
+    "nvram",
+    "kextload",
+    "kmutil load",
+    "dd ",
+    "pciconf",
+    "setpci",
+    "ioreg -c IOPCIDevice -w"
+  ],
+  "generated_at_utc": "2026-06-17T22:29:09.941020+00:00",
+  "gpu_command_submission_attempted": false,
+  "ioserviceopen_attempted": false,
+  "missing_ready_field_count": 11,
+  "missing_ready_fields": [
+    "apple_developer_program_active",
+    "apple_team_id_available",
+    "driverkit_entitlement_request_submitted",
+    "pcidriverkit_transport_entitlement_request_submitted",
+    "system_extension_capability_requested",
+    "host_app_id_configured",
+    "driver_app_id_configured",
+    "driverkit_entitlement_approved",
+    "pcidriverkit_transport_entitlement_approved",
+    "system_extension_capability_approved",
+    "provisioning_profiles_regenerated_after_approval"
+  ],
+  "next_gate": "phase62h-local-readonly-provider-visibility-capture-wrapper",
+  "provider_open_attempted": false,
+  "provider_visibility_capture_attempted": false,
+  "ready_for_provider_match": false,
+  "rtx5070_target_retained": true,
+  "schema": "h1mekartx.readonly_provider_visibility_command_template.v1"
+}
