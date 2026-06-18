@@ -1,0 +1,181 @@
+{
+  "actual_apple_entitlement_request_submitted": false,
+  "bar0_read_attempted": false,
+  "bar0_write_attempted": false,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "bundle_archive_created_by_this_phase": false,
+  "certificates_exported": false,
+  "classification": "CLASSIFICATION_REDACTED_EXPORT_DRY_RUN_PLAN_CONSISTENCY_GATE_OUTPUT",
+  "configuration_writes_attempted": false,
+  "consistency": [
+    {
+      "id": "dry_run_plan_passed",
+      "status": "PASS"
+    },
+    {
+      "id": "dry_run_plan_check_passed",
+      "status": "PASS"
+    },
+    {
+      "id": "dry_run_plan_ready",
+      "status": "PASS"
+    },
+    {
+      "id": "manifest_consistency_gate_ready",
+      "status": "PASS"
+    },
+    {
+      "id": "redacted_manifest_ready",
+      "status": "PASS"
+    },
+    {
+      "id": "include_files_present",
+      "status": "PASS"
+    },
+    {
+      "id": "exclude_labels_present",
+      "status": "PASS"
+    },
+    {
+      "id": "bundle_archive_created_by_this_phase_false",
+      "status": "PASS"
+    },
+    {
+      "id": "files_copied_to_export_bundle_by_this_phase_false",
+      "status": "PASS"
+    },
+    {
+      "id": "certificates_exported_false",
+      "status": "PASS"
+    },
+    {
+      "id": "private_keys_exported_false",
+      "status": "PASS"
+    },
+    {
+      "id": "provisioning_assets_exported_false",
+      "status": "PASS"
+    },
+    {
+      "id": "raw_ioregistry_exported_false",
+      "status": "PASS"
+    },
+    {
+      "id": "provider_handles_exported_false",
+      "status": "PASS"
+    },
+    {
+      "id": "actual_apple_entitlement_request_submitted_false",
+      "status": "PASS"
+    },
+    {
+      "id": "contacted_apple_by_this_phase_false",
+      "status": "PASS"
+    },
+    {
+      "id": "provider_open_attempted_false",
+      "status": "PASS"
+    },
+    {
+      "id": "ioserviceopen_attempted_false",
+      "status": "PASS"
+    },
+    {
+      "id": "bar_mapping_attempted_false",
+      "status": "PASS"
+    },
+    {
+      "id": "bar0_read_attempted_false",
+      "status": "PASS"
+    },
+    {
+      "id": "bar0_write_attempted_false",
+      "status": "PASS"
+    },
+    {
+      "id": "gpu_command_submission_attempted_false",
+      "status": "PASS"
+    },
+    {
+      "id": "current_rtx5070_metal_acceleration_claimed_false",
+      "status": "PASS"
+    },
+    {
+      "id": "dock_transparency_blur_acceleration_claimed_false",
+      "status": "PASS"
+    },
+    {
+      "id": "vendor_id",
+      "status": "PASS"
+    },
+    {
+      "id": "device_id",
+      "status": "PASS"
+    },
+    {
+      "id": "iopcimatch",
+      "status": "PASS"
+    },
+    {
+      "id": "driverkit_bundle_identifier",
+      "status": "PASS"
+    },
+    {
+      "id": "host_app_bundle_identifier",
+      "status": "PASS"
+    }
+  ],
+  "contacted_apple_by_this_phase": false,
+  "current_rtx5070_metal_acceleration_claimed": false,
+  "current_rtx5070_ui_smoothness_claimed": false,
+  "decision": "PASS_REDACTED_EXPORT_DRY_RUN_PLAN_CONSISTENCY_GATE_READY",
+  "display_engine_init_attempted": false,
+  "dock_transparency_blur_acceleration_claimed": false,
+  "dry_run_plan_consistency_gate_only": true,
+  "dry_run_plan_only": false,
+  "exclude_labels_present": true,
+  "expected_device_id": "0x2f04",
+  "expected_driverkit_bundle_identifier": "dev.h1meka.H1mekaRTXDriver",
+  "expected_host_app_bundle_identifier": "dev.h1meka.H1mekaRTXHost",
+  "expected_iopcimatch": "0x2f0410de",
+  "expected_vendor_id": "0x10de",
+  "fail_count": 0,
+  "fallback_gpu_substitution_allowed": false,
+  "files_copied_to_export_bundle_by_this_phase": false,
+  "firmware_load_attempted": false,
+  "framebuffer_init_attempted": false,
+  "generated_at_utc": "2026-06-18T14:18:47.478759+00:00",
+  "gpu_command_submission_attempted": false,
+  "gpu_command_submission_ready": false,
+  "gpu_reset_attempted": false,
+  "include_files_present": true,
+  "input_dry_run_plan_check_pass": true,
+  "input_dry_run_plan_check_present": true,
+  "input_dry_run_plan_pass": true,
+  "input_dry_run_plan_present": true,
+  "input_dry_run_plan_ready": true,
+  "input_manifest_consistency_gate_present": true,
+  "input_manifest_consistency_gate_ready": true,
+  "input_redacted_manifest_present": true,
+  "input_redacted_manifest_ready": true,
+  "inputs_safe": true,
+  "ioserviceopen_attempted": false,
+  "metal_acceleration_ready": false,
+  "metal_proof_claimed": false,
+  "next_gate": "phase63f-redacted-export-bundle-dry-run-inventory-ledger",
+  "pass_count": 29,
+  "private_keys_exported": false,
+  "private_paths_committed": false,
+  "provider_handles_exported": false,
+  "provider_open_attempted": false,
+  "provider_visibility_commands_executed_by_this_phase": false,
+  "provisioning_assets_exported": false,
+  "raw_capture_parsed_by_this_phase": false,
+  "raw_ioregistry_exported": false,
+  "raw_stderr_committed": false,
+  "raw_stdout_committed": false,
+  "redacted_export_dry_run_plan_consistency_gate_ready": true,
+  "rtx5070_target_retained": true,
+  "schema": "h1mekartx.redacted_export_dry_run_plan_consistency_gate_output.v1"
+}
