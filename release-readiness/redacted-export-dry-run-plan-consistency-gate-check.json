@@ -1,0 +1,473 @@
+{
+  "actual_apple_entitlement_request_submitted": false,
+  "bar0_read_attempted": false,
+  "bar0_write_attempted": false,
+  "bar_mapping_attempted": false,
+  "bundle_archive_created_by_this_phase": false,
+  "certificates_exported": false,
+  "checks": [
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/tools/hackintosh/redacted-export-dry-run-plan-consistency-gate.json",
+      "name": "manifest_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/docs/hackintosh/redacted-export-dry-run-plan-consistency-gate.md",
+      "name": "doc_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/redacted-export-dry-run-plan-consistency-gate.json",
+      "name": "output_exists",
+      "passed": true
+    },
+    {
+      "detail": "/Users/h1meka/Dev/H1mekaRTX/release-readiness/redacted-export-dry-run-plan-consistency-gate.md",
+      "name": "output_md_exists",
+      "passed": true
+    },
+    {
+      "detail": "manifest schema",
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "detail": "output schema",
+      "name": "output_schema",
+      "passed": true
+    },
+    {
+      "detail": "output decision",
+      "name": "output_decision_pass",
+      "passed": true
+    },
+    {
+      "detail": "ready",
+      "name": "output_ready_true",
+      "passed": true
+    },
+    {
+      "detail": "include files",
+      "name": "output_include_files_present_true",
+      "passed": true
+    },
+    {
+      "detail": "exclude labels",
+      "name": "output_exclude_labels_present_true",
+      "passed": true
+    },
+    {
+      "detail": "fail_count",
+      "name": "output_fail_count_zero",
+      "passed": true
+    },
+    {
+      "detail": "consistency",
+      "name": "output_consistency_all_pass",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_target_retained",
+      "name": "manifest_rtx5070_target_retained_True",
+      "passed": true
+    },
+    {
+      "detail": "fallback_gpu_substitution_allowed",
+      "name": "manifest_fallback_gpu_substitution_allowed_False",
+      "passed": true
+    },
+    {
+      "detail": "bundle_archive_created_by_this_phase",
+      "name": "manifest_bundle_archive_created_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "files_copied_to_export_bundle_by_this_phase",
+      "name": "manifest_files_copied_to_export_bundle_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "certificates_exported",
+      "name": "manifest_certificates_exported_false",
+      "passed": true
+    },
+    {
+      "detail": "private_keys_exported",
+      "name": "manifest_private_keys_exported_false",
+      "passed": true
+    },
+    {
+      "detail": "provisioning_assets_exported",
+      "name": "manifest_provisioning_assets_exported_false",
+      "passed": true
+    },
+    {
+      "detail": "raw_ioregistry_exported",
+      "name": "manifest_raw_ioregistry_exported_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_handles_exported",
+      "name": "manifest_provider_handles_exported_false",
+      "passed": true
+    },
+    {
+      "detail": "actual_apple_entitlement_request_submitted",
+      "name": "manifest_actual_apple_entitlement_request_submitted_false",
+      "passed": true
+    },
+    {
+      "detail": "contacted_apple_by_this_phase",
+      "name": "manifest_contacted_apple_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "manifest_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "manifest_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "manifest_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar0_read_attempted",
+      "name": "manifest_bar0_read_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar0_write_attempted",
+      "name": "manifest_bar0_write_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "manifest_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "current_rtx5070_metal_acceleration_claimed",
+      "name": "manifest_current_rtx5070_metal_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "dock_transparency_blur_acceleration_claimed",
+      "name": "manifest_dock_transparency_blur_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_target_retained",
+      "name": "output_rtx5070_target_retained_True",
+      "passed": true
+    },
+    {
+      "detail": "fallback_gpu_substitution_allowed",
+      "name": "output_fallback_gpu_substitution_allowed_False",
+      "passed": true
+    },
+    {
+      "detail": "bundle_archive_created_by_this_phase",
+      "name": "output_bundle_archive_created_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "files_copied_to_export_bundle_by_this_phase",
+      "name": "output_files_copied_to_export_bundle_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "certificates_exported",
+      "name": "output_certificates_exported_false",
+      "passed": true
+    },
+    {
+      "detail": "private_keys_exported",
+      "name": "output_private_keys_exported_false",
+      "passed": true
+    },
+    {
+      "detail": "provisioning_assets_exported",
+      "name": "output_provisioning_assets_exported_false",
+      "passed": true
+    },
+    {
+      "detail": "raw_ioregistry_exported",
+      "name": "output_raw_ioregistry_exported_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_handles_exported",
+      "name": "output_provider_handles_exported_false",
+      "passed": true
+    },
+    {
+      "detail": "actual_apple_entitlement_request_submitted",
+      "name": "output_actual_apple_entitlement_request_submitted_false",
+      "passed": true
+    },
+    {
+      "detail": "contacted_apple_by_this_phase",
+      "name": "output_contacted_apple_by_this_phase_false",
+      "passed": true
+    },
+    {
+      "detail": "provider_open_attempted",
+      "name": "output_provider_open_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "ioserviceopen_attempted",
+      "name": "output_ioserviceopen_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar_mapping_attempted",
+      "name": "output_bar_mapping_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar0_read_attempted",
+      "name": "output_bar0_read_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "bar0_write_attempted",
+      "name": "output_bar0_write_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "gpu_command_submission_attempted",
+      "name": "output_gpu_command_submission_attempted_false",
+      "passed": true
+    },
+    {
+      "detail": "current_rtx5070_metal_acceleration_claimed",
+      "name": "output_current_rtx5070_metal_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "dock_transparency_blur_acceleration_claimed",
+      "name": "output_dock_transparency_blur_acceleration_claimed_false",
+      "passed": true
+    },
+    {
+      "detail": "input_dry_run_plan_pass",
+      "name": "output_input_dry_run_plan_pass_true",
+      "passed": true
+    },
+    {
+      "detail": "input_dry_run_plan_check_pass",
+      "name": "output_input_dry_run_plan_check_pass_true",
+      "passed": true
+    },
+    {
+      "detail": "input_dry_run_plan_ready",
+      "name": "output_input_dry_run_plan_ready_true",
+      "passed": true
+    },
+    {
+      "detail": "input_manifest_consistency_gate_ready",
+      "name": "output_input_manifest_consistency_gate_ready_true",
+      "passed": true
+    },
+    {
+      "detail": "input_redacted_manifest_ready",
+      "name": "output_input_redacted_manifest_ready_true",
+      "passed": true
+    },
+    {
+      "detail": "inputs_safe",
+      "name": "output_inputs_safe_true",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_vendor_id=0x10de",
+      "name": "manifest_rtx5070_vendor_id",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_device_id=0x2f04",
+      "name": "manifest_rtx5070_device_id",
+      "passed": true
+    },
+    {
+      "detail": "rtx5070_iopcimatch=0x2f0410de",
+      "name": "manifest_rtx5070_iopcimatch",
+      "passed": true
+    },
+    {
+      "detail": "expected_driverkit_bundle_identifier=dev.h1meka.H1mekaRTXDriver",
+      "name": "manifest_expected_driverkit_bundle_identifier",
+      "passed": true
+    },
+    {
+      "detail": "host_app_bundle_identifier=dev.h1meka.H1mekaRTXHost",
+      "name": "manifest_host_app_bundle_identifier",
+      "passed": true
+    },
+    {
+      "detail": "next_gate=phase63f-redacted-export-bundle-dry-run-inventory-ledger",
+      "name": "manifest_next_gate",
+      "passed": true
+    },
+    {
+      "detail": "expected_vendor_id=0x10de",
+      "name": "output_expected_vendor_id",
+      "passed": true
+    },
+    {
+      "detail": "expected_device_id=0x2f04",
+      "name": "output_expected_device_id",
+      "passed": true
+    },
+    {
+      "detail": "expected_iopcimatch=0x2f0410de",
+      "name": "output_expected_iopcimatch",
+      "passed": true
+    },
+    {
+      "detail": "expected_driverkit_bundle_identifier=dev.h1meka.H1mekaRTXDriver",
+      "name": "output_expected_driverkit_bundle_identifier",
+      "passed": true
+    },
+    {
+      "detail": "expected_host_app_bundle_identifier=dev.h1meka.H1mekaRTXHost",
+      "name": "output_expected_host_app_bundle_identifier",
+      "passed": true
+    },
+    {
+      "detail": "next_gate=phase63f-redacted-export-bundle-dry-run-inventory-ledger",
+      "name": "output_next_gate",
+      "passed": true
+    },
+    {
+      "detail": "This phase is dry-run-plan-consistency-gate-only",
+      "name": "doc_contains_This_phase_is_dry-run-plan-consistency-gate-only",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not create an export archive",
+      "name": "doc_contains_This_phase_does_not_create_an_export_archive",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not copy files into an export bundle",
+      "name": "doc_contains_This_phase_does_not_copy_files_into_an_export_bundle",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not export provisioning assets",
+      "name": "doc_contains_This_phase_does_not_export_provisioning_assets",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not export certificates",
+      "name": "doc_contains_This_phase_does_not_export_certificates",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not export private keys",
+      "name": "doc_contains_This_phase_does_not_export_private_keys",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not export raw IORegistry data",
+      "name": "doc_contains_This_phase_does_not_export_raw_IORegistry_data",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not export provider handles",
+      "name": "doc_contains_This_phase_does_not_export_provider_handles",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not submit an Apple entitlement request",
+      "name": "doc_contains_This_phase_does_not_submit_an_Apple_entitlement_request",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not contact Apple",
+      "name": "doc_contains_This_phase_does_not_contact_Apple",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not open a provider",
+      "name": "doc_contains_This_phase_does_not_open_a_provider",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not call IOServiceOpen",
+      "name": "doc_contains_This_phase_does_not_call_IOServiceOpen",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not map BAR memory",
+      "name": "doc_contains_This_phase_does_not_map_BAR_memory",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not read BAR0",
+      "name": "doc_contains_This_phase_does_not_read_BAR0",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not write BAR0",
+      "name": "doc_contains_This_phase_does_not_write_BAR0",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not submit GPU commands",
+      "name": "doc_contains_This_phase_does_not_submit_GPU_commands",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not claim RTX 5070 Metal acceleration",
+      "name": "doc_contains_This_phase_does_not_claim_RTX_5070_Metal_acceleration",
+      "passed": true
+    },
+    {
+      "detail": "This phase does not claim Dock/transparency/blur acceleration",
+      "name": "doc_contains_This_phase_does_not_claim_Dock/transparency/blur_acceleration",
+      "passed": true
+    },
+    {
+      "detail": "/Users/",
+      "name": "release_output_private_path_absent__Users_",
+      "passed": true
+    },
+    {
+      "detail": "/private/var/folders/",
+      "name": "release_output_private_path_absent__private_var_folders_",
+      "passed": true
+    },
+    {
+      "detail": "/var/folders/",
+      "name": "release_output_private_path_absent__var_folders_",
+      "passed": true
+    }
+  ],
+  "contacted_apple_by_this_phase": false,
+  "current_rtx5070_metal_acceleration_claimed": false,
+  "decision": "PASS_REDACTED_EXPORT_DRY_RUN_PLAN_CONSISTENCY_GATE_READY",
+  "dock_transparency_blur_acceleration_claimed": false,
+  "dry_run_plan_consistency_gate_only": true,
+  "fallback_gpu_substitution_allowed": false,
+  "files_copied_to_export_bundle_by_this_phase": false,
+  "generated_at_utc": "2026-06-18T14:18:47.504185+00:00",
+  "gpu_command_submission_attempted": false,
+  "ioserviceopen_attempted": false,
+  "next_gate": "phase63f-redacted-export-bundle-dry-run-inventory-ledger",
+  "private_keys_exported": false,
+  "provider_handles_exported": false,
+  "provider_open_attempted": false,
+  "provisioning_assets_exported": false,
+  "raw_ioregistry_exported": false,
+  "rtx5070_target_retained": true,
+  "schema": "h1mekartx.redacted_export_dry_run_plan_consistency_gate_check.v1"
+}
