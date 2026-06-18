@@ -1,0 +1,117 @@
+{
+  "bar0_read_attempted": false,
+  "bar0_write_attempted": false,
+  "bar_access_ready": false,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "blocked_count": 3,
+  "classification": "CLASSIFICATION_NOOPEN_TO_ENTITLEMENT_REQUEST_HANDOFF_LEDGER_OUTPUT",
+  "configuration_writes_attempted": false,
+  "current_rtx5070_metal_acceleration_claimed": false,
+  "current_rtx5070_ui_smoothness_claimed": false,
+  "decision": "PASS_NOOPEN_TO_ENTITLEMENT_REQUEST_HANDOFF_LEDGER_READY",
+  "display_engine_init_attempted": false,
+  "dock_transparency_blur_acceleration_claimed": false,
+  "driverkit_entitlement_approved": false,
+  "driverkit_profile_created": false,
+  "driverkit_profile_ready": false,
+  "entitlement_request_package_ready": false,
+  "expected_device_id": "0x2f04",
+  "expected_driverkit_bundle_identifier": "dev.h1meka.H1mekaRTXDriver",
+  "expected_iopcimatch": "0x2f0410de",
+  "expected_vendor_id": "0x10de",
+  "fail_count": 0,
+  "fallback_gpu_substitution_allowed": false,
+  "firmware_load_attempted": false,
+  "framebuffer_init_attempted": false,
+  "generated_at_utc": "2026-06-18T11:29:06.859571+00:00",
+  "gpu_command_submission_attempted": false,
+  "gpu_command_submission_ready": false,
+  "gpu_reset_attempted": false,
+  "handoff_ledger_only": true,
+  "input_final_readiness_ledger_check_pass": true,
+  "input_final_readiness_ledger_check_present": true,
+  "input_final_readiness_ledger_pass": true,
+  "input_final_readiness_ledger_present": true,
+  "input_final_readiness_ready": true,
+  "input_noopen_promotion_gate_pass": true,
+  "input_noopen_promotion_gate_present": true,
+  "input_preflight_present": true,
+  "input_preflight_ready": true,
+  "inputs_safe": true,
+  "ioserviceopen_attempted": false,
+  "ioserviceopen_ready": false,
+  "ledger": [
+    {
+      "id": "final_noopen_readiness_ledger_passed",
+      "status": "PASS"
+    },
+    {
+      "id": "final_noopen_readiness_check_passed",
+      "status": "PASS"
+    },
+    {
+      "id": "final_noopen_readiness_ready",
+      "status": "PASS"
+    },
+    {
+      "id": "noopen_promotion_gate_passed",
+      "status": "PASS"
+    },
+    {
+      "id": "provider_match_preflight_ready",
+      "status": "PASS"
+    },
+    {
+      "id": "inputs_safe",
+      "status": "PASS"
+    },
+    {
+      "id": "entitlement_request_package_not_created_yet",
+      "status": "BLOCKED"
+    },
+    {
+      "id": "driverkit_entitlement_not_approved_yet",
+      "status": "BLOCKED"
+    },
+    {
+      "id": "driverkit_profile_not_created_yet",
+      "status": "BLOCKED"
+    },
+    {
+      "id": "provider_open_blocked",
+      "status": "PASS"
+    },
+    {
+      "id": "ioserviceopen_blocked",
+      "status": "PASS"
+    },
+    {
+      "id": "bar_access_blocked",
+      "status": "PASS"
+    },
+    {
+      "id": "gpu_command_submission_blocked",
+      "status": "PASS"
+    },
+    {
+      "id": "metal_acceleration_not_ready",
+      "status": "PASS"
+    }
+  ],
+  "metal_acceleration_ready": false,
+  "metal_proof_claimed": false,
+  "next_gate": "phase62v-entitlement-request-package-skeleton",
+  "noopen_to_entitlement_request_handoff_ready": true,
+  "pass_count": 11,
+  "private_paths_committed": false,
+  "provider_match_noopen_final_readiness_ready": true,
+  "provider_open_attempted": false,
+  "provider_open_ready": false,
+  "provider_visibility_commands_executed_by_this_phase": false,
+  "raw_capture_parsed_by_this_phase": false,
+  "raw_stderr_committed": false,
+  "raw_stdout_committed": false,
+  "rtx5070_target_retained": true,
+  "schema": "h1mekartx.noopen_to_entitlement_request_handoff_ledger_output.v1"
+}
