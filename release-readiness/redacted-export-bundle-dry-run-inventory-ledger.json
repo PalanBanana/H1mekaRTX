@@ -1,0 +1,316 @@
+{
+  "absolute_paths_recorded": false,
+  "actual_apple_entitlement_request_submitted": false,
+  "bar0_read_attempted": false,
+  "bar0_write_attempted": false,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "bundle_archive_created_by_this_phase": false,
+  "certificates_exported": false,
+  "checks": [
+    {
+      "id": "plan_consistency_gate_passed",
+      "status": "PASS"
+    },
+    {
+      "id": "plan_consistency_gate_check_passed",
+      "status": "PASS"
+    },
+    {
+      "id": "plan_consistency_gate_ready",
+      "status": "PASS"
+    },
+    {
+      "id": "dry_run_plan_ready",
+      "status": "PASS"
+    },
+    {
+      "id": "manifest_consistency_gate_ready",
+      "status": "PASS"
+    },
+    {
+      "id": "redacted_manifest_ready",
+      "status": "PASS"
+    },
+    {
+      "id": "inventory_present",
+      "status": "PASS"
+    },
+    {
+      "id": "inventory_all_exist",
+      "status": "PASS"
+    },
+    {
+      "id": "inventory_all_relative",
+      "status": "PASS"
+    },
+    {
+      "id": "inventory_forbidden_absent",
+      "status": "PASS"
+    },
+    {
+      "id": "inventory_all_not_copied",
+      "status": "PASS"
+    },
+    {
+      "id": "exclude_labels_present",
+      "status": "PASS"
+    },
+    {
+      "id": "bundle_archive_created_by_this_phase_false",
+      "status": "PASS"
+    },
+    {
+      "id": "files_copied_to_export_bundle_by_this_phase_false",
+      "status": "PASS"
+    },
+    {
+      "id": "certificates_exported_false",
+      "status": "PASS"
+    },
+    {
+      "id": "private_keys_exported_false",
+      "status": "PASS"
+    },
+    {
+      "id": "provisioning_assets_exported_false",
+      "status": "PASS"
+    },
+    {
+      "id": "raw_ioregistry_exported_false",
+      "status": "PASS"
+    },
+    {
+      "id": "provider_handles_exported_false",
+      "status": "PASS"
+    },
+    {
+      "id": "actual_apple_entitlement_request_submitted_false",
+      "status": "PASS"
+    },
+    {
+      "id": "contacted_apple_by_this_phase_false",
+      "status": "PASS"
+    },
+    {
+      "id": "provider_open_attempted_false",
+      "status": "PASS"
+    },
+    {
+      "id": "ioserviceopen_attempted_false",
+      "status": "PASS"
+    },
+    {
+      "id": "bar_mapping_attempted_false",
+      "status": "PASS"
+    },
+    {
+      "id": "bar0_read_attempted_false",
+      "status": "PASS"
+    },
+    {
+      "id": "bar0_write_attempted_false",
+      "status": "PASS"
+    },
+    {
+      "id": "gpu_command_submission_attempted_false",
+      "status": "PASS"
+    },
+    {
+      "id": "current_rtx5070_metal_acceleration_claimed_false",
+      "status": "PASS"
+    },
+    {
+      "id": "dock_transparency_blur_acceleration_claimed_false",
+      "status": "PASS"
+    },
+    {
+      "id": "vendor_id",
+      "status": "PASS"
+    },
+    {
+      "id": "device_id",
+      "status": "PASS"
+    },
+    {
+      "id": "iopcimatch",
+      "status": "PASS"
+    },
+    {
+      "id": "driverkit_bundle_identifier",
+      "status": "PASS"
+    },
+    {
+      "id": "host_app_bundle_identifier",
+      "status": "PASS"
+    }
+  ],
+  "classification": "CLASSIFICATION_REDACTED_EXPORT_BUNDLE_DRY_RUN_INVENTORY_LEDGER_OUTPUT",
+  "configuration_writes_attempted": false,
+  "contacted_apple_by_this_phase": false,
+  "current_rtx5070_metal_acceleration_claimed": false,
+  "current_rtx5070_ui_smoothness_claimed": false,
+  "decision": "PASS_REDACTED_EXPORT_BUNDLE_DRY_RUN_INVENTORY_LEDGER_READY",
+  "display_engine_init_attempted": false,
+  "dock_transparency_blur_acceleration_claimed": false,
+  "dry_run_inventory_ledger_only": true,
+  "dry_run_plan_only": false,
+  "exclude_labels": [
+    "HOST_REPORT_BUNDLE",
+    "RAW_STDOUT_STDERR",
+    "PRIVATE_LOCAL_PATHS",
+    "CERTIFICATES",
+    "PRIVATE_KEYS",
+    "PROVISIONING_PROFILES",
+    "APPLE_ACCOUNT_EMAIL_UNLESS_APPROVED",
+    "TEAM_ID_UNLESS_APPROVED",
+    "DEVICE_SERIAL_NUMBERS",
+    "RAW_IOREGISTRY_DUMPS",
+    "BAR_MMIO_DATA",
+    "PROVIDER_HANDLES",
+    "KERNEL_LOGS_WITH_PRIVATE_PATHS"
+  ],
+  "exclude_labels_present": true,
+  "expected_device_id": "0x2f04",
+  "expected_driverkit_bundle_identifier": "dev.h1meka.H1mekaRTXDriver",
+  "expected_host_app_bundle_identifier": "dev.h1meka.H1mekaRTXHost",
+  "expected_iopcimatch": "0x2f0410de",
+  "expected_vendor_id": "0x10de",
+  "fail_count": 0,
+  "fallback_gpu_substitution_allowed": false,
+  "files_copied_to_export_bundle_by_this_phase": false,
+  "firmware_load_attempted": false,
+  "framebuffer_init_attempted": false,
+  "generated_at_utc": "2026-06-18T14:23:30.540729+00:00",
+  "gpu_command_submission_attempted": false,
+  "gpu_command_submission_ready": false,
+  "gpu_reset_attempted": false,
+  "input_dry_run_plan_present": true,
+  "input_dry_run_plan_ready": true,
+  "input_manifest_consistency_gate_present": true,
+  "input_manifest_consistency_gate_ready": true,
+  "input_plan_consistency_gate_check_pass": true,
+  "input_plan_consistency_gate_check_present": true,
+  "input_plan_consistency_gate_pass": true,
+  "input_plan_consistency_gate_present": true,
+  "input_plan_consistency_gate_ready": true,
+  "input_redacted_manifest_present": true,
+  "input_redacted_manifest_ready": true,
+  "inputs_safe": true,
+  "inventory": [
+    {
+      "archived_by_this_phase": false,
+      "byte_count": 1090,
+      "copied_by_this_phase": false,
+      "exists": true,
+      "forbidden_by_label": false,
+      "is_relative_path": true,
+      "relative_path": "docs/hackintosh/driverkit-entitlement-request-notes-template.md",
+      "sha256": "2cdf0e0c219feced4f545f23eb8a49f8d411e1703e9dde56421468efccec7b1a"
+    },
+    {
+      "archived_by_this_phase": false,
+      "byte_count": 2103,
+      "copied_by_this_phase": false,
+      "exists": true,
+      "forbidden_by_label": false,
+      "is_relative_path": true,
+      "relative_path": "release-readiness/entitlement-request-package-skeleton.md",
+      "sha256": "7db6086b13ceb86b0b255e8ea09232c5c6505eb5669dad2e15024cf14c823a99"
+    },
+    {
+      "archived_by_this_phase": false,
+      "byte_count": 2330,
+      "copied_by_this_phase": false,
+      "exists": true,
+      "forbidden_by_label": false,
+      "is_relative_path": true,
+      "relative_path": "release-readiness/entitlement-request-evidence-checklist.md",
+      "sha256": "8499a98bdcb8ff775a84b05b0f02f42dda93c170ad44257364bbc32a579d72d4"
+    },
+    {
+      "archived_by_this_phase": false,
+      "byte_count": 2043,
+      "copied_by_this_phase": false,
+      "exists": true,
+      "forbidden_by_label": false,
+      "is_relative_path": true,
+      "relative_path": "release-readiness/entitlement-request-package-consistency-gate.md",
+      "sha256": "92f261bc261aea40963a07d1ba3b5d9275f44e6b1c27a8b35342d23003a5bee9"
+    },
+    {
+      "archived_by_this_phase": false,
+      "byte_count": 2348,
+      "copied_by_this_phase": false,
+      "exists": true,
+      "forbidden_by_label": false,
+      "is_relative_path": true,
+      "relative_path": "release-readiness/entitlement-request-pre-submission-packet-ledger.md",
+      "sha256": "926e4c27c11483e6967f35b79e59aa51c5a3681b12033536c1e86f5402f5b95c"
+    },
+    {
+      "archived_by_this_phase": false,
+      "byte_count": 2431,
+      "copied_by_this_phase": false,
+      "exists": true,
+      "forbidden_by_label": false,
+      "is_relative_path": true,
+      "relative_path": "release-readiness/entitlement-request-local-submission-readiness-gate.md",
+      "sha256": "77793248e780de09dccb04bc9c94fc63342ad418b2398665c8c5389ae970640d"
+    },
+    {
+      "archived_by_this_phase": false,
+      "byte_count": 2645,
+      "copied_by_this_phase": false,
+      "exists": true,
+      "forbidden_by_label": false,
+      "is_relative_path": true,
+      "relative_path": "release-readiness/manual-entitlement-request-packet-export-checklist.md",
+      "sha256": "a5f770371ec855c14ebd5619da788b411214f6c47b1bfa0ffdb45a6f29d43d66"
+    },
+    {
+      "archived_by_this_phase": false,
+      "byte_count": 3545,
+      "copied_by_this_phase": false,
+      "exists": true,
+      "forbidden_by_label": false,
+      "is_relative_path": true,
+      "relative_path": "release-readiness/redacted-manual-export-bundle-manifest.md",
+      "sha256": "c101dd86a1c39704160c3901781780aedb2700aa0dd79e9c54d5bae7e80f77e2"
+    },
+    {
+      "archived_by_this_phase": false,
+      "byte_count": 3111,
+      "copied_by_this_phase": false,
+      "exists": true,
+      "forbidden_by_label": false,
+      "is_relative_path": true,
+      "relative_path": "release-readiness/redacted-bundle-manifest-consistency-gate.md",
+      "sha256": "c2f2edba4628e2aeabb16c0194e9c554673f50f9cb6286334578fcf3bd8f4a44"
+    }
+  ],
+  "inventory_all_exist": true,
+  "inventory_all_not_copied": true,
+  "inventory_all_relative": true,
+  "inventory_count": 9,
+  "inventory_forbidden_absent": true,
+  "inventory_present": true,
+  "ioserviceopen_attempted": false,
+  "metal_acceleration_ready": false,
+  "metal_proof_claimed": false,
+  "next_gate": "phase63g-redacted-export-inventory-consistency-gate",
+  "pass_count": 34,
+  "private_keys_exported": false,
+  "private_paths_committed": false,
+  "provider_handles_exported": false,
+  "provider_open_attempted": false,
+  "provider_visibility_commands_executed_by_this_phase": false,
+  "provisioning_assets_exported": false,
+  "raw_capture_parsed_by_this_phase": false,
+  "raw_ioregistry_exported": false,
+  "raw_stderr_committed": false,
+  "raw_stdout_committed": false,
+  "redacted_export_bundle_dry_run_inventory_ledger_ready": true,
+  "rtx5070_target_retained": true,
+  "schema": "h1mekartx.redacted_export_bundle_dry_run_inventory_ledger_output.v1"
+}
