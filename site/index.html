@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>H1mekaRTX</title>
+  <meta name="description" content="Experimental RTX 5070 macOS research project." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="badge">BAR Safety Gates · Passing</div>
+      <h1>H1mekaRTX</h1>
+      <p class="subtitle">
+        Experimental research project for NVIDIA GeForce RTX 5070 detection,
+        compute-only runtime research, framebuffer-only output research,
+        and long-term Metal acceleration research on macOS.
+      </p>
+
+      <div class="warning">
+        <strong>Status: research-only.</strong>
+        This project does not provide working macOS NVIDIA graphics acceleration,
+        CUDA support, or a production display driver.
+      </div>
+
+      <div class="actions">
+        <a href="https://github.com/PalanBanana/H1mekaRTX">GitHub</a>
+        <a href="#target">Target GPU</a>
+        <a href="#roadmap">Roadmap</a>
+      </div>
+    </section>
+
+    <section id="target" class="card">
+      <h2>Target GPU</h2>
+      <ul class="specs">
+        <li><span>GPU</span><code>NVIDIA GB205 / GeForce RTX 5070</code></li>
+        <li><span>Board</span><code>Gigabyte GV-N5070WF3OC-12GD/F1/115C</code></li>
+        <li><span>Vendor ID</span><code>0x10de</code></li>
+        <li><span>Device ID</span><code>0x2f04</code></li>
+        <li><span>IOPCIMatch</span><code>0x2f0410de</code></li>
+        <li><span>Subsystem</span><code>0x1458:0x417e</code></li>
+      </ul>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Current Focus</h2>
+        <p>
+          DriverKit entitlement packet preparation, redacted export manifests,
+          dry-run inventories, and no-open provider-match readiness gates.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Safety Contract</h2>
+        <p>
+          No provider open, no IOServiceOpen, no BAR mapping, no BAR0 reads/writes,
+          no GPU command submission, and no Metal acceleration claim.
+        </p>
+      </article>
+    </section>
+
+    <section id="roadmap" class="card">
+      <h2>Roadmap</h2>
+      <ol class="timeline">
+        <li><strong>Phase 62</strong> — Provider visibility and entitlement request readiness gates.</li>
+        <li><strong>Phase 63</strong> — Redacted export bundle dry-run and inventory gates.</li>
+        <li><strong>Future</strong> — Manual entitlement review, still no provider open until all gates pass.</li>
+      </ol>
+    </section>
+
+    <footer>
+      <p>H1mekaRTX · Research-only · RTX 5070 target retained</p>
+    </footer>
+  </main>
+</body>
+</html>
