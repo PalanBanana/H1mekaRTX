@@ -1,0 +1,180 @@
+{
+  "actual_apple_entitlement_request_submitted": false,
+  "app_id_created_by_this_phase": false,
+  "bar0_read_attempted": false,
+  "bar0_write_attempted": false,
+  "bar_access_ready": false,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "blocked_count": 6,
+  "bundle_archive_created_by_this_phase": false,
+  "certificates_exported": false,
+  "classification": "CLASSIFICATION_REDACTED_MANUAL_EXPORT_BUNDLE_MANIFEST_OUTPUT",
+  "configuration_writes_attempted": false,
+  "contacted_apple_by_this_phase": false,
+  "current_rtx5070_metal_acceleration_claimed": false,
+  "current_rtx5070_ui_smoothness_claimed": false,
+  "decision": "PASS_REDACTED_MANUAL_EXPORT_BUNDLE_MANIFEST_READY",
+  "display_engine_init_attempted": false,
+  "dock_transparency_blur_acceleration_claimed": false,
+  "driverkit_entitlement_approved": false,
+  "driverkit_entitlement_requested_by_this_phase": false,
+  "driverkit_extension_activated": false,
+  "driverkit_extension_loaded": false,
+  "driverkit_extension_signed_by_this_phase": false,
+  "driverkit_pci_entitlement_requested_by_this_phase": false,
+  "driverkit_profile_created": false,
+  "driverkit_profile_ready": false,
+  "excluded_patterns": [
+    "HOST_REPORT_BUNDLE_TOKEN",
+    "raw stdout",
+    "raw stderr",
+    "IORegistry raw",
+    "private key",
+    "certificate",
+    "provisioning profile",
+    "PRIVATE_HOME_PATH_TOKEN",
+    "PRIVATE_VAR_FOLDERS_TOKEN",
+    "VAR_FOLDERS_TOKEN",
+    "provider handle",
+    "BAR dump",
+    "MMIO dump"
+  ],
+  "expected_device_id": "0x2f04",
+  "expected_driverkit_bundle_identifier": "dev.h1meka.H1mekaRTXDriver",
+  "expected_host_app_bundle_identifier": "dev.h1meka.H1mekaRTXHost",
+  "expected_iopcimatch": "0x2f0410de",
+  "expected_vendor_id": "0x10de",
+  "fail_count": 0,
+  "fallback_gpu_substitution_allowed": false,
+  "firmware_load_attempted": false,
+  "framebuffer_init_attempted": false,
+  "generated_at_utc": "2026-06-18T13:22:51.344302+00:00",
+  "gpu_command_submission_attempted": false,
+  "gpu_command_submission_ready": false,
+  "gpu_reset_attempted": false,
+  "included_files": [
+    "docs/hackintosh/driverkit-entitlement-request-notes-template.md",
+    "release-readiness/entitlement-request-package-skeleton.md",
+    "release-readiness/entitlement-request-evidence-checklist.md",
+    "release-readiness/entitlement-request-package-consistency-gate.md",
+    "release-readiness/entitlement-request-pre-submission-packet-ledger.md",
+    "release-readiness/entitlement-request-local-submission-readiness-gate.md",
+    "release-readiness/manual-entitlement-request-packet-export-checklist.md"
+  ],
+  "input_evidence_checklist_present": true,
+  "input_evidence_checklist_ready": true,
+  "input_local_submission_readiness_gate_present": true,
+  "input_local_submission_readiness_ready": true,
+  "input_manual_export_check_pass": true,
+  "input_manual_export_check_present": true,
+  "input_manual_export_checklist_pass": true,
+  "input_manual_export_checklist_present": true,
+  "input_manual_export_checklist_ready": true,
+  "input_pre_submission_packet_present": true,
+  "input_pre_submission_packet_ready": true,
+  "input_request_notes_template_present": true,
+  "inputs_safe": true,
+  "ioserviceopen_attempted": false,
+  "ioserviceopen_ready": false,
+  "items": [
+    {
+      "id": "manual_export_checklist_passed",
+      "status": "PASS"
+    },
+    {
+      "id": "manual_export_check_passed",
+      "status": "PASS"
+    },
+    {
+      "id": "manual_export_checklist_ready",
+      "status": "PASS"
+    },
+    {
+      "id": "local_submission_readiness_gate_ready",
+      "status": "PASS"
+    },
+    {
+      "id": "pre_submission_packet_ready",
+      "status": "PASS"
+    },
+    {
+      "id": "evidence_checklist_ready",
+      "status": "PASS"
+    },
+    {
+      "id": "request_notes_template_ready",
+      "status": "PASS"
+    },
+    {
+      "id": "future_manual_redaction_required",
+      "status": "PLACEHOLDER"
+    },
+    {
+      "id": "future_manual_bundle_creation_required",
+      "status": "PLACEHOLDER"
+    },
+    {
+      "id": "bundle_archive_not_created_by_this_phase",
+      "status": "BLOCKED"
+    },
+    {
+      "id": "certificates_not_exported",
+      "status": "BLOCKED"
+    },
+    {
+      "id": "private_keys_not_exported",
+      "status": "BLOCKED"
+    },
+    {
+      "id": "provisioning_assets_not_exported",
+      "status": "BLOCKED"
+    },
+    {
+      "id": "raw_ioregistry_not_exported",
+      "status": "BLOCKED"
+    },
+    {
+      "id": "actual_apple_submission_not_performed",
+      "status": "BLOCKED"
+    },
+    {
+      "id": "provider_open_blocked",
+      "status": "PASS"
+    },
+    {
+      "id": "bar_access_blocked",
+      "status": "PASS"
+    },
+    {
+      "id": "gpu_command_submission_blocked",
+      "status": "PASS"
+    },
+    {
+      "id": "metal_acceleration_not_claimed",
+      "status": "PASS"
+    }
+  ],
+  "metal_acceleration_ready": false,
+  "metal_proof_claimed": false,
+  "next_gate": "phase63c-redacted-bundle-manifest-consistency-gate",
+  "pass_count": 11,
+  "placeholder_count": 2,
+  "private_keys_exported": false,
+  "private_paths_committed": false,
+  "provider_handles_exported": false,
+  "provider_open_attempted": false,
+  "provider_open_ready": false,
+  "provider_visibility_commands_executed_by_this_phase": false,
+  "provisioning_assets_exported": false,
+  "provisioning_profile_created_by_this_phase": false,
+  "raw_capture_parsed_by_this_phase": false,
+  "raw_ioregistry_exported": false,
+  "raw_stderr_committed": false,
+  "raw_stdout_committed": false,
+  "redacted_manifest_only": true,
+  "redacted_manual_export_bundle_manifest_ready": true,
+  "request_notes_template_ready": true,
+  "rtx5070_target_retained": true,
+  "schema": "h1mekartx.redacted_manual_export_bundle_manifest_output.v1"
+}
