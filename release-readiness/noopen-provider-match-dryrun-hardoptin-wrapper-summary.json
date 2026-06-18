@@ -1,0 +1,20 @@
+{
+  "bar0_read_attempted": false,
+  "bar0_write_attempted": false,
+  "bar_mapping_attempted": false,
+  "command_count": 4,
+  "command_manifest_present": true,
+  "commands_executed": false,
+  "current_rtx5070_metal_acceleration_claimed": false,
+  "decision": "REFUSED_NOOPEN_PROVIDER_MATCH_DRYRUN_MISSING_HARD_OPTIN",
+  "dock_transparency_blur_acceleration_claimed": false,
+  "generated_at_utc": "2026-06-18T07:21:03.330013+00:00",
+  "gpu_command_submission_attempted": false,
+  "hard_opt_in_matched": false,
+  "ioserviceopen_attempted": false,
+  "next_gate": "phase62q-sanitized-noopen-provider-match-dryrun-output-parser",
+  "provider_open_attempted": false,
+  "raw_capture_path_redacted": "host-report-bundle/noopen-provider-match-dryrun/noopen-provider-match-dryrun-local-capture.json",
+  "raw_capture_written_local_only": true,
+  "schema": "h1mekartx.noopen_provider_match_dryrun_hardoptin_wrapper_summary.v1"
+}
