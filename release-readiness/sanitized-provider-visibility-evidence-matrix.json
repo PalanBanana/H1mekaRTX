@@ -1,0 +1,148 @@
+{
+  "bar0_read_attempted": false,
+  "bar0_write_attempted": false,
+  "bar_mapping_attempted": false,
+  "blocked_count": 2,
+  "classification": "CLASSIFICATION_SANITIZED_PROVIDER_VISIBILITY_EVIDENCE_MATRIX",
+  "current_rtx5070_metal_acceleration_claimed": false,
+  "current_rtx5070_ui_smoothness_claimed": false,
+  "decision": "PASS_SANITIZED_PROVIDER_VISIBILITY_EVIDENCE_MATRIX_READY",
+  "dock_transparency_blur_acceleration_claimed": false,
+  "evidence_matrix_only": true,
+  "fail_count": 0,
+  "fallback_gpu_substitution_allowed": false,
+  "generated_at_utc": "2026-06-18T06:39:49.022752+00:00",
+  "gpu_command_submission_attempted": false,
+  "input_check_present": true,
+  "input_summary_present": true,
+  "ioserviceopen_attempted": false,
+  "matrix": [
+    {
+      "evidence": {
+        "expected_device_id": "0x2f04",
+        "expected_iopcimatch": "0x2f0410de",
+        "expected_vendor_id": "0x10de"
+      },
+      "id": "rtx5070_target_identity",
+      "status": "PASS"
+    },
+    {
+      "evidence": {
+        "summary_present": true
+      },
+      "id": "sanitized_parser_summary_present",
+      "status": "PASS"
+    },
+    {
+      "evidence": {
+        "check_decision": "PASS_SANITIZED_LOCAL_PROVIDER_VISIBILITY_CAPTURE_PARSER_READY",
+        "check_present": true
+      },
+      "id": "sanitized_parser_check_present",
+      "status": "PASS"
+    },
+    {
+      "evidence": {
+        "raw_capture_exists_local": true
+      },
+      "id": "raw_capture_availability",
+      "status": "PASS"
+    },
+    {
+      "evidence": {
+        "hard_opt_in_matched": false
+      },
+      "id": "hard_opt_in_state",
+      "status": "BLOCKED"
+    },
+    {
+      "evidence": {
+        "raw_capture_read": false
+      },
+      "id": "raw_capture_read_state",
+      "status": "BLOCKED"
+    },
+    {
+      "evidence": {
+        "detected_any_h1mekartx": false
+      },
+      "id": "provider_visibility_h1mekartx_token",
+      "status": "NOT_PROVEN"
+    },
+    {
+      "evidence": {
+        "detected_any_iopcidevice": false
+      },
+      "id": "provider_visibility_iopcidevice_token",
+      "status": "NOT_PROVEN"
+    },
+    {
+      "evidence": {
+        "detected_any_10de": false,
+        "detected_any_2f04": false,
+        "detected_any_2f0410de": false
+      },
+      "id": "provider_visibility_pci_identity_tokens",
+      "status": "NOT_PROVEN"
+    },
+    {
+      "evidence": {
+        "provider_open_attempted": false
+      },
+      "id": "provider_open_safety",
+      "status": "PASS"
+    },
+    {
+      "evidence": {
+        "ioserviceopen_attempted": false
+      },
+      "id": "ioserviceopen_safety",
+      "status": "PASS"
+    },
+    {
+      "evidence": {
+        "bar_mapping_attempted": false
+      },
+      "id": "bar_mapping_safety",
+      "status": "PASS"
+    },
+    {
+      "evidence": {
+        "bar0_read_attempted": false,
+        "bar0_write_attempted": false
+      },
+      "id": "bar0_read_write_safety",
+      "status": "PASS"
+    },
+    {
+      "evidence": {
+        "gpu_command_submission_attempted": false
+      },
+      "id": "gpu_command_safety",
+      "status": "PASS"
+    },
+    {
+      "evidence": {
+        "current_rtx5070_metal_acceleration_claimed": false
+      },
+      "id": "metal_proof_state",
+      "status": "NOT_PROVEN"
+    },
+    {
+      "evidence": {
+        "dock_transparency_blur_acceleration_claimed": false
+      },
+      "id": "dock_transparency_blur_proof_state",
+      "status": "NOT_PROVEN"
+    }
+  ],
+  "missing_count": 0,
+  "next_gate": "phase62k-local-optin-provider-visibility-evidence-capture-runbook",
+  "not_proven_count": 5,
+  "pass_count": 9,
+  "provider_open_attempted": false,
+  "provider_visibility_commands_executed_by_this_phase": false,
+  "raw_capture_parsed_by_this_phase": false,
+  "rtx5070_target_retained": true,
+  "schema": "h1mekartx.sanitized_provider_visibility_evidence_matrix_output.v1"
+}
