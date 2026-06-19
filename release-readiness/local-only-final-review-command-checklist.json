@@ -1,0 +1,183 @@
+{
+  "absolute_paths_recorded": false,
+  "actual_apple_entitlement_request_submitted": false,
+  "app_id_created_by_this_phase": false,
+  "bar0_read_attempted": false,
+  "bar0_write_attempted": false,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "bundle_archive_created_by_this_phase": false,
+  "certificates_exported": false,
+  "checklist_command_count": 9,
+  "checklist_commands": [
+    {
+      "command": "git status --short --ignored",
+      "id": "repo-status",
+      "local_only_review": true,
+      "purpose": "Inspect uncommitted and ignored local workspace noise before final human review.",
+      "read_only": true,
+      "submits_request": false
+    },
+    {
+      "command": "gh pr view 245 --repo PalanBanana/H1mekaRTX --json number,state,mergedAt,url,statusCheckRollup --jq '.'",
+      "id": "phase63j-pr-status",
+      "local_only_review": true,
+      "purpose": "Confirm Phase 63J merge and checks without modifying the repository.",
+      "read_only": true,
+      "submits_request": false
+    },
+    {
+      "command": "python3 -m json.tool release-readiness/redacted-entitlement-request-final-review-packet-index.json >/tmp/h1mekartx-final-review-index.pretty.json",
+      "id": "final-review-index-json-format",
+      "local_only_review": true,
+      "purpose": "Pretty-print the local final review packet index JSON to a temporary review file.",
+      "read_only": true,
+      "submits_request": false
+    },
+    {
+      "command": "python3 -m json.tool release-readiness/redacted-entitlement-request-final-review-packet-index-check.json >/tmp/h1mekartx-final-review-index-check.pretty.json",
+      "id": "final-review-index-check-json-format",
+      "local_only_review": true,
+      "purpose": "Pretty-print the local final review packet index check JSON to a temporary review file.",
+      "read_only": true,
+      "submits_request": false
+    },
+    {
+      "command": "grep -R \"PASS_REDACTED_ENTITLEMENT_REQUEST_FINAL_REVIEW_PACKET_INDEX_READY\" release-readiness/redacted-entitlement-request-final-review-packet-index*.json",
+      "id": "final-review-pass-grep",
+      "local_only_review": true,
+      "purpose": "Confirm the final review index PASS decision in local release-readiness artifacts.",
+      "read_only": true,
+      "submits_request": false
+    },
+    {
+      "command": "grep -R 'current_rtx5070_metal_acceleration_claimed.*false' release-readiness/redacted-entitlement-request-final-review-packet-index*.json",
+      "id": "metal-claim-false-grep",
+      "local_only_review": true,
+      "purpose": "Confirm current RTX 5070 Metal acceleration remains unclaimed in local artifacts.",
+      "read_only": true,
+      "submits_request": false
+    },
+    {
+      "command": "grep -R 'dock_transparency_blur_acceleration_claimed.*false' release-readiness/redacted-entitlement-request-final-review-packet-index*.json",
+      "id": "dock-blur-claim-false-grep",
+      "local_only_review": true,
+      "purpose": "Confirm Dock/transparency/blur acceleration remains unclaimed in local artifacts.",
+      "read_only": true,
+      "submits_request": false
+    },
+    {
+      "command": "sed -n '1,80p' docs/hackintosh/redacted-entitlement-request-final-review-packet-index.md",
+      "id": "final-review-doc-preview",
+      "local_only_review": true,
+      "purpose": "Preview the first 80 lines of the local final review packet index document.",
+      "read_only": true,
+      "submits_request": false
+    },
+    {
+      "command": "gh run list --repo PalanBanana/H1mekaRTX --limit 5",
+      "id": "recent-ci-runs",
+      "local_only_review": true,
+      "purpose": "Inspect recent GitHub Actions runs without changing repository state.",
+      "read_only": true,
+      "submits_request": false
+    }
+  ],
+  "checklist_commands_executed_by_this_phase": false,
+  "checks": [
+    {
+      "id": "final_review_packet_index_passed",
+      "status": "PASS"
+    },
+    {
+      "id": "final_review_packet_index_check_passed",
+      "status": "PASS"
+    },
+    {
+      "id": "final_review_packet_index_ready",
+      "status": "PASS"
+    },
+    {
+      "id": "commands_present",
+      "status": "PASS"
+    },
+    {
+      "id": "commands_all_read_only",
+      "status": "PASS"
+    },
+    {
+      "id": "commands_all_local_review",
+      "status": "PASS"
+    },
+    {
+      "id": "commands_all_no_submit",
+      "status": "PASS"
+    },
+    {
+      "id": "commands_all_safe",
+      "status": "PASS"
+    },
+    {
+      "id": "commands_no_execution_by_this_phase",
+      "status": "PASS"
+    },
+    {
+      "id": "commands_no_archive_or_copy",
+      "status": "PASS"
+    }
+  ],
+  "classification": "CLASSIFICATION_LOCAL_ONLY_FINAL_REVIEW_COMMAND_CHECKLIST_OUTPUT",
+  "commands_all_local_review": true,
+  "commands_all_no_submit": true,
+  "commands_all_read_only": true,
+  "commands_all_safe": true,
+  "commands_no_archive_or_copy": true,
+  "commands_no_execution_by_this_phase": true,
+  "configuration_writes_attempted": false,
+  "contacted_apple_by_this_phase": false,
+  "current_rtx5070_metal_acceleration_claimed": false,
+  "current_rtx5070_ui_smoothness_claimed": false,
+  "decision": "PASS_LOCAL_ONLY_FINAL_REVIEW_COMMAND_CHECKLIST_READY",
+  "display_engine_init_attempted": false,
+  "dock_transparency_blur_acceleration_claimed": false,
+  "driverkit_entitlement_approved": false,
+  "driverkit_entitlement_requested_by_this_phase": false,
+  "driverkit_extension_activated": false,
+  "driverkit_extension_loaded": false,
+  "driverkit_extension_signed_by_this_phase": false,
+  "driverkit_pci_entitlement_requested_by_this_phase": false,
+  "driverkit_profile_created": false,
+  "driverkit_profile_ready": false,
+  "expected_device_id": "0x2f04",
+  "expected_driverkit_bundle_identifier": "dev.h1meka.H1mekaRTXDriver",
+  "expected_host_app_bundle_identifier": "dev.h1meka.H1mekaRTXHost",
+  "expected_iopcimatch": "0x2f0410de",
+  "expected_vendor_id": "0x10de",
+  "fail_count": 0,
+  "fallback_gpu_substitution_allowed": false,
+  "files_copied_to_export_bundle_by_this_phase": false,
+  "firmware_load_attempted": false,
+  "framebuffer_init_attempted": false,
+  "generated_at_utc": "2026-06-19T00:05:05.663214+00:00",
+  "gpu_command_submission_attempted": false,
+  "gpu_reset_attempted": false,
+  "input_final_review_packet_index_check_pass": true,
+  "input_final_review_packet_index_check_present": true,
+  "input_final_review_packet_index_pass": true,
+  "input_final_review_packet_index_present": true,
+  "input_final_review_packet_index_ready": true,
+  "ioserviceopen_attempted": false,
+  "local_final_review_command_checklist_only": true,
+  "local_only_final_review_command_checklist_ready": true,
+  "metal_proof_claimed": false,
+  "next_gate": "phase63l-local-only-final-review-command-checklist-consistency-gate",
+  "pass_count": 10,
+  "private_keys_exported": false,
+  "provider_handles_exported": false,
+  "provider_open_attempted": false,
+  "provisioning_assets_exported": false,
+  "provisioning_profile_created_by_this_phase": false,
+  "raw_ioregistry_exported": false,
+  "rtx5070_target_retained": true,
+  "schema": "h1mekartx.local_only_final_review_command_checklist_output.v1"
+}
