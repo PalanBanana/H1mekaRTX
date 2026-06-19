@@ -1,0 +1,281 @@
+{
+  "absolute_paths_recorded": false,
+  "actual_apple_entitlement_request_submitted": false,
+  "app_id_created_by_this_phase": false,
+  "bar0_read_attempted": false,
+  "bar0_write_attempted": false,
+  "bar_mapping_attempted": false,
+  "bar_mmio_mutation_attempted": false,
+  "bundle_archive_created_by_this_phase": false,
+  "certificates_exported": false,
+  "checks": [
+    {
+      "id": "index_entries_present",
+      "status": "PASS"
+    },
+    {
+      "id": "index_entry_count_10",
+      "status": "PASS"
+    },
+    {
+      "id": "index_all_exist",
+      "status": "PASS"
+    },
+    {
+      "id": "index_all_relative",
+      "status": "PASS"
+    },
+    {
+      "id": "index_all_decisions_ok",
+      "status": "PASS"
+    },
+    {
+      "id": "index_all_sha256_present",
+      "status": "PASS"
+    },
+    {
+      "id": "index_all_byte_count_present",
+      "status": "PASS"
+    },
+    {
+      "id": "index_forbidden_path_absent",
+      "status": "PASS"
+    },
+    {
+      "id": "index_all_not_copied",
+      "status": "PASS"
+    }
+  ],
+  "classification": "CLASSIFICATION_REDACTED_ENTITLEMENT_REQUEST_FINAL_REVIEW_PACKET_INDEX_OUTPUT",
+  "configuration_writes_attempted": false,
+  "contacted_apple_by_this_phase": false,
+  "current_rtx5070_metal_acceleration_claimed": false,
+  "current_rtx5070_ui_smoothness_claimed": false,
+  "decision": "PASS_REDACTED_ENTITLEMENT_REQUEST_FINAL_REVIEW_PACKET_INDEX_READY",
+  "display_engine_init_attempted": false,
+  "dock_transparency_blur_acceleration_claimed": false,
+  "driverkit_entitlement_approved": false,
+  "driverkit_entitlement_requested_by_this_phase": false,
+  "driverkit_extension_activated": false,
+  "driverkit_extension_loaded": false,
+  "driverkit_extension_signed_by_this_phase": false,
+  "driverkit_pci_entitlement_requested_by_this_phase": false,
+  "driverkit_profile_created": false,
+  "driverkit_profile_ready": false,
+  "expected_device_id": "0x2f04",
+  "expected_driverkit_bundle_identifier": "dev.h1meka.H1mekaRTXDriver",
+  "expected_host_app_bundle_identifier": "dev.h1meka.H1mekaRTXHost",
+  "expected_iopcimatch": "0x2f0410de",
+  "expected_vendor_id": "0x10de",
+  "fail_count": 0,
+  "fallback_gpu_substitution_allowed": false,
+  "files_copied_to_export_bundle_by_this_phase": false,
+  "final_review_packet_index_only": true,
+  "firmware_load_attempted": false,
+  "framebuffer_init_attempted": false,
+  "generated_at_utc": "2026-06-19T00:01:08.171194+00:00",
+  "gpu_command_submission_attempted": false,
+  "gpu_reset_attempted": false,
+  "index_all_byte_count_present": true,
+  "index_all_decisions_ok": true,
+  "index_all_exist": true,
+  "index_all_not_copied": true,
+  "index_all_relative": true,
+  "index_all_sha256_present": true,
+  "index_entries": [
+    {
+      "actual_decision": "PASS_ENTITLEMENT_REQUEST_LOCAL_SUBMISSION_READINESS_GATE_READY",
+      "archived_by_this_phase": false,
+      "byte_count": 19920,
+      "copied_by_this_phase": false,
+      "decision_ok": true,
+      "description": "local submission readiness gate",
+      "exists": true,
+      "expected_decisions": [
+        "PASS_ENTITLEMENT_REQUEST_LOCAL_SUBMISSION_READINESS_GATE_READY"
+      ],
+      "forbidden_path_hit": false,
+      "is_relative_path": true,
+      "phase": "phase62z",
+      "relative_path": "release-readiness/entitlement-request-local-submission-readiness-gate-check.json",
+      "request_submitted_by_this_phase": false,
+      "sha256": "f94c9e7d5cb87de2207b34374f9488e0ac26f571a89d53e6ecf46052f0617c4e"
+    },
+    {
+      "actual_decision": "PASS_MANUAL_ENTITLEMENT_REQUEST_PACKET_EXPORT_CHECKLIST_READY",
+      "archived_by_this_phase": false,
+      "byte_count": 20719,
+      "copied_by_this_phase": false,
+      "decision_ok": true,
+      "description": "manual entitlement request packet export checklist",
+      "exists": true,
+      "expected_decisions": null,
+      "forbidden_path_hit": false,
+      "is_relative_path": true,
+      "phase": "phase63a",
+      "relative_path": "release-readiness/manual-entitlement-request-packet-export-checklist-check.json",
+      "request_submitted_by_this_phase": false,
+      "sha256": "a51b8035588c577ed291321160f16cb38d00bff5f11ec7de5cd15eb1d38fc798"
+    },
+    {
+      "actual_decision": "PASS_REDACTED_MANUAL_EXPORT_BUNDLE_MANIFEST_READY",
+      "archived_by_this_phase": false,
+      "byte_count": 22485,
+      "copied_by_this_phase": false,
+      "decision_ok": true,
+      "description": "redacted manual export bundle manifest",
+      "exists": true,
+      "expected_decisions": [
+        "PASS_REDACTED_MANUAL_EXPORT_BUNDLE_MANIFEST_READY",
+        "PASS_REDACTED_EXPORT_BUNDLE_MANIFEST_READY"
+      ],
+      "forbidden_path_hit": false,
+      "is_relative_path": true,
+      "phase": "phase63b",
+      "relative_path": "release-readiness/redacted-manual-export-bundle-manifest-check.json",
+      "request_submitted_by_this_phase": false,
+      "sha256": "cb02a8c7d68cf0391ed0a7b70d1f50c5394c7697adf06b5b110211920388d390"
+    },
+    {
+      "actual_decision": "PASS_REDACTED_BUNDLE_MANIFEST_CONSISTENCY_GATE_READY",
+      "archived_by_this_phase": false,
+      "byte_count": 22635,
+      "copied_by_this_phase": false,
+      "decision_ok": true,
+      "description": "redacted bundle manifest consistency gate",
+      "exists": true,
+      "expected_decisions": [
+        "PASS_REDACTED_BUNDLE_MANIFEST_CONSISTENCY_GATE_READY"
+      ],
+      "forbidden_path_hit": false,
+      "is_relative_path": true,
+      "phase": "phase63c",
+      "relative_path": "release-readiness/redacted-bundle-manifest-consistency-gate-check.json",
+      "request_submitted_by_this_phase": false,
+      "sha256": "8619074763fe6308099b89681d79fe924c2fe07c1d70c89718681be64130bf52"
+    },
+    {
+      "actual_decision": "PASS_REDACTED_EXPORT_BUNDLE_DRY_RUN_PLAN_READY",
+      "archived_by_this_phase": false,
+      "byte_count": 14216,
+      "copied_by_this_phase": false,
+      "decision_ok": true,
+      "description": "redacted export bundle dry-run plan",
+      "exists": true,
+      "expected_decisions": [
+        "PASS_REDACTED_EXPORT_BUNDLE_DRY_RUN_PLAN_READY"
+      ],
+      "forbidden_path_hit": false,
+      "is_relative_path": true,
+      "phase": "phase63d",
+      "relative_path": "release-readiness/redacted-export-bundle-dry-run-plan-check.json",
+      "request_submitted_by_this_phase": false,
+      "sha256": "f97af69e18db6bb6f1eae905196e2f272751411d784f0979fc41093f88b52875"
+    },
+    {
+      "actual_decision": "PASS_REDACTED_EXPORT_DRY_RUN_PLAN_CONSISTENCY_GATE_READY",
+      "archived_by_this_phase": false,
+      "byte_count": 14188,
+      "copied_by_this_phase": false,
+      "decision_ok": true,
+      "description": "redacted export dry-run plan consistency gate",
+      "exists": true,
+      "expected_decisions": [
+        "PASS_REDACTED_EXPORT_DRY_RUN_PLAN_CONSISTENCY_GATE_READY"
+      ],
+      "forbidden_path_hit": false,
+      "is_relative_path": true,
+      "phase": "phase63e",
+      "relative_path": "release-readiness/redacted-export-dry-run-plan-consistency-gate-check.json",
+      "request_submitted_by_this_phase": false,
+      "sha256": "26d5846c3bda21fedc70655d350f113427f20e37dae0cf4f434a0a927cd89d04"
+    },
+    {
+      "actual_decision": "PASS_REDACTED_EXPORT_BUNDLE_DRY_RUN_INVENTORY_LEDGER_READY",
+      "archived_by_this_phase": false,
+      "byte_count": 15376,
+      "copied_by_this_phase": false,
+      "decision_ok": true,
+      "description": "redacted export bundle dry-run inventory ledger",
+      "exists": true,
+      "expected_decisions": [
+        "PASS_REDACTED_EXPORT_BUNDLE_DRY_RUN_INVENTORY_LEDGER_READY"
+      ],
+      "forbidden_path_hit": false,
+      "is_relative_path": true,
+      "phase": "phase63f",
+      "relative_path": "release-readiness/redacted-export-bundle-dry-run-inventory-ledger-check.json",
+      "request_submitted_by_this_phase": false,
+      "sha256": "94ddf754745a63b2600c4c9604bc0c93d6d08729a39dd53097466d765c94643b"
+    },
+    {
+      "actual_decision": "PASS_REDACTED_EXPORT_INVENTORY_CONSISTENCY_GATE_READY",
+      "archived_by_this_phase": false,
+      "byte_count": 15401,
+      "copied_by_this_phase": false,
+      "decision_ok": true,
+      "description": "redacted export inventory consistency gate",
+      "exists": true,
+      "expected_decisions": [
+        "PASS_REDACTED_EXPORT_INVENTORY_CONSISTENCY_GATE_READY"
+      ],
+      "forbidden_path_hit": false,
+      "is_relative_path": true,
+      "phase": "phase63g",
+      "relative_path": "release-readiness/redacted-export-inventory-consistency-gate-check.json",
+      "request_submitted_by_this_phase": false,
+      "sha256": "a5edd2d1822c0548c277147b9cbb302d3c77255df879cf9ed67da925a260e6aa"
+    },
+    {
+      "actual_decision": "PASS_REDACTED_EXPORT_BUNDLE_ASSEMBLY_DRY_RUN_MANIFEST_READY",
+      "archived_by_this_phase": false,
+      "byte_count": 11101,
+      "copied_by_this_phase": false,
+      "decision_ok": true,
+      "description": "redacted export bundle assembly dry-run manifest",
+      "exists": true,
+      "expected_decisions": [
+        "PASS_REDACTED_EXPORT_BUNDLE_ASSEMBLY_DRY_RUN_MANIFEST_READY"
+      ],
+      "forbidden_path_hit": false,
+      "is_relative_path": true,
+      "phase": "phase63h",
+      "relative_path": "release-readiness/redacted-export-bundle-assembly-dry-run-manifest-check.json",
+      "request_submitted_by_this_phase": false,
+      "sha256": "37a15a609024b3ff219e8a23f2d20609b9ca5e237c868f3cd8d2f985f14e55d4"
+    },
+    {
+      "actual_decision": "PASS_REDACTED_BUNDLE_ASSEMBLY_DRY_RUN_CONSISTENCY_GATE_READY",
+      "archived_by_this_phase": false,
+      "byte_count": 15628,
+      "copied_by_this_phase": false,
+      "decision_ok": true,
+      "description": "redacted bundle assembly dry-run consistency gate",
+      "exists": true,
+      "expected_decisions": [
+        "PASS_REDACTED_BUNDLE_ASSEMBLY_DRY_RUN_CONSISTENCY_GATE_READY"
+      ],
+      "forbidden_path_hit": false,
+      "is_relative_path": true,
+      "phase": "phase63i",
+      "relative_path": "release-readiness/redacted-bundle-assembly-dry-run-consistency-gate-check.json",
+      "request_submitted_by_this_phase": false,
+      "sha256": "19fc0a52c9fcb0490c2669bf4e99480782fd0631ad77d1c4a411e61b8b7ea3ee"
+    }
+  ],
+  "index_entry_count": 10,
+  "index_forbidden_absent": true,
+  "ioserviceopen_attempted": false,
+  "metal_proof_claimed": false,
+  "next_gate": "phase63k-local-only-final-review-command-checklist",
+  "pass_count": 9,
+  "private_keys_exported": false,
+  "provider_handles_exported": false,
+  "provider_open_attempted": false,
+  "provisioning_assets_exported": false,
+  "provisioning_profile_created_by_this_phase": false,
+  "raw_ioregistry_exported": false,
+  "redacted_entitlement_request_final_review_packet_index_ready": true,
+  "rtx5070_target_retained": true,
+  "schema": "h1mekartx.redacted_entitlement_request_final_review_packet_index_output.v1"
+}
